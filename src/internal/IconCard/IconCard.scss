@@ -1,0 +1,152 @@
+.version {
+  display: inline-block;
+  margin-bottom: rem(16px);
+  color: $text-03;
+}
+
+.icon-container-wrapper {
+  margin-top: rem(70px);
+}
+
+.icon-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  @media (min-width: 1600px) {
+    width: 80%;
+  }
+}
+
+.container:not(.container--expanded) .iconography .bx--search {
+  @media (min-width: 1024px) {
+    width: 32rem;
+  }
+
+  @media (min-width: 1139px) {
+    width: 43rem;
+  }
+
+  @media (min-width: 1374px) {
+    width: 54rem;
+  }
+
+  @media (min-width: 1600px) {
+    width: 43rem;
+  }
+
+  @media (min-width: 1667px) {
+    width: 54rem;
+  }
+}
+
+.iconography .bx--search {
+  width: 100%;
+
+  @media (min-width: 562px) {
+    width: 32rem;
+  }
+
+  @media (min-width: 783px) {
+    width: 43rem;
+  }
+
+  @media (min-width: 840px) {
+    width: 32rem;
+  }
+
+  @media (min-width: 939px) {
+    width: 43rem;
+  }
+
+  @media (min-width: 1174px) {
+    width: 54rem;
+  }
+
+  @media (min-width: 1408px) {
+    width: 65rem;
+  }
+
+  @media (min-width: 1600px) {
+    width: 54rem;
+  }
+
+  @media (min-width: 1760px) {
+    width: 65rem;
+  }
+}
+
+.icon {
+  flex: 1 1 10rem;
+  max-width: 10rem;
+  height: 250px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  h5 {
+    @include letter-spacing;
+    color: $text-01;
+    font-weight: 700;
+    margin-top: rem(16px);
+    margin-bottom: rem(5px);
+  }
+
+  span {
+    @include font-size('12');
+    color: $text-03;
+  }
+}
+
+.icon__actions {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $brand-02;
+  transition: $transition--base;
+  opacity: 0;
+
+  &.displayed {
+    opacity: 1;
+  }
+}
+
+.icon__card {
+  background: $color__navy-gray-9;
+  height: 10rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  .icon__actions:focus,
+  button:focus,
+  a:focus {
+    .icon__actions {
+      opacity: 1;
+    }
+  }
+}
+
+.icon-button {
+  border: 2px solid $text-01;
+  background-color: transparent;
+  min-width: rem(112px);
+  margin: .2rem 0;
+  color: $text-01;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $text-01;
+    color: $inverse-01;
+  }
+}

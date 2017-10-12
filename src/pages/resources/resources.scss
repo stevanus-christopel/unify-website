@@ -1,0 +1,138 @@
+.resources {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+
+    @include breakpoint('1267px') {
+      flex-direction: row;
+    }
+
+    div p {
+      padding-bottom: 1rem;
+      max-width: 100%;
+      min-height: 88px;
+
+      @include breakpoint('1267px') {
+        max-width: 30rem !important;
+      }
+    }
+
+    div {
+      flex: 1 1 auto;
+      margin-right: 2rem;
+      margin-bottom: 4rem;
+
+      @include breakpoint('bp--sm--major') {
+        flex-basis: 46%;
+      }
+    }
+
+    div img {
+      width: rem(80px);
+    }
+
+    div h2 {
+      padding-bottom: 2rem;
+      margin-top: 0;
+    }
+
+    h2:before {
+      display: none !important;
+    }
+
+    div a {
+      display: block;
+      margin-bottom: .5rem;
+    }
+
+    & + .page__divider-heading {
+      max-width: 100% !important;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+
+    div {
+      min-width: 200px;
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 100%;
+
+      h4 {
+        white-space: nowrap;
+      }
+
+      .bx--btn {
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      a {
+        margin-top: 2rem;
+      }
+
+      p {
+        margin-bottom: 0;
+        max-width: 25rem !important;
+      }
+
+      @include breakpoint('575px') {
+        max-width: 70%;
+      }
+
+      @include breakpoint('bp--sm--major') {
+        flex-basis: calc(50% - 3rem);
+        max-width: 100%;
+        margin-right: 3rem;
+
+        .bx--btn {
+          width: 15rem;
+        }
+
+        a {
+          margin-top: 0;
+        }
+
+        p {
+          margin-bottom: 2rem;
+          min-height: 48px;
+        }
+      }
+    }
+  }
+}
+
+
+main[data-page="resources-undefined"] {
+  .page__divider-heading {
+    letter-spacing: 2.29px !important;
+    max-width: 100% !important;
+    font-size: 1rem !important;
+    color: $brand-01 !important;
+    border-bottom: 2px solid $ui-03 !important;
+  }
+
+  .cheat-sheet {
+    margin-top: 0;
+
+    @include breakpoint('bp--sm--major') {
+      margin-top: 4rem;
+    }
+  }
+}

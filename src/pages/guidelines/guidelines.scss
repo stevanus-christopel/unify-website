@@ -1,0 +1,55 @@
+.glossary-entry {
+
+  img.glossary-entry__main-heading {
+    width: 5rem;
+    margin: 3.25rem 0 .5rem;
+  }
+
+  &#W {
+    img {
+      width: rem(97.67px);
+    }
+  }
+
+  &#M {
+    img {
+      width: rem(81.67px);
+    }
+  }
+
+  &#O {
+    img {
+      width: rem(72.83px);
+    }
+  }
+
+  h2 {
+    margin-top: 4rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .glossary-entry__word-heading {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .glossary-entry__subtext {
+    font-size: rem(13px);
+    color: $color__navy-gray-7;
+    margin-top: .25rem;
+    max-width: 38rem;
+  }
+
+  .glossary-entry__list {
+    margin-bottom: 5rem;
+  } 
+}
+
+img.content-page__cap-letter {
+  width: 9rem !important;
+  margin: 0 2rem .75rem 0 !important;
+  float: left;
+}
+

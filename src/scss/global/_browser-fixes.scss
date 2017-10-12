@@ -1,0 +1,31 @@
+.overview-page__tiles {
+  width: 100%;
+}
+
+.overview-page__tile {
+  min-height: 110px;
+
+  &--text,
+  &--content {
+    width: 100%;
+  }
+}
+
+main[data-page="guidelines-principles"] {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @media (max-width: 900px) {
+      p {
+        display: inline-block !important;
+        position: relative;
+        padding-bottom: 11rem !important;
+      }
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

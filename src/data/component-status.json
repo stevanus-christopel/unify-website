@@ -1,0 +1,190 @@
+{
+  "items": [
+    {
+      "item": "Accordion",
+      "added": "6.10.0",
+      "status": 0
+    },
+    {
+      "item": "Breadcrumb",
+      "added": "7.0.0",
+      "status": 0
+    },
+    {
+      "item": "Button",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Card",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Checkbox",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Code Snippet",
+      "added": "7.0.0",
+      "status": 0
+    },
+    {
+      "item": "Content Switcher",
+      "added": "4.0.0",
+      "status": 0
+    },
+    {
+      "item": "Copy Button",
+      "added": "6.11.0",
+      "status": 2
+    },
+    {
+      "item": "Data Table",
+      "added": "6.11.0",
+      "status": 0
+    },
+    {
+      "item": "Date Picker",
+      "added": "7.10.1",
+      "status": 0
+    },
+    {
+      "item": "Detail Page Header",
+      "added": "2.3.0",
+      "status": 0
+    },
+    {
+      "item": "Dropdown",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "File Uploader",
+      "added": "7.0.0",
+      "status": 0
+    },
+    {
+      "item": "Footer",
+      "added": "4.0.0",
+      "status": 1
+    },
+    {
+      "item": "Form",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Interior Left Nav",
+      "added": "6.8.0",
+      "status": 0
+    },
+    {
+      "item": "Link",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "List",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Loading",
+      "added": "5.0.0",
+      "status": 0
+    },
+    {
+      "item": "Modal",
+      "added": "4.3.0",
+      "status": 0
+    },
+    {
+      "item": "Module",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Notification",
+      "added": "6.0.0",
+      "status": 0
+    },
+    {
+      "item": "Number Input",
+      "added": "6.0.0",
+      "status": 0
+    },
+    {
+      "item": "Pagination",
+      "added": "7.0.0",
+      "status": 0
+    },
+    {
+      "item": "Progress Indicator",
+      "added": "6.11.0",
+      "status": 0
+    },
+    {
+      "item": "Overflow Menu",
+      "added": "5.0.0",
+      "status": 0
+    },
+    {
+      "item": "Radio Button",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Search",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Select",
+      "added": "4.0.0",
+      "status": 0
+    },
+    {
+      "item": "Slider",
+      "added": "7.10.0",
+      "status": 0
+    },
+    {
+      "item": "Structured List",
+      "added": "7.7.0",
+      "status": 0
+    },
+    {
+      "item": "Tabs",
+      "added": "2.13.0",
+      "status": 0
+    },
+    {
+      "item": "Tags",
+      "added": "6.0.0",
+      "status": 0
+    },
+    {
+      "item": "Text Input",
+      "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Tile",
+      "added": "7.22.0",
+      "tag": "new",
+      "status": 0
+    },
+    {
+      "item": "Toggle",
+      "added": "4.0.0",
+      "status": 0
+    },
+    {
+      "item": "Tooltip",
+      "added": "2.0.0",
+      "status": 0
+    }
+  ]
+}

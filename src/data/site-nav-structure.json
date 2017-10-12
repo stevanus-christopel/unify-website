@@ -1,0 +1,91 @@
+{
+  "getting-started": {
+    "title": "Getting Started",
+    "subnav": {
+      "designers": "Designers",
+      "developers": "Developers",
+      "service-providers": "Service Providers",
+      "FAQ": "FAQ"
+    }
+  },
+  "guidelines": {
+    "title": "Guidelines",
+    "subnav": {
+      "accessibility": "Accessibility",
+      "content": "Content",
+      "bluemix-brand": "Bluemix Brand",
+      "principles": "Principles"
+    }
+  },
+  "style": {
+    "title": "Style",
+    "subnav": {
+      "colors": "Colors",
+      "grid": "Grid",
+      "iconography": "Iconography",
+      "layer": "Layer",
+      "motion": "Motion",
+      "typography": "Typography"
+    }
+  },
+  "components": {
+    "title": "Components",
+    "subnav": {
+      "overview": "Overview",
+      "accordion": "Accordion",
+      "breadcrumb": "Breadcrumb",
+      "button": "Button",
+      "card": "Card",
+      "checkbox": "Checkbox",
+      "code-snippet": "Code Snippet",
+      "content-switcher": "Content Switcher",
+      "data-table": "Data Table",
+      "data-vis": {
+        "title": "Data Vis",
+        "subnav": {
+          "overview": "Overview",
+          "gauge": "Gauge",
+          "line-graph": "Line Graph",
+          "pie-chart": "Pie Chart",
+          "scatter-plot": "Scatter Plot"
+        }
+      },
+      "date-picker": "Date Picker",
+      "detail-page-header": "Detail Page Header",
+      "dropdown": "Dropdown",
+      "file-uploader": "File Uploader",
+      "form": "Form",
+      "interior-left-nav": "Interior Left Nav",
+      "link": "Link",
+      "list": "List",
+      "loading": "Loading",
+      "modal": "Modal",
+      "module": "Module",
+      "notification": "Notification",
+      "number-input": "Number Input",
+      "overflow-menu": "Overflow Menu",
+      "pagination": "Pagination",
+      "progress-indicator": "Progress Indicator",
+      "radio-button": "Radio Button",
+      "search": "Search",
+      "select": "Select",
+      "slider": "Slider",
+      "structured-list": "Structured List",
+      "tabs": "Tabs",
+      "tag": "Tag",
+      "text-input": "Text Input",
+      "tile": "Tile",
+      "toggle": "Toggle",
+      "tooltip": "Tooltip"
+    }
+  },
+  "component-status": {
+    "title": "Component Status"
+  },
+  "resources": {
+    "title": "Resources"
+  },
+  "themes": {
+    "title": "Themes"
+  }
+}
