@@ -6,23 +6,138 @@
   flex-direction: column;
   align-items: center;
 
-  &__top-banner {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 3rem 3%;
-    width: 100%;
-    transition: $transition--base ease;
-    border-bottom: 1px solid $color__gray-1;
-
-    @include breakpoint('bp--sm--major') {
-      height: rem(640px);
-      padding: 4rem 10%;
+  &__top {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: auto;
+    overflow: hidden;
+    @include breakpoint('600px') {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    @include breakpoint('840px') {
+      padding-left: 12.5%;
+      padding-right: 12.5%;
+    }
+    @include breakpoint('1280px') {
+      padding-left: 14%;
+      padding-right: 14%;
+    }
+    @include breakpoint('1366px') {
+      padding-left: 25%;
+      padding-right: 25%;
     }
 
-    @include breakpoint('1024px') {
-      padding: 7rem 15%;
+    &-banner {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 3rem 3%;
+      width: 100%;
+      transition: $transition--base ease;
+      border-bottom: 1px solid $color__gray-1;
+      overflow: visible;
+
+      @include breakpoint('bp--sm--major') {
+        padding: 4rem 10%;
+      }
+
+      @include breakpoint('1024px') {
+        padding: 5rem 15%;
+        padding-bottom: 3rem;
+      }
+      
+      @include breakpoint('1280px') {
+        padding: 0 15%;
+        height: 720px;
+        box-sizing: border-box;
+      }
+
+      & img {
+        image-rendering: optimizeSpeed;             /*                     */
+        image-rendering: -moz-crisp-edges;          /* Firefox             */
+        image-rendering: -o-crisp-edges;            /* Opera               */
+        image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+        image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+        -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+
+        -webkit-transition: all 1.5s ease;
+        -moz-transition: all 1.5s ease;
+        -o-transition: all 1.5s ease;
+        transition: all 1.5s ease;
+      }
+      
+      &--image-1 {    
+        height: 100%;
+        position: absolute;
+        top: -40%;
+        left: -16%;
+      }
+      
+      &--image-2 {  
+        height: 55%;
+        position: absolute;
+        top: -7%;
+        left: 55%;
+      }
+
+      &--image-3 {
+        height: 74%;
+        position: absolute;
+        bottom: -25%;
+        right: -37%;   
+        z-index: 1; 
+      }
+      
+      &--image-4 {
+        height: 63%;
+        position: absolute;
+        bottom: 10%;
+        right: -21%;
+        z-index: 0;  
+      }
+      
+      &--image-5 {
+        height: 10%;
+        position: absolute;
+        bottom: 34%;
+        right: -12%;
+        z-index: 1; 
+      }
+      
+      &--image-6 {
+        height: 42%;
+        position: absolute;
+        bottom: 14%;
+        left: -22%;
+        z-index: 1;
+      }
+      
+      &--image-7 {
+        height: 2%;
+        position: absolute;
+        top: 1.5%;
+        left: -15%;
+        z-index: 1;
+      }
+      
+      &--image-8 {
+        height: 8%;
+        position: absolute;
+        bottom: 10%;
+        left: -14%;
+        z-index: 1;
+      }
+      
+      &--image-9 {
+        height: 4%;
+        position: absolute;
+        bottom: 50%;
+        right: -6%;
+        z-index: -1;
+      }
     }
   }
 
@@ -31,6 +146,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    z-index: 3;
   }
 
   &__title--aria {
@@ -59,7 +175,7 @@
   }
 
   &__content {
-    font-family: 'IBM Helvetica';
+    font-family: 'Proxima Nova';
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -159,6 +275,9 @@
   @include breakpoint('768px') {
     margin: 2rem;
   }
+  @include breakpoint('1280px') {
+    margin: 2.5rem;
+  }
 
   span {
     @include font-smoothing;
@@ -170,6 +289,7 @@
     left: 50%;
     transform: translateX(-50%) scale(1);
     transition: all 250ms cubic-bezier(.8, -.5, .2, 1.8);
+    color: rgba(0, 0, 0, 0.7);
     @include breakpoint('990px') {
       font-size: 4.5rem;
     }
@@ -203,7 +323,7 @@
     image-rendering: optimize-contrast;         /* CSS3 Proposed       */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
     @include breakpoint('990px') {
-      height: 67px;
+      height: 65px;
     }
   }
 

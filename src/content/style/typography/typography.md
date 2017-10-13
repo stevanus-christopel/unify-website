@@ -6,7 +6,7 @@ IBM uses a custom version of Helvetica Neue for both its Marketing and Product b
 
 ```scss
 @mixin helvetica {
-  font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
 }
 ```
 
