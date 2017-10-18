@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   state = {
-    isOpen: true,
+    isOpen: false,
     isFinal: false
   }
 

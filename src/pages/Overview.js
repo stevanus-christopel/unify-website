@@ -1,7 +1,6 @@
 import React from 'react';
 import Letter from '../internal/Letters';
 import { Link } from 'react-router';
-import ReactGA from 'react-ga';
 
 import overview_top_1 from '../content/overview/images/overview-top-1.png';
 import overview_top_2 from '../content/overview/images/overview-top-2.png';
@@ -258,17 +257,10 @@ class Overview extends React.Component {
     document.getElementsByClassName("overview-page__top-banner--image-9")[0].style.right = img_top_banner_9_right + "%";
   }
 
-  handleClick = (cat) => {
-    ReactGA.event({
-      category: cat,
-      action: 'Clicked link'
-    });
-  }
-
   render() {
-    const icon1 = require('../content/overview/images/icon-1.svg');
-    const icon2 = require('../content/overview/images/icon-2.svg');
-    const icon3 = require('../content/overview/images/icon-3.svg');
+    const icon1 = require('../content/overview/images/icon-home-1.svg');
+    const icon2 = require('../content/overview/images/icon-home-2.svg');
+    const icon3 = require('../content/overview/images/icon-home-3.svg');
 
     return (
       <div>
@@ -312,38 +304,39 @@ class Overview extends React.Component {
             </div>
           </div>
         </div>
+
+        <div className='overview-page__top-banner-border'></div>
       </div>
       <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
         <h1 id="page-title" className="overview-page__title--aria" aria-label="Carbon Design System">Carbon Design System</h1>
         <div className="overview-page__content">
-        <Letter />
           <div className="overview-page__main-intro">
             <div className="overview-page__main-intro--icon">
               <img alt="Hexagon icon" src={icon1} />
             </div>
             <div className="overview-page__main-intro--content">
-              <p className="overview-page__main-intro--text">Carbon, in nature, allows for complex structures to be made from simpler compounds. The Carbon Design System is a series of individual styles and components, that when combined make beautiful, intuitive designs. These designs are systemic and logical, as they all follow the same universal principles.</p>
+              <p className="overview-page__main-intro--text">As Tokopedia continues to grow, both as a product and a company, one challenge we are faced with is learning how to refine the Tokopedia brand identity and apply it cohesively to each of our products.</p>
+              <p className="overview-page__main-intro--text-secondary">We created this styleguide to act as a central location where we house a live inventory of UI components, brand guidelines, brand assets, code snippets, developer guidelines and more. Anyone working on the Tokopedia product is encouraged to stay familiar with this styleguide and help ensure that it is kept up-to-date.</p>
               <Link
-                onClick={() => this.handleClick('Explore the system')}
                 tabIndex="0"
-                className="overview-page__main-intro--link bx--btn bx--btn--secondary"
-                to="/components/overview"
+                className="overview-page__main-intro--link"
+                to="introduction"
               >
-                Explore the system
+                Introduction
               </Link>
             </div>
           </div>
           <div className="overview-page__tiles">
             <div className="overview-page__tile">
-              <div className="overview-page__tile--icon">
+              <div className="overview-page__tile--icon overview-page__tile--icon-left">
                 <img alt="Tile icon 1" src={icon2} />
               </div>
               <div className="overview-page__tile--content">
                 <h2 className="overview-page__tile--heading">
-                  Carbon Design Kit
+                  Unify Design Kit
                 </h2>
                 <p className="overview-page__tile--text">
-                  The Design Kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla profecto est, quin suam vim retineat a primo ad extremum.
                 </p>
                 <a
                   href="https://github.com/carbon-design-system/carbon-design-kit"
@@ -351,22 +344,22 @@ class Overview extends React.Component {
                   target="_blank"
                   onClick={() => this.handleClick('Design Kit')}
                 >
-                Get the Sketch kit
+                  Download Sketch File
                 </a>
               </div>
             </div>
             <div className="overview-page__tile">
-              <div className="overview-page__tile--icon">
+              <div className="overview-page__tile--icon overview-page__tile--icon-right">
                 <img alt="Tile icon 2" src={icon3} />
               </div>
               <div className="overview-page__tile--content">
                 <h2 className="overview-page__tile--heading">
-                  Carbon Component Library
+                  Unify Component Library
                 </h2>
                 <p
                   className="overview-page__tile--text"
                 >
-                  The Component Library gives developers a collection of re-usable HTML and Sass partials for building their products.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla profecto est, quin suam vim retineat a primo ad extremum.
                 </p>
                 <a
                   href="https://github.com/carbon-design-system/carbon-components"
@@ -374,7 +367,7 @@ class Overview extends React.Component {
                   target="_blank"
                   onClick={() => this.handleClick('Developer Kit')}
                 >
-                Component GitHub repo
+                  Component GitHub Repo
                 </a>
               </div>
             </div>

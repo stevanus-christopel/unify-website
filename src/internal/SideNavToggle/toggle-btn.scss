@@ -1,21 +1,25 @@
 .side-nav__toggle-btn {
   position: fixed;
-  top: 0;
+  top: 2%;
   left: calc(200px - 2.3rem);
-  width: 2.3rem;
-  height: 2.3rem;
-  background-color: $color__blue-51;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.75);
+	box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid transparent;
+  border-radius: 4px;
   margin: 0;
   padding: 0;
   cursor: pointer;
   transition: left $transition--base ease;
-  z-index: 8000;
+  z-index: 7001;
+
+  @include breakpoint('840px') {
+    top: 3%;
+  }
 
   @include breakpoint('620px') {
     left: calc(200px - 2.1rem);
-    width: 2rem;
-    height: 2rem;
   }
 
   & > div {
@@ -31,13 +35,14 @@
 
     .line {
       @include reset;
-      height: rem(2px);
-      width: 1rem;
+      height: 3px;
+      width: 28px;
       cursor: pointer;
       display: block;
-      margin: rem(1.5px) 0;
-      background: $color__white;
+      margin: 3px 6px;
+      background: $color-green;
       will-change: all;
+      border-radius: 4px;
     }
 
     .line:nth-child(2) {
@@ -45,16 +50,32 @@
     }
 
     .line:nth-child(1) {
-      transform: translateY(5px) rotate(45deg);
+      transform: translateY(9px) rotate(45deg);
     }
 
     .line:nth-child(3) {
-      transform: translateY(-5px) rotate(-45deg);
+      transform: translateY(-9px) rotate(-45deg);
     }
   }
 
   &--closed {
-    left: 0;
+    left: 2%;
+
+    @include breakpoint('600px') {
+      left: 3%;
+    }
+    @include breakpoint('840px') {
+      left: 8%;
+    }
+    @include breakpoint('1280px') {
+      left: 12.5%;
+    }
+    @include breakpoint('1366px') {
+      left: 15%;
+    }
+    @include breakpoint('1600px') {
+      left: 20%;
+    }
   
     > div {
       .line:nth-child(2) {

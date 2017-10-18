@@ -29,6 +29,14 @@ const routes = {
   },
   childRoutes: [
     {
+      path: 'introduction',
+      indexRoute: {
+        getComponent(location, cb) {
+          import('./pages/Introduction').then(loadRoute(cb)).catch(errorLoading);
+        },
+      }
+    },
+    {
       path: 'getting-started',
       indexRoute: {
         onEnter: (nextState, replace) => replace('/getting-started/designers'),
