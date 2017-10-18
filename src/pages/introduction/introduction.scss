@@ -140,11 +140,16 @@
             &-number {
                 position: absolute;
                 left: 2%;
-                bottom: 8%;
+                top: 25%;
                 font-size: 120px;
                 line-height: 72px;
                 color: rgba(0, 0, 0, 0.05);
                 font-weight: bold;
+                
+                @include breakpoint('840px') {
+                    top: initial;
+                    bottom: 8%;
+                }
 
                 @include breakpoint('1280px') {
                   font-size: 200px;

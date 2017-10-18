@@ -26,9 +26,9 @@ class SideNavToggle extends Component {
         className={classNames}
       >
         <div>
+          <span className="line line--short"></span>
           <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
+          <span className="line line--short"></span>
         </div>
       </button>
     );

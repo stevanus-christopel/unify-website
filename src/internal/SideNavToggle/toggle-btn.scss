@@ -35,14 +35,19 @@
 
     .line {
       @include reset;
-      height: 3px;
+      height: 2px;
       width: 28px;
       cursor: pointer;
       display: block;
-      margin: 3px 6px;
-      background: $color-green;
+      margin: 2px 6px;
+      background: #4a4a4a;
       will-change: all;
       border-radius: 4px;
+
+      &--short {
+        width: 18px;
+        margin-left: 3px;
+      }
     }
 
     .line:nth-child(2) {
@@ -50,11 +55,11 @@
     }
 
     .line:nth-child(1) {
-      transform: translateY(9px) rotate(45deg);
+      transform: translateY(6px) rotate(45deg);
     }
 
     .line:nth-child(3) {
-      transform: translateY(-9px) rotate(-45deg);
+      transform: translateY(-6px) rotate(-45deg);
     }
   }
 
@@ -88,6 +93,10 @@
        {
         transform: translateY(0) rotate(0);
         transition: all $transition--base ease-in-out;
+      }
+      
+      & .line--short {
+        margin-left: -4px;
       }
     }
   }
