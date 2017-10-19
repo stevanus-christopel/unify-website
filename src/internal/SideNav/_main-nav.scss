@@ -9,7 +9,7 @@
 
     &:hover,
     &:focus {
-      color: $color__blue-51;
+      color: $color-green;
     }
 
     &:focus {
@@ -55,8 +55,8 @@
 
       .main-nav-item__heading {
         font-weight: 700;
-        color: $color__blue-51;
-        border-left: 4px solid $color__blue-51;
+        color: $color-green;
+        border-left: 4px solid $color-green;
       }
     }
 
@@ -64,7 +64,7 @@
     &:focus {
 
       .main-nav-item__heading {
-        color: $color__blue-51;
+        color: $color-green;
       }
     }
 

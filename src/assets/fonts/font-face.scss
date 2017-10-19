@@ -1,5 +1,7 @@
 $font-path: '.' !default; // Default font directory, allow user override
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
 @font-face {
   font-family: 'Proxima Nova';
   font-style: normal;

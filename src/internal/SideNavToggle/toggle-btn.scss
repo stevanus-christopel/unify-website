@@ -78,9 +78,6 @@
     @include breakpoint('1366px') {
       left: 15%;
     }
-    @include breakpoint('1600px') {
-      left: 20%;
-    }
   
     > div {
       .line:nth-child(2) {

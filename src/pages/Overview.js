@@ -14,27 +14,27 @@ import overview_top_8 from '../content/overview/images/overview-top-8.png';
 const img_top_banner_movement = 5;
 
 const img_top_banner_1_top = -40;
-const img_top_banner_1_left = -16;
+const img_top_banner_1_left = 2;
 var img_top_banner_1_is_hover = false;
 
-const img_top_banner_2_top = -7;
-const img_top_banner_2_left = 55;
+const img_top_banner_2_top = -14;
+const img_top_banner_2_left = 50;
 var img_top_banner_2_is_hover = false;
 
 const img_top_banner_3_bottom = -25;
-const img_top_banner_3_right = -37;
+const img_top_banner_3_right = 0;
 var img_top_banner_3_is_hover = false;
 
-const img_top_banner_7_top = 1.5;
-const img_top_banner_7_left = -15;
+const img_top_banner_7_top = 6;
+const img_top_banner_7_left = 2;
 var img_top_banner_7_is_hover = false;
 
 const img_top_banner_8_bottom = 10;
-const img_top_banner_8_left = 14;
+const img_top_banner_8_left = 8;
 var img_top_banner_8_is_hover = false;
 
-const img_top_banner_9_bottom = 50;
-const img_top_banner_9_right = -6;
+const img_top_banner_9_bottom = 62;
+const img_top_banner_9_right = 17;
 var img_top_banner_9_is_hover = false;
 
 class Overview extends React.Component {
@@ -277,38 +277,18 @@ class Overview extends React.Component {
           <img className='overview-page__top-banner--image-9' alt='' src={overview_top_8} />
 
           <div className="overview-page__title">
-            <div>
-              <div className="overview-page__title--column">
-                <Letter letter="U" active />
-                <Letter letter="N" />
-                <Letter letter="I" version={1} active />
-                <Letter letter="F" />
-                <Letter letter="Y" />
-              </div>
-              <div className="overview-page__title--column">
-                <Letter letter="D" />
-                <Letter letter="E" active />
-                <Letter letter="S" />
-                <Letter letter="I" version={2} active />
-                <Letter letter="G" />
-                <Letter letter="N" version={2} />
-              </div>
-              <div className="overview-page__title--column">
-                <Letter letter="S" version={2} />
-                <Letter letter="Y" />
-                <Letter letter="S" version={3} />
-                <Letter letter="T" />
-                <Letter letter="E" active />
-                <Letter letter="M" />
-              </div>
-            </div>
+            <Letter letter="U" />
+            <Letter letter="N" />
+            <Letter letter="I" />
+            <Letter letter="F" />
+            <Letter letter="Y" />
           </div>
         </div>
 
         <div className='overview-page__top-banner-border'></div>
       </div>
       <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
-        <h1 id="page-title" className="overview-page__title--aria" aria-label="Carbon Design System">Carbon Design System</h1>
+        <h1 id="page-title" className="overview-page__title--aria" aria-label="UNIFY Design System">UNIFY Design System</h1>
         <div className="overview-page__content">
           <div className="overview-page__main-intro">
             <div className="overview-page__main-intro--icon">

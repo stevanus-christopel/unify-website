@@ -53,39 +53,6 @@ const routes = {
       ],
     },
     {
-      path: 'guidelines',
-      indexRoute: {
-        onEnter: (nextState, replace) => replace('/guidelines/accessibility'),
-      },
-      childRoutes: [
-        {
-          path: '/guidelines/content',
-          indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace('/guidelines/content/general'),
-          },
-          childRoutes: [
-            {
-              path: '/guidelines/:name/:page',
-              getComponent(location, cb) {
-                import('./pages/guidelines/Guidelines')
-                  .then(loadRoute(cb))
-                  .catch(errorLoading);
-              },
-            },
-          ],
-        },
-        {
-          path: '/guidelines/:name',
-          getComponent(location, cb) {
-            import('./pages/guidelines/Guidelines')
-              .then(loadRoute(cb))
-              .catch(errorLoading);
-          },
-        },
-      ],
-    },
-    {
       path: 'style',
       indexRoute: {
         onEnter: (nextState, replace) => replace('/style/colors/swatches'),

@@ -53,6 +53,7 @@ a {
   @include font-smoothing;
   color: $color__blue-51;
   font-weight: 600;
+  outline: none;
 
   &:hover {
     color: $color__blue-40;
@@ -65,4 +66,8 @@ svg {
 
 .bx--tabs__nav-item {
   transition: background-color 250ms;
+}
+
+input, button {
+  outline: none;
 }

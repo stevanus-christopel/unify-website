@@ -2,9 +2,6 @@
   @include reset;
   @include grid-padding;
   background-color: $color__white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   &__top {
     position: relative;
@@ -20,39 +17,25 @@
       padding-left: 12.5%;
       padding-right: 12.5%;
     }
-    @include breakpoint('1280px') {
-      padding-left: 14%;
-      padding-right: 14%;
-    }
-    @include breakpoint('1366px') {
-      padding-left: 25%;
-      padding-right: 25%;
-    }
 
     &-banner {
       position: relative;
       width: 100%;
+      height: 240px;
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 3rem 3%;
       width: 100%;
       transition: $transition--base ease;
       overflow: visible;
-
-      @include breakpoint('bp--sm--major') {
-        padding: 4rem 10%;
-      }
-
-      @include breakpoint('1024px') {
-        padding: 5rem 15%;
-        padding-bottom: 3rem;
+      box-sizing: border-box;
+      
+      @include breakpoint('768px') {
+        height: 460px;
       }
       
-      @include breakpoint('1280px') {
-        padding: 0 15%;
-        height: 720px;
-        box-sizing: border-box;
+      @include breakpoint('1600px') {
+        height: 650px;
       }
 
       & img {
@@ -73,29 +56,30 @@
         height: 100%;
         position: absolute;
         top: -40%;
-        left: -16%;
+        left: 2%;
       }
       
       &--image-2 {  
         height: 55%;
         position: absolute;
-        top: -7%;
-        left: 55%;
+        top: -14%;
+        left: 50%;
+        z-index: 4;
       }
 
       &--image-3 {
         height: 74%;
         position: absolute;
         bottom: -25%;
-        right: -37%;   
+        right: 0;   
         z-index: 1; 
       }
       
       &--image-4 {
-        height: 63%;
+        height: 70%;
         position: absolute;
-        bottom: 10%;
-        right: -21%;
+        bottom: 16%;
+        right: 5%;
         z-index: 0;  
       }
       
@@ -103,23 +87,23 @@
         height: 10%;
         position: absolute;
         bottom: 34%;
-        right: -12%;
+        right: 12%;
         z-index: 1; 
       }
       
       &--image-6 {
         height: 42%;
         position: absolute;
-        bottom: 14%;
-        left: -22%;
+        bottom: 10%;
+        left: 0;
         z-index: 1;
       }
       
       &--image-7 {
         height: 2%;
         position: absolute;
-        top: 1.5%;
-        left: -15%;
+        top: 6%;
+        left: 2%;
         z-index: 1;
       }
       
@@ -127,16 +111,16 @@
         height: 8%;
         position: absolute;
         bottom: 10%;
-        left: -14%;
+        left: 8%;
         z-index: 1;
       }
       
       &--image-9 {
         height: 4%;
         position: absolute;
-        bottom: 50%;
-        right: -6%;
-        z-index: -1;
+        bottom: 62%;
+        right: 17%;
+        z-index: 4;
       }
 
       &-border {
@@ -161,36 +145,15 @@
     @include hidden;
   }
 
-  &__title--column {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    margin-right: 6.25vw;
-
-    @include breakpoint('990px') {
-      margin-right: rem(75px);
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    span:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   &__content {
-    font-family: 'Proxima Nova';
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding-top: 64px;
-    max-width: 55rem;
+    max-width: 1024px;
+    margin: auto;
 
     .overview-page__main-intro {
       width: 100%;
@@ -313,36 +276,26 @@
 }
 
 .overview__letter {
+  display: inline;
   user-select: none;
-  position: relative;
-  transition: transform 250ms;
-  transform: scale(1);
   cursor: pointer;
-  will-change: transform;
-  margin: 0.5rem;
-  @include breakpoint('420px') {
-    margin: 1rem;
-  }
-  @include breakpoint('768px') {
-    margin: 2rem;
-  }
-  @include breakpoint('1280px') {
-    margin: 2.5rem;
-  }
 
   span {
     @include font-smoothing;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 8vw;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) scale(1);
+    font-size: 80px;
+    margin: 0 4px;
     transition: all 250ms cubic-bezier(.8, -.5, .2, 1.8);
-    color: $font-color-black-primary;
-    @include breakpoint('990px') {
-      font-size: 4.5rem;
+    color: #4a4a4a;
+    @include breakpoint('768px') {
+      font-size: 160px;
+    }
+    @include breakpoint('1024px') {
+      font-size: 242px;
+    }
+    @include breakpoint('1600px') {
+      font-size: 282px;
     }
   }
 

@@ -20,9 +20,9 @@ class Letter extends Component {
   getLetterPNG = (letter) => <LetterPNG letter={letter} version={this.props.version} />;
 
   handleClick = () => {
-    this.setState({
+    /*this.setState({
       active: !this.state.active,
-    });
+    });*/
   }
 
   handleMouseEnter = () => {
@@ -63,7 +63,7 @@ class Letter extends Component {
         <span className="letter">
           {html}
         </span>
-        {this.getLetterPNG(this.props.letter)}
+        {/*this.getLetterPNG(this.props.letter)*/}
       </div>
     );
   }
