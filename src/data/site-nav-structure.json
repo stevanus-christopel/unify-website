@@ -1,4 +1,7 @@
 {
+  "introduction": {
+    "title": "Introduction"
+  },
   "getting-started": {
     "title": "Getting Started",
     "subnav": {
@@ -6,15 +9,6 @@
       "developers": "Developers",
       "service-providers": "Service Providers",
       "FAQ": "FAQ"
-    }
-  },
-  "guidelines": {
-    "title": "Guidelines",
-    "subnav": {
-      "accessibility": "Accessibility",
-      "content": "Content",
-      "bluemix-brand": "Bluemix Brand",
-      "principles": "Principles"
     }
   },
   "style": {
