@@ -14,21 +14,22 @@ class SideNavToggle extends Component {
       isOpen,
     } = this.props;
 
-    const classNames = classnames({
-      'side-nav__toggle-btn': true,
-      'side-nav__toggle-btn--closed': !isOpen,
-    });
+    const classNames = classnames(
+      'side-nav__toggle-btn',
+      (isOpen ? 'open' : 'close')
+    );
 
     return (
       <button
-        aria-label="Toggle Side Navigation"
+        aria-label="Toggle Navigation"
         onClick={onToggleBtnClick}
         className={classNames}
       >
+        <div className="line">
+          <span></span>
+        </div>
         <div>
-          <span className="line line--short"></span>
-          <span className="line"></span>
-          <span className="line line--short"></span>
+          <span className="text">Menu</span>
         </div>
       </button>
     );
