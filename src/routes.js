@@ -92,10 +92,10 @@ const routes = {
           ],
         },
         {
-          path: '/style/grid',
+          path: '/style/spacing',
           indexRoute: {
             onEnter: (nextState, replace) =>
-              replace('/style/grid/design'),
+              replace('/style/spacing/design'),
           },
           childRoutes: [
             {

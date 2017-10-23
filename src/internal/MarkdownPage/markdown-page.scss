@@ -91,7 +91,7 @@
 
   p strong em {
     font-size: 1.125rem;
-    color: $color__blue-40;
+    color: $color-green;
     font-style: normal;
   }
 
@@ -261,7 +261,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background-color: rgba($color__blue-30, .8);
+      background-color: rgba($color-green, .5);
       color: $color__white;
       font-size: rem(12px);
       font-style: normal;

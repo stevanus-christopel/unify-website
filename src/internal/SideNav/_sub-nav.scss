@@ -24,7 +24,7 @@
 
     &:hover,
     &:focus {
-      color: $color__blue-51;
+      color: $color-green;
     }
 
     &:focus {
@@ -43,7 +43,7 @@
 
       &:hover,
       &:focus {
-        color: $color__blue-51;
+        color: $color-green;
       }
 
       &:focus {
@@ -53,8 +53,8 @@
     }
 
     &.selected {
-      border-left: 4px solid $color__blue-51;
-      color: $color__blue-51;
+      border-left: 4px solid $color-green;
+      color: $color-green;
 
       .sub-nav__item-link {
         font-weight: 700;
