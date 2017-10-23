@@ -28,14 +28,14 @@ class Page extends Component {
     this.updateClasses();
     this.addCustomComponent();
     this.colorHex();
-    document.title = `Carbon Design System | ${this.props.title}`;
+    document.title = `Tokopedia Unify Design System | ${this.props.title}`;
   }
 
   componentDidUpdate() {
     this.updateClasses();
     this.addCustomComponent();
     this.colorHex();
-    document.title = `Carbon Design System | ${this.props.title}`;
+    document.title = `Tokopedia Unify Design System | ${this.props.title}`;
   }
 
   handleKeyDown = evt => {

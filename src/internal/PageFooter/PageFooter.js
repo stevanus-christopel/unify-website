@@ -8,31 +8,6 @@ class PageFooter extends Component {
     isExpanded: PropTypes.bool,
   };
 
-  getLastUpdate = () => {
-    const lastUpdatedDate = new Date('09/21/2017'); // UPDATE BEFORE CF PUSH
-    const months = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
-    ];
-    const formattedDate = `${months[
-      lastUpdatedDate.getMonth()
-    ]} ${lastUpdatedDate.getDate()}, ${lastUpdatedDate.getFullYear()} at ${lastUpdatedDate.toLocaleTimeString(
-      [],
-      { hour: '2-digit', minute: '2-digit' },
-    )}`;
-    return formattedDate;
-  };
-
   render() {
     const dribbble = (
       <svg
@@ -94,8 +69,6 @@ class PageFooter extends Component {
     );
 
     const { isExpanded } = this.props;
-    const version = Packages.dependencies['carbon-components'];
-    const lastUpdated = this.getLastUpdate();
     const footerClasses = classNames({
       'page-footer': true,
       'page-footer--expanded': !isExpanded,
@@ -103,95 +76,9 @@ class PageFooter extends Component {
 
     return (
       <footer className={footerClasses}>
+        <div className="page-footer__content"></div>
         <div className="page-footer__content">
-          <p className="page-footer__text page-footer__version-link">
-            Component version{' '}
-            <a
-              className="page-footer__link"
-              href="https://github.com/carbon-design-system/carbon-components/releases"
-              rel="noopener"
-              target="_blank"
-              alt="Carbon Components GitHub repo"
-            >
-              {version}
-            </a>
-          </p>
-          <p className="page-footer__text">
-            Website last updated on{' '}
-            <span className="page-footer__last-updated">{lastUpdated}</span>
-          </p>
-          <p className="page-footer__text">Copyright © 2017 IBM</p>
-        </div>
-        <div className="page-footer__content">
-          <ul className="page-footer__social-media">
-            <li>
-              <a
-                href="https://dribbble.com/_carbondesign"
-                className="social-media__link"
-                rel="noopener"
-                target="_blank"
-                alt="Dribble account for Carbon"
-              >
-                {dribbble}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://medium.com/carbon-design-system"
-                className="social-media__link"
-                rel="noopener"
-                target="_blank"
-                alt="Medium account for Carbon"
-              >
-                {medium}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/_carbondesign"
-                className="social-media__link"
-                rel="noopener"
-                target="_blank"
-                alt="Twitter account for Carbon"
-              >
-                {twitter}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/carbon-design-system"
-                className="social-media__link"
-                rel="noopener"
-                target="_blank"
-                alt="GitHub account for Carbon"
-              >
-                {github}
-              </a>
-            </li>
-          </ul>
-          <p className="page-footer__text">
-            Have questions?{' '}
-            <a
-              href="mailto:carbon@us.ibm.com"
-              className="page-footer__link"
-              rel="noopener"
-              target="_blank"
-              alt="Email Carbon"
-            >
-              Email us
-            </a>{' '}
-            or open an{' '}
-            <a
-              href="https://github.com/carbon-design-system/carbon-components/issues/new"
-              className="page-footer__link"
-              rel="noopener"
-              target="_blank"
-              alt="Open a GitHub issue"
-            >
-              issue
-            </a>{' '}
-            in GitHub.
-          </p>
+          <p className="page-footer__text">Tokopedia UNIFY Team - 2017</p>
         </div>
       </footer>
     );

@@ -68,7 +68,11 @@
     }
 
     &__content {
-        margin-bottom: 260px;
+        margin-bottom: 0;
+        
+        @include breakpoint('600px') {
+            margin-bottom: 260px;
+        }
 
         &-row {
             display: flex;
@@ -173,7 +177,7 @@
         image-rendering: optimize-contrast;         /* CSS3 Proposed       */
         -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
         
-        @include breakpoint('840px') {
+        @include breakpoint('768px') {
             display: inline-block;
         }
     }
@@ -182,11 +186,16 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        width: 70%;
         image-rendering: optimizeSpeed;             /*                     */
         image-rendering: -moz-crisp-edges;          /* Firefox             */
         image-rendering: -o-crisp-edges;            /* Opera               */
         image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
         image-rendering: optimize-contrast;         /* CSS3 Proposed       */
         -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+
+        @include breakpoint('600px') {
+            width: initial;
+        }
     }
 }

@@ -47,12 +47,16 @@
 
       &:hover {
         .bx--tabs__nav-link {
-          color: $color__blue-51;
+          color: $color-green;
         }
       }
 
       &.bx--tabs--selected {
-        border-bottom: 3px solid $color__blue-40 !important;
+        border-bottom: 3px solid $color-green !important;
+      }
+
+      &--selected {
+        border-bottom: 2px solid $color-green !important;
       }
     }
   }

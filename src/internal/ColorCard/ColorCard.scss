@@ -3,14 +3,13 @@
   flex-wrap: wrap;
   list-style: none;
   margin-left: 0;
-  max-width: 50rem;
+  overflow: hidden;
 }
 
 .color {
   margin-bottom: 3rem;
 
   &--border {
-
     .color__example {
       border: 1px solid $color__gray-1;
     }
@@ -26,6 +25,7 @@
 }
 
 .color__example {
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +33,51 @@
   height: em(120px);
   transition: transform $transition--base;
   margin-bottom: 1rem;
+  
+  &--triple-width {
+    width: em(450px);
+  }
+
+  &--double-width {
+    width: em(330px);
+  }
+  
+  &--half-width {
+    width: em(100px);
+  }
+
+  &--empty {
+    &:hover,
+    &:focus,
+    button:focus {
+      cursor: initial !important;
+      transform: none !important;
+    }
+  }
+
+  &--gradient-green {
+    background: $color-green; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, $color-green, #27782C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, $color-green, #27782C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, $color-green, #27782C); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, $color-green, #27782C); /* Standard syntax */
+  }
+  
+  &--gradient-yellow {
+    background: #FFC107; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #FFC107, #DB8C0A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #FFC107, #DB8C0A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #FFC107, #DB8C0A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #FFC107, #DB8C0A); /* Standard syntax */
+  }
+    
+  &--gradient-blue {
+    background: #46D5E0; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #46D5E0, #1C9BA5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #46D5E0, #1C9BA5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #46D5E0, #1C9BA5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #46D5E0, #1C9BA5); /* Standard syntax */
+  }
 
   button {
     font-size: rem(12px);

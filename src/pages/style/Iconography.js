@@ -26,7 +26,7 @@ class Iconography extends React.Component {
   };
 
   componentDidMount() {
-    document.title = `Carbon Design System | ${this.props.currentPage}`;
+    document.title = `Tokopedia Unify Design System | ${this.props.currentPage}`;
     axios.get('http://carbon-apis.mybluemix.net/icons').then(res =>
       this.setState({
         icons_all: res.data,

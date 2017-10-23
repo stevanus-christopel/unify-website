@@ -9,7 +9,9 @@ class ColorCard extends Component {
   static propTypes = {
     hex: PropTypes.string,
     white: PropTypes.bool,
-    name: PropTypes.string
+    name: PropTypes.string,
+    width: PropTypes.number,
+    gradient: PropTypes.string
   }
 
   state = {
@@ -58,16 +60,39 @@ class ColorCard extends Component {
 
     return (
       <div tabIndex="0" className={classNames}>
-        <div tabIndex="0" className="color__example" style={{ backgroundColor: hex }} >
-          <CopyToClipboard
-            text={this.state.value}
-            onCopy={this.toggleCopied}
-          >
-            <button tabIndex="0" className={textClass} onClick={() => this.handleClick()}>{this.state.displayCopied ? 'HEX Copied!' : 'Copy HEX'}</button>
-          </CopyToClipboard>
+        <div tabIndex="0"
+        className={
+          classnames(
+            "color__example",
+            name==="" && "color__example--empty",
+            this.props.width === 3 && "color__example--triple-width",
+            this.props.width === 2 && "color__example--double-width",
+            this.props.width === 0.5 && "color__example--half-width",
+            this.props.gradient === "green" && "color__example--gradient-green",
+            this.props.gradient === "yellow" && "color__example--gradient-yellow",
+            this.props.gradient === "blue" && "color__example--gradient-blue"
+          )
+        }
+        style={{ backgroundColor: hex }} >
+        {
+          hex != "" &&
+          <div>   
+            <CopyToClipboard
+              text={this.state.value}
+              onCopy={this.toggleCopied}
+            >
+
+            {
+              hex != "" &&
+              <button tabIndex="0" className={textClass} onClick={() => this.handleClick()}>{this.state.displayCopied ? 'Copied!' : 'Copy HEX'}</button>
+            }
+              
+            </CopyToClipboard>
+          </div>
+        }
         </div>
-        <p>{name}</p>
-        <p>{hex}</p>
+        {name != "" && <p>{name}</p>}
+        {hex != "" && <p>{hex}</p>}
       </div>
     );
   }

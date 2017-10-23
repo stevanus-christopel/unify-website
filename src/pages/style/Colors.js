@@ -20,32 +20,65 @@ class Colors extends React.Component {
           name={ColorItemObj.name}
           hex={ColorItemObj.hex}
           white={ColorItemObj.white}
+          width={ColorItemObj.width}
+          gradient={ColorItemObj.gradient}
         />
       );
     });
 
   render() {
-    const ColorCards = this.renderColorCards(ColorList['ui-colors']);
-    const SupportColorCards = this.renderColorCards(
-      ColorList['support-colors'],
-    );
-    const tabs = ['swatches', 'usage'];
-    let currentPage = 'swatches';
+    const tabs = ['palette', 'usage'];
+    let currentPage = 'palette';
     if (this.props.currentPage) {
       currentPage = this.props.currentPage;
     }
 
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
-        <Tab href="/style/colors/swatches" label="Swatches">
+        <Tab href="/style/colors/palette" label="Palette">
           <div className="page">
-            <h2>Carbon default theme</h2>
+            <h2>Main Colors</h2>
             <div className="wrapped-list">
-              {ColorCards}
+              {this.renderColorCards(ColorList['main-colors-cta'])}
             </div>
-            <h3 className="page__divider-heading">Supporting Colors</h3>
             <div className="wrapped-list">
-              {SupportColorCards}
+              {this.renderColorCards(ColorList['main-colors-background'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['main-colors-text'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['main-colors-others'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['main-colors-star'])}
+            </div>
+            
+            <h2>Monochromatic Colors</h2>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['monochromatic-colors-green'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['monochromatic-colors-red'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['monochromatic-colors-pink'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['monochromatic-colors-yellow'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['monochromatic-colors-blue'])}
+            </div>
+            <h2>Gradient Colors</h2>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['gradient-colors-green'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['gradient-colors-yellow'])}
+            </div>
+            <div className="wrapped-list">
+              {this.renderColorCards(ColorList['gradient-colors-blue'])}
             </div>
           </div>
         </Tab>

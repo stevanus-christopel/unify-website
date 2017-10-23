@@ -1,109 +1,360 @@
 {
-  "ui-colors": [
+  "main-colors-cta": [
     {
-      "name": "brand-01",
-      "hex": "#3d70b2"
+      "name": "Main CTA",
+      "hex": "#42B549",
+      "width":2
     },
     {
-      "name": "brand-02",
-      "hex": "#5596e6"
-    },
-    {
-      "name": "brand-03",
-      "hex": "#41d6c3"
-    },
-    {
-      "white": true,
-      "name": "ui-01",
-      "hex": "#ffffff"
-    },
-    {
-      "name": "ui-02",
-      "hex": "#f5f7fa"
-    },
-    {
-      "name": "ui-03",
-      "hex": "#f0f3f6"
-    },
-    {
-      "name": "ui-04",
-      "hex": "#dfe3e6"
-    },
-    {
-      "name": "ui-05",
-      "hex": "#8c9ba5"
-    },
-    {
-      "name": "text-01",
-      "hex": "#152934"
-    },
-    {
-      "name": "text-02",
-      "hex": "#5a6872"
-    },
-    {
-      "name": "text-03",
-      "hex": "#5a6872"
-    },
-    {
-      "white": true,
-      "name": "inverse-01",
-      "hex": "#ffffff"
-    },
-    {
-      "white": true,
-      "name": "field-01",
-      "hex": "rgba(60, 112, 178, .1)"
+      "name": "Main CTA for Transactions",
+      "hex": "#FF5722",
+      "width":2
     }
   ],
-  "support-colors": [
+  "main-colors-background": [
     {
-      "name": "support-01",
-      "hex": "#e71d32"
+      "name": "Background 1",
+      "hex": "#FFFFFF"
     },
     {
-      "name": "support-02",
-      "hex": "#5aa700"
+      "name": "Background 2",
+      "hex": "#F8F8F8"
     },
     {
-      "name": "support-03",
-      "hex": "#efc100"
+      "name": "Line",
+      "hex": "#E0E0E0"
+    }
+  ],
+  "main-colors-text": [
+    {
+      "name": "Text 0.7",
+      "hex": "rgba(0, 0, 0, 0.7)"
     },
     {
-      "name": "support-04",
-      "hex": "#5aaafa"
+      "name": "Text 0.54",
+      "hex": "rgba(0, 0, 0, 0.54)"
     },
     {
-      "name": "nav-01",
-      "hex": "#0f212e"
+      "name": "Text 0.38",
+      "hex": "rgba(0, 0, 0, 0.38)"
+    }
+  ],
+  "main-colors-others": [
+    {
+      "name": "Links",
+      "hex": "#399C3F"
     },
     {
-      "name": "nav-02",
-      "hex": "#152935"
+      "name": "New Label & Notif",
+      "hex": "#EA212D"
     },
     {
-      "name": "nav-03",
-      "hex": "#ba8ff7"
+      "name": "Error 1",
+      "hex": "#D50000"
     },
     {
-      "name": "nav-04",
-      "hex": "#734098"
+      "name": "Error 2",
+      "hex": "#F13700"
     },
     {
-      "name": "nav-05",
-      "hex": "#00b4a0"
+      "name": "Wishlist",
+      "hex": "#F05F68"
+    }
+  ],
+  "main-colors-star": [
+    {
+      "name": "Star Review & Promo 1",
+      "hex": "#FFC107",
+      "width":2
     },
     {
-      "name": "nav-06",
-      "hex": "#008571"
+      "name": "Star Review & Promo 2",
+      "hex": "#F5A623",
+      "width":2
+    }
+  ],
+  "monochromatic-colors-green": [
+    {
+      "name": "",
+      "hex": "#F3FEF3",
+      "width":0.5
     },
     {
-      "name": "nav-07",
-      "hex": "#5aaafa"
+      "name": "",
+      "hex": "#D3F0D4",
+      "width":0.5
     },
     {
-      "name": "nav-08",
-      "hex": "#3d70b2"
+      "name": "",
+      "hex": "#ADE3AF",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#87D58B",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#60C866",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#42B549",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#399C3F",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#27782C",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#1B521E",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#0F2C11",
+      "width":0.5
+    }
+  ],
+  "monochromatic-colors-red": [
+    {
+      "name": "",
+      "hex": "#FFF2EE",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FFCBBB",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FFA488",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FF8B66",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FF7144",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FF5722",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#F13700",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#D50000",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#AA2900",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#771D00",
+      "width":0.5
+    }
+  ],
+  "monochromatic-colors-pink": [
+    {
+      "name": "",
+      "hex": "#FDEBEC",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#F9BCC0",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#F48E94",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#F05F68",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#EA212D",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#D50000",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#B30000",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#800000",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#5E0000",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#2B0000",
+      "width":0.5
+    }
+  ],
+  "monochromatic-colors-yellow": [
+    {
+      "name": "",
+      "hex": "#FFFCF5",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FFF0C2",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FFE38F",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FFD65C",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FFCE3A",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#FFC107",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#F5A623",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#DB8C0A",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#AA6D08",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#7A4E06",
+      "width":0.5
+    }
+  ],
+  "monochromatic-colors-blue": [
+    {
+      "name": "",
+      "hex": "#F5FDFD",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#D7F6F8",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#BAEFF3",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#8FE6EC",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#72DFE7",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#46D5E0",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#23C4D0",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#1C9BA5",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#147279",
+      "width":0.5
+    },
+    {
+      "name": "",
+      "hex": "#0D494D",
+      "width":0.5
+    }
+  ],
+  "gradient-colors-green": [
+    {
+      "name": "#42B549 - #27782C",
+      "hex": "",
+      "width":3,
+      "gradient":"green"
+    }
+  ],
+  "gradient-colors-yellow": [
+    {
+      "name": "#FFC107 - #DB8C0A",
+      "hex": "",
+      "width":3,
+      "gradient":"yellow"
+    }
+  ],
+  "gradient-colors-blue": [
+    {
+      "name": "#42B549 - #27782C",
+      "hex": "",
+      "width":3,
+      "gradient":"blue"
     }
   ]
 }

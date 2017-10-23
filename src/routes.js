@@ -55,13 +55,13 @@ const routes = {
     {
       path: 'style',
       indexRoute: {
-        onEnter: (nextState, replace) => replace('/style/colors/swatches'),
+        onEnter: (nextState, replace) => replace('/style/colors/palette'),
       },
       childRoutes: [
         {
           path: '/style/colors',
           indexRoute: {
-            onEnter: (nextState, replace) => replace('/style/colors/swatches'),
+            onEnter: (nextState, replace) => replace('/style/colors/palette'),
           },
           childRoutes: [
             {
