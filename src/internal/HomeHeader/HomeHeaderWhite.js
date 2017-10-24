@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import Letter from '../Letters';
 
-import overview_top_1 from '../../content/overview/images/overview-top-1.png';
-import overview_top_2 from '../../content/overview/images/overview-top-2.png';
-import overview_top_3 from '../../content/overview/images/overview-top-3.png';
-import overview_top_4 from '../../content/overview/images/overview-top-4.png';
-import overview_top_5 from '../../content/overview/images/overview-top-5.png';
-import overview_top_6 from '../../content/overview/images/overview-top-6.png';
-import overview_top_7 from '../../content/overview/images/overview-top-7.png';
-import overview_top_8 from '../../content/overview/images/overview-top-8.png';
+import overview_top_1 from '../../content/overview/images/header-white/overview-top-white-1.png';
+import overview_top_2 from '../../content/overview/images/header-white/overview-top-white-2.png';
+import overview_top_3 from '../../content/overview/images/header-white/overview-top-white-3.png';
+import overview_top_4 from '../../content/overview/images/header-white/overview-top-white-4.png';
+import overview_top_5 from '../../content/overview/images/header-white/overview-top-white-5.png';
+import overview_top_6 from '../../content/overview/images/header-white/overview-top-white-6.png';
+import overview_top_7 from '../../content/overview/images/header-white/overview-top-white-7.png';
+import overview_top_8 from '../../content/overview/images/header-white/overview-top-white-8.png';
 
 const img_top_banner_movement = 5;
 
@@ -255,17 +256,27 @@ class HomeHeaderWhite extends Component {
 
     render() {
         return (
-        <div>
-            <img className='overview-page__top-banner--image-white-1' alt='' src={overview_top_1} />
-            <img className='overview-page__top-banner--image-white-2' alt='' src={overview_top_2} />
-            <img className='overview-page__top-banner--image-white-3' alt='' src={overview_top_3} />
-            <img className='overview-page__top-banner--image-white-4' alt='' src={overview_top_4} />
-            <img className='overview-page__top-banner--image-white-5' alt='' src={overview_top_5} />
-            <img className='overview-page__top-banner--image-white-6' alt='' src={overview_top_6} />
-            <img className='overview-page__top-banner--image-white-7' alt='' src={overview_top_7} />
-            <img className='overview-page__top-banner--image-white-8' alt='' src={overview_top_8} />
-            <img className='overview-page__top-banner--image-white-9' alt='' src={overview_top_8} />
-        </div>
+            <div className="overview-page__top">
+                <div className="overview-page__top-banner" aria-hidden="true">
+                    <img className='overview-page__top-banner--image-white-1' alt='' src={overview_top_1} />
+                    <img className='overview-page__top-banner--image-white-2' alt='' src={overview_top_2} />
+                    <img className='overview-page__top-banner--image-white-3' alt='' src={overview_top_3} />
+                    <img className='overview-page__top-banner--image-white-4' alt='' src={overview_top_4} />
+                    <img className='overview-page__top-banner--image-white-5' alt='' src={overview_top_5} />
+                    <img className='overview-page__top-banner--image-white-6' alt='' src={overview_top_6} />
+                    <img className='overview-page__top-banner--image-white-7' alt='' src={overview_top_7} />
+                    <img className='overview-page__top-banner--image-white-8' alt='' src={overview_top_8} />
+                    <img className='overview-page__top-banner--image-white-9' alt='' src={overview_top_8} />
+            
+                    <div className="overview-page__title">
+                    <Letter letter="U" />
+                    <Letter letter="N" />
+                    <Letter letter="I" />
+                    <Letter letter="F" />
+                    <Letter letter="Y" />
+                    </div>
+                </div>
+            </div>
         );
     }
 }
