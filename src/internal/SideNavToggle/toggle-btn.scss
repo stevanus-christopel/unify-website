@@ -4,37 +4,37 @@ $anim_time: 1s;
 
 @keyframes topBar_open {
   0% { transform: translateY(0px) rotate(0deg) ; width: 26px; }
-  10% {transform: translateY(-8px) translateX(2.5px) rotate(0deg); width: 26px; }
-  50% {transform: translateY(6px) translateX(4px) rotate(45deg); width: 34px; }
-  75% {transform: translateY(-8px) translateX(4.5px) rotate(45deg); width: 34px; }
-  100% {transform: translateY(-2px) translateX(5px) rotate(45deg); width: 34px; }
+  10% {transform: translateY(-6px) translateX(3px) rotate(0deg); width: 26px; }
+  50% {transform: translateY(4px) translateX(3.5px) rotate(45deg); width: 20px; }
+  75% {transform: translateY(-6px) translateX(3.5px) rotate(45deg); width: 20px; }
+  100% {transform: translateY(2px) translateX(3px) rotate(45deg); width: 20px; }
 }
 @keyframes bottomBar_open {
   0% { transform: translateY(0px) rotate(0deg) ; width: 26px; }
-  10% { transform: translateY(-8px) translateX(-2.5px) rotate(0deg) ; width: 26px; }
-  60% {transform: translateY(0px) translateX(-4px) rotate(-45deg); width: 34px; }
-  75% {transform: translateY(-10px) translateX(-4.5px) rotate(-45deg); width: 34px; }
-  100% {transform: translateY(-8px) translateX(-5px) rotate(-45deg); width: 34px; }
+  10% { transform: translateY(-8px) translateX(-3px) rotate(0deg) ; width: 26px; }
+  60% {transform: translateY(0px) translateX(-3.5px) rotate(-45deg); width: 20px; }
+  75% {transform: translateY(-8px) translateX(-3.5px) rotate(-45deg); width: 20px; }
+  100% {transform: translateY(-4px) translateX(-3px) rotate(-45deg); width: 20px; }
 }
 @keyframes menuLabel_open {
   0% { transform: translateY(0px); opacity: 1; }
   25% {transform: translateY(-18px); }
-  45% {transform: translateY(44px); opacity: 1; }
-  48% {transform: translateY(50px); opacity: 0; }
-  100% {transform: translateY(30px); opacity: 0; }
+  45% {transform: translateY(14px); opacity: 1; }
+  48% {transform: translateY(20px); opacity: 0; }
+  100% {transform: translateY(0px); opacity: 0; }
 }
 
 //  Close
 
 @keyframes topBar_close {
-  0% {transform: translateY(17px) rotate(45deg); width: 34px; }
+  0% {transform: translateY(17px) rotate(45deg); width: 20px; }
   35% {transform: translateY(-8px) rotate(-4deg); width: 26px; }
   53% {transform: translateY(10px) rotate(3deg); width: 26px; }
   70% {transform: translateY(-6px) rotate(0deg); width: 26px; }
   100% { transform: translateY(-2px) rotate(0deg) ; width: 26px; }
 }
 @keyframes bottomBar_close {
-  0% {transform: translateY(-8px) rotate(-45deg); width: 34px; }
+  0% {transform: translateY(-8px) rotate(-45deg); width: 20px; }
   35% {transform: translateY(-18px) rotate(6deg); width: 26px; }
   53% {transform: translateY(0px) rotate(-3deg); width: 26px; }
   68% { transform: translateY(-7px) rotate(0deg) ; width: 26px; }
@@ -54,7 +54,7 @@ $anim_time: 1s;
 .side-nav__toggle-btn {
   position: fixed;
   top: 2%;
-  left: calc(200px - 2.3rem);
+  left: calc(200px - 1.5rem);
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.75);
@@ -69,11 +69,7 @@ $anim_time: 1s;
   overflow: hidden;
 
   @include breakpoint('840px') {
-    top: 3%;
-  }
-
-  @include breakpoint('620px') {
-    left: calc(200px - 2.1rem);
+    top: 3.4%;
   }
 
   & .line {
@@ -138,6 +134,12 @@ $anim_time: 1s;
   }
   
   &.close {    
+    left: 16px;
+    
+    @include breakpoint('800px') {
+      left: calc(200px - 1.5rem);
+    }
+
     & .line:before {
       animation: topBar_close $anim_time ease-in-out;
       animation-fill-mode: forwards;
