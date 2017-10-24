@@ -154,6 +154,83 @@
                         right: 0;   
                     }
                 }
+
+                &-purple {
+                    &-1 {
+                        height: 40%;
+                        position: absolute;
+                        top: 16%;
+                        left: 15%;  
+                    }
+
+                    &-2 {
+                        height: 7%;
+                        position: absolute;
+                        bottom: 20%;
+                        left: 18%;  
+                    }
+
+                    &-3 {
+                        height: 2%;
+                        position: absolute;
+                        bottom: 22%;
+                        left: 22%;  
+                    }
+                    
+                    &-4 {
+                        height: 16%;
+                        position: absolute;
+                        bottom: 22%;
+                        left: 32%;
+                        z-index: 4;  
+                    }
+                    
+                    &-5 {
+                        height: 20%;
+                        position: absolute;
+                        top: 12%;
+                        right: 38%; 
+                    }
+                    
+                    &-6 {
+                        height: 2%;
+                        position: absolute;
+                        top: 16%;
+                        right: 19%; 
+                    }
+                    
+                    &-7 {
+                        height: 7%;
+                        position: absolute;
+                        top: 18%;
+                        right: 18%; 
+                    }
+
+                    &-8 {
+                        height: 70%;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;  
+                    }
+                }
+                
+                &-yellow {
+                    &-1 {
+                        height: 46%;
+                        position: absolute;
+                        top: 7%;
+                        left: 13%;  
+                        z-index: 4;
+                    }
+
+                    &-2 {
+                        height: 35%;
+                        position: absolute;
+                        top: 54%;
+                        left: 32%;
+                        z-index: 4;  
+                    }
+                }
             }
         }
     }

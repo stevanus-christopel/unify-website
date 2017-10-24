@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 import { 
   HomeHeaderWhite, 
-  HomeHeaderGreen 
+  HomeHeaderGreen,
+  HomeHeaderPurple,
+  HomeHeaderYellow 
 } from '../internal/HomeHeader';
 
 class Overview extends React.Component {
@@ -22,7 +24,7 @@ class Overview extends React.Component {
 
     return (
       <div>
-        <HomeHeaderGreen />
+        <HomeHeaderYellow />
         <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
           <h1 id="page-title" className="overview-page__title--aria" aria-label="UNIFY Design System">UNIFY Design System</h1>
           <div className="overview-page__content">
