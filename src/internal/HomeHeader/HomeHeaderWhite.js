@@ -13,7 +13,7 @@ import overview_top_8 from '../../content/overview/images/header-white/overview-
 const img_top_banner_movement = 5;
 
 const img_top_banner_1_top = -40;
-const img_top_banner_1_left = 2;
+const img_top_banner_1_left = 20;
 var img_top_banner_1_is_hover = false;
 
 const img_top_banner_2_top = -14;
@@ -21,19 +21,19 @@ const img_top_banner_2_left = 50;
 var img_top_banner_2_is_hover = false;
 
 const img_top_banner_3_bottom = -25;
-const img_top_banner_3_right = 0;
+const img_top_banner_3_right = 16;
 var img_top_banner_3_is_hover = false;
 
 const img_top_banner_7_top = 6;
-const img_top_banner_7_left = 2;
+const img_top_banner_7_left = 22;
 var img_top_banner_7_is_hover = false;
 
 const img_top_banner_8_bottom = 10;
-const img_top_banner_8_left = 8;
+const img_top_banner_8_left = 22;
 var img_top_banner_8_is_hover = false;
 
 const img_top_banner_9_bottom = 62;
-const img_top_banner_9_right = 17;
+const img_top_banner_9_right = 28;
 var img_top_banner_9_is_hover = false;
 
 class HomeHeaderWhite extends Component {

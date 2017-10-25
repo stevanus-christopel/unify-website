@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { CSSTransitionGroup } from 'react-transition-group'
 import { 
   HomeHeaderWhite, 
   HomeHeaderGreen,
@@ -9,12 +10,28 @@ import {
 
 class Overview extends React.Component {
   
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      headerPage: 1
+    }
   }
 
   componentDidMount() {
     document.title = 'Tokopedia Unify Design System';
+
+    setInterval(() => {
+      let nextPage = this.state.headerPage + 1;
+      
+      if(nextPage > 4) {
+        nextPage = 1;
+      }
+
+      this.setState({
+        headerPage: nextPage
+      });
+    }, 8000);
   }
 
   render() {
@@ -24,7 +41,23 @@ class Overview extends React.Component {
 
     return (
       <div>
-        <HomeHeaderYellow />
+        <CSSTransitionGroup
+          transitionName="home-header"
+          transitionEnterTimeout={2000}
+          transitionLeaveTimeout={2000}>
+            <div key={this.state.headerPage}>
+              {
+                this.state.headerPage === 1 ?
+                <HomeHeaderPurple /> :
+                this.state.headerPage === 2 ?
+                <HomeHeaderYellow /> :
+                this.state.headerPage === 3 ?
+                <HomeHeaderWhite /> :
+                <HomeHeaderGreen />
+              }
+            </div>
+        </CSSTransitionGroup>
+
         <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
           <h1 id="page-title" className="overview-page__title--aria" aria-label="UNIFY Design System">UNIFY Design System</h1>
           <div className="overview-page__content">

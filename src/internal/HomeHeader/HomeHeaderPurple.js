@@ -102,11 +102,11 @@ class HomeHeaderPurple extends Component {
                 <img className='overview-page__top-banner--image-purple-8' alt='' src={overview_top_8} />
 
                 <div className="overview-page__title">
-                <Letter letter="U" className="white" />
-                <Letter letter="N" className="white" />
-                <Letter letter="I" className="white" />
-                <Letter letter="F" className="white" />
-                <Letter letter="Y" className="white" />
+                    <Letter letter="U" className="white" />
+                    <Letter letter="N" className="white" />
+                    <Letter letter="I" className="white" />
+                    <Letter letter="F" className="white" />
+                    <Letter letter="Y" className="white" />
                 </div>
             </div>
         </div>
