@@ -12,11 +12,6 @@
   flex-direction: column;
   align-items: flex-start;
 
-  @include breakpoint('bp--md--major') {
-    margin-left: $width--side-nav;
-    width: calc(100% - 200px);
-  }
-
   @include breakpoint('680px') {
     padding: 1.5rem 5%;
     flex-direction: row;

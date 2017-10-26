@@ -142,11 +142,15 @@
   }
 }
 
+/*
+  React CSS Transition for Overview Top Section
+*/
 .home-header-enter {
   transform: translateX(100%);
   position: relative;
   z-index: 20;
 }
+
 .home-header-enter.home-header-enter-active {
   transform: translateX(0%);
   transition: transform 1500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -156,6 +160,7 @@
 .home-header-leave {
   transform: translateX(0%);
 }
+
 .home-header-leave.home-header-leave-active {
   transform: translateX(-100%);
   transition: transform 1900ms cubic-bezier(0.6, 0.04, 0.98, 0.335);

@@ -7,6 +7,7 @@ body {
   font-family: 'Proxima Nova';
   background-color: $color__white;
   color: $color__blue-90;
+  height: 100%;
 
   hr {
     display: none;
@@ -31,16 +32,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  @include breakpoint('bp--md--major') {
-    margin-left: $width--side-nav;
-    width: calc(100% - 200px);
-  }
-
-  &--expanded {
-    width: 100%;
-    margin-left: 0;
-  }
 
   main {
     &:focus {

@@ -14,7 +14,7 @@
     text-transform: capitalize;
     margin-left: 0;
     padding: .875rem .875rem .875rem 2rem;
-    color: $color__blue-90;
+    color: $font-color-white;
     border-left: 4px solid transparent;
 
     @include breakpoint('620px') {

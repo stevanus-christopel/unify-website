@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import debounce from 'lodash.debounce';
+import ShapeOverlays from '../internal/ShapeOverlays';
 import SideNav from '../internal/SideNav';
 import SideNavToggle from '../internal/SideNavToggle';
 import PageFooter from '../internal/PageFooter';
@@ -10,6 +11,9 @@ import '../assets/syntax/prism.css';
 import '../assets/syntax/syntax.css';
 import '../scss/main.scss';
 
+const elmOverlay = document.querySelector('.shape-overlays');
+const overlay = new ShapeOverlays(elmOverlay);
+
 class App extends Component {
   static propTypes = {
     children: PropTypes.node,
@@ -17,7 +21,7 @@ class App extends Component {
 
   state = {
     isOpen: false,
-    isFinal: false
+    isFinal: true
   }
 
   componentDidMount() {
@@ -39,24 +43,30 @@ class App extends Component {
   }
 
   onToggleBtnClick = () => {
-    if (this.state.isOpen) {
-      this.setState({
-        isOpen: false,
-      });
-      setTimeout(() => {
-        this.setState({
-          isFinal: true
-        });
-      }, 300);
+    if (overlay.isAnimating) {
+      return false;
     } else {
-      this.setState({
-        isFinal: false,
-      });
-      setTimeout(() => {
+      overlay.toggle();
+      
+      if (this.state.isOpen) {
         this.setState({
-          isOpen: true
+          isOpen: false,
         });
-      }, 5);
+        setTimeout(() => {
+          this.setState({
+            isFinal: true
+          });
+        }, 680);
+      } else {
+        this.setState({
+          isFinal: false,
+        });
+        setTimeout(() => {
+          this.setState({
+            isOpen: true
+          });
+        }, 5);
+      }
     }
   }
 
@@ -99,8 +109,6 @@ class App extends Component {
         isOpen: false,
       });
     }
-    const debouncedResize = debounce(this.handleResize, 1000);
-    window.addEventListener('resize', debouncedResize);
     document.addEventListener('click', (evt) => {
       this.handleClose(evt);
     });
@@ -114,18 +122,6 @@ class App extends Component {
         });
       }
     });
-  }
-
-  handleResize = () => {
-    if (window.innerWidth < 1024) {
-      this.setState({
-        isOpen: false,
-      });
-    } else {
-      this.setState({
-        isOpen: true
-      });
-    }
   }
 
   render() {
