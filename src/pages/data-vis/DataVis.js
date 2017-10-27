@@ -5,7 +5,6 @@ import PageTabs from '../../internal/PageTabs';
 import MarkdownPage from '../../internal/MarkdownPage';
 import ColorCard from '../../internal/ColorCard';
 import { Tabs, Tab } from 'carbon-components-react';
-import ReactGA from 'react-ga';
 import { browserHistory } from 'react-router';
 import ColorList from '../../data/data-vis-colors.json';
 import Markdown from 'markdown-it';
@@ -22,11 +21,6 @@ class DataVis extends React.Component {
   };
 
   updateTab = evt => {
-    ReactGA.event({
-      category: 'Tabs',
-      action: 'click',
-      label: evt.target.innerText,
-    });
     const tab = evt.currentTarget.querySelector('a').getAttribute('href');
     browserHistory.push(tab);
   };

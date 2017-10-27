@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { browserHistory } from 'react-router';
-import ReactGA from 'react-ga';
 
 import { Tabs, Tab } from 'carbon-components-react';
 import CodePage from '../../internal/CodePage';
@@ -22,11 +21,6 @@ class ComponentPage extends Component {
   };
 
   updateTab = evt => {
-    ReactGA.event({
-      category: 'Tabs',
-      action: 'click',
-      label: evt.target.innerText,
-    });
     const tab = evt.currentTarget.querySelector('a').getAttribute('href');
     browserHistory.push(tab);
   };

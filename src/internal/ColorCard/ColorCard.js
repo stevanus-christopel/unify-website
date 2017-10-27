@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import color from 'color';
 import classnames from 'classnames';
-import ReactGA from 'react-ga';
 
 class ColorCard extends Component {
   static propTypes = {
@@ -28,13 +27,6 @@ class ColorCard extends Component {
         displayCopied: false,
       });
     }, 2500);
-  }
-
-  handleClick = () => {
-    ReactGA.event({
-      category: 'Copy Color',
-      action: 'click'
-    });
   }
 
   colorContrast = (ColorHEX) => {
@@ -84,7 +76,7 @@ class ColorCard extends Component {
 
             {
               hex != "" &&
-              <button tabIndex="0" className={textClass} onClick={() => this.handleClick()}>{this.state.displayCopied ? 'Copied!' : 'Copy HEX'}</button>
+              <button tabIndex="0" className={textClass}>{this.state.displayCopied ? 'Copied!' : 'Copy HEX'}</button>
             }
               
             </CopyToClipboard>

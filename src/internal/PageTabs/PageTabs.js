@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { browserHistory } from 'react-router';
 import { Tabs } from 'carbon-components-react';
-import ReactGA from 'react-ga';
 
 class PageTabs extends Component {
   static propTypes = {
@@ -12,11 +11,6 @@ class PageTabs extends Component {
   }
 
   updateTab = (evt) => {
-    ReactGA.event({
-      category: 'Tabs',
-      action: 'click',
-      label: evt.target.innerText
-    });
     if (evt.target.classList.contains('bx--tabs__nav-link')) {
       browserHistory.push(evt.target.getAttribute('href'));
     }

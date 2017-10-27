@@ -54,7 +54,7 @@ $anim_time: 1s;
 .side-nav__toggle-btn {
   position: fixed;
   top: 2%;
-  left: calc(200px - 1.5rem);
+  left: 16px;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.75);
@@ -70,6 +70,7 @@ $anim_time: 1s;
 
   @include breakpoint('840px') {
     top: 3.4%;
+    left: 32px
   }
 
   & .line {
@@ -136,8 +137,8 @@ $anim_time: 1s;
   &.close {    
     left: 16px;
     
-    @include breakpoint('800px') {
-      left: calc(200px - 1.5rem);
+    @include breakpoint('840px') {
+      left: 32px
     }
 
     & .line:before {

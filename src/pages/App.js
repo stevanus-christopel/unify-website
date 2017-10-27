@@ -28,7 +28,6 @@ class App extends Component {
     // [... document.querySelectorAll('pre')].forEach(pre => {
     //   Prism.highlightElement(pre);
     // });
-    this.checkWidth();
     this.addBxClasses();
     Prism.highlightAll();
   }
@@ -102,28 +101,6 @@ class App extends Component {
     }
   }
 
-  checkWidth = () => {
-    const width = window.innerWidth;
-    if (width < 1024) {
-      this.setState({
-        isOpen: false,
-      });
-    }
-    document.addEventListener('click', (evt) => {
-      this.handleClose(evt);
-    });
-    document.addEventListener('touchstart', (evt) => {
-      this.handleClose(evt);
-    });
-    document.addEventListener('keydown', (evt) => {
-      if (evt.which === 27 && this.state.isOpen) {
-        this.setState({
-          isOpen: false
-        });
-      }
-    });
-  }
-
   render() {
     const classNames = classnames({
       'container': true, // eslint-disable-line
@@ -136,7 +113,7 @@ class App extends Component {
       ''
     ) :
     (
-      <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} />
+      <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} onToggleBtnClick={this.onToggleBtnClick} />
     );
     const toggleBtnContent = currentLocation === 'live' ?
     (

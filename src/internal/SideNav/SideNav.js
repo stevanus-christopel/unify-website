@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link, browserHistory } from 'react-router';
 import classnames from 'classnames';
-import ReactGA from 'react-ga';
 import SiteContent from '../../data/sitecontent.js';
 
 import { Icon, Button } from 'carbon-components-react';
@@ -31,21 +30,6 @@ class SideNav extends Component {
     if (evt.which === 13) {
       document.activeElement.blur();
       document.querySelector('#maincontent').focus();
-    }
-  };
-
-  handleClick = (evt, cat) => {
-    if (cat === 'Left Nav') {
-      ReactGA.event({
-        category: cat,
-        action: 'click',
-        label: evt.target.innerText,
-      });
-    } else {
-      ReactGA.event({
-        category: cat,
-        action: 'click',
-      });
     }
   };
 
@@ -141,6 +125,7 @@ class SideNav extends Component {
             tabIndex="0"
             className="main-nav-item__heading"
             to={`/${navItem}`}
+            onClick={this.props.onToggleBtnClick}
           >
             {navItemObj.title}
           </Link>
@@ -234,6 +219,7 @@ class SideNav extends Component {
             aria-label={subnav[subNavItem]}
             to={link}
             tabIndex={tabIndex}
+            onClick={this.props.onToggleBtnClick}
           >
             {subnav[subNavItem]}
           </Link>
@@ -272,6 +258,7 @@ class SideNav extends Component {
               aria-label={subnav[subNavItem]}
               to={link}
               tabIndex={tabIndex}
+              onClick={this.props.onToggleBtnClick}
             >
               {subnav[subNavItem]}
             </Link>
@@ -316,7 +303,7 @@ class SideNav extends Component {
           >
             Skip to main content
           </a>
-          <Link to="/" className="side-nav__logo">
+          <Link to="/" className="side-nav__logo" onClick={this.props.onToggleBtnClick}>
             UNIFY <span>Design System</span>
           </Link>
           <div className="bx--search bx--search--sm" role="search">
@@ -354,7 +341,6 @@ class SideNav extends Component {
             role="menu"
             aria-label="Page main menu"
             className="side-nav__main-nav"
-            onClick={e => this.handleClick(e, 'Left Nav')}
           >
             {navItems}
           </ul>
@@ -367,7 +353,6 @@ class SideNav extends Component {
               target="_blank"
               role="button"
               iconDescription="sidenav link icon"
-              onClick={e => this.handleClick(e, 'Design Kit')}
             >
               Design Kit
             </Button>
@@ -379,7 +364,6 @@ class SideNav extends Component {
               target="_blank"
               role="button"
               iconDescription="sidenav link icon"
-              onClick={e => this.handleClick(e, 'Developer Kit')}
             >
               GitHub Repo
             </Button>

@@ -54,6 +54,7 @@ class HomeHeaderPurple extends Component {
 
     constructor() {
         super();
+        this.showImageAnimate = this.showImageAnimate.bind(this);
         this.handleMouseMoveTopBanner = this.handleMouseMoveTopBanner.bind(this);
         this.handleMouseLeaveTopBanner = this.handleMouseLeaveTopBanner.bind(this);
     }
@@ -64,6 +65,15 @@ class HomeHeaderPurple extends Component {
         document.getElementsByClassName("overview-page__top")[0].onmousemove = this.handleMouseMoveTopBanner;
         document.getElementsByClassName("overview-page__top")[0].onmouseleave = this.handleMouseLeaveTopBanner;
         document.getElementsByClassName("overview-page__top")[0].style.backgroundImage = overview_background;
+
+        setTimeout(this.showImageAnimate, 2000);
+    }
+
+    showImageAnimate() {
+        var imageAnimates = document.getElementsByClassName("overview-page__top-banner--image-animate");
+        for(let i=0;i<imageAnimates.length;i++) {
+            imageAnimates[i].className += " show";
+        }
     }
     
     handleMouseMoveTopBanner(e) {
@@ -92,14 +102,14 @@ class HomeHeaderPurple extends Component {
         return (
         <div className="overview-page__top" style={ backgroundStyle }>
             <div className="overview-page__top-banner" aria-hidden="true">
-                <img className='overview-page__top-banner--image-purple-1' alt='' src={overview_top_1} />
-                <img className='overview-page__top-banner--image-purple-2' alt='' src={overview_top_2} />
-                <img className='overview-page__top-banner--image-purple-3' alt='' src={overview_top_3} />
-                <img className='overview-page__top-banner--image-purple-4' alt='' src={overview_top_4} />
-                <img className='overview-page__top-banner--image-purple-5' alt='' src={overview_top_5} />
-                <img className='overview-page__top-banner--image-purple-6' alt='' src={overview_top_6} />
-                <img className='overview-page__top-banner--image-purple-7' alt='' src={overview_top_7} />
-                <img className='overview-page__top-banner--image-purple-8' alt='' src={overview_top_8} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-purple-1' alt='' src={overview_top_1} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-purple-2' alt='' src={overview_top_2} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-purple-3' alt='' src={overview_top_3} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-purple-4' alt='' src={overview_top_4} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-purple-5' alt='' src={overview_top_5} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-purple-6' alt='' src={overview_top_6} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-purple-7' alt='' src={overview_top_7} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-purple-8' alt='' src={overview_top_8} />
 
                 <div className="overview-page__title">
                     <Letter letter="U" className="white" />

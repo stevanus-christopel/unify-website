@@ -24,6 +24,7 @@ class HomeHeaderYellow extends Component {
 
     constructor() {
         super();
+        this.showImageAnimate = this.showImageAnimate.bind(this);
         this.handleMouseMoveTopBanner = this.handleMouseMoveTopBanner.bind(this);
         this.handleMouseLeaveTopBanner = this.handleMouseLeaveTopBanner.bind(this);
     }
@@ -34,6 +35,15 @@ class HomeHeaderYellow extends Component {
         document.getElementsByClassName("overview-page__top")[0].onmousemove = this.handleMouseMoveTopBanner;
         document.getElementsByClassName("overview-page__top")[0].onmouseleave = this.handleMouseLeaveTopBanner;
         document.getElementsByClassName("overview-page__top")[0].style.backgroundImage = overview_background;
+        
+        setTimeout(this.showImageAnimate, 2000);
+    }
+
+    showImageAnimate() {
+        var imageAnimates = document.getElementsByClassName("overview-page__top-banner--image-animate");
+        for(let i=0;i<imageAnimates.length;i++) {
+            imageAnimates[i].className += " show";
+        }
     }
     
     handleMouseMoveTopBanner(e) {
@@ -50,8 +60,8 @@ class HomeHeaderYellow extends Component {
         return (
         <div className="overview-page__top" style={ backgroundStyle }>
             <div className="overview-page__top-banner" aria-hidden="true">
-                <img className='overview-page__top-banner--image-yellow-1' alt='' src={overview_top_1} />
-                <img className='overview-page__top-banner--image-yellow-2' alt='' src={overview_top_2} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-yellow-1' alt='' src={overview_top_1} />
+                <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-yellow-2' alt='' src={overview_top_2} />
 
                 <div className="overview-page__title">
                 <Letter letter="U" className="white" />
