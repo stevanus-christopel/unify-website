@@ -16,8 +16,8 @@
   @include font-smoothing;
   @include layer('temporary-nav');
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
   font-size: rem(14px);
   border-right: 2px solid $color__gray-3;
   width: 100%;
@@ -141,5 +141,15 @@
     font-size: .875rem;
     color: $font-color-white;
     margin: .25rem 0;
+  }
+  
+  &__column {
+    width: 16.66%;
+    box-sizing: border-box;
+    border-right: solid 1px #398f3f;
+
+    &:last-child {
+      border-right: solid 1px transparent;
+    }
   }
 }

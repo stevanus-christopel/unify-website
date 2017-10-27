@@ -40,6 +40,20 @@ class SideNav extends Component {
       activeSearch: false,
     });
   };
+  
+  handleMouseEnter = () => {
+    let menus = document.getElementsByClassName("main-nav-item__heading");
+    for(var i=0;i<menus.length; i++) {
+      menus[i].className += " no-hover";
+    }
+  };
+    
+  handleMouseLeave = () => {
+    let menus = document.getElementsByClassName("main-nav-item__heading");
+    for(var i=0;i<menus.length; i++) {
+      menus[i].className = "main-nav-item__heading";
+    }
+  };
 
   crawlSiteContent = query => {
     const newResults = [];
@@ -126,6 +140,8 @@ class SideNav extends Component {
             className="main-nav-item__heading"
             to={`/${navItem}`}
             onClick={this.props.onToggleBtnClick}
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
           >
             {navItemObj.title}
           </Link>
@@ -293,7 +309,24 @@ class SideNav extends Component {
         aria-expanded={isOpen}
         className={classNames}
       >
-        <div className="side-nav__top-container">
+        <div className="side-nav__column"></div>
+        <div className="side-nav__column">
+          <div className={bottomClasses}>
+            <ul
+              role="menu"
+              aria-label="Page main menu"
+              className="side-nav__main-nav"
+            >
+              {navItems}
+            </ul>
+          </div>
+        </div>
+        <div className="side-nav__column"></div>
+        <div className="side-nav__column"></div>
+        <div className="side-nav__column"></div>
+        <div className="side-nav__column"></div>
+
+        {/*<div className="side-nav__top-container">
           <a
             id="skip-to-content"
             tabIndex="0"
@@ -328,23 +361,17 @@ class SideNav extends Component {
               <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm3.5 10.1l-1.4 1.4L8 9.4l-2.1 2.1-1.4-1.4L6.6 8 4.5 5.9l1.4-1.4L8 6.6l2.1-2.1 1.4 1.4L9.4 8l2.1 2.1z" />
             </svg>
           </div>
-        </div>
+        </div>*/}
+        {/*
         <GlobalSearch
           results={this.state.results}
           relatedResults={this.state.relatedResults}
           val={this.state.val}
           currentQuery={this.state.currentQuery}
           activeSearch={this.state.activeSearch}
-        />
-        <div className={bottomClasses}>
-          <ul
-            role="menu"
-            aria-label="Page main menu"
-            className="side-nav__main-nav"
-          >
-            {navItems}
-          </ul>
-          <div className="side-nav__links">
+        />*/}
+
+          {/*<div className="side-nav__links">
             <Button
               href="https://github.com/carbon-design-system/carbon-design-kit"
               className="side-nav__link bx--btn"
@@ -367,8 +394,7 @@ class SideNav extends Component {
             >
               GitHub Repo
             </Button>
-          </div>
-        </div>
+          </div>*/}
       </nav>
     );
   }

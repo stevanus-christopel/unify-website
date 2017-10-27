@@ -1,85 +1,17 @@
 {
-  "introduction": {
-    "title": "Introduction"
-  },
-  "getting-started": {
-    "title": "Getting Started",
-    "subnav": {
-      "designers": "Designers",
-      "developers": "Developers",
-      "service-providers": "Service Providers",
-      "FAQ": "FAQ"
-    }
-  },
-  "style": {
-    "title": "Style",
-    "subnav": {
-      "colors": "Colors",
-      "spacing": "Spacing",
-      "iconography": "Iconography",
-      "layer": "Layer",
-      "motion": "Motion",
-      "typography": "Typography"
-    }
+  "": {
+    "title": "Home"
   },
   "components": {
-    "title": "Components",
-    "subnav": {
-      "overview": "Overview",
-      "accordion": "Accordion",
-      "breadcrumb": "Breadcrumb",
-      "button": "Button",
-      "card": "Card",
-      "checkbox": "Checkbox",
-      "code-snippet": "Code Snippet",
-      "content-switcher": "Content Switcher",
-      "data-table": "Data Table",
-      "data-vis": {
-        "title": "Data Vis",
-        "subnav": {
-          "overview": "Overview",
-          "gauge": "Gauge",
-          "line-graph": "Line Graph",
-          "pie-chart": "Pie Chart",
-          "scatter-plot": "Scatter Plot"
-        }
-      },
-      "date-picker": "Date Picker",
-      "detail-page-header": "Detail Page Header",
-      "dropdown": "Dropdown",
-      "file-uploader": "File Uploader",
-      "form": "Form",
-      "interior-left-nav": "Interior Left Nav",
-      "link": "Link",
-      "list": "List",
-      "loading": "Loading",
-      "modal": "Modal",
-      "module": "Module",
-      "notification": "Notification",
-      "number-input": "Number Input",
-      "overflow-menu": "Overflow Menu",
-      "pagination": "Pagination",
-      "progress-indicator": "Progress Indicator",
-      "radio-button": "Radio Button",
-      "search": "Search",
-      "select": "Select",
-      "slider": "Slider",
-      "structured-list": "Structured List",
-      "tabs": "Tabs",
-      "tag": "Tag",
-      "text-input": "Text Input",
-      "tile": "Tile",
-      "toggle": "Toggle",
-      "tooltip": "Tooltip"
-    }
+    "title": "Components"
   },
-  "component-status": {
-    "title": "Component Status"
+  "style": {
+    "title": "Styles"
   },
-  "resources": {
-    "title": "Resources"
+  "motions": {
+    "title": "Motions"
   },
-  "themes": {
-    "title": "Themes"
+  "patterns": {
+    "title": "Patterns"
   }
 }

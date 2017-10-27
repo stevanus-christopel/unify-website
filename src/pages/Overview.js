@@ -21,7 +21,7 @@ class Overview extends React.Component {
   componentDidMount() {
     document.title = 'Tokopedia Unify Design System';
 
-    setInterval(() => {
+    this.intervalId = setInterval(() => {
       let nextPage = this.state.headerPage + 1;
       
       if(nextPage > 4) {
@@ -32,6 +32,10 @@ class Overview extends React.Component {
         headerPage: nextPage
       });
     }, 8000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
   }
 
   render() {
