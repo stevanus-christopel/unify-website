@@ -64,11 +64,11 @@ class HomeHeaderYellow extends Component {
                 <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-yellow-2' alt='' src={overview_top_2} />
 
                 <div className="overview-page__title">
-                <Letter letter="U" className="white" />
-                <Letter letter="N" className="white" />
-                <Letter letter="I" className="white" />
-                <Letter letter="F" className="white" />
-                <Letter letter="Y" className="white" />
+                    <Letter letter="U" className="white" onClick={() => this.props.onClickChangeHeader(1)}  />
+                    <Letter letter="N" className="white" onClick={() => this.props.onClickChangeHeader(2)}  />
+                    <Letter letter="I" className="white" onClick={() => this.props.onClickChangeHeader(3)}  />
+                    <Letter letter="F" className="white" onClick={() => this.props.onClickChangeHeader(4)}  />
+                    <Letter letter="Y" className="white" onClick={() => this.props.onClickChangeHeader(1)}  />
                 </div>
             </div>
         </div>

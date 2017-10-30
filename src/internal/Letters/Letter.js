@@ -10,6 +10,7 @@ class Letter extends Component {
     active: PropTypes.bool,
     version: PropTypes.number,
     className: PropTypes.string,
+    onClick: PropTypes.func
   }
 
   state = {
@@ -18,12 +19,6 @@ class Letter extends Component {
   }
 
   getLetterPNG = (letter) => <LetterPNG letter={letter} version={this.props.version} />;
-
-  handleClick = () => {
-    /*this.setState({
-      active: !this.state.active,
-    });*/
-  }
 
   handleMouseEnter = () => {
     if (window.innerWidth > 700) {
@@ -52,15 +47,13 @@ class Letter extends Component {
     });
 
     let html = this.props.letter;
-
     return (
       <div
         className={classNames}
-        onClick={this.handleClick}
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
       >
-        <span className="letter">
+        <span className="letter" onClick={this.props.onClick}>
           {html}
         </span>
         {/*this.getLetterPNG(this.props.letter)*/}

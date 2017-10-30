@@ -106,7 +106,7 @@
 @supports(-webkit-text-stroke: 1px $font-color-white){
   .side-nav__main-nav .main-nav-item__active .main-nav-item__heading{
       color: transparent;
-      -webkit-text-stroke: 1px $font-color-white;
+      -webkit-text-stroke: 1.5px $font-color-white;
       text-shadow: none;
   }
 }

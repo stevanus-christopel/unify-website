@@ -55,7 +55,7 @@ const routes = {
     {
       path: 'style',
       indexRoute: {
-        onEnter: (nextState, replace) => replace('/style/colors/palette'),
+        onEnter: (nextState, replace) => replace('/style/overview'),
       },
       childRoutes: [
         {

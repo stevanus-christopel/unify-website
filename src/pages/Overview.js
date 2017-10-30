@@ -14,13 +14,28 @@ class Overview extends React.Component {
     super(props);
 
     this.state = {
-      headerPage: 1
+      headerPage: 3
     }
   }
 
   componentDidMount() {
     document.title = 'Tokopedia Unify Design System';
+    this.setHeaderInterval();
+  }
 
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
+
+  changeHeader = (page) => {
+    clearInterval(this.intervalId);
+    this.setState({
+      headerPage: page
+    });
+    this.setHeaderInterval();
+  }
+
+  setHeaderInterval = () => {
     this.intervalId = setInterval(() => {
       let nextPage = this.state.headerPage + 1;
       
@@ -32,10 +47,6 @@ class Overview extends React.Component {
         headerPage: nextPage
       });
     }, 8000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.intervalId);
   }
 
   render() {
@@ -52,12 +63,12 @@ class Overview extends React.Component {
             <div key={this.state.headerPage}>
               {
                 this.state.headerPage === 1 ?
-                <HomeHeaderPurple /> :
+                <HomeHeaderPurple onClickChangeHeader={this.changeHeader} /> :
                 this.state.headerPage === 2 ?
-                <HomeHeaderYellow /> :
+                <HomeHeaderYellow onClickChangeHeader={this.changeHeader} /> :
                 this.state.headerPage === 3 ?
-                <HomeHeaderWhite /> :
-                <HomeHeaderGreen />
+                <HomeHeaderWhite onClickChangeHeader={this.changeHeader} /> :
+                <HomeHeaderGreen onClickChangeHeader={this.changeHeader} />
               }
             </div>
         </CSSTransitionGroup>

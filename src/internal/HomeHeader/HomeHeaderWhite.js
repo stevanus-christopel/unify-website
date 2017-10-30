@@ -279,11 +279,11 @@ class HomeHeaderWhite extends Component {
                     <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-white-9' alt='' src={overview_top_8} />
             
                     <div className="overview-page__title">
-                    <Letter letter="U" />
-                    <Letter letter="N" />
-                    <Letter letter="I" />
-                    <Letter letter="F" />
-                    <Letter letter="Y" />
+                        <Letter letter="U" onClick={() => this.props.onClickChangeHeader(1)}  />
+                        <Letter letter="N" onClick={() => this.props.onClickChangeHeader(2)}  />
+                        <Letter letter="I" onClick={() => this.props.onClickChangeHeader(3)}  />
+                        <Letter letter="F" onClick={() => this.props.onClickChangeHeader(4)}  />
+                        <Letter letter="Y" onClick={() => this.props.onClickChangeHeader(1)}  />
                     </div>
                 </div>
             </div>

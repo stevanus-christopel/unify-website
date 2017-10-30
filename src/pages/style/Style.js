@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Overview from './Overview';
 import Colors from './Colors';
 import Iconography from './Iconography';
 import Layer from './Layer';
@@ -20,7 +21,9 @@ class Style extends React.Component {
     const paramsPage = params.page;
     const title = paramsName.charAt(0).toUpperCase() + paramsName.substring(1);
     let content;
-    if (paramsName === 'colors') {
+    if (paramsName === 'overview') {
+      return <Overview currentPage={paramsPage} />;
+    } else if (paramsName === 'colors') {
       content = <Colors currentPage={paramsPage} />;
     } else if (paramsName === 'layer') {
       content = <Layer currentPage={paramsPage} />;

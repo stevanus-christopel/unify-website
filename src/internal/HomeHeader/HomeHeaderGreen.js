@@ -8,7 +8,7 @@ import overview_background from '../../content/overview/images/header-green/over
 
 const img_top_banner_movement = 5;
 
-const img_top_banner_1_bottom = 0;
+const img_top_banner_1_bottom = 1.2;
 const img_top_banner_1_left = 0;
 var img_top_banner_1_is_hover = false;
 
@@ -16,7 +16,7 @@ const img_top_banner_2_top = 50;
 const img_top_banner_2_left = 50;
 var img_top_banner_2_is_hover = false;
 
-const img_top_banner_3_bottom = 0;
+const img_top_banner_3_bottom = 1.2;
 const img_top_banner_3_right = 0;
 var img_top_banner_3_is_hover = false;
 
@@ -72,11 +72,11 @@ class HomeHeaderGreen extends Component {
                 <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-green-3' alt='' src={overview_top_3} />
 
                 <div className="overview-page__title">
-                <Letter letter="U" className="white" />
-                <Letter letter="N" className="white" />
-                <Letter letter="I" className="white" />
-                <Letter letter="F" className="white" />
-                <Letter letter="Y" className="white" />
+                    <Letter letter="U" className="white" onClick={() => this.props.onClickChangeHeader(1)}  />
+                    <Letter letter="N" className="white" onClick={() => this.props.onClickChangeHeader(2)}  />
+                    <Letter letter="I" className="white" onClick={() => this.props.onClickChangeHeader(3)}  />
+                    <Letter letter="F" className="white" onClick={() => this.props.onClickChangeHeader(4)}  />
+                    <Letter letter="Y" className="white" onClick={() => this.props.onClickChangeHeader(1)}  />
                 </div>
             </div>
         </div>
