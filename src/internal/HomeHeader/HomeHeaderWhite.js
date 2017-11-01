@@ -10,31 +10,42 @@ import overview_top_6 from '../../content/overview/images/header-white/overview-
 import overview_top_7 from '../../content/overview/images/header-white/overview-top-white-7.png';
 import overview_top_8 from '../../content/overview/images/header-white/overview-top-white-8.png';
 
-const img_top_banner_movement = 5;
+const img_top_banner_movement = 2;
 
 const img_top_banner_1_top = -40;
+var current_img_top_banner_1_top = img_top_banner_1_top;
 const img_top_banner_1_left = 20;
-var img_top_banner_1_is_hover = false;
+var current_img_top_banner_1_left = img_top_banner_1_left;
 
 const img_top_banner_2_top = -14;
+var current_img_top_banner_2_top = img_top_banner_2_top;
 const img_top_banner_2_left = 50;
-var img_top_banner_2_is_hover = false;
+var current_img_top_banner_2_left = img_top_banner_2_left;
 
 const img_top_banner_3_bottom = -25;
+var current_img_top_banner_3_bottom = img_top_banner_3_bottom;
 const img_top_banner_3_right = 16;
-var img_top_banner_3_is_hover = false;
+var current_img_top_banner_3_right = img_top_banner_3_right;
 
 const img_top_banner_7_top = 6;
+var current_img_top_banner_7_top = img_top_banner_7_top;
 const img_top_banner_7_left = 22;
-var img_top_banner_7_is_hover = false;
+var current_img_top_banner_7_left = img_top_banner_7_left;
 
 const img_top_banner_8_bottom = 10;
+var current_img_top_banner_8_bottom = img_top_banner_8_bottom;
 const img_top_banner_8_left = 22;
-var img_top_banner_8_is_hover = false;
+var current_img_top_banner_8_left = img_top_banner_8_left;
 
 const img_top_banner_9_bottom = 62;
+var current_img_top_banner_9_bottom = img_top_banner_9_bottom;
 const img_top_banner_9_right = 28;
-var img_top_banner_9_is_hover = false;
+var current_img_top_banner_9_right = img_top_banner_9_right;
+
+var last_mouse_x = 0;
+var last_mouse_y = 0;
+var diff_mouse_x = 0;
+var diff_mouse_y = 0;
 
 class HomeHeaderWhite extends Component {
 
@@ -51,43 +62,6 @@ class HomeHeaderWhite extends Component {
         document.getElementsByClassName("overview-page__top")[0].onmousemove = this.handleMouseMoveTopBanner;
         document.getElementsByClassName("overview-page__top")[0].onmouseleave = this.handleMouseLeaveTopBanner;
         
-        document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].onmouseenter = function() {
-        img_top_banner_1_is_hover = true;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].onmouseleave = function() {
-        img_top_banner_1_is_hover = false;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].onmouseenter = function() {
-        img_top_banner_2_is_hover = true;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].onmouseleave = function() {
-        img_top_banner_2_is_hover = false;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].onmouseenter = function() {
-        img_top_banner_3_is_hover = true;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].onmouseleave = function() {
-        img_top_banner_3_is_hover = false;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].onmouseenter = function() {
-        img_top_banner_7_is_hover = true;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].onmouseleave = function() {
-        img_top_banner_7_is_hover = false;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].onmouseenter = function() {
-        img_top_banner_8_is_hover = true;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].onmouseleave = function() {
-        img_top_banner_8_is_hover = false;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].onmouseenter = function() {
-        img_top_banner_9_is_hover = true;
-        }
-        document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].onmouseleave = function() {
-        img_top_banner_9_is_hover = false;
-        }
-        
         setTimeout(this.showImageAnimate, 2000);
     }
 
@@ -99,154 +73,72 @@ class HomeHeaderWhite extends Component {
     }
     
     handleMouseMoveTopBanner(e) {
-        if(parseInt(e.y) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].getBoundingClientRect().top) &&
-        !img_top_banner_1_is_hover) {
+        if(last_mouse_x != 0) {
+            diff_mouse_x = (e.x - last_mouse_x) / 8;
+        }
+
+        if(last_mouse_y != 0) {
+            diff_mouse_y = (e.y - last_mouse_y) / 16;
+        }
+
+        console.log("x: " + diff_mouse_x);
+        console.log("y: " + diff_mouse_y);
+
+        if(diff_mouse_y != 0) {
+            current_img_top_banner_1_top = current_img_top_banner_1_top - diff_mouse_y;
             document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].style.top = 
-            (img_top_banner_1_top - img_top_banner_movement) + "%";
-        } else if(parseInt(e.y) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].getBoundingClientRect().top) &&
-        !img_top_banner_1_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].style.top = 
-            (img_top_banner_1_top + img_top_banner_movement) + "%";
-        }
+            current_img_top_banner_1_top + "%";
 
-        if(parseInt(e.x) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].getBoundingClientRect().left) &&
-        !img_top_banner_1_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].style.left = 
-            (img_top_banner_1_left - img_top_banner_movement) + "%";
-        } else if(parseInt(e.x) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].getBoundingClientRect().left) &&
-        !img_top_banner_1_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].style.left = 
-            (img_top_banner_1_left + img_top_banner_movement) + "%";
-        }
-
-
-        if(parseInt(e.y) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].getBoundingClientRect().top) &&
-        !img_top_banner_2_is_hover) {
+            current_img_top_banner_2_top = current_img_top_banner_2_top - diff_mouse_y;
             document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].style.top = 
-            (img_top_banner_2_top - img_top_banner_movement) + "%";
-        } else if(parseInt(e.y) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].getBoundingClientRect().top) &&
-        !img_top_banner_2_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].style.top = 
-            (img_top_banner_2_top + img_top_banner_movement) + "%";
-        }
+            current_img_top_banner_2_top+ "%";
 
-        if(parseInt(e.x) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].getBoundingClientRect().left) &&
-        !img_top_banner_2_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].style.left = 
-            (img_top_banner_2_left - img_top_banner_movement) + "%";
-        } else if(parseInt(e.x) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].getBoundingClientRect().left) &&
-        !img_top_banner_2_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].style.left = 
-            (img_top_banner_2_left + img_top_banner_movement) + "%";
-        }
-
-
-        if(parseInt(e.y) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].getBoundingClientRect().top) &&
-        !img_top_banner_3_is_hover) {
+            current_img_top_banner_3_bottom = current_img_top_banner_3_bottom + diff_mouse_y;
             document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].style.bottom = 
-            (img_top_banner_3_bottom + img_top_banner_movement) + "%";
-        } else if(parseInt(e.y) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].getBoundingClientRect().top) &&
-        !img_top_banner_3_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].style.bottom = 
-            (img_top_banner_3_bottom - img_top_banner_movement) + "%";
-        }
+            current_img_top_banner_3_bottom + "%";
 
-        if(parseInt(e.x) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].getBoundingClientRect().left) &&
-        !img_top_banner_3_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].style.right = 
-            (img_top_banner_3_right + img_top_banner_movement) + "%";
-        } else if(parseInt(e.x) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].getBoundingClientRect().left) &&
-        !img_top_banner_3_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].style.right = 
-            (img_top_banner_3_right - img_top_banner_movement) + "%";
-        }
-
-
-        if(parseInt(e.y) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].getBoundingClientRect().top) &&
-        !img_top_banner_7_is_hover) {
+            current_img_top_banner_7_top = current_img_top_banner_7_top - diff_mouse_y;
             document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].style.top = 
-            (img_top_banner_7_top - img_top_banner_movement) + "%";
-        } else if(parseInt(e.y) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].getBoundingClientRect().top) &&
-        !img_top_banner_7_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].style.top = 
-            (img_top_banner_7_top + img_top_banner_movement) + "%";
-        }
+            current_img_top_banner_7_top + "%";
 
-        if(parseInt(e.x) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].getBoundingClientRect().left) &&
-        !img_top_banner_7_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].style.left = 
-            (img_top_banner_7_left - img_top_banner_movement) + "%";
-        } else if(parseInt(e.x) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].getBoundingClientRect().left) &&
-        !img_top_banner_7_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].style.left = 
-            (img_top_banner_7_left + img_top_banner_movement) + "%";
-        }
-        
-        
-        if(parseInt(e.y) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].getBoundingClientRect().top) &&
-        !img_top_banner_8_is_hover) {
+            current_img_top_banner_8_bottom = current_img_top_banner_8_bottom + diff_mouse_y;
             document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].style.bottom = 
-            (img_top_banner_8_bottom + img_top_banner_movement) + "%";
-        } else if(parseInt(e.y) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].getBoundingClientRect().top) &&
-        !img_top_banner_8_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].style.bottom = 
-            (img_top_banner_8_bottom - img_top_banner_movement) + "%";
+            current_img_top_banner_8_bottom + "%";
+
+            current_img_top_banner_9_bottom = current_img_top_banner_9_bottom + diff_mouse_y;
+            document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].style.bottom = 
+            current_img_top_banner_9_bottom + "%";
         }
 
-        if(parseInt(e.x) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].getBoundingClientRect().left) &&
-        !img_top_banner_8_is_hover) {
+        if((diff_mouse_x > 0 && (current_img_top_banner_1_left - diff_mouse_x) > 0.1875) ||
+        (diff_mouse_x < 0 && (current_img_top_banner_3_right + diff_mouse_x) > -0.875)) {
+            current_img_top_banner_1_left = (current_img_top_banner_1_left - diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].style.left = 
+            current_img_top_banner_1_left + "%";
+
+            current_img_top_banner_2_left= (current_img_top_banner_2_left - diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-white-2")[0].style.left = 
+            (current_img_top_banner_2_left - diff_mouse_x) + "%";
+
+            current_img_top_banner_3_right= (current_img_top_banner_3_right + diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-white-3")[0].style.right = 
+            current_img_top_banner_3_right + "%";
+
+            current_img_top_banner_7_left = (current_img_top_banner_7_left - diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-white-7")[0].style.left = 
+            current_img_top_banner_7_left + "%";
+
+            current_img_top_banner_8_left= (current_img_top_banner_8_left - diff_mouse_x);
             document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].style.left = 
-            (img_top_banner_8_left - img_top_banner_movement) + "%";
-        } else if(parseInt(e.x) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].getBoundingClientRect().left) &&
-        !img_top_banner_8_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].style.left = 
-            (img_top_banner_8_left + img_top_banner_movement) + "%";
-        }
-        
-        
-        if(parseInt(e.y) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].getBoundingClientRect().top) &&
-        !img_top_banner_9_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].style.bottom = 
-            (img_top_banner_9_bottom + img_top_banner_movement) + "%";
-        } else if(parseInt(e.y) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].getBoundingClientRect().top) &&
-        !img_top_banner_9_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].style.bottom = 
-            (img_top_banner_9_bottom - img_top_banner_movement) + "%";
+            current_img_top_banner_8_left + "%";
+
+            current_img_top_banner_9_right= (current_img_top_banner_9_right + diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].style.right = 
+            current_img_top_banner_9_right + "%";
         }
 
-        if(parseInt(e.x) < 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].getBoundingClientRect().left) &&
-        !img_top_banner_9_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].style.right = 
-            (img_top_banner_9_right + img_top_banner_movement) + "%";
-        } else if(parseInt(e.x) > 
-        parseInt(document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].getBoundingClientRect().left) &&
-        !img_top_banner_9_is_hover) {
-            document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].style.right = 
-            (img_top_banner_9_right - img_top_banner_movement) + "%";
-        }
+        last_mouse_x = e.x;
+        last_mouse_y = e.y;
     }
 
     handleMouseLeaveTopBanner() {
@@ -262,6 +154,29 @@ class HomeHeaderWhite extends Component {
         document.getElementsByClassName("overview-page__top-banner--image-white-8")[0].style.left = img_top_banner_8_left + "%";
         document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].style.bottom = img_top_banner_9_bottom + "%";
         document.getElementsByClassName("overview-page__top-banner--image-white-9")[0].style.right = img_top_banner_9_right + "%";
+        
+        current_img_top_banner_1_top = img_top_banner_1_top;
+        current_img_top_banner_1_left = img_top_banner_1_left;
+        
+        current_img_top_banner_2_top = img_top_banner_2_top;
+        current_img_top_banner_2_left = img_top_banner_2_left;
+        
+        current_img_top_banner_3_bottom = img_top_banner_3_bottom;
+        current_img_top_banner_3_right = img_top_banner_3_right;
+        
+        current_img_top_banner_7_top = img_top_banner_7_top;
+        current_img_top_banner_7_left = img_top_banner_7_left;
+        
+        current_img_top_banner_8_bottom = img_top_banner_8_bottom;
+        current_img_top_banner_8_left = img_top_banner_8_left;
+        
+        current_img_top_banner_9_bottom = img_top_banner_9_bottom;
+        current_img_top_banner_9_right = img_top_banner_9_right;
+
+        last_mouse_x = 0;
+        last_mouse_y = 0;
+        diff_mouse_x = 0;
+        diff_mouse_y = 0;
     }
 
     render() {
