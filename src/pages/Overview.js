@@ -20,33 +20,12 @@ class Overview extends React.Component {
 
   componentDidMount() {
     document.title = 'Tokopedia Unify Design System';
-    this.setHeaderInterval();
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.intervalId);
   }
 
   changeHeader = (page) => {
-    clearInterval(this.intervalId);
     this.setState({
       headerPage: page
     });
-    this.setHeaderInterval();
-  }
-
-  setHeaderInterval = () => {
-    this.intervalId = setInterval(() => {
-      let nextPage = this.state.headerPage + 1;
-      
-      if(nextPage > 4) {
-        nextPage = 1;
-      }
-
-      this.setState({
-        headerPage: nextPage
-      });
-    }, 8000);
   }
 
   render() {

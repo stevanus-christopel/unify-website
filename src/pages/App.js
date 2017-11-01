@@ -46,26 +46,31 @@ class App extends Component {
       return false;
     } else {
       overlay.toggle();
-      
-      if (this.state.isOpen) {
-        this.setState({
-          isOpen: false,
-        });
-        setTimeout(() => {
+
+      setTimeout(() => {
+        
+        if (this.state.isOpen) {
           this.setState({
-            isFinal: true
+            isOpen: false,
           });
-        }, 680);
-      } else {
-        this.setState({
-          isFinal: false,
-        });
-        setTimeout(() => {
+          setTimeout(() => {
+            this.setState({
+              isFinal: true
+            });
+          }, 680);
+        } else {
           this.setState({
-            isOpen: true
+            isFinal: false,
           });
-        }, 5);
-      }
+          setTimeout(() => {
+            this.setState({
+              isOpen: true
+            });
+          }, 5);
+        }
+
+
+      }, 100);
     }
   }
 

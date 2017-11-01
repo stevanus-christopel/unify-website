@@ -26,7 +26,7 @@
   position: fixed;
   overflow-y: auto;
   z-index: 7000;
-  transition: 2000ms $bx--standard-easing;
+  transition: transform 600ms ease, opacity 200ms ease;
 
   @include breakpoint('bp--sm--major') {
     box-shadow: none;
@@ -34,6 +34,7 @@
 
   &__closed {
     transform: translateY(100%);
+    opacity: 0;
     overflow: inherit;
   }
 

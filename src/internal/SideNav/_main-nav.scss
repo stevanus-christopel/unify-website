@@ -54,7 +54,6 @@
     }
 
     &__open {
-
       & > .main-nav-item__heading .main-nav-item__arrow {
         transform: rotate(-180deg);
       }
@@ -74,6 +73,11 @@
         color: $font-color-white;
         opacity: 1;
       }
+    }
+
+    &__image {
+      margin-right: 24px;
+      margin-top: 64px;
     }
   }
 

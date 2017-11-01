@@ -135,6 +135,38 @@ const routes = {
       ],
     },
     {
+      path: 'interactions',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/interactions/overview'),
+      },
+      childRoutes: [
+        {
+          path: '/interactions/:name',
+          getComponent(location, cb) {
+            import('./pages/interactions/Interactions')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+    {
+      path: 'patterns',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/patterns/overview'),
+      },
+      childRoutes: [
+        {
+          path: '/patterns/:name',
+          getComponent(location, cb) {
+            import('./pages/patterns/Patterns')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+    {
       path: 'components',
       indexRoute: {
         onEnter: (nextState, replace) => replace('/components/overview'),
