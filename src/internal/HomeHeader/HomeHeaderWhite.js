@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Letter from '../Letters';
 
 import overview_top_1 from '../../content/overview/images/header-white/overview-top-white-1.png';
 import overview_top_2 from '../../content/overview/images/header-white/overview-top-white-2.png';
@@ -10,7 +9,10 @@ import overview_top_6 from '../../content/overview/images/header-white/overview-
 import overview_top_7 from '../../content/overview/images/header-white/overview-top-white-7.png';
 import overview_top_8 from '../../content/overview/images/header-white/overview-top-white-8.png';
 
-const img_top_banner_movement = 2;
+const backgroundStyle = {
+    backgroundImage: "initial",
+    backgroundColor: "#FFF"
+}
 
 const img_top_banner_1_top = -40;
 var current_img_top_banner_1_top = img_top_banner_1_top;
@@ -81,10 +83,8 @@ class HomeHeaderWhite extends Component {
             diff_mouse_y = (e.y - last_mouse_y) / 16;
         }
 
-        console.log("x: " + diff_mouse_x);
-        console.log("y: " + diff_mouse_y);
-
-        if(diff_mouse_y != 0) {
+        if((diff_mouse_y < 0 && (current_img_top_banner_3_bottom + diff_mouse_y) > -45) ||
+        diff_mouse_y > 0 && (current_img_top_banner_1_top - diff_mouse_y) > -60) {
             current_img_top_banner_1_top = current_img_top_banner_1_top - diff_mouse_y;
             document.getElementsByClassName("overview-page__top-banner--image-white-1")[0].style.top = 
             current_img_top_banner_1_top + "%";
@@ -181,7 +181,7 @@ class HomeHeaderWhite extends Component {
 
     render() {
         return (
-            <div className="overview-page__top">
+            <div className="overview-page__top-section" style={ backgroundStyle }>
                 <div className="overview-page__top-banner" aria-hidden="true">
                     <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-white-1' alt='' src={overview_top_1} />
                     <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-white-2' alt='' src={overview_top_2} />
@@ -192,14 +192,6 @@ class HomeHeaderWhite extends Component {
                     <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-white-7' alt='' src={overview_top_7} />
                     <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-white-8' alt='' src={overview_top_8} />
                     <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-white-9' alt='' src={overview_top_8} />
-            
-                    <div className="overview-page__title">
-                        <Letter letter="U" onClick={() => this.props.onClickChangeHeader(1)}  />
-                        <Letter letter="N" onClick={() => this.props.onClickChangeHeader(2)}  />
-                        <Letter letter="I" onClick={() => this.props.onClickChangeHeader(3)}  />
-                        <Letter letter="F" onClick={() => this.props.onClickChangeHeader(4)}  />
-                        <Letter letter="Y" onClick={() => this.props.onClickChangeHeader(1)}  />
-                    </div>
                 </div>
             </div>
         );

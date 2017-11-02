@@ -44,6 +44,7 @@ class Letter extends Component {
       overview__letter: true,
       'overview__letter--active': this.state.active,
       'overview__letter--hover': this.state.hover,
+      'white': this.props.headerPage != 3,
     });
 
     let html = this.props.letter;

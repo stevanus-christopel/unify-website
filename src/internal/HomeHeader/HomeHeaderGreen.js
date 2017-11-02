@@ -21,7 +21,6 @@ const img_top_banner_3_right = 0;
 var img_top_banner_3_is_hover = false;
 
 const backgroundStyle = {
-    backgroundSize: "cover",
     backgroundImage: "url(" + overview_background + ")"
 }
 
@@ -39,7 +38,6 @@ class HomeHeaderGreen extends Component {
         
         document.getElementsByClassName("overview-page__top")[0].onmousemove = this.handleMouseMoveTopBanner;
         document.getElementsByClassName("overview-page__top")[0].onmouseleave = this.handleMouseLeaveTopBanner;
-        document.getElementsByClassName("overview-page__top")[0].style.backgroundImage = overview_background;
         
         setTimeout(this.showImageAnimate, 2000);
     }
@@ -65,19 +63,11 @@ class HomeHeaderGreen extends Component {
 
     render() {
         return (
-        <div className="overview-page__top" style={ backgroundStyle }>
+        <div className="overview-page__top-section" style={ backgroundStyle }>
             <div className="overview-page__top-banner" aria-hidden="true">
                 <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-green-1' alt='' src={overview_top_1} />
                 <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-green-2' alt='' src={overview_top_2} />
                 <img className='overview-page__top-banner--image-animate overview-page__top-banner--image-green-3' alt='' src={overview_top_3} />
-
-                <div className="overview-page__title">
-                    <Letter letter="U" className="white" onClick={() => this.props.onClickChangeHeader(1)}  />
-                    <Letter letter="N" className="white" onClick={() => this.props.onClickChangeHeader(2)}  />
-                    <Letter letter="I" className="white" onClick={() => this.props.onClickChangeHeader(3)}  />
-                    <Letter letter="F" className="white" onClick={() => this.props.onClickChangeHeader(4)}  />
-                    <Letter letter="Y" className="white" onClick={() => this.props.onClickChangeHeader(1)}  />
-                </div>
             </div>
         </div>
         );

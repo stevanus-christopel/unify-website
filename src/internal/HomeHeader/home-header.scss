@@ -1,21 +1,35 @@
 .overview-page {
     &__top {
-        position: absolute;
-        top: 0;
+        position: relative;
+        height: 240px;
         width: 100%;
-        padding-left: 3%;
-        padding-right: 3%;
         margin: auto;
         overflow: hidden;
         background-color: $font-color-white;
 
-        @include breakpoint('600px') {
-            padding-left: 5%;
-            padding-right: 5%;
+        @include breakpoint('768px') {
+            height: 460px;
         }
-        @include breakpoint('840px') {
-            padding-left: 12.5%;
-            padding-right: 12.5%;
+        
+        @include breakpoint('1600px') {
+            height: 650px;
+        }
+
+        &-section {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+
+            @include breakpoint('600px') {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            @include breakpoint('840px') {
+                padding-left: 12.5%;
+                padding-right: 12.5%;
+            }
         }
 
         &-banner {
@@ -25,9 +39,9 @@
             flex-direction: row;
             align-items: center;
             width: 100%;
-            transition: $transition--base ease;
             overflow: visible;
             box-sizing: border-box;
+            background-size: cover;
             
             @include breakpoint('768px') {
                 height: 460px;
@@ -85,7 +99,7 @@
                         position: absolute;
                         top: -14%;
                         left: 50%;
-                        z-index: 4;
+                        z-index: 12;
                         
                         -webkit-transition: all 3500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
                         -moz-transition: all 3500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -224,7 +238,7 @@
                         position: absolute;
                         bottom: 62%;
                         right: 28%;
-                        z-index: 4;
+                        z-index: 12;
                         
                         -webkit-transition: all 3500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
                         -moz-transition: all 3500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -367,7 +381,7 @@
                         position: absolute;
                         bottom: 22%;
                         left: 32%;
-                        z-index: 4;  
+                        z-index: 12;  
                         
                         -webkit-transition: all 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
                         -moz-transition: all 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -470,7 +484,7 @@
                         position: absolute;
                         top: 8%;
                         left: 20%;  
-                        z-index: 4;
+                        z-index: 12;
                         
                         -webkit-transition: all 800ms ease-out;
                         -moz-transition: all 800ms ease-out;
@@ -487,7 +501,7 @@
                         position: absolute;
                         top: 54%;
                         left: 32%;
-                        z-index: 4;  
+                        z-index: 12;  
                         
                         -webkit-transition: all 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
                         -moz-transition: all 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -508,11 +522,15 @@
     }
     
     &__title {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        z-index: 3;
+        z-index: 11;
     }
     
     &__title--aria {
@@ -524,6 +542,7 @@
     display: inline;
     user-select: none;
     cursor: pointer;
+    z-index: 11;
 
     &.white {
         & span {
@@ -537,8 +556,8 @@
       font-weight: 700;
       font-size: 80px;
       margin: 0 4px;
-      transition: all 250ms cubic-bezier(.8, -.5, .2, 1.8);
       color: #4a4a4a;
+      transition: color 2000ms ease-in-out;
       @include breakpoint('768px') {
         font-size: 160px;
       }
@@ -553,7 +572,6 @@
     svg {
       width: 8vw;
       height: 8vw;
-      transition: all 250ms cubic-bezier(.8, -.5, .2, 1.8);
       visibility: hidden;
       opacity: 0;
       transform: scale(0.1);
@@ -566,7 +584,6 @@
   
     img {
       height: 33.5px;
-      transition: all 250ms cubic-bezier(.8, -.5, .2, 1.8);
       visibility: hidden;
       opacity: 0;
       transform: scale(0.1);

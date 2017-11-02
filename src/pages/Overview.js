@@ -1,12 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { CSSTransitionGroup } from 'react-transition-group'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { 
   HomeHeaderWhite, 
   HomeHeaderGreen,
   HomeHeaderPurple,
   HomeHeaderYellow 
 } from '../internal/HomeHeader';
+import Letter from '../internal/Letters';
+
+const duration = 2000;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+}
+
+const transitionStyles = {
+  entering: { opacity: 0 },
+  entered:  { opacity: 1 },
+};
 
 class Overview extends React.Component {
   
@@ -14,7 +27,8 @@ class Overview extends React.Component {
     super(props);
 
     this.state = {
-      headerPage: 3
+      headerPage: 3,
+      letterClasses: "overview__letter"
     }
   }
 
@@ -35,22 +49,30 @@ class Overview extends React.Component {
 
     return (
       <div>
-        <CSSTransitionGroup
-          transitionName="home-header"
-          transitionEnterTimeout={2000}
-          transitionLeaveTimeout={2000}>
-            <div key={this.state.headerPage}>
+        <div className="overview-page__top">
+          <TransitionGroup>
+            <CSSTransition key={this.state.headerPage} classNames="home-header"
+            timeout={{enter: 2000, exit: 2000}}>
               {
                 this.state.headerPage === 1 ?
-                <HomeHeaderPurple onClickChangeHeader={this.changeHeader} /> :
+                <HomeHeaderPurple /> :
                 this.state.headerPage === 2 ?
-                <HomeHeaderYellow onClickChangeHeader={this.changeHeader} /> :
+                <HomeHeaderYellow /> :
                 this.state.headerPage === 3 ?
-                <HomeHeaderWhite onClickChangeHeader={this.changeHeader} /> :
-                <HomeHeaderGreen onClickChangeHeader={this.changeHeader} />
+                <HomeHeaderWhite /> :
+                <HomeHeaderGreen />
               }
-            </div>
-        </CSSTransitionGroup>
+            </CSSTransition>
+          </TransitionGroup>
+              
+          <div className="overview-page__title">
+              <Letter headerPage={this.state.headerPage} letter="U" onClick={() => this.changeHeader(1)}  />
+              <Letter headerPage={this.state.headerPage} letter="N" onClick={() => this.changeHeader(2)}  />
+              <Letter headerPage={this.state.headerPage} letter="I" onClick={() => this.changeHeader(3)}  />
+              <Letter headerPage={this.state.headerPage} letter="F" onClick={() => this.changeHeader(4)}  />
+              <Letter headerPage={this.state.headerPage} letter="Y" onClick={() => this.changeHeader(1)}  />
+          </div>
+        </div>
 
         <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
           <h1 id="page-title" className="overview-page__title--aria" aria-label="UNIFY Design System">UNIFY Design System</h1>
