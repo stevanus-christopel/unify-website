@@ -70,16 +70,6 @@ class Colors extends React.Component {
             <div className="wrapped-list">
               {this.renderColorCards(ColorList['monochromatic-colors-blue'])}
             </div>
-            <h2>Gradient Colors</h2>
-            <div className="wrapped-list">
-              {this.renderColorCards(ColorList['gradient-colors-green'])}
-            </div>
-            <div className="wrapped-list">
-              {this.renderColorCards(ColorList['gradient-colors-yellow'])}
-            </div>
-            <div className="wrapped-list">
-              {this.renderColorCards(ColorList['gradient-colors-blue'])}
-            </div>
           </div>
         </Tab>
         <Tab href="/style/colors/usage" label="Usage">

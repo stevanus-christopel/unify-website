@@ -8,7 +8,7 @@ import overview_background from '../../content/overview/images/header-green/over
 
 const img_top_banner_movement = 5;
 
-const img_top_banner_1_bottom = 1.2;
+const img_top_banner_1_bottom = 0;
 const img_top_banner_1_left = 0;
 var img_top_banner_1_is_hover = false;
 
@@ -16,7 +16,7 @@ const img_top_banner_2_top = 50;
 const img_top_banner_2_left = 50;
 var img_top_banner_2_is_hover = false;
 
-const img_top_banner_3_bottom = 1.2;
+const img_top_banner_3_bottom = 0;
 const img_top_banner_3_right = 0;
 var img_top_banner_3_is_hover = false;
 

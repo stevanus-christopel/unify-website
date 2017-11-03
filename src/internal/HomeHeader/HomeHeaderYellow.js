@@ -8,7 +8,7 @@ import overview_background from '../../content/overview/images/header-yellow/ove
 const img_top_banner_movement = 5;
 
 const img_top_banner_1_top = 8;
-const img_top_banner_1_left = 17;
+const img_top_banner_1_left = 14;
 var img_top_banner_1_is_hover = false;
 
 const img_top_banner_2_top = 54;

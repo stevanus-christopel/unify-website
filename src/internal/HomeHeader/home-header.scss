@@ -42,6 +42,7 @@
             overflow: visible;
             box-sizing: border-box;
             background-size: cover;
+            overflow: hidden;
             
             @include breakpoint('768px') {
                 height: 460px;
@@ -259,7 +260,7 @@
                     &-1 {    
                         height: 75%;
                         position: absolute;
-                        bottom: 1.2;
+                        bottom: 0;
                         left: 0;
                         
                         -webkit-transition: all 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -297,7 +298,7 @@
                     &-3 {
                         height: 60%;
                         position: absolute;
-                        bottom: 1.2;
+                        bottom: 0;
                         right: 0;   
                         
                         -webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -382,11 +383,12 @@
                         bottom: 22%;
                         left: 32%;
                         z-index: 12;  
-                        
-                        -webkit-transition: all 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                        -moz-transition: all 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                        -o-transition: all 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                        transition: all 1500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                        animation: flying_object_bottom 4000ms infinite linear;
+
+                        transition: 
+                        top 1500ms ease-in-out,
+                        left 1500ms ease-in-out,
+                        transform 1500ms ease-in-out;
                         
                         /* hidden state */
                         transform: translate(-200px,200px);
@@ -483,7 +485,7 @@
                         height: 46%;
                         position: absolute;
                         top: 8%;
-                        left: 20%;  
+                        left: 14%;  
                         z-index: 12;
                         
                         -webkit-transition: all 800ms ease-out;
@@ -502,11 +504,12 @@
                         top: 54%;
                         left: 32%;
                         z-index: 12;  
-                        
-                        -webkit-transition: all 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                        -moz-transition: all 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                        -o-transition: all 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                        transition: all 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                        animation: flying_object_top 4000ms infinite linear;
+
+                        transition: 
+                        top 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                        left 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                        transform 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
                         
                         /* hidden state */
                         transform: translate(-50px, 100px);
@@ -623,6 +626,10 @@
       animation: rock 350ms infinite forwards linear 250ms, pop 250ms 1;
     }
 }
+
+/*
+    Keyframes
+*/
   
 @keyframes rock {
     0%,
@@ -646,4 +653,39 @@
         transform: scale(1.05);
     }
 }
-  
+
+@keyframes flying_object_top {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: 10px;
+    }
+    50% {
+        margin-top: 0;
+    }
+    75% {
+        margin-top: -10px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes flying_object_bottom {
+    0% {
+        margin-bottom: 0;
+    }
+    25% {
+        margin-bottom: 10px;
+    }
+    50% {
+        margin-bottom: 0;
+    }
+    75% {
+        margin-bottom: -10px;
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}
