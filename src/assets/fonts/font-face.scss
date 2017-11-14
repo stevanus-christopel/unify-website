@@ -3,7 +3,7 @@ $font-path: '.' !default; // Default font directory, allow user override
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'UNIFY';
   font-style: normal;
   font-weight: 200;
   src: url('#{$font-path}/Mark Simonson - Proxima Nova ScOsf Thin-webfont.eot'),
@@ -15,7 +15,7 @@ $font-path: '.' !default; // Default font directory, allow user override
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'UNIFY';
   font-style: normal;
   font-weight: 400;
   src: url('#{$font-path}/Mark Simonson - Proxima Nova Alt Regular-webfont.eot'),
@@ -27,7 +27,7 @@ $font-path: '.' !default; // Default font directory, allow user override
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'UNIFY';
   font-style: normal;
   font-weight: 600;
   src: url('#{$font-path}/Mark Simonson - Proxima Nova Semibold-webfont.eot'),
@@ -39,7 +39,7 @@ $font-path: '.' !default; // Default font directory, allow user override
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'UNIFY';
   font-style: normal;
   font-weight: 700;
   src: url('#{$font-path}/Mark Simonson - Proxima Nova Alt Bold-webfont.eot'),
@@ -51,7 +51,7 @@ $font-path: '.' !default; // Default font directory, allow user override
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
+  font-family: 'UNIFY';
   font-style: normal;
   font-weight: 900;
   src: url('#{$font-path}/Mark Simonson - Proxima Nova Alt Black-webfont.eot'),

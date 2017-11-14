@@ -10,6 +10,11 @@ import SiteNavStructure from '../../data/site-nav-structure.json';
 import SideNavItem from '../SideNavItem/SideNavItem';
 import GlobalSearch from '../GlobalSearch/GlobalSearch';
 
+import iconTriangle from './images/triangle.svg';
+import iconGithub from './images/github.svg';
+import iconSketch from './images/sketch.svg';
+import iconSearch from './images/search.svg';
+
 class SideNav extends Component {
   static propTypes = {
     isOpen: PropTypes.bool,
@@ -144,6 +149,10 @@ class SideNav extends Component {
             onMouseLeave={this.handleMouseLeave}
           >
             {navItemObj.title}
+            {
+              navItemObj.children.length > 0 &&
+              <img className="main-nav-item__heading--hover" alt='' src={iconTriangle} />
+            }
           </Link>
         </SideNavItem>
       );
@@ -311,6 +320,10 @@ class SideNav extends Component {
       >
         <div className="side-nav__column"></div>
         <div className="side-nav__column">
+          <div className="side-nav__search">
+            <input className="side-nav__search-txt" type="text" placeholder="Type for Search..."
+            style={ {backgroundImage: "url(" + iconSearch + ")" } } />
+          </div>
           <div className={bottomClasses}>
             <ul
               role="menu"
@@ -319,11 +332,41 @@ class SideNav extends Component {
             >
               {navItems}
             </ul>
+            <div className="side-nav__button-container">
+              <a href="#" className="side-nav__button">
+                <img alt='' src={iconGithub} className="side-nav__button--icon" />
+                GitHub Repo
+                <span>&#8594;</span>
+              </a>
+              <a href="#" className="side-nav__button">
+                <img alt='' src={iconSketch} className="side-nav__button--icon" />
+                Sketch File
+                <span>&#8594;</span>
+              </a>
+            </div>
           </div>
         </div>
         <div className="side-nav__column"></div>
-        <div className="side-nav__column"></div>
-        <div className="side-nav__column"></div>
+        <div className="side-nav__column">
+          <ul className="main-nav-item__children">
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+          </ul>
+        </div>
+        <div className="side-nav__column">
+          <ul className="main-nav-item__children">
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+          </ul>
+        </div>
         <div className="side-nav__column"></div>
 
         {/*<div className="side-nav__top-container">

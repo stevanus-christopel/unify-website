@@ -1,17 +1,38 @@
 {
   "": {
-    "title": "Home"
+    "title": "Home",
+    "children": []
   },
   "components": {
-    "title": "Components"
+    "title": "Components",
+    "children": [
+      {
+        "title": "Buttons"
+      }
+    ]
   },
   "style": {
-    "title": "Styles"
+    "title": "Styles",
+    "children": [
+      {
+        "title": "Copywriting"
+      }
+    ]
   },
   "interactions": {
-    "title": "Interactions"
+    "title": "Interactions",
+    "children": [
+      {
+        "title": "Sound"
+      }
+    ]
   },
   "patterns": {
-    "title": "Patterns"
+    "title": "Patterns",
+    "children": [
+      {
+        "title": "Patterns"
+      }
+    ]
   }
 }
