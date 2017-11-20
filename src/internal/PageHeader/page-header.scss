@@ -1,6 +1,6 @@
 .page-header {
   @include grid-padding;
-  height: rem(232px);
+  height: rem(224px);
   background-color: $color-green;
   display: flex;
   flex-direction: column;
@@ -8,41 +8,46 @@
   justify-content: flex-start;
   border-bottom: 1px solid $border-color;
   padding-bottom: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include breakpoint('768px') {
     padding-bottom: 0;
+    height: rem(300px);
   }
 
   &__label {
-    @include font-size('24');
+    font-size: 18px;
     color: $font-color-white;
     text-transform: capitalize;
     line-height: 1;
-    margin: 4rem 0 1.25rem;
+    margin: 0 0 1.25rem;
+    margin-top: 48px;
+    margin-bottom: 8px;
+    margin-left: 52px;
     white-space: nowrap;
-
-    @include breakpoint('500px') {
-      @include font-size('16');
-      margin-bottom: 1rem;
-      margin-top: 3rem;
+    
+    @include breakpoint('768px') {
+      margin-top: 72px;
+      margin-bottom: 0;
+      margin-left: 0;
+      font-size: 24px;
     }
   }
 
   &__title {
-    font-size: rem(32px);
+    font-size: 40px;
     color: $font-color-white;
     text-transform: capitalize;
     font-weight: 700;
-    margin: -1.15rem 0 0 -3px;
+    margin: 0 0 0 -3px;
+    margin-left: 52px;
     padding: 0;
     transition: $transition--base $bx--standard-easing;
-
-    @include breakpoint('500px') {
-      font-size: rem(52px);
-    }
-
-    @include breakpoint('840px') {
-      font-size: rem(66px);
+    
+    @include breakpoint('768px') {
+      font-size: 64px;
+      margin-left: 0;
     }
   }
 }

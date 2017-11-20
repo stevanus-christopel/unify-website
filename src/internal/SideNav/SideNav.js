@@ -13,7 +13,7 @@ import GlobalSearch from '../GlobalSearch/GlobalSearch';
 import iconTriangle from './images/triangle.svg';
 import iconGithub from './images/github.svg';
 import iconSketch from './images/sketch.svg';
-import iconSearch from './images/search.svg';
+import iconSearch from './images/search-main-menu.svg';
 
 class SideNav extends Component {
   static propTypes = {

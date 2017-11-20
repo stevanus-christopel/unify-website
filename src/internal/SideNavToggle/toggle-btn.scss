@@ -53,7 +53,7 @@ $anim_time: 1s;
 
 .side-nav__toggle-btn {
   position: fixed;
-  top: 4rem;
+  top: 48px;
   left: 16.5%;
   width: 44px;
   height: 44px;
@@ -68,8 +68,8 @@ $anim_time: 1s;
   z-index: 7001;
   overflow: hidden;
 
-  @include breakpoint('500px') {
-    top: 3rem;
+  @include breakpoint('768px') {
+    top: 72px;
   }
 
   & .line {
