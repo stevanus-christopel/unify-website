@@ -1,7 +1,7 @@
 .page-header {
   @include grid-padding;
-  height: rem(196px);
-  background-color: $color__gray-3;
+  height: rem(232px);
+  background-color: $color-green;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -14,11 +14,10 @@
   }
 
   &__label {
-    @include font-size('14');
-    color: $color__navy-gray-6;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 2px;
+    @include font-size('24');
+    color: $font-color-white;
+    text-transform: capitalize;
+    line-height: 1;
     margin: 4rem 0 1.25rem;
     white-space: nowrap;
 
@@ -31,7 +30,7 @@
 
   &__title {
     font-size: rem(32px);
-    color: $color__blue-90;
+    color: $font-color-white;
     text-transform: capitalize;
     font-weight: 700;
     margin: -1.15rem 0 0 -3px;

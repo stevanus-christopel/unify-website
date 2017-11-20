@@ -36,7 +36,7 @@ main[data-page|=components-code]{
   }
 
   table {
-    max-width: 45rem;
+    max-width: 100%;
   }
 
   table tr td:nth-child(2):not(:last-child) {
@@ -59,7 +59,7 @@ main[data-page|=components-code]{
 main[data-page='components-code-button'] {
   .page_md {
     table tr td:nth-child(3) {
-      white-space: nowrap;
+      white-space: initial;
     }
     
     table tr td:nth-child(2) {

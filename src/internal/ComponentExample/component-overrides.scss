@@ -196,14 +196,6 @@
   }
 }
 
-.page-header + div > .bx--tabs {
-  background-color: $field-01;
-
-  @include breakpoint('768px') {
-    background-color: transparent;
-  }
-}
-
 .bx--overflow-menu-options {
   z-index: 7000;
 }

@@ -1,7 +1,8 @@
 .page-tabs {
   @include grid-margins;
-  margin-top: -3.5rem;
+  margin-top: -2.5rem;
   width: auto;
+  background-color: transparent;
 
   .bx--tabs--hidden {
     display: none;
@@ -12,43 +13,48 @@
   }
 
   .bx--tabs__trigger {
-    background-color: rgba(61, 112, 178, .1);
-
     &-text,
     svg {
-      color: $color__blue-90;
-      fill: $color__blue-51;
+      color: $color__white;
+      fill: $color__white;
     }
   }
 
   .bx--tabs__nav {
     @include layer('overlay');
     z-index: 5;
+    background-color: $font-color-white;
+    border-radius: 8px 8px 0 0;
+    
+    @include breakpoint('768px') {
+      width: 90%;
+    }
+
+    @include breakpoint('840px') {
+      width: 75%;
+    }
   }
 
   @include breakpoint('768px') {
     @include grid-padding;
-    background-color: transparent;
     margin: -2.95rem 0 0 0;
 
     .bx--tabs__nav {
       margin: 0;
+      margin-top: -8px;
       box-shadow: none;
     }
 
     .bx--tabs__nav-item {
       padding: 0;
+      margin: 8px 32px;
+      margin-right: 8px;
+      margin-bottom: 0;
 
       .bx--tabs__nav-link {
         font-size: 1rem;
-        padding: .75rem 0 1rem;
-        color: $color__blue-90;
-      }
-
-      &:hover {
-        .bx--tabs__nav-link {
-          color: $color-green;
-        }
+        padding: .75rem 24px 1rem;
+        color: $font-color-black-disabled;
       }
 
       &.bx--tabs--selected {
@@ -57,6 +63,10 @@
 
       &--selected {
         border-bottom: 2px solid $color-green !important;
+
+        & .bx--tabs__nav-link {
+          color: $color-green;
+        }
       }
     }
   }

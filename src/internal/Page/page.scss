@@ -14,15 +14,21 @@ td {position: relative;}
 //--------------------
 
 .page {
-  margin: 4rem 3% 0;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 3% 0;
   padding-bottom: 5rem;
+  background-color: $font-color-white;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
 
   @include breakpoint('600px') {
-    margin: 4rem 5% 0;
+    margin: 0 5% 0;
   }
 
   @include breakpoint('840px') {
-    margin: 4rem 12.5% 0;
+    margin: 0 12.5% 0;
   }
 
   .page__sub-heading {
@@ -47,7 +53,7 @@ td {position: relative;}
 
   .page__desc {
     @include font-smoothing;
-    max-width: 38rem;
+    max-width: 100%;
     color: $color__blue-90;
     word-wrap: break-word;
     font-size: 1.125rem;

@@ -34,6 +34,13 @@ body {
   justify-content: space-between;
 
   main {
+    background-color: #F8F8F8;
+
+    &.overview-page,
+    &.introduction-page {
+      background-color: $font-color-white;
+    }
+
     &:focus {
       outline: none;
     }
