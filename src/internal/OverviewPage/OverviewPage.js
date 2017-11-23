@@ -56,7 +56,7 @@ class OverviewPage extends Component {
         name: 'Button',
         img: require('./images/Button.svg'),
         link: '/components/button'
-      },
+      }/*,
       {
         name: 'Card',
         img: require('./images/Card.svg'),
@@ -221,7 +221,7 @@ class OverviewPage extends Component {
         name: 'Tooltip',
         img: require('./images/Tooltip.svg'),
         link: '/components/tooltip'
-      }
+      }*/
     ];
     let key = 0;
     const componentTemplate = componentData.map(component => {

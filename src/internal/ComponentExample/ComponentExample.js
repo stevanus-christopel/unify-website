@@ -7,6 +7,7 @@ import CodeExample from '../CodeExample/CodeExample';
 class ComponentExample extends Component {
   static propTypes = {
     htmlFile: PropTypes.string,
+    htmlFile: PropTypes.any,
     component: PropTypes.string,
     variation: PropTypes.string,
   };
@@ -27,20 +28,34 @@ class ComponentExample extends Component {
     const componentLink = component === 'detail-page-header'
       ? `/components/${variation}/live`
       : `/components/${component}/live`;
+    
+    let codeFile;
+
+    try{
+      if(variation != null) {
+        codeFile = require(`../../content/components/${component}/code/${variation}.js`).default;
+      } else {
+        codeFile = require(`../../content/components/${component}/code/${component}.js`).default;
+      }
+    } catch (error) {
+      console.log(error);
+    }
 
     return (
       <div className={lightUIclassnames}>
         <div className="svg--sprite" aria-hidden="true" />
         <div className="component-example__live">
           <div className={classNames}>
-            <div dangerouslySetInnerHTML={{ __html: htmlFile }} />
+            {
+              codeFile
+            }
           </div>
-          <Link
+          {/*<Link
             className="component-example__view-full-render"
             to={componentLink}
           >
             View full render
-          </Link>
+          </Link>*/}
         </div>
         <CodeExample htmlFile={htmlFile} />
       </div>

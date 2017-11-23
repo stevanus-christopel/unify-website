@@ -66,8 +66,15 @@
 
       .bx--tabs__nav-link {
         font-size: 20px;
+        line-height: 1.2;
         padding: 30px 48px;
         color: $font-color-black-disabled;
+
+        &:focus {
+          outline: none;
+          box-shadow: initial;
+          border: none;
+        }
       }
 
       &--selected {

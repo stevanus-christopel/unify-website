@@ -6,6 +6,7 @@ import ComponentExample from '../ComponentExample/ComponentExample';
 class CodePage extends Component {
   static propTypes = {
     component: PropTypes.string,
+    type: PropTypes.string,
   };
 
   componentDidMount() {
@@ -41,7 +42,7 @@ class CodePage extends Component {
   }
 
   renderVariation = (parent, variation, title) => {
-    let htmlFile;
+    let htmlFile, codeFile;
     if (parent === 'text-input' && variation === 'text-area') {
       htmlFile = require('carbon-components/src/components/text-area/text-area.html');
     } else if (parent === 'data-table' && variation === 'toolbar') {
@@ -49,7 +50,7 @@ class CodePage extends Component {
     } else if (parent === 'date-picker' && variation === 'time-picker') {
       htmlFile = require('carbon-components/src/components/time-picker/time-picker.html');
     } else {
-      htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
+      htmlFile = require(`../../content/components/${parent}/${this.props.type}/${variation}.html`);
     }
 
     if (parent === 'card') {
@@ -72,8 +73,9 @@ class CodePage extends Component {
   renderJavascriptContent = component => {
     let javascriptSection;
     try {
-      javascriptSection = require(`carbon-components/src/components/${component}/README.md`);
+      javascriptSection = require(`../../content/components/${component}/${this.props.type}/README.md`);
     } catch (e) {
+      console.log(e);
       javascriptSection = '';
     }
     return javascriptSection;
@@ -116,12 +118,15 @@ class CodePage extends Component {
 
     return (
       <div className="page code-page test">
-        <p
-          className="page__desc"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+        {
+          description &&
+          <p
+            className="page__desc"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+        }
         {componentContent}
-        {javascriptContent}
+        { javascriptContent }
       </div>
     );
   }

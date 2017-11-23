@@ -16,7 +16,7 @@ class ComponentPage extends Component {
   };
 
   getCurrentTab = () => {
-    const tabs = ['code', 'usage', 'style'];
+    const tabs = ['design', 'code', 'code-rn'];
     return tabs.indexOf(this.props.params.page);
   };
 
@@ -40,8 +40,7 @@ class ComponentPage extends Component {
     const componentTitle =
       currentComponent.replace(/-/g, ' ').charAt(0).toUpperCase() +
       currentComponent.replace(/-/g, ' ').substring(1);
-    const usage = require(`../../content/components/${currentComponent}/usage.md`);
-    const style = require(`../../content/components/${currentComponent}/style.md`);
+    const design = require(`../../content/components/${currentComponent}/design.md`);
 
     let hasCodePage;
     try {
@@ -50,9 +49,7 @@ class ComponentPage extends Component {
     } catch (err) {
       hasCodePage = false;
     }
-    const codePageContent = hasCodePage
-      ? <CodePage component={currentComponent} />
-      : '';
+    
     const content = (
       <Tabs
         key={params.name}
@@ -60,25 +57,33 @@ class ComponentPage extends Component {
         selected={this.getCurrentTab()}
       >
         <Tab
+          href={`/components/${currentComponent}/design`}
+          label="Design"
+          onClick={this.updateTab}
+        >
+          <MarkdownPage content={design} />
+        </Tab>
+        <Tab
           href={`/components/${currentComponent}/code`}
-          label="Code"
+          label="React"
           onClick={this.updateTab}
         >
-          {codePageContent}
+          {
+            hasCodePage
+            ? <CodePage component={currentComponent} type="code" />
+            : ''
+          }
         </Tab>
         <Tab
-          href={`/components/${currentComponent}/usage`}
-          label="Usage"
+          href={`/components/${currentComponent}/code-rn`}
+          label="React Native"
           onClick={this.updateTab}
         >
-          <MarkdownPage content={usage} />
-        </Tab>
-        <Tab
-          href={`/components/${currentComponent}/style`}
-          label="Style"
-          onClick={this.updateTab}
-        >
-          <MarkdownPage content={style} />
+          {
+            hasCodePage
+            ? <CodePage component={currentComponent} type="code-rn" />
+            : ''
+          }
         </Tab>
       </Tabs>
     );

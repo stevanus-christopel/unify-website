@@ -64,7 +64,7 @@ td {position: relative;}
     letter-spacing: 0;
 
     span {
-      color: $color__blue-40;
+      color: $color-green;
     }
   }
 
@@ -94,10 +94,10 @@ td {position: relative;}
       display: flex;
       align-items: center;
       color: $color__blue-90;
-      margin-top: 6rem;
+      margin-top: 4rem;
       font-weight: 600;
       font-size: rem(26px);
-      padding: 1rem 0 3rem;
+      padding: 1rem 0;
 
 
       &:focus {
@@ -129,17 +129,6 @@ td {position: relative;}
           opacity: 1;
           outline: 1px solid $brand-01;
         }
-      }
-
-      &:before {
-        content: '';
-        width: 5rem;
-        height: .3rem;
-        display: block;
-        background-color: $color-green;
-        position: absolute;
-        top: -.5rem;
-        left: 0;
       }
 
       & + h3 {

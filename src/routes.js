@@ -177,7 +177,7 @@ const routes = {
           indexRoute: {
             onEnter: (nextState, replace) => {
               if (!(nextState.params.name === 'overview')) {
-                replace(`/components/${nextState.params.name}/code`)
+                replace(`/components/${nextState.params.name}/design`)
               }
             },
           },
