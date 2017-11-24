@@ -1,53 +1,28 @@
-### SCSS
+### Usage
 
-#### Mixins
-
-Mixins specific to button are located in [src/components/button/_mixins.scss]().
-
-| Name         | Params                                                         | Description                                                                            |
-|--------------|----------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| button-base  |                                                                | Base styles used in every button. Used in `@mixin button-theme` by default             |
-| button-theme | bg-color, border-color, font-color, hover-bg-color, icon-color | Used to create variant styles for a button (Variations like, primary, secondary, etc.) |
+1. Install **unify-react-mobile** by running `yarn add unify-react-native` or `npm install unify-react-native` on your project.
+2. Use `import { Button } from 'unify-react-native'` on top of your code.
+3. Code your `<Button />` component based on your requirement with modifiers & props below.
 
 
-#### Modifiers
 
-Use these modifiers with `.bx--btn` class.
+### Styles
 
-| Selector            | Description                                   |
-|---------------------|-----------------------------------------------|
-| .bx--btn--primary   | Selector for applying primary button styles   |
-| .bx--btn--secondary | Selector for applying secondary button styles |
-| .bx--btn--danger    | Selector for applying danger button styles    |
-| .bx--btn--sm        | Selector for applying small button styles     |
+#### Props
 
+Use these props on each `<Button />` component. The bold one in Value section is the default value.
 
-### FAQ
-
-#### Using icons with buttons
-
-All buttons can use icons. It's recommended to inline SVG icons when possible.
-Simply add the appropriate `<svg>` to the button HTML with the `bx--btn__icon` class.
-You can also include `<title>` for better accessibility to describe what the button does.
-
-```html
-<button class="bx--btn bx--btn--secondary" type="button">
-  Secondary
-  <svg class="bx--btn__icon" width="16" height="16" viewBox="0 0 16 16" fill-rule="evenodd">
-    <title>add a new connection to your instance</title>
-    <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 9H9v3H7V9H4V7h3V4h2v3h3v2z"></path>
-  </svg>
-</button>
-```
-
-Be aware that only `--glyph` icons should be used with buttons.
-Here's an example using `carbon-icons.svg`.
-
-```html
-<button class="bx--btn bx--btn--secondary" type="button">
-  Secondary
-  <svg class="bx--btn__icon">
-    <use xlink:href="/carbon-icons/carbon-icons.svg#add--glyph"></use>
-  </svg>
-</button>
-```
+| Props            | Description                         | Type            | Value
+|---------------------|----------------------------------|-----------------|---------------------|
+| className   | Props for applying custom classes   | string            | **""**
+| primary   | Props for making primary button styles   | bool            | **false**, true
+| secondary   | Props for making secondary button styles   | bool            | **false**, true
+| disabled   | Props for making disabled button styles   | bool            | **false**, true
+| large   | Props for making large button styles   | bool            | **false**, true
+| medium   | Props for making medium button styles   | bool            | **false**, true
+| small   | Props for making small button styles   | bool            | **false**, true
+| floating   | Props for making floating button styles   | bool            | **false**, true
+| block   | Props for making block button styles   | bool            | **false**, true
+| image   | Props for adding icon to button   | string            | **""**, url
+| onPress   | Props for adding press function to button   | func            | -
+| children   | Props for give button text   | string            | **""**

@@ -1,12 +1,21 @@
 import React from 'react';
 import { Button } from 'unify-react-mobile';
 
+import image from '../images/social.svg'
+
 const ComponentDemo = (
     <div>
-        <Button className="btn--primary btn--small">Primary Small</Button>
-        <Button className="btn--primary btn--medium">Primary Medium</Button>
-        <Button className="btn--primary btn--large">Primary Large</Button>
-        <Button className="btn--primary btn--block">Primary Block</Button>
+        <div>
+            <Button primary small>Primary Small</Button>
+            &nbsp;&nbsp;
+            <Button primary medium>Primary Medium</Button>
+            &nbsp;&nbsp;
+            <Button primary large>Primary Large</Button>
+        </div>
+        <br />
+        <Button primary block>Primary Block</Button>
+        <br />
+        <Button primary block image={image}>Primary Block with Image</Button>
     </div>
 )
 

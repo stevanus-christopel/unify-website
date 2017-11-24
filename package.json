@@ -88,7 +88,7 @@
     "react-dom": "^15.4.2",
     "react-router": "^3.0.0",
     "react-transition-group": "^2.2.1",
-    "unify-react-mobile": "^0.0.5"
+    "unify-react-mobile": "^0.0.9"
   },
   "scripts": {
     "dev": "npm run front-matter && node scripts/start.js",

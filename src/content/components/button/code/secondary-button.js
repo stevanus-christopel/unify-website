@@ -1,12 +1,21 @@
 import React from 'react';
 import { Button } from 'unify-react-mobile';
 
+import image from '../images/mail.svg'
+
 const ComponentDemo = (
     <div>
-        <Button className="btn--secondary btn--small">Secondary Small</Button>
-        <Button className="btn--secondary btn--medium">Secondary Medium</Button>
-        <Button className="btn--secondary btn--large">Secondary Large</Button>
-        <Button className="btn--secondary btn--block">Secondary Block</Button>
+        <div>
+            <Button secondary small>Secondary Small</Button>
+            &nbsp;&nbsp;
+            <Button secondary medium>Secondary Medium</Button>
+            &nbsp;&nbsp;
+            <Button secondary large>Secondary Large</Button>
+        </div>
+        <br />
+        <Button secondary block>Secondary Block</Button>
+        <br />
+        <Button secondary block image={image}>Secondary Block with Image</Button>
     </div>
 )
 

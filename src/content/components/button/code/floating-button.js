@@ -3,7 +3,7 @@ import { Button } from 'unify-react-mobile';
 
 const ComponentDemo = (
     <div>
-        <Button floating={true}>Floating Button</Button>
+        <Button floating primary>Floating Button</Button>
     </div>
 )
 
