@@ -43,6 +43,16 @@ class OverviewPage extends Component {
 
     const componentData = [
       {
+        name: 'Button',
+        img: require('./images/Button.svg'),
+        link: '/components/button'
+      },
+      {
+        name: 'Toaster',
+        img: require('./images/Toaster.svg'),
+        link: '/components/toaster'
+      }/*,
+      {
         name: 'Accordion',
         img: require('./images/Accordion.svg'),
         link: '/components/accordion'
@@ -52,11 +62,6 @@ class OverviewPage extends Component {
         img: require('./images/Breadcrumb.svg'),
         link: '/components/breadcrumb'
       },
-      {
-        name: 'Button',
-        img: require('./images/Button.svg'),
-        link: '/components/button'
-      }/*,
       {
         name: 'Card',
         img: require('./images/Card.svg'),

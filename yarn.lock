@@ -8177,9 +8177,9 @@ unicons@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/unicons/-/unicons-0.0.3.tgz#6e6a7a1a6eaebb01ca3d8b12ad9687279eaba524"
 
-unify-react-mobile@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/unify-react-mobile/-/unify-react-mobile-0.0.9.tgz#dc36f0ab2be89d661e43fcf2a23b5f78babf3521"
+unify-react-mobile@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/unify-react-mobile/-/unify-react-mobile-0.0.10.tgz#73c303701735de006e50decfe79ac709726252dc"
   dependencies:
     babel-cli "^6.26.0"
     babel-core "^6.26.0"

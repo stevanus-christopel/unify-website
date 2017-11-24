@@ -1,11 +1,11 @@
 ---
 variations:
   primary-button:
-  - Primary button
+  - Primary Button
   secondary-button:
-  - Secondary button
+  - Secondary Button
   disabled-button:
-  - Disabled button
+  - Disabled Button
   floating-button:
-  - Floating button
+  - Floating Button
 ---
