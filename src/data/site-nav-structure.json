@@ -31,10 +31,12 @@
         "title": "Copywriting"
       },
       {
-        "title": "Spacing"
+        "title": "Spacing",
+        "url": "/style/spacing"
       },
       {
-        "title": "Colors"
+        "title": "Colors",
+        "url": "/style/colors"
       },
       {
         "title": "Font"
