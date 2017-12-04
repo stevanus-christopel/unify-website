@@ -15,9 +15,33 @@
 
   .main-nav-item {
     padding: .225rem 0;
+    
+    &.no-hover {
+      opacity: 0.1;
+    }
 
     &:hover {
       color: $font-color-white;
+      opacity: 1;
+
+      & .main-nav-item__children--small {
+        max-height: 400px !important;
+      }
+    }
+    
+    &__active {
+      color: #27782C;
+      text-shadow: -1px -1px 0 $font-color-white, 1px -1px 0 $font-color-white, 
+      -1px 1px 0 $font-color-white, 1px 1px 0 $font-color-white;
+      opacity: 1;
+
+      &.no-hover {
+        opacity: 1;
+      }
+
+      &:hover {
+        color: $font-color-white;
+      }
     }
 
     &__heading {
@@ -49,8 +73,10 @@
         margin-top: 8px;
       }
 
-      &:hover .main-nav-item__heading--hover {
-        display: block;
+      @include breakpoint('1280px') {
+        &:hover .main-nav-item__heading--hover {
+          display: block;
+        }
       }
       
       @include breakpoint('600px') {
@@ -72,13 +98,9 @@
       }
       
       @include breakpoint('1600px') {
-        font-size: 80px;
-        line-height: 90px;
+        font-size: 76px;
+        line-height: 86px;
         left: -8px;
-      }
-
-      &.no-hover {
-        opacity: 0.1;
       }
     }
 
@@ -92,22 +114,6 @@
     &__open {
       & > .main-nav-item__heading .main-nav-item__arrow {
         transform: rotate(-180deg);
-      }
-    }
-
-    &__active {
-      .main-nav-item__heading {
-        color: #27782C;
-        text-shadow: -1px -1px 0 $font-color-white, 1px -1px 0 $font-color-white, 
-        -1px 1px 0 $font-color-white, 1px 1px 0 $font-color-white;
-        opacity: 1;
-      }
-    }
-
-    &:hover {
-      .main-nav-item__heading {
-        color: $font-color-white;
-        opacity: 1;
       }
     }
 
@@ -146,11 +152,33 @@
 .main-nav-item__children {
     margin-top: 150px;
 
-    & li {
-      font-size: 24px;
-      line-height: 48px;
+    & li a {
+      display: none;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 40px;
       letter-spacing: 0.8px;
-      color: transparent; //test
+      color: $font-color-white;
+      text-decoration: initial;
+      margin-left: 4px;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      
+      @include breakpoint('1280px') {
+        display: block;
+      }
+      
+      @include breakpoint('1340px') {
+        font-size: 20px;
+        line-height: 48px;
+      }
+      
+      @include breakpoint('1600px') {
+        font-size: 24px;
+      }
     }
   
     @include breakpoint('500px') {
@@ -159,6 +187,47 @@
     
     @include breakpoint('1000px') {
       margin-top: 240px;
+    }
+
+    &--small {
+      display: block;
+      width: 200%;
+      padding: 0 0 8px;
+      box-sizing: border-box;
+      overflow: hidden;
+      max-height: 0 !important;
+      transition: max-height 0.8s ease-in-out;
+      
+      @include breakpoint('1280px') {
+        display: none;
+      }
+
+      & li { 
+        display: inline-block;
+        width: 100%;
+        
+        @include breakpoint('360px') {
+          width: 50%;
+        }
+        
+        @include breakpoint('680px') {
+          width: 25%;
+        }
+
+        & a {
+          color: $font-color-white;
+          font-size: 18px;
+          line-height: 36px;
+          text-decoration: initial;
+          font-weight: normal;
+          text-shadow: initial;
+
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
     }
 }
 

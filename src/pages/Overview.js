@@ -8,6 +8,7 @@ import {
   HomeHeaderYellow 
 } from '../internal/HomeHeader';
 import Letter from '../internal/Letters';
+import LiquidButton from '../internal/LiquidButton';
 
 const duration = 2000;
 
@@ -34,6 +35,10 @@ class Overview extends React.Component {
 
   componentDidMount() {
     document.title = 'Tokopedia Unify Design System';
+    const liquidButtons = document.querySelectorAll('.btn--liquid')
+    for (let button of liquidButtons) {
+      new LiquidButton(button)
+    }
   }
 
   changeHeader = (page) => {
@@ -86,10 +91,15 @@ class Overview extends React.Component {
                 <p className="overview-page__main-intro--text-secondary">We created this styleguide to act as a central location where we house a live inventory of UI components, brand guidelines, brand assets, code snippets, developer guidelines and more. Anyone working on the Tokopedia product is encouraged to stay familiar with this styleguide and help ensure that it is kept up-to-date.</p>
                 <Link
                   tabIndex="0"
-                  className="overview-page__main-intro--link"
                   to="introduction"
                 >
-                  Introduction
+                  <button className="btn--liquid"
+                  data-placeholder="Introduction"
+                  data-textstyle="fill: #FFFFFF; font-size: 17px;"
+                  data-basecolor="#FFC107"
+                  data-gradient="#42B549, #42B549">
+                    <svg></svg>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -106,7 +116,7 @@ class Overview extends React.Component {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla profecto est, quin suam vim retineat a primo ad extremum.
                   </p>
                   <a
-                    href="https://github.com/carbon-design-system/carbon-design-kit"
+                    href="https://drive.google.com/drive/folders/0AFAID-GJ_Se0Uk9PVA"
                     className="overview-page__tile--link"
                     target="_blank"
                     onClick={() => this.handleClick('Design Kit')}
@@ -129,7 +139,7 @@ class Overview extends React.Component {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla profecto est, quin suam vim retineat a primo ad extremum.
                   </p>
                   <a
-                    href="https://github.com/carbon-design-system/carbon-components"
+                    href="https://github.com/tokopedia/unify-react-mobile"
                     className="overview-page__tile--link"
                     target="_blank"
                     onClick={() => this.handleClick('Developer Kit')}

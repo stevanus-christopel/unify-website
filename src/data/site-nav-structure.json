@@ -1,37 +1,73 @@
 {
   "": {
     "title": "Home",
-    "children": []
+    "url": "",
+    "children": [
+      {
+        "title": "Introduction",
+        "url": "/introduction"
+      }
+    ]
   },
   "components": {
     "title": "Components",
+    "url": "components",
     "children": [
       {
-        "title": "Buttons"
+        "title": "Buttons",
+        "url": "/components/button"
+      },
+      {
+        "title": "Toaster",
+        "url": "/components/toaster"
       }
     ]
   },
   "style": {
     "title": "Styles",
+    "url": "style",
     "children": [
       {
         "title": "Copywriting"
+      },
+      {
+        "title": "Spacing"
+      },
+      {
+        "title": "Colors"
+      },
+      {
+        "title": "Font"
+      },
+      {
+        "title": "Icon"
       }
     ]
   },
   "interactions": {
     "title": "Interactions",
+    "url": "interactions",
     "children": [
       {
         "title": "Sound"
+      },
+      {
+        "title": "Feedback"
+      },
+      {
+        "title": "Transition"
       }
     ]
   },
   "patterns": {
     "title": "Patterns",
+    "url": "patterns",
     "children": [
       {
-        "title": "Patterns"
+        "title": "Empty State"
+      },
+      {
+        "title": "Navigation"
       }
     ]
   }

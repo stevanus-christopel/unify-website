@@ -8,7 +8,9 @@ class SideNavItem extends Component {
     children: PropTypes.node,
     isCurrentPath: PropTypes.bool,
     isActiveItem: PropTypes.bool,
-    type: PropTypes.string
+    type: PropTypes.string,
+    onMouseEnter: PropTypes.func,
+    onMouseLeave: PropTypes.func,
   };
 
   state = {
@@ -92,7 +94,8 @@ class SideNavItem extends Component {
     const tabIndex = children.length ? 0 : -1;
 
     return (
-      <li role="menuitem" tabIndex={tabIndex} className={classNames} onClick={this.handleClick} onKeyDown={this.handleKeyDown}>
+      <li role="menuitem" tabIndex={tabIndex} className={classNames} onClick={this.handleClick} onKeyDown={this.handleKeyDown}
+      onMouseEnter={this.props.onMouseEnter} onMouseLeave={this.props.onMouseLeave}>
         {children}
       </li>
     );

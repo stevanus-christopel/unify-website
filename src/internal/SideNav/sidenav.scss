@@ -70,6 +70,7 @@
   }
 
   &__bottom-container {
+    width: 200%;
     transform: translateY(0);
     transition: opacity 2000ms $bx--standard-easing, transform 1800ms $bx--standard-easing;
     opacity: 1;
@@ -224,7 +225,7 @@
     }
 
     &-container {
-      width: 400%;
+      width: 200%;
     }
 
     &--icon {

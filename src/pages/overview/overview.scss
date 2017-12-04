@@ -130,6 +130,28 @@
       margin-bottom: 8px;
       color: $font-color-black-primary;
     }
+
+    & .btn--liquid {
+      background: none; 
+      border: none; 
+      outline: none; 
+      padding: 0;
+      width: 240px;
+      height: 90px;
+      margin: 0;
+      margin-top: 8px;
+      margin-left: -20px;
+      font-weight: 600;
+
+      & svg {
+        width: 100%;
+        height: 100%;
+
+        & path:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 
