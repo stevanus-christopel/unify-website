@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tooltip } from 'unify-react-mobile';
 
-import image from '../images/call.svg';
+import image from '../images/icon-tooltip.svg';
 
 const ComponentDemo = (
     <div>
