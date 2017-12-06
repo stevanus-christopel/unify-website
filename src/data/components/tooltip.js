@@ -1,12 +1,11 @@
 /* eslint-disable */
  module.exports = {
-  "desc": "<span>Tooltips</span> provide additional information upon hover or focus. They often contain helper text that is contextual to an element.",
   "variations": {
-    "tooltip": [
-      "Tooltip"
+    "normal-tooltip": [
+      "Normal Tooltip"
     ],
-    "tooltip--simple": [
-      "Simple tooltip"
+    "image-tooltip": [
+      "Tooltip with Image"
     ]
   },
   "__content": "\n"

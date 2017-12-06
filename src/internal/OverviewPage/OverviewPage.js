@@ -51,6 +51,11 @@ class OverviewPage extends Component {
         name: 'Toaster',
         img: require('./images/Toaster.svg'),
         link: '/components/toaster'
+      },
+      {
+        name: 'Tooltip',
+        img: require('./images/Tooltip.svg'),
+        link: '/components/tooltip'
       }/*,
       {
         name: 'Accordion',

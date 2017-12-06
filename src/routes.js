@@ -37,22 +37,6 @@ const routes = {
       }
     },
     {
-      path: 'getting-started',
-      indexRoute: {
-        onEnter: (nextState, replace) => replace('/getting-started/designers'),
-      },
-      childRoutes: [
-        {
-          path: '/getting-started/:name',
-          getComponent(location, cb) {
-            import('./pages/getting-started/GettingStarted')
-              .then(loadRoute(cb))
-              .catch(errorLoading);
-          },
-        },
-      ],
-    },
-    {
       path: 'style',
       indexRoute: {
         onEnter: (nextState, replace) => replace('/style/overview'),

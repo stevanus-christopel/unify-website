@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="458" height="290" viewBox="0 0 458 290">
+    <defs>
+        <rect id="a" width="156" height="48" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="458" height="290" fill="#F8F8F8" rx="4"/>
+        <path fill="#FFF" d="M135 177h188v80H135z"/>
+        <rect width="156" height="48" fill="#42B549" rx="4" transform="translate(151 193)"/>
+        <rect width="156" height="48" fill="#42B549" rx="4" transform="translate(151 105)"/>
+        <g>
+            <g transform="translate(151 33)">
+                <use fill="#FFF" xlink:href="#a"/>
+                <rect width="155" height="47" x=".5" y=".5" stroke="#E0E0E0" rx="4"/>
+            </g>
+        </g>
+    </g>
+</svg>

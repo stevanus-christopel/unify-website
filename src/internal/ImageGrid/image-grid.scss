@@ -1,9 +1,8 @@
 .image-grid {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin: 1rem 0;
-  max-width: 45rem;
 
   > div,
   > p {
@@ -24,7 +23,12 @@
 
     img {
       width: 100%;
-      border: 1px solid $color__navy-gray-8;
+      image-rendering: optimizeSpeed;             /*                     */
+      image-rendering: -moz-crisp-edges;          /* Firefox             */
+      image-rendering: -o-crisp-edges;            /* Opera               */
+      image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+      image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+      -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
     }
 
     &.dark-bg {

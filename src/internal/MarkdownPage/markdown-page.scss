@@ -1,4 +1,8 @@
 .page_md {
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-color-black-primary;
+
   h1,
   h2,
   h3 {
@@ -20,13 +24,27 @@
     }
   }
 
+  & h2 {
+    margin-bottom: 16px;
+    background-image: url('./images/h2-before.svg');
+    width: 6px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    text-indent: 16px;
+  }
+
   h3#css-modifiers {
     padding-top: 0;
   }
 
+  & p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   > p:not(:empty) {
     max-width: 100%;
-    line-height: 1.75;
     padding: 0 0 1rem;
 
     + h2,
@@ -48,20 +66,20 @@
   }
 
   h2 {
-
     & + table {
       margin-top: 0;
     }
   }
 
   > p:not(:empty):first-child {
-     margin-bottom: 4rem;
+    margin-bottom: 64px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: $font-color-black-primary;
 
     strong {
-      font-size: 1.125rem;
-      line-height: 1.5;
-      word-wrap: break-word;
-      letter-spacing: 0;
+      color: $color-green;
     }
   }
 
@@ -97,7 +115,7 @@
 
   img {
     width: 100%;
-    margin: 1rem 0 0;
+    margin: 0;
   }
 
   a.bx--btn {

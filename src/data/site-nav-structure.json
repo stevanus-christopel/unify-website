@@ -20,6 +20,10 @@
       {
         "title": "Toaster",
         "url": "/components/toaster"
+      },
+      {
+        "title": "Tooltip",
+        "url": "/components/tooltip"
       }
     ]
   },
