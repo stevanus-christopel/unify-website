@@ -5,59 +5,27 @@ $font-path: '.' !default; // Default font directory, allow user override
 @font-face {
   font-family: 'UNIFY';
   font-style: normal;
-  font-weight: 200;
-  src: url('#{$font-path}/Mark Simonson - Proxima Nova ScOsf Thin-webfont.eot'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova ScOsf Thin-webfont.eot?#iefix') format('embedded-opentype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova ScOsf Thin-webfont.woff2') format('woff2'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova ScOsf Thin-webfont.woff') format('woff'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova ScOsf Thin-webfont.ttf') format('truetype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova ScOsf Thin-webfont.svg#proxima_nova_scosfthin') format('svg');
-}
-
-@font-face {
-  font-family: 'UNIFY';
-  font-style: normal;
   font-weight: 400;
-  src: url('#{$font-path}/Mark Simonson - Proxima Nova Alt Regular-webfont.eot'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2') format('woff2'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+  src: url('#{$font-path}/CircularStd-Book.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'UNIFY';
   font-style: normal;
   font-weight: 600;
-  src: url('#{$font-path}/Mark Simonson - Proxima Nova Semibold-webfont.eot'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Semibold-webfont.woff2') format('woff2'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Semibold-webfont.woff') format('woff'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Semibold-webfont.ttf') format('truetype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Semibold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+  src: url('#{$font-path}/CircularStd-Medium.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'UNIFY';
   font-style: normal;
   font-weight: 700;
-  src: url('#{$font-path}/Mark Simonson - Proxima Nova Alt Bold-webfont.eot'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Bold-webfont.woff2') format('woff2'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Bold-webfont.woff') format('woff'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Bold-webfont.ttf') format('truetype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Bold-webfont.svg#proxima_nova_altbold') format('svg');
+  src: url('#{$font-path}/CircularStd-Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'UNIFY';
   font-style: normal;
   font-weight: 900;
-  src: url('#{$font-path}/Mark Simonson - Proxima Nova Alt Black-webfont.eot'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Black-webfont.eot?#iefix') format('embedded-opentype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Black-webfont.woff2') format('woff2'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Black-webfont.woff') format('woff'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Black-webfont.ttf') format('truetype'),
-       url('#{$font-path}/Mark Simonson - Proxima Nova Alt Black-webfont.svg#proxima_nova_altblack') format('svg');
+  src: url('#{$font-path}/CircularStd-Black.otf') format('opentype');
 }

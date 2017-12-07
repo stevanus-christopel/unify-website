@@ -27,8 +27,6 @@
   & h2 {
     margin-bottom: 16px;
     background-image: url('./images/h2-before.svg');
-    width: 6px;
-    height: 24px;
     background-repeat: no-repeat;
     background-position: center left;
     text-indent: 24px;
@@ -45,7 +43,7 @@
 
   > p:not(:empty) {
     max-width: 100%;
-    padding: 0 0 1rem;
+    padding: 0 0 32px;
 
     + h2,
     + h4 {
@@ -72,10 +70,10 @@
   }
 
   > p:not(:empty):first-child {
-    margin-bottom: 64px;
+    margin-bottom: 72px;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 40px;
     color: $font-color-black-primary;
 
     strong {
@@ -84,10 +82,11 @@
   }
 
   h4 {
-    color: $color__blue-90;
+    color: $font-color-black-disabled;
     padding: 4rem 0 1rem;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: rem(16px);
+    line-height: 20px;
 
     & + table {
       margin-top: 0;
@@ -178,7 +177,7 @@
         text-align: left;
         letter-spacing: 1px;
         padding: 1rem 3rem 1rem 0;
-        border-bottom: 2px solid $color__blue-40;
+        border-bottom: 2px solid $color-green;
         white-space: nowrap;
       }
     }

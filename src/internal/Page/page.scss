@@ -14,9 +14,9 @@ td {position: relative;}
 //--------------------
 
 .page {
-  padding-top: 32px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 3% 0;
   padding-bottom: 5rem;
   background-color: $font-color-white;
@@ -24,12 +24,24 @@ td {position: relative;}
   overflow: hidden;
   box-shadow: 6px 9px 30px 0 rgba(0, 0, 0, 0.12);
 
+  @include breakpoint('360px') {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   @include breakpoint('600px') {
     margin: 0 5% 0;
   }
 
-  @include breakpoint('840px') {
+  @include breakpoint('880px') {
     margin: 0 12.5% 0;
+  }
+
+  @include breakpoint('1366px') {
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
   .page__sub-heading {
@@ -76,7 +88,7 @@ td {position: relative;}
       padding-bottom: 1rem;
       border-bottom: 2px solid $color-green;
       text-transform: uppercase;
-      color: $color__blue-90;
+      color: $font-color-black-primary;
       margin-bottom: 3rem;
       max-width: rem(660px);
     }
@@ -93,7 +105,7 @@ td {position: relative;}
       position: relative;
       display: flex;
       align-items: center;
-      color: $color__blue-90;
+      color: $font-color-black-primary;
       margin-top: 64px;
       font-weight: bold;
       font-size: rem(24px);
@@ -137,10 +149,11 @@ td {position: relative;}
     }
 
     h3 {
-      color: $color-green;
+      color: $font-color-black-primary;
       padding: 4rem 0 1rem;
-      font-size: 1.125rem;
-      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 400;
       letter-spacing: 0;
 
       & + h4 {

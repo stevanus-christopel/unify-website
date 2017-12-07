@@ -6,8 +6,12 @@
     @include font-smoothing;
     position: relative;
     color: $font-color-black-primary;
-    font-weight: 600;
-    padding: 1rem 0 1.5rem;
+    font-weight: bold;
+    padding: 0;
+    background-image: url('./images/h2-before.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    text-indent: 24px;
   }
 
   &__desc {
@@ -22,7 +26,7 @@
 
 main[data-page|=components-code]{
   h3 + h4 {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   table {
@@ -51,7 +55,7 @@ main[data-page='components-code-button'] {
     table tr td:nth-child(3) {
       white-space: initial;
     }
-    
+
     table tr td:nth-child(2) {
       min-width: 15rem;
       white-space: pre-wrap;

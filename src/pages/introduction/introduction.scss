@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     &__top {
       padding-left: 3%;
       padding-right: 3%;
@@ -13,12 +13,12 @@
       overflow: hidden;
       height: 355px;
       margin-bottom: 12px;
-      
+
       @include breakpoint('600px') {
         padding-left: 5%;
         padding-right: 5%;
       }
-      @include breakpoint('840px') {
+      @include breakpoint('880px') {
         padding-left: 12.5%;
         padding-right: 12.5%;
         margin-bottom: 188px;
@@ -49,7 +49,7 @@
             left: 16%;
         }
     }
-    
+
     &__subtitle {
         position: absolute;
         left: 20%;
@@ -58,7 +58,7 @@
         line-height: 56px;
         color: $font-color-white;
         font-weight: bold;
-        
+
         @include breakpoint('768px') {
             top: 100px;
             left: 16%;
@@ -69,7 +69,7 @@
 
     &__content {
         margin-bottom: 0;
-        
+
         @include breakpoint('600px') {
             margin-bottom: 260px;
         }
@@ -96,7 +96,7 @@
             flex-grow: 1;
             flex-basis: 0;
             margin-bottom: 80px;
-            
+
             @include breakpoint('840px') {
                 border-right: 1px dashed $border-color;
                 padding-bottom: 72px;
@@ -111,7 +111,7 @@
                 height: 96px;
                 text-align: center;
                 margin-bottom: 20px;
-                
+
                 @include breakpoint('840px') {
                     margin-bottom: 60px;
                 }
@@ -129,7 +129,7 @@
                 line-height: 32px;
                 font-weight: bold;
                 margin-bottom: 16px;
-                
+
                 @include breakpoint('1280px') {
                     font-size: 48px;
                     line-height: 48px;
@@ -149,7 +149,7 @@
                 line-height: 72px;
                 color: rgba(0, 0, 0, 0.05);
                 font-weight: bold;
-                
+
                 @include breakpoint('840px') {
                     top: initial;
                     bottom: 8%;
@@ -176,12 +176,12 @@
         image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
         image-rendering: optimize-contrast;         /* CSS3 Proposed       */
         -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
-        
+
         @include breakpoint('768px') {
             display: inline-block;
         }
     }
-    
+
     &__bottom-right-image {
         position: absolute;
         right: 0;

@@ -69,3 +69,20 @@ svg {
 input, button, a {
   outline: none;
 }
+
+/*
+  Global Classes
+*/
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.img-block img {
+  width: 100% !important;
+  max-width: initial !important;
+}

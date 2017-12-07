@@ -3,14 +3,14 @@
   margin-top: -2.6rem;
   width: auto;
   background-color: transparent;
-  
+
   @include breakpoint('768px') {
     margin-top: -2.5rem;
   }
 
   &.bx--tabs {
     min-height: 35px;
-    
+
     @include breakpoint('768px') {
       min-height: 46px;
     }
@@ -28,7 +28,7 @@
     border-radius: 8px 8px 0 0;
     background-color: white;
     border-bottom: 1px solid #8fc043;
-    
+
     &-text,
     svg {
       color: $font-color-black-primary;
@@ -37,16 +37,15 @@
   }
 
   .bx--tabs__nav {
-    @include layer('overlay');
     z-index: 5;
     background-color: $font-color-white;
     border-radius: 8px 8px 0 0;
-    
+
     @include breakpoint('768px') {
       width: 90%;
     }
 
-    @include breakpoint('840px') {
+    @include breakpoint('880px') {
       width: 75%;
     }
   }
@@ -58,7 +57,6 @@
     .bx--tabs__nav {
       margin: 0;
       margin-top: -46px;
-      box-shadow: 6px 0 30px 0 rgba(0, 0, 0, 0.12);
       border-bottom: 1px solid #8fc043;
     }
 

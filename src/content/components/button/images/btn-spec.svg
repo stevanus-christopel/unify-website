@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="111" viewBox="0 0 510 111">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h687v113H0z"/>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="16" font-weight="bold" transform="translate(0 -1)">
+            <tspan x="256" y="34">Corner Radius</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="16" font-weight="bold" transform="translate(0 -1)">
+            <tspan x="0" y="34">Font Size</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(0 -1)">
+            <tspan x="256" y="55">Buttons should have a 4px corner radius.</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(0 -1)">
+            <tspan x="0" y="55">Button text should be Title Case.</tspan> <tspan x="0" y="73">Big button text size : 14px</tspan> <tspan x="0" y="91">Medium button text size : 13px</tspan> <tspan x="0" y="109">Small button text size : 11px</tspan>
+        </text>
+        <path stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round" d="M.5.5h138.514"/>
+    </g>
+</svg>
