@@ -4,18 +4,18 @@
   margin-bottom: 3rem;
   width: 50%;
   margin-top: 150px;
-  
+
   @include breakpoint('500px') {
     margin-top: 180px;
   }
-  
+
   @include breakpoint('1000px') {
     margin-top: 240px;
   }
 
   .main-nav-item {
     padding: .225rem 0;
-    
+
     &.no-hover {
       opacity: 0.1;
     }
@@ -28,10 +28,10 @@
         max-height: 400px !important;
       }
     }
-    
+
     &__active {
       color: #27782C;
-      text-shadow: -1px -1px 0 $font-color-white, 1px -1px 0 $font-color-white, 
+      text-shadow: -1px -1px 0 $font-color-white, 1px -1px 0 $font-color-white,
       -1px 1px 0 $font-color-white, 1px 1px 0 $font-color-white;
       opacity: 1;
 
@@ -78,7 +78,7 @@
           display: block;
         }
       }
-      
+
       @include breakpoint('600px') {
         font-size: 50px;
         line-height: 60px;
@@ -90,13 +90,13 @@
         line-height: 70px;
         left: -8px;
       }
-      
+
       @include breakpoint('1280px') {
         font-size: 60px;
         line-height: 70px;
         left: -8px;
       }
-      
+
       @include breakpoint('1600px') {
         font-size: 76px;
         line-height: 86px;
@@ -166,25 +166,25 @@
         text-decoration: underline;
         cursor: pointer;
       }
-      
+
       @include breakpoint('1280px') {
         display: block;
       }
-      
+
       @include breakpoint('1340px') {
         font-size: 20px;
         line-height: 48px;
       }
-      
+
       @include breakpoint('1600px') {
         font-size: 24px;
       }
     }
-  
+
     @include breakpoint('500px') {
       margin-top: 180px;
     }
-    
+
     @include breakpoint('1000px') {
       margin-top: 240px;
     }
@@ -197,21 +197,17 @@
       overflow: hidden;
       max-height: 0 !important;
       transition: max-height 0.8s ease-in-out;
-      
+
       @include breakpoint('1280px') {
         display: none;
       }
 
-      & li { 
+      & li {
         display: inline-block;
         width: 100%;
-        
-        @include breakpoint('360px') {
+
+        @include breakpoint('768px') {
           width: 50%;
-        }
-        
-        @include breakpoint('680px') {
-          width: 25%;
         }
 
         & a {
