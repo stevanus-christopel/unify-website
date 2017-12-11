@@ -2,7 +2,7 @@
 
 ## Usage
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="mb-16">
     Tabs enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.
     <br /><br />
     Present tabs as a single row above their associated content. Tab labels should succinctly describe the content within.

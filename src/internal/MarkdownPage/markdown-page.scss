@@ -208,14 +208,14 @@
   ol {
     @include font-size('16');
     @include font-smoothing;
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-    line-height: 2;
+    margin-left: 14px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 24px;
     max-width: 100%;
 
     li {
-      font-weight: 400;
-      padding-left: .25rem;
+      color: $font-color-black-secondary;
     }
 
     & + h3 {
@@ -489,5 +489,79 @@
 
   hr + table {
     max-width: 45rem;
+  }
+
+  small {
+    display: block;
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $font-color-black-disabled;
+  }
+
+  /*
+    Custom class for markdown
+  */
+
+  & b {
+    font-weight: bold;
+  }
+
+  & p.body-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $font-color-black-secondary;
+  }
+
+  & .copy__box {
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);
+    padding: 40px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $font-color-black-secondary;
+
+    &--do {
+      height: 4px;
+      border-radius: 8px;
+      background-color: #60c866;
+      margin-top: 24px;
+      margin-bottom: 32px;
+
+      @include breakpoint('1366px') {
+        margin-bottom: 0;
+      }
+
+      &:after {
+        display: block;
+        padding-top: 6px;
+        content: "Do.";
+        font-size: 18px;
+        font-weight: bold;
+        color: #60c866;
+      }
+    }
+
+    &--dont {
+      height: 4px;
+      border-radius: 8px;
+      background-color: #f05f68;
+      margin-top: 24px;
+      margin-bottom: 32px;
+
+      @include breakpoint('1366px') {
+        margin-bottom: 0;
+      }
+
+      &:after {
+        display: block;
+        padding-top: 6px;
+        content: "Don't.";
+        font-size: 18px;
+        font-weight: bold;
+        color: #f05f68;
+      }
+    }
   }
 }

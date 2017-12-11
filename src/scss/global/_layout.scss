@@ -82,8 +82,21 @@ input, button, a {
   margin-top: 16px;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .pt-0 {
   padding-top: 0 !important;
+}
+
+.pb-8 {
+  padding-bottom: 8px !important;
+}
+
+.img-center img {
+  display: block !important;
+  margin: auto !important;
 }
 
 .img-block img {
@@ -94,4 +107,12 @@ input, button, a {
 .img-width-initial img {
   width: initial !important;
   max-width: initial !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.align-center {
+  text-align: center;
 }

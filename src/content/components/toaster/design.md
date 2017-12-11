@@ -2,7 +2,7 @@
 
 ## Usage
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="mb-16">
     Toasts contain a single line of text directly related to the operation performed. They may contain a text action, but no icons.
     <br /> <br />
     Only one toast may be displayed at a time. Each toast may contain a single action, and animate upwards from the bottom edge of the screen or bottom nav. Toaster be automatically time out from the screen depends on the case.
