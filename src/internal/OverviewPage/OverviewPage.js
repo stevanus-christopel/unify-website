@@ -5,42 +5,6 @@ import Page from '../Page';
 
 class OverviewPage extends Component {
   render() {
-    const accordionExample = require('./images/Accordion.svg');
-    const breadcrumbExample = require('./images/Breadcrumb.svg');
-    const buttonExample = require('./images/Button.svg');
-    const cardExample = require('./images/Card.svg');
-    const checkboxExample = require('./images/Checkbox.svg');
-    const codeSnippetExample = require('./images/Code Snippet.svg');
-    const contentSwitcherExample = require('./images/Content Switcher.svg');
-    const dataTableExample = require('./images/Data Table.svg');
-    const datePickerExample = require('./images/Date Picker.svg');
-    const detailPageHeaderExample = require('./images/Detail Page Header.svg');
-    const dropdownExample = require('./images/Dropdown.svg');
-    const fileUploaderExample = require('./images/File Uploader.svg');
-    const formExample = require('./images/Form.svg');
-    const interiorLeftNavExample = require('./images/Interior Left Nav.svg');
-    const linkExample = require('./images/Link.svg');
-    const listExample = require('./images/List.svg');
-    const loadingExample = require('./images/Loading.svg');
-    const modalExample = require('./images/Modal.svg');
-    const moduleExample = require('./images/Module.svg');
-    const notificationExample = require('./images/Notification.svg');
-    const numberInputExample = require('./images/Number Input.svg');
-    const overflowMenuExample = require('./images/Overflow Menu.svg');
-    const paginationExample = require('./images/Pagination.svg');
-    const progressIndicatorExample = require('./images/Progress Indicator.svg');
-    const radioButtonExample = require('./images/Radio Button.svg');
-    const searchExample = require('./images/Search.svg');
-    const selectExample = require('./images/Select.svg');
-    const sliderExample = require('./images/Slider.svg');
-    const structuredListExample = require('./images/Structured List.svg');
-    const tabsExample = require('./images/Tabs.svg');
-    const tagExample = require('./images/Tag.svg');
-    const textInputExample = require('./images/Text Input.svg');
-    const tileExample = require('./images/Tile.svg');
-    const toggleExample = require('./images/Toggle - 2.svg');
-    const tooltipExample = require('./images/Tooltip.svg');
-
     const componentData = [
       {
         name: 'Button',

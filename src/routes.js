@@ -43,6 +43,22 @@ const routes = {
       },
       childRoutes: [
         {
+          path: '/style/copywriting',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/style/copywriting/design'),
+          },
+          childRoutes: [
+            {
+              path: '/style/:name/:page',
+              getComponent(location, cb) {
+                import('./pages/style/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
           path: '/style/colors',
           indexRoute: {
             onEnter: (nextState, replace) => replace('/style/colors/palette'),

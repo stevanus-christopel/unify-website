@@ -36,7 +36,8 @@
     "url": "style",
     "children": [
       {
-        "title": "Copywriting"
+        "title": "Copywriting",
+        "url": "/style/copywriting"
       },
       {
         "title": "Spacing",

@@ -2,10 +2,10 @@
  module.exports = {
   "variations": {
     "main-tabs": [
-      "Main Tab"
+      "Main Tabs"
     ],
     "secondary-tabs": [
-      "Secondary Tab"
+      "Secondary Tabs"
     ]
   },
   "__content": "\n"

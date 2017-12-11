@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Overview from './Overview';
+import Copywriting from './Copywriting';
 import Colors from './Colors';
 import Iconography from './Iconography';
 import Layer from './Layer';
@@ -23,6 +24,8 @@ class Style extends React.Component {
     let content;
     if (paramsName === 'overview') {
       return <Overview currentPage={paramsPage} />;
+    } else if (paramsName === 'copywriting') {
+      content = <Copywriting currentPage={paramsPage} />;
     } else if (paramsName === 'colors') {
       content = <Colors currentPage={paramsPage} />;
     } else if (paramsName === 'layer') {

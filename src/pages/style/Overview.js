@@ -10,11 +10,12 @@ class Overview extends React.Component {
 
   render() {
     const codeSnippetExample = require('../../content/style/overview/images/Code Snippet.svg');
+    const copywritingImage = require('../../content/style/overview/images/Copywriting.svg');
 
     const styleData = [
       {
         name: 'Copywriting',
-        img: codeSnippetExample,
+        img: copywritingImage,
         link: '/style/copywriting'
       },
       {

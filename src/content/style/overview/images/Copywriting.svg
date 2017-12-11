@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="258px" height="165px" viewBox="0 0 458 290">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="458" height="290" fill="#F8F8F8" rx="4"/>
+        <g fill="#E0E0E0" transform="translate(119 76)">
+            <rect width="49" height="6" rx="3"/>
+            <rect width="59" height="6" x="57" rx="3"/>
+            <rect width="117" height="6" x="124" rx="3"/>
+            <rect width="147" height="6" y="14" rx="3"/>
+            <rect width="97" height="6" y="28" rx="3"/>
+            <rect width="47" height="6" x="155" y="14" rx="3"/>
+        </g>
+        <g fill="#E0E0E0" transform="translate(119 194)">
+            <rect width="113" height="6" rx="3"/>
+            <rect width="37" height="6" x="124" rx="3"/>
+            <rect width="141" height="6" y="14" rx="3"/>
+        </g>
+        <g fill="#E0E0E0" transform="translate(119 142)">
+            <rect width="147" height="6" rx="3"/>
+            <rect width="97" height="6" y="14" rx="3"/>
+            <rect width="47" height="6" x="155" rx="3"/>
+        </g>
+    </g>
+</svg>

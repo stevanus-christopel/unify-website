@@ -8,9 +8,6 @@
     Present tabs as a single row above their associated content. Tab labels should succinctly describe the content within.
     <br /><br />
     Because swipe gestures are used for navigating between tabs, don't pair tabs with content that also supports swiping.
-    <div class="img-width-initial mt-16">
-      ![Tabs Usage Spec](images/tabs-usage-spec.svg)
-    </div>
   </div>
   <div class="img-block">
     ![Tabs Usage](images/tabs-usage.svg)
@@ -39,6 +36,9 @@
 <div data-insert-component="ImageGrid">
   <div>
     ![Tabs Spec](images/tabs-spec.svg)
+    <div class="img-width-initial mt-16">
+      ![Tabs Usage Spec](images/tabs-usage-spec.svg)
+    </div>
   </div>
   <div>
   </div>

@@ -6,9 +6,6 @@
     Toasts contain a single line of text directly related to the operation performed. They may contain a text action, but no icons.
     <br /> <br />
     Only one toast may be displayed at a time. Each toast may contain a single action, and animate upwards from the bottom edge of the screen or bottom nav. Toaster be automatically time out from the screen depends on the case.
-    <div class="img-width-initial mt-16">
-      ![Toaster Usage Spec](images/toaster-usage-spec.svg)
-    </div>
   </div>
   <div class="img-block">
     ![Toaster Usage](images/toaster-usage.svg)
@@ -37,6 +34,9 @@
 <div data-insert-component="ImageGrid">
   <div>
     ![Toaster Spec](images/toaster-spec.svg)
+    <div class="img-width-initial mt-16">
+      ![Toaster Usage Spec](images/toaster-usage-spec.svg)
+    </div>
   </div>
   <div>
   </div>
