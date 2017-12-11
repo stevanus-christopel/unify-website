@@ -5,14 +5,13 @@
   <div>
     Buttons are used primarily on action items. Some examples include Add, Save, Delete, Sign up. Do not use Buttons as navigational elements. Instead, use Links because it takes the user to a new page and is not associated with an action. Each page may have one to two primary buttons. Any remaining calls-to-action are represented as secondary buttons.
     <div class="mt-16">
-      ![Button Spec](images/btn-spec.svg)
+      ![Button Usage Spec](images/btn-usage-spec.svg)
     </div>
   </div>
   <div class="img-block">
     ![Button Usage](images/btn-usage.svg)
   </div>
 </div>
-
 
 ## Type
 

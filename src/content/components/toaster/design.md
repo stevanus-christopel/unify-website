@@ -1,54 +1,45 @@
-## Color
+**Toaster** provides brief feedback about an operation through a message at the bottom of the screen.
 
-| ATTRIBUTE         | SCSS        | HEX     |
-|---------------|-------------|---------|
-| Background: Toast    | $ui-01      | #ffffff |
-| Error         | $support-01 | #e71d32 |
-| Success       | $support-02 | #5aa700 |
-| Warning       | $support-03 | #efc100 |
-| Informational | $support-04 | #5aaafa |
-| Title         | $text-01    | #152935 |
-| Text          | $text-02    | #5a6872 |
-| X icon        | $ui-05      | #8c9ba5 |
+## Usage
+<div data-insert-component="ImageGrid">
+  <div>
+    Toasts contain a single line of text directly related to the operation performed. They may contain a text action, but no icons.
+    <br /> <br />
+    Only one toast may be displayed at a time. Each toast may contain a single action, and animate upwards from the bottom edge of the screen or bottom nav. Toaster be automatically time out from the screen depends on the case.
+    <div class="img-width-initial mt-16">
+      ![Toaster Usage Spec](images/toaster-usage-spec.svg)
+    </div>
+  </div>
+  <div class="img-block">
+    ![Toaster Usage](images/toaster-usage.svg)
+  </div>
+</div>
 
-## Typography
+## Type
 
-Notification titles should not exceed more than three words. Notification text should be set in sentence case with only the first word capitalized.
+<div data-insert-component="ImageGrid">
+  <div>
+    Toaster Normal<br />
+    ![Toaster Normal](images/toaster-1.svg)
+  </div>
+  <div>
+    Toaster - Bottom Nav<br />
+    ![Toaster - Bottom Nav](images/toaster-2.svg)
+  </div>
+  <div>
+    Toaster Error<br />
+    ![Toaster Error](images/toaster-3.svg)
+  </div>
+</div>
 
-| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
-|----------|-----------------|--------------|
-| Title    | 14 / 0.875 | Bold / 700   |
-| Text     | 14 / 0.875 | Normal / 400 |
+## Spec
 
-## Structure
-
-### Toast Notification
-
-| PROPERTY           | PX  | REM    |
-|--------------------|-----|--------|
-| Height             | varies based on content  | 5      |
-| Width              | 270 | 16.875 |
-| Spacing: external  | 8   | 0.5      |
-| Spacing: left, top, right | 16  | 1      |
-| Spacing: text      | 16  | 1      |
-
-![Structure and spacing for a toast notification](images/notification-style-1.png)
-_Structure and spacing measurements for a Toast Notification | px / rem_
-
-### Inline Notification
-
-The width of an Inline Notification will vary based on content.
-
-| PROPERTY          | PX | REM  |
-|-------------------|----|------|
-| Height: one-line  | 40 | 2.5  |
-| Height: two lines | 56 | 3.5  |
-| Icon              | 16 | 1    |
-| X icon            | 12 | 0.750 |
-| Border            | 1  | -    |
-| Border-left       | 5  | -    |
-| Spacing: icons    | 16 | 1    |
-| Spacing: top, bottom | 12 | 0.75|
-
-![Structure and spacing for an inline notification](images/notification-style-2.png)
-_Structure and spacing measurements for a Inline Notification | px / rem_
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Toaster Spec](images/toaster-spec.svg)
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+</div>

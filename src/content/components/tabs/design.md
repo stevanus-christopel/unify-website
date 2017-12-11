@@ -1,27 +1,47 @@
-## Color
+**Tabs** make it easy to explore and switch between different views
 
-| ATTRIBUTE                       | SCSS      |  HEX    |
-|-----------------------------|-----------|---------|
-| Tab label: selected          | $brand-01 | #3d70b2 |
-| Tab border-bottom: selected | $brand-01 | #3d70b2 |
-| Tab label                    | $text-01  | #152935 |
-| Tab label: hover             | $brand-01 | #3d70b2 |
+## Usage
+<div data-insert-component="ImageGrid">
+  <div>
+    Tabs enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.
+    <br /><br />
+    Present tabs as a single row above their associated content. Tab labels should succinctly describe the content within.
+    <br /><br />
+    Because swipe gestures are used for navigating between tabs, don't pair tabs with content that also supports swiping.
+    <div class="img-width-initial mt-16">
+      ![Tabs Usage Spec](images/tabs-usage-spec.svg)
+    </div>
+  </div>
+  <div class="img-block">
+    ![Tabs Usage](images/tabs-usage.svg)
+  </div>
+</div>
 
-## Typography
+## Type
 
-Tab label should be set in sentence case, and should not exceed three words.
+<div data-insert-component="ImageGrid">
+  <div>
+    Main Tab<br />
+    ![Main Tab](images/tabs-1.svg)
+  </div>
+  <div>
+    Main Tab - Many Item<br />
+    ![Main Tab - Many Item](images/tabs-2.svg)
+  </div>
+  <div>
+    Secondary Tab<br />
+    ![Secondary Tab](images/tabs-3.svg)
+  </div>
+</div>
 
-| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
-|----------|-----------------|--------------|
-| Tab label | 14 / 0.875 | Bold / 700   |
+## Spec
 
-## Structure
-
-| PROPERTY          | PX | REM |
-|-------------------|----|-----|
-| Tab border-bottom | 2  | -   |
-| Spacing: tabs     | 48 | 3   |
-| Spacing: bottom   | 16 | 1   |
-
-![Structure and spacing measurements for Tabs](images/tab-style-1.png)
-_Structure and spacing measurements for Tab | px / rem_
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Tabs Spec](images/tabs-spec.svg)
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+</div>

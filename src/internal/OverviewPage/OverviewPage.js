@@ -48,6 +48,11 @@ class OverviewPage extends Component {
         link: '/components/button'
       },
       {
+        name: 'Tabs',
+        img: require('./images/Tabs.svg'),
+        link: '/components/tabs'
+      },
+      {
         name: 'Toaster',
         img: require('./images/Toaster.svg'),
         link: '/components/toaster'
