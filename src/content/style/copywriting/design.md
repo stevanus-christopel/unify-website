@@ -139,3 +139,105 @@
     <div class="copy__box--dont w-90"></div>
   </div>
 </div>
+
+<p class="pb-8"><br />Addressing Users</p>
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="body-text w-90">Doesn't matter where this word is located, you should write <b>"Anda"</b> with capital letters. You should use this word for content materials that are related to:</p>
+    <ul class="body-text w-90">
+      <li>Merchant (seller)</li>
+      <li>Multifinance</li>
+      <li>Fintech</li>
+      <li>General announcement, such as ticker, error message, hover message</li>
+      <li>Press Release</li>
+      <li>Public Relations</li>
+      <li>Other official content</li>
+    </ul>
+  </div>
+  <div>
+    <div class="copy__box align-center w-90">
+      <b>Anda</b> tidak memiliki pembayaran yang sedang berlangsung
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <div class="copy__box align-center w-90">
+      <b>anda</b> tidak memliki pembayaran yang sedang berlangsung
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+</div>
+
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="body-text w-90">Or you can use <b>"kamu"</b> as reference on <b>Digital</b> and <b>Official Store</b> content. 
+    You can write it with capital or small letters according to where this word is located.</p>
+    </ul>
+  </div>
+  <div>
+    <div class="copy__box align-center w-90">
+      Kini <b>kamu</b> bisa isi pulsa lewat Tokopedia, lho!
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <div class="copy__box align-center w-90">
+      Kini <b>Kamu</b> bisa isi pulsa lewat Tokopedia, lho!
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+</div>
+
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="body-text w-90">Use <b>"you"</b> when making a copy in <b>English</b>. You can write it with capital or small letters according to where this word is located.</p>
+    </ul>
+  </div>
+  <div>
+    <div class="copy__box align-center w-90">
+      <b>You</b> do not have any ongoing payment
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <div class="copy__box align-center w-90">
+      <b>You</b> do not have any ongoing payment
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+</div>
+
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="body-text w-90">Use <b>"User"</b> or <b>"Pengguna"</b> for <b>Terms & Conditions</b>. It should be written with small letters according to where this word is located.</p>
+    </ul>
+  </div>
+  <div>
+    <div class="copy__box w-90">
+      Dengan mendaftar dan/atau menggunakan situs www.tokopedia.com, maka <b>pengguna</b> dianggap telah membaca, mengerti, memahami dan menyetujui semua isi dalam Syarat & ketentuan
+    </div>
+    <div class="copy__box--do w-90"></div>
+  </div>
+</div>
+
+## Tone
+
+<p class="body-text pb-0">Use casual and user-friendly tone when writing a product copy. You can also combine it with some understandable foreign terms. Pay attention to the context.
+<br /><br />
+*Note(s):
+</p>
+<ul class="body-text mt-0">
+  <li>Tone can be casual, but try not to make it too casual and robotic. Pay attention to the limitation. It means that you should follow this guideline so that you can write a product copy in a good way.</li>
+  <li>Don't use jargon (slang/short languange)</li>
+</ul>
+<div data-insert-component="ImageGrid">
+  <div>
+    <div class="copy__box w-90 align-center">
+      Saran Anda penting bagi kami. Klik link berikut ini
+    </div>
+    <div class="copy__box--do w-90"></div>
+  </div>
+  <div>
+    <div class="copy__box w-90">
+      Saran Agan penting bagi kami. Klik link berikut ini
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+</div>

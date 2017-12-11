@@ -224,7 +224,13 @@
   }
 
   ul li {
-    list-style-type: disc;
+    list-style-type: none;
+    text-indent: -14px;
+
+    &:before {
+      content: "-";
+      margin-right: 7px;
+    }
   }
 
   ol li {
