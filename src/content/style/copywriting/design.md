@@ -247,32 +247,38 @@
 
 <p class="pb-8"><br />Punctuation</p>
 
-<div data-insert-component="ImageGrid">
-  <div>
-    <p class="body-text pt-0 w-90">
+<p class="body-text pt-0 w-90">
       <b>Full Stop</b><br />
       It is used for sentence not phrase.
-    </p>
+</p>
+
+<div data-insert-component="ImageGrid">
+  <div>
     <div class="copy__box w-90">
       Anda tidak memiliki pembayaran yang sedang berlangsung.
     </div>
     <div class="copy__box--do w-90"></div>
-    <br /><br />
+  </div>
+  <div>
     <div class="copy__box w-90">
       Anda tidak memiliki pembayaran yang sedang berlangsung
     </div>
     <div class="copy__box--dont w-90"></div>
   </div>
+</div>
+
+<p class="body-text pt-0 w-90">
+  <b>Comma "&"</b><br />
+  It is used to separate 2 clauses.
+</p>
+<div data-insert-component="ImageGrid">
   <div>
-    <p class="body-text pt-0 w-90">
-      <b>Comma</b><br />
-      It is used to separate 2 clauses.
-    </p>
     <div class="copy__box w-90">
       Pilih dan beli produk yang Anda inginkan, ayo mulai belanja!
     </div>
     <div class="copy__box--do w-90"></div>
-    <br /><br />
+  </div>
+  <div>
     <div class="copy__box w-90">
       Pilih dan beli produk yang Anda inginkan ayo mulai belanja!
     </div>
@@ -368,9 +374,9 @@
       <br />
       <span class="color-black-disabled">If the time shows 1-60 secs (today)</span>
       <br />
-      <span class="color-black-disabled">If the time shows 1-59 secs (today)</span>
+      <span class="color-black-disabled">If the time shows 1-59 minutes (today)</span>
       <br />
-      <span class="color-black-disabled">If the time shows 1-23 secs (today)</span>
+      <span class="color-black-disabled">If the time shows 1-23 hours (today)</span>
       <br /><br />
       <span>If the time showe 01:50 and in the past </span>
       <br />
@@ -390,6 +396,17 @@
     <br /><br />
     <div class="copy__box align-center w-90">
       Rp 80.000
+    </div>
+    <div class="copy__box--dont w-90"></div>
+    <br /><br />
+    <h4 class="pt-0 w-90">Date</h4>
+    <div class="copy__box align-center w-90">
+      15 Nov 2017
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <div class="copy__box align-center w-90">
+      15 November 2017
     </div>
     <div class="copy__box--dont w-90"></div>
   </div>
