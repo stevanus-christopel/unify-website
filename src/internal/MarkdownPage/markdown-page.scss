@@ -535,7 +535,7 @@
       margin-top: 24px;
       margin-bottom: 32px;
 
-      @include breakpoint('1366px') {
+      @include breakpoint('1280px') {
         margin-bottom: 0;
       }
 
@@ -556,7 +556,7 @@
       margin-top: 24px;
       margin-bottom: 32px;
 
-      @include breakpoint('1366px') {
+      @include breakpoint('1280px') {
         margin-bottom: 0;
       }
 

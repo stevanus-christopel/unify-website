@@ -10,23 +10,23 @@
   </div>
 </div>
 
-<h4 class="pt-0">in Sentence</h4>
+<h4 class="pt-0">In sentence</h4>
 <div data-insert-component="ImageGrid">
   <div>
     <div class="copy__box w-90">
-      Untuk mempercepat proses verifikasi pembayaran, silakan upload bukti transfer
+      Untuk mempercepat proses verifikasi pembayaran, <b>silakan</b> upload bukti transfer
     </div>
     <div class="copy__box--do w-90"></div>
   </div>
   <div>
     <div class="copy__box w-90">
-      Untuk mempercepat proses verifikasi pembayaran, silahkan unggah bukti transfer
+      Untuk mempercepat proses verifikasi pembayaran, <b>silahkan</b> unggah bukti transfer
     </div>
     <div class="copy__box--dont w-90"></div>
   </div>
 </div>
 
-<h4 class="pt-0">in Button</h4>
+<h4 class="pt-0">In button</h4>
 <div data-insert-component="ImageGrid">
   <div>
     <div class="copy__box img-center img-width-initial w-90">
@@ -216,8 +216,8 @@
     <div class="copy__box--do w-90"></div>
   </div>
 </div>
-
-## Tone
+<br />
+<h2 class="mt-0">Tone</h2>
 
 <p class="body-text pb-0">Use casual and user-friendly tone when writing a product copy. You can also combine it with some understandable foreign terms. Pay attention to the context.
 <br /><br />
@@ -230,14 +230,206 @@
 <div data-insert-component="ImageGrid">
   <div>
     <div class="copy__box w-90 align-center">
-      Saran Anda penting bagi kami. Klik link berikut ini
+      Saran <b>Anda</b> penting bagi kami. Klik link berikut ini
     </div>
     <div class="copy__box--do w-90"></div>
   </div>
   <div>
     <div class="copy__box w-90">
-      Saran Agan penting bagi kami. Klik link berikut ini
+      Saran <b>Agan</b> penting bagi kami. Klik link berikut ini
     </div>
     <div class="copy__box--dont w-90"></div>
+  </div>
+</div>
+
+<br />
+<h2 class="mt-0">Capitalization & Punctuation</h2>
+
+<p class="pb-8"><br />Punctuation</p>
+
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="body-text pt-0 w-90">
+      <b>Full Stop</b><br />
+      It is used for sentence not phrase.
+    </p>
+    <div class="copy__box w-90">
+      Anda tidak memiliki pembayaran yang sedang berlangsung.
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <div class="copy__box w-90">
+      Anda tidak memiliki pembayaran yang sedang berlangsung
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+  <div>
+    <p class="body-text pt-0 w-90">
+      <b>Comma</b><br />
+      It is used to separate 2 clauses.
+    </p>
+    <div class="copy__box w-90">
+      Pilih dan beli produk yang Anda inginkan, ayo mulai belanja!
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <div class="copy__box w-90">
+      Pilih dan beli produk yang Anda inginkan ayo mulai belanja!
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+</div>
+
+<p class="body-text pt-0 w-90">
+  <b>Ampersand "&"</b><br />
+  It is used as a link to connect 2 words or more. You can use it for proper noun, abreviation, limited space, and as part of feature's name.
+</p>
+
+<div data-insert-component="ImageGrid">
+  <div>
+    <div class="copy__box w-90">
+      Silahkan berikan Rating & Review sesuai kepuasan Anda atas pelayanan toko.
+    </div>
+    <div class="copy__box--do w-90"></div>
+  </div>
+  <div>
+    <div class="copy__box w-90">
+      Silahkan berikan Rating dan Review sesuai kepuasan Anda atas pelayanan toko.
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+</div>
+
+<p class="pb-8"><br />Title & Sentence Case</p>
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="body-text w-90">
+      Pay attention to title case and sentence case. Consider where the sentence is located.
+      <br /><br />
+      <b>Title case</b>
+      <br />
+      <span class="color-black-disabled">Use capital word for title or heading. You can use title case for conjunctions.</span>
+      <br /><br />
+      <b>Sentence case</b>
+      <br />
+      <span class="color-black-disabled">Use sentence case for content/subtitle.</span>
+    </p>
+  </div>
+  <div>
+    <div class="copy__box w-90">
+      <b>Bayar Tagihan Bebas Cemas</b><br />
+      Tagihan mulai dari pulsa, BPJS hingga listrik, bisa terbayar tanpa was-was
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <div class="copy__box w-90">
+      <b>Bayar tagihan bebas cemas</b><br />
+      Tagihan mulai dari pulsa, BPJS hingga listrik, bisa terbayar tanpa was-was
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+</div>
+
+<p class="pb-8"><br />Copyright</p>
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="body-text w-90">
+      Use copywright sign "©". After that, don't forget to put year and company's name.
+    </p>
+  </div>
+  <div>
+    <div class="copy__box align-center w-90">
+      © 2009-2017, PT Tokopedia
+    </div>
+    <div class="copy__box--do w-90"></div>
+  </div>
+</div>
+
+<br />
+<h2 class="mt-0">Numeric</h2>
+
+<p class="pb-8"><br />Numbering (Price, Date, Time)</p>
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="body-text w-90">
+      Numbers can be used for certain contexts, such as price, quantity, date, and time.
+      <br /><br />
+      <b>Price</b>
+      <br />
+      <span class="color-black-disabled">Use Rupiah for price. Don't use space and other punctuation.</span>
+      <br /><br />
+      <b>Date</b>
+      <br />
+      <span class="color-black-disabled">Follow the date format below.</span>
+      <br />
+      <span class="color-black-disabled">DD<spasi>MMM<spasi>YYYY</span>
+      <br /><br />
+      <b>Time</b>
+      <br />
+      <span class="color-black-disabled">If the time shows 1-60 secs (today)</span>
+      <br />
+      <span class="color-black-disabled">If the time shows 1-59 secs (today)</span>
+      <br />
+      <span class="color-black-disabled">If the time shows 1-23 secs (today)</span>
+      <br /><br />
+      <span>If the time showe 01:50 and in the past </span>
+      <br />
+      <span>If the time showed 2 April at 10:20 (this year dan more than a day)</span>
+      <br />
+      <span>If the time showed 2 April at 22:20 (this year, more than a day, and at night)</span>
+      <br />
+      <span>If the time showed 12 January 2016 (next year)</span>
+    </p>
+  </div>
+  <div>
+    <h4 class="pt-0 w-90">Price</h4>
+    <div class="copy__box align-center w-90">
+      Rp80.000
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <div class="copy__box align-center w-90">
+      Rp 80.000
+    </div>
+    <div class="copy__box--dont w-90"></div>
+  </div>
+</div>
+
+<br />
+<h2 class="mt-0">Others</h2>
+<div data-insert-component="ImageGrid">
+  <div>
+    <p class="w-90">Phrases</p>
+    <p class="body-text w-90 mb-16">
+      A phrase is a group of words. It doesn't have verbs.
+    </p>
+    <div class="copy__box align-center w-90">
+      EN: Seller Story
+      <br />
+      ID: Seller Story
+    </div>
+    <div class="copy__box--do w-90"></div>
+    <br /><br />
+    <p class="w-90">Sentences</p>
+    <p class="body-text w-90 mb-16">
+      A sentence has one or more clauses and has both subjects and verbs.
+    </p>
+    <div class="copy__box w-90">
+      EN: Do not worry if you want to know the train schedule and train tickets prices but not in front of a computer at the moment...
+      <br /><br />
+      ID: Jangan bingung jika ingin mengetahui jadwal kereta api dan harga tiketnya ketika tidak berada di depan komputer.
+    </div>
+    <div class="copy__box--do w-90"></div>
+  </div>
+  <div>
+    <p class="w-90">Clauses</p>
+    <p class="body-text w-90 mb-16">
+      A clause has both subjects and verbs.
+    </p>
+    <div class="copy__box align-center w-90">
+      EN: Have you visited Official Store?<br />
+      ID: Sudah pernah kunjungi Official Store?
+    </div>
+    <div class="copy__box--do w-90"></div>
   </div>
 </div>

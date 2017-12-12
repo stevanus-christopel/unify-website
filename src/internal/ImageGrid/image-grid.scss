@@ -39,7 +39,7 @@
         max-width: 400px;
       }
 
-      @include breakpoint('1366px') {
+      @include breakpoint('1280px') {
         width: 80%;
         max-width: initial;
         margin-bottom: 0;
@@ -57,41 +57,41 @@
   div:first-child:nth-last-child(2),
   div:first-child:nth-last-child(2) ~ div {
 
-    @include breakpoint('1366px') {
+    @include breakpoint('1280px') {
       width: calc(50% - 1rem);
     }
   }
 
   div:first-child:nth-last-child(3),
   div:first-child:nth-last-child(3) ~ div {
-    @include breakpoint('1366px') {
+    @include breakpoint('1280px') {
       width: calc(33.3333% - 1rem);
     }
   }
 
   > div:first-child:nth-last-child(4),
   > div:first-child:nth-last-child(4) ~ div {
-    @include breakpoint('1366px') {
+    @include breakpoint('1280px') {
       width: calc(50% - 1rem);
     }
   }
 
   > div:first-child:nth-last-child(6),
   > div:first-child:nth-last-child(6) ~ div {
-    @include breakpoint('1366px') {
+    @include breakpoint('1280px') {
       width: calc(33% - 1rem);
     }
   }
   > div:first-child:nth-last-child(8),
   > div:first-child:nth-last-child(8) ~ div {
-    @include breakpoint('1366px') {
+    @include breakpoint('1280px') {
       width: calc(25% - 1rem);
     }
   }
 
   > div:first-child:nth-last-child(9),
   > div:first-child:nth-last-child(9) ~ div {
-    @include breakpoint('1366px') {
+    @include breakpoint('1280px') {
       width: calc(33% - 1rem);
     }
   }
