@@ -18,6 +18,14 @@
         "url": "/components/button"
       },
       {
+        "title": "Dialog",
+        "url": "/components/dialog"
+      },
+      {
+        "title": "Menus",
+        "url": "/components/menu"
+      },
+      {
         "title": "Tabs",
         "url": "/components/tabs"
       },

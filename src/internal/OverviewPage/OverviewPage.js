@@ -12,6 +12,16 @@ class OverviewPage extends Component {
         link: '/components/button'
       },
       {
+        name: 'Dialog',
+        img: require('./images/Dialog.svg'),
+        link: '/components/dialog'
+      },
+      {
+        name: 'Menu',
+        img: require('./images/Menu.svg'),
+        link: '/components/menu'
+      },
+      {
         name: 'Tabs',
         img: require('./images/Tabs.svg'),
         link: '/components/tabs'

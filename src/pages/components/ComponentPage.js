@@ -49,7 +49,7 @@ class ComponentPage extends Component {
     } catch (err) {
       hasCodePage = false;
     }
-    
+
     const content = (
       <Tabs
         key={params.name}
