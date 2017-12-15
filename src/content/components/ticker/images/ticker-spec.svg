@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="291" height="59" viewBox="0 0 291 59">
+    <defs>
+        <rect id="a" width="288" height="56" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1.021 1.012)">
+            <use fill="#FFF" xlink:href="#a"/>
+            <rect width="289" height="57" x="-.5" y="-.5" stroke="#D3F0D4" rx="4"/>
+        </g>
+        <path fill="#87D58B" fill-rule="nonzero" d="M275.521 15.691l-4.748 5.18a.415.415 0 0 1-.623 0 .511.511 0 0 1 0-.679l4.749-5.18-4.749-5.18a.511.511 0 0 1 0-.679.415.415 0 0 1 .623 0l4.748 5.18 4.75-5.18a.415.415 0 0 1 .621 0 .511.511 0 0 1 0 .679l-4.749 5.18 4.75 5.181a.511.511 0 0 1 0 .679.415.415 0 0 1-.623 0l-4.749-5.18z"/>
+        <path fill="#ADE3AF" d="M3.021 1.012v56a2 2 0 0 1-2-2v-52a2 2 0 0 1 2-2z"/>
+        <text font-family="SanFranciscoText-Medium, San Francisco Text" font-size="11" font-weight="400" transform="translate(1.021 1.012)">
+            <tspan x="16" y="26" fill="#000" fill-opacity=".7">Type information with approx. 80 CHARACTER, </tspan> <tspan x="16" y="38" fill="#000" fill-opacity=".7">for more or another direction. </tspan> <tspan x="169.828" y="38.005" fill="#42B549" font-family="SanFranciscoText-Bold, San Francisco Text" font-weight="bold">Text Link</tspan>
+        </text>
+    </g>
+</svg>

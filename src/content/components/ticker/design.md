@@ -15,15 +15,15 @@
 <div data-insert-component="ImageGrid">
   <div>
     Announcement Ticker<br />
-    <!-- ![Announcement Ticker](images/ticker-1.svg) -->
+    ![Announcement Ticker](images/ticker-1.svg)
   </div>
   <div>
     Announcement Sliding Ticker<br />
-    <!-- ![Announcement Sliding Ticker](images/ticker-2.svg) -->
+    ![Announcement Sliding Ticker](images/ticker-2.svg)
   </div>
   <div>
     Warning Ticker<br />
-    <!-- ![Warning Ticker](images/ticker-3.svg) -->
+    ![Warning Ticker](images/ticker-3.svg)
   </div>
 </div>
 
@@ -31,9 +31,9 @@
 
 <div data-insert-component="ImageGrid">
   <div>
-    <!-- ![Ticker Spec](images/ticker-spec.svg) -->
+    ![Ticker Spec](images/ticker-spec.svg)
     <div class="img-width-initial mt-16">
-      <!-- ![Ticker Usage Spec](images/toaster-usage-spec.svg) -->
+      ![Ticker Usage Spec](images/ticker-usage-spec.png)
     </div>
   </div>
   <div>
