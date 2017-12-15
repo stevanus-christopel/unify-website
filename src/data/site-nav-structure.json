@@ -14,6 +14,10 @@
     "url": "components",
     "children": [
       {
+        "title": "Bottom Sheets",
+        "url": "/components/bottom-sheet"
+      },
+      {
         "title": "Buttons",
         "url": "/components/button"
       },
@@ -28,6 +32,10 @@
       {
         "title": "Tabs",
         "url": "/components/tabs"
+      },
+      {
+        "title": "Tickers",
+        "url": "/components/ticker"
       },
       {
         "title": "Toaster",

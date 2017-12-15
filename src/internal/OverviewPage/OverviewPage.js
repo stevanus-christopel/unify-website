@@ -7,6 +7,11 @@ class OverviewPage extends Component {
   render() {
     const componentData = [
       {
+        name: 'Bottom Sheets',
+        img: require('./images/Bottom Sheet.svg'),
+        link: '/components/bottom-sheet'
+      },
+      {
         name: 'Button',
         img: require('./images/Button.svg'),
         link: '/components/button'
@@ -25,6 +30,11 @@ class OverviewPage extends Component {
         name: 'Tabs',
         img: require('./images/Tabs.svg'),
         link: '/components/tabs'
+      },
+      {
+        name: 'Ticker',
+        img: require('./images/Ticker.svg'),
+        link: '/components/ticker'
       },
       {
         name: 'Toaster',

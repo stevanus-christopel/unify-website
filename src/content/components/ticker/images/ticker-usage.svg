@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="458" height="290" viewBox="0 0 458 290">
+    <defs>
+        <rect id="a" width="320" height="68" rx="4"/>
+        <rect id="c" width="320" height="68" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="458" height="290" fill="#F8F8F8" rx="4"/>
+        <g transform="translate(69 65)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#a"/>
+            <rect width="319" height="67" x=".5" y=".5" stroke="#D3F0D4" rx="4"/>
+            <path fill="#ADE3AF" d="M-21-14H3V92h-24z" mask="url(#b)"/>
+            <rect width="62" height="6" x="16" y="24" fill="#EAEAEA" rx="3"/>
+            <rect width="132" height="6" x="86" y="24" fill="#EAEAEA" rx="3"/>
+            <circle cx="306" cy="14" r="6" fill="#ADE3AF"/>
+            <rect width="132" height="6" x="16" y="38" fill="#EAEAEA" rx="3"/>
+        </g>
+        <g transform="translate(69 157)">
+            <mask id="d" fill="#fff">
+                <use xlink:href="#c"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#c"/>
+            <rect width="319" height="67" x=".5" y=".5" stroke="#FFE38F" rx="4"/>
+            <path fill="#FFE38F" d="M-21-14H3V92h-24z" mask="url(#d)"/>
+            <rect width="62" height="6" x="16" y="24" fill="#EAEAEA" rx="3"/>
+            <rect width="132" height="6" x="86" y="24" fill="#EAEAEA" rx="3"/>
+            <circle cx="306" cy="14" r="6" fill="#FFE38F"/>
+            <rect width="132" height="6" x="16" y="38" fill="#EAEAEA" rx="3"/>
+        </g>
+    </g>
+</svg>
