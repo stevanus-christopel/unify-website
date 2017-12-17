@@ -16,8 +16,7 @@ class ComponentExample extends Component {
     const { htmlFile, component, variation } = this.props;
 
     const classNames = classnames({
-      'component-example__live--rendered': true,
-      [`${component}`]: true,
+      'component-example__live--rendered': true
     });
 
     const lightUIclassnames = classnames({
