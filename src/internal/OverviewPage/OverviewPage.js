@@ -7,6 +7,11 @@ class OverviewPage extends Component {
   render() {
     const componentData = [
       {
+        name: 'Bottom Nav',
+        img: require('./images/Bottom Nav.svg'),
+        link: '/components/bottom-nav'
+      },
+      {
         name: 'Bottom Sheets',
         img: require('./images/Bottom Sheet.svg'),
         link: '/components/bottom-sheet'

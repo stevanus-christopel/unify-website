@@ -199,3 +199,13 @@
 .bx--overflow-menu-options {
   z-index: 7000;
 }
+
+/*
+  Custom by stevanus.id
+*/
+
+.component-example__live {
+  & .bottomnav {
+    position: absolute;
+  }
+}

@@ -277,7 +277,7 @@ class SideNav extends Component {
             this.state.subNavItems.length > 8 &&
             <ul className="main-nav-item__children">
               { 
-                this.state.subNavItems.map((subNavItem)=> {
+                this.state.subNavItems.map((subNavItem, index)=> {
                   if(index <= 8) {
                     return;
                   }
