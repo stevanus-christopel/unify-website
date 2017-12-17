@@ -34,6 +34,10 @@
         "url": "/components/menu"
       },
       {
+        "title": "Navigation Bar",
+        "url": "/components/nav-bar"
+      },
+      {
         "title": "Tabs",
         "url": "/components/tabs"
       },

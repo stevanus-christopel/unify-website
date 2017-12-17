@@ -32,6 +32,11 @@ class OverviewPage extends Component {
         link: '/components/menu'
       },
       {
+        name: 'Navigation Bar',
+        img: require('./images/Breadcrumb.svg'),
+        link: '/components/nav-bar'
+      },
+      {
         name: 'Tabs',
         img: require('./images/Tabs.svg'),
         link: '/components/tabs'
