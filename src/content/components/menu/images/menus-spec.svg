@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="348" height="578" viewBox="0 0 348 578">
+    <defs>
+        <path id="b" d="M9 0h320v303H9z"/>
+        <filter id="a" width="104.1%" height="104.3%" x="-2%" y="-1.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+        </filter>
+        <path id="d" d="M0 0h320v265H0z"/>
+        <filter id="c" width="106.9%" height="108.3%" x="-3.4%" y="-4.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(0 3)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" fill-opacity=".65" xlink:href="#b"/>
+        </g>
+        <g transform="translate(9 306)">
+            <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+            <use fill="#FFF" xlink:href="#d"/>
+        </g>
+        <path fill="#FFF" d="M9 436h320v64H9z"/>
+        <path stroke="#E0E0E0" stroke-linecap="square" stroke-width=".5" d="M25 500h304"/>
+        <text fill="#000" fill-opacity=".7" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="14" font-weight="400" opacity=".9" transform="translate(9 436)">
+            <tspan x="73" y="37">Third Content Goes Here</tspan>
+        </text>
+        <g fill="#BDBDBD" stroke="#BDBDBD" stroke-width=".2">
+            <path d="M45.274 467.436a.35.35 0 0 0-.357.362v6.259H33.713v-12.57h7.18a.35.35 0 0 0 .357-.361.35.35 0 0 0-.356-.362h-7.538a.35.35 0 0 0-.356.362v13.293a.35.35 0 0 0 .356.362h11.918a.35.35 0 0 0 .356-.362v-6.62a.35.35 0 0 0-.356-.363"/>
+            <path d="M39.213 470.28l-1.375.518-.917-.88.51-1.344 1.782 1.707zm4.991-8.43l.611-.62c.459-.053 1.019.154 1.426.62.408.414.56.88.51 1.293l-.611.569-1.936-1.862zm-6.264 6.155l5.755-5.638.968.931.967.931-5.806 5.586-1.884-1.81zm8.81-6.672c-.61-.621-1.425-.931-2.138-.776a.384.384 0 0 0-.204.103l-1.019.983-6.366 6.259c-.05.051-.05.103-.102.155l-1.069 3.414c-.05.103 0 .258.102.362.05.051.153.103.254.103h.102l3.514-1.034c.051 0 .102-.052.153-.104l7.385-7.293c.05-.052.102-.103.102-.207.102-.62-.153-1.345-.713-1.965z"/>
+        </g>
+        <g>
+            <path fill="#FFF" d="M9 371h320v64H9z"/>
+            <path stroke="#E0E0E0" stroke-linecap="square" stroke-width=".5" d="M25 435h304"/>
+            <text fill="#000" fill-opacity=".7" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="14" font-weight="400" opacity=".9" transform="translate(9 371)">
+                <tspan x="73" y="37">Second Content Goes Here</tspan>
+            </text>
+            <g stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M46.296 410.363a.476.476 0 0 1-.146.365.474.474 0 0 1-.368.145h-9.749a.473.473 0 0 1-.366-.144.477.477 0 0 1-.147-.366.542.542 0 0 0-.004-.07l-.844-13.064h12.473l-.844 13.063a.542.542 0 0 0-.005.07zM33.258 397.229h15.3M40.901 399.398v9.41M37.251 399.398l.516 9.41M44.566 399.398l-.517 9.41M43.288 397.229l-.242-1.516c-.08-.252-.327-.455-.594-.455h-3.097a.66.66 0 0 0-.626.543l-.203 1.428"/>
+            </g>
+        </g>
+        <g>
+            <path fill="#FFF" d="M9 306h320v64H9z"/>
+            <path stroke="#E0E0E0" stroke-linecap="square" stroke-width=".5" d="M25 370h304"/>
+            <text fill="#000" fill-opacity=".7" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="14" font-weight="400" opacity=".9" transform="translate(9 306)">
+                <tspan x="73" y="37">First Content Goes Here</tspan>
+            </text>
+            <g stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M38.924 338.03a2.833 2.833 0 1 1-5.666 0 2.833 2.833 0 0 1 5.666 0zM48.508 332.591a2.333 2.333 0 1 1-4.666 0 2.333 2.333 0 0 1 4.666 0zM48.508 343.453a2.333 2.333 0 1 1-4.666 0 2.333 2.333 0 0 1 4.666 0zM38.443 336.45l5.7-2.71M38.516 339.496l5.628 2.808"/>
+            </g>
+        </g>
+        <g>
+            <g transform="translate(92.5 516)">
+                <rect width="154" height="47" x=".5" rx="2"/>
+                <text fill="#42B549" font-family="SanFranciscoText-Semibold, San Francisco Text" font-size="14" font-weight="500">
+                    <tspan x="16.739" y="28.5">Call to Action Here</tspan>
+                </text>
+            </g>
+        </g>
+        <g>
+            <g transform="translate(53 309)">
+                <path fill="#50E3C2" d="M5 29h24v1H5z"/>
+                <path fill="#50E3C2" d="M5 27h1v5H5zM28 27h1v5h-1z"/>
+                <rect width="35" height="22" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M14 22l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="4.162" y="15">24px</tspan>
+                </text>
+            </g>
+            <g transform="translate(0 374)">
+                <path fill="#50E3C2" d="M9 29h16v1H9z"/>
+                <path fill="#50E3C2" d="M9 27h1v5H9zM24 27h1v5h-1z"/>
+                <rect width="35" height="22" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M14 22l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="4.162" y="15">16px</tspan>
+                </text>
+            </g>
+            <g transform="translate(40 481)">
+                <path fill="#50E3C2" d="M2 3h1v16H2z"/>
+                <path fill="#50E3C2" d="M0 3h5v1H0zM0 18h5v1H0z"/>
+                <rect width="35" height="22" x="8" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M4 11l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="12.162" y="15">16px</tspan>
+                </text>
+            </g>
+            <g transform="translate(40 433)">
+                <path fill="#50E3C2" d="M2 3h1v16H2z"/>
+                <path fill="#50E3C2" d="M0 3h5v1H0zM0 18h5v1H0z"/>
+                <rect width="35" height="22" x="8" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M4 11l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="12.162" y="15">16px</tspan>
+                </text>
+            </g>
+            <g transform="translate(167 513)">
+                <path fill="#50E3C2" d="M2 3h1v15.5H2z"/>
+                <path fill="#50E3C2" d="M0 3h5v1H0zM0 17.5h5v1H0z"/>
+                <rect width="45" height="22" x="9" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M5 11l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="18.162" y="15">16px</tspan>
+                </text>
+            </g>
+            <g transform="translate(167 545)">
+                <path fill="#50E3C2" d="M2 3h1v15.5H2z"/>
+                <path fill="#50E3C2" d="M0 3h5v1H0zM0 17.5h5v1H0z"/>
+                <rect width="45" height="22" x="9" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M5 11l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="18.162" y="15">16px</tspan>
+                </text>
+            </g>
+            <g transform="translate(135 556)">
+                <path fill="#50E3C2" d="M34 7h1v8h-1z"/>
+                <path fill="#50E3C2" d="M32 7h5v1h-5zM32 14h5v1h-5z"/>
+                <rect width="29" height="22" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M25 11l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="4.498" y="15">8px</tspan>
+                </text>
+            </g>
+            <g transform="translate(127 498)">
+                <path fill="#50E3C2" d="M42 3h1v15h-1z"/>
+                <path fill="#50E3C2" d="M40 3h5v1h-5zM40 17h5v1h-5z"/>
+                <rect width="35" height="22" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M31 11l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="4.162" y="15">16px</tspan>
+                </text>
+            </g>
+            <g transform="translate(167 371)">
+                <path fill="#50E3C2" d="M2 0h1v24H2z"/>
+                <path fill="#50E3C2" d="M0 0h5v1H0zM0 23h5v1H0z"/>
+                <rect width="35" height="22" x="8" y="1" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M4 12l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="12.162" y="16">24px</tspan>
+                </text>
+            </g>
+            <g transform="translate(167 411)">
+                <path fill="#50E3C2" d="M2 0h1v24H2z"/>
+                <path fill="#50E3C2" d="M0 0h5v1H0zM0 23h5v1H0z"/>
+                <rect width="35" height="22" x="8" y="1" fill="#50E3C2" rx="2"/>
+                <path fill="#50E3C2" d="M4 12l4-4 4 4-4 4z"/>
+                <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                    <tspan x="12.162" y="16">24px</tspan>
+                </text>
+            </g>
+            <path fill="#F50" d="M332 306h1v124h-1zM332 447h1v124h-1z"/>
+            <path fill="#F50" d="M330 306h5v1h-5zM330 570h5v1h-5z"/>
+            <text fill="#FF5722" font-family="HelveticaNeue, Helvetica Neue" font-size="12" transform="translate(315 306)">
+                <tspan x=".89" y="137">Varies</tspan>
+            </text>
+            <g>
+                <path fill="#F50" d="M332 3h1v143h-1zM332 163h1v143h-1z"/>
+                <path fill="#F50" d="M330 3h5v1h-5zM330 305h5v1h-5z"/>
+                <text fill="#FF5722" font-family="HelveticaNeue, Helvetica Neue" font-size="12" transform="translate(315 3)">
+                    <tspan x=".89" y="156">Varies</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

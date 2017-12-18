@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import PageHeader from '../../internal/PageHeader';
 import ImageGrid from '../../internal/ImageGrid';
 import ColorContrast from '../../internal/ColorContrast';
-import SpacingExample from '../../internal/SpacingExample';
 import DosAndDonts1 from '../../internal/DosAndDonts/DosAndDonts1';
 import DosAndDonts2 from '../../internal/DosAndDonts/DosAndDonts2';
 import DosAndDonts3 from '../../internal/DosAndDonts/DosAndDonts3';
@@ -98,7 +97,6 @@ class Page extends Component {
     const customComponents = {
       ImageGrid,
       ColorContrast,
-      SpacingExample,
       LayerTypes,
       LayerUsage,
       TypographyTable,

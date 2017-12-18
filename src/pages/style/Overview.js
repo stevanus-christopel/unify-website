@@ -19,8 +19,8 @@ class Overview extends React.Component {
         link: '/style/copywriting'
       },
       {
-        name: 'Spacing',
-        img: codeSnippetExample,
+        name: 'Size & Spacing',
+        img: require('../../content/style/overview/images/Spacing.svg'),
         link: '/style/spacing'
       },
       {

@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="339" height="577" viewBox="0 0 339 577">
+    <defs>
+        <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="99.021%">
+            <stop offset="0%" stop-opacity="0"/>
+            <stop offset="80%" stop-opacity=".02"/>
+            <stop offset="100%" stop-opacity=".04"/>
+        </linearGradient>
+        <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".12"/>
+            <stop offset="20%" stop-color="#FFF" stop-opacity=".06"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <ellipse id="b" cx="272.674" cy="476.626" rx="13.824" ry="13.95"/>
+        <filter id="a" width="121.7%" height="121.5%" x="-10.9%" y="-7.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.237601902 0"/>
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <ellipse id="f" cx="272.674" cy="407.626" rx="13.824" ry="13.95"/>
+        <filter id="e" width="121.7%" height="121.5%" x="-10.9%" y="-7.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.237601902 0"/>
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="i" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".8"/>
+            <stop offset="5%" stop-color="#FFF" stop-opacity=".4"/>
+            <stop offset="20%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="j" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-opacity="0"/>
+            <stop offset="80%" stop-opacity="0"/>
+            <stop offset="95.026%" stop-opacity=".02"/>
+            <stop offset="100%" stop-opacity=".04"/>
+        </linearGradient>
+        <path id="g" d="M9 9h320v356H9z"/>
+        <filter id="h" width="102.2%" height="102%" x="-.8%" y="-.7%" filterUnits="objectBoundingBox">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+        </filter>
+        <ellipse id="l" cx="272.674" cy="45.626" rx="13.824" ry="13.95"/>
+        <filter id="k" width="121.7%" height="121.5%" x="-10.9%" y="-7.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.237601902 0"/>
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <ellipse id="n" cx="272.674" cy="114.626" rx="13.824" ry="13.95"/>
+        <filter id="m" width="121.7%" height="121.5%" x="-10.9%" y="-7.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.237601902 0"/>
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <path id="p" d="M9 1h320v65H9z"/>
+        <filter id="o" width="104.1%" x="-2%" y="-8.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+        </filter>
+        <path id="r" d="M9 383h320v186H9z"/>
+        <filter id="q" width="106.9%" height="111.8%" x="-3.4%" y="-6.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(0 2)">
+        <text fill="#000" fill-opacity=".7" font-family="OpenSans, Open Sans" font-size="14">
+            <tspan x="25" y="539">Tagihan (2 barang) :</tspan>
+        </text>
+        <text fill="#FF5722" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold">
+            <tspan x="25" y="560">Rp 2.935.000</tspan>
+        </text>
+        <rect width="120" height="40" x="199" y="525" fill="#FF5722" rx="3"/>
+        <text fill="#FFF" font-family="OpenSans-Semibold, Open Sans" font-size="13" font-weight="500">
+            <tspan x="241.381" y="549">Bayar</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="OpenSans, Open Sans" font-size="14">
+            <tspan x="25" y="483">Punya Kode Promo?</tspan>
+        </text>
+        <path fill="#999" fill-rule="nonzero" d="M167.5 470.321a7.179 7.179 0 1 0 0 14.358 7.179 7.179 0 0 0 0-14.358zm1.429 10.965c-.358.143-.643.25-.858.321a2.374 2.374 0 0 1-.75.107c-.428 0-.75-.107-1-.321a.964.964 0 0 1-.357-.786c0-.143 0-.25.036-.393 0-.143.036-.285.071-.428l.429-1.572.107-.428a1.34 1.34 0 0 0 .036-.357c0-.215-.036-.322-.143-.429-.071-.071-.25-.107-.464-.107-.107 0-.25 0-.357.036l-.322.107.107-.465c.286-.107.572-.214.822-.321.25-.071.5-.143.75-.143.428 0 .75.107 1 .322.214.214.357.464.357.785 0 .072 0 .179-.036.357 0 .179-.036.322-.071.465l-.429 1.571-.107.429c-.036.143-.036.285-.036.357 0 .214.036.357.143.428.107.072.25.108.5.108.107 0 .214-.036.357-.072s.25-.071.286-.107l-.071.536zm-.072-6.322a1.153 1.153 0 0 1-.75.286c-.286 0-.536-.107-.75-.286a.88.88 0 0 1-.321-.678c0-.286.107-.5.321-.715.214-.178.464-.285.75-.285s.536.107.75.285a.9.9 0 0 1 .322.715c-.036.25-.143.464-.322.678z"/>
+        <path fill="#EBEBEB" fill-opacity=".464" d="M310 476.626c0 5.836-4.286 10.475-9.677 10.475h-27.649c-5.391 0-9.677-4.64-9.677-10.475 0-5.837 4.286-10.475 9.677-10.475h27.649c5.391 0 9.677 4.638 9.677 10.475z"/>
+        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+        <use fill="#BDBDBD" xlink:href="#b"/>
+        <ellipse cx="272.674" cy="476.626" stroke="url(#c)" stroke-width=".5" rx="13.574" ry="13.7"/>
+        <ellipse cx="272.674" cy="476.626" stroke="url(#d)" stroke-width=".5" rx="13.574" ry="13.7"/>
+        <text fill="#000" fill-opacity=".38" font-family="OpenSans, Open Sans" font-size="14">
+            <tspan x="25" y="414">Donasi Rp 100</tspan>
+        </text>
+        <path fill="#999" fill-rule="nonzero" d="M130.5 399.321a7.179 7.179 0 1 0 0 14.358 7.179 7.179 0 0 0 0-14.358zm1.429 10.965c-.358.143-.643.25-.858.321a2.374 2.374 0 0 1-.75.107c-.428 0-.75-.107-1-.321a.964.964 0 0 1-.357-.786c0-.143 0-.25.036-.393 0-.143.036-.285.071-.428l.429-1.572.107-.428a1.34 1.34 0 0 0 .036-.357c0-.215-.036-.322-.143-.429-.071-.071-.25-.107-.464-.107-.107 0-.25 0-.357.036l-.322.107.107-.465c.286-.107.572-.214.822-.321.25-.071.5-.143.75-.143.428 0 .75.107 1 .322.214.214.357.464.357.785 0 .072 0 .179-.036.357 0 .179-.036.322-.071.465l-.429 1.571-.107.429c-.036.143-.036.285-.036.357 0 .214.036.357.143.428.107.072.25.108.5.108.107 0 .214-.036.357-.072s.25-.071.286-.107l-.071.536zm-.072-6.322a1.153 1.153 0 0 1-.75.286c-.286 0-.536-.107-.75-.286a.88.88 0 0 1-.321-.678c0-.286.107-.5.321-.715.214-.178.464-.285.75-.285s.536.107.75.285a.9.9 0 0 1 .322.715c-.036.25-.143.464-.322.678z"/>
+        <path fill="#EBEBEB" fill-opacity=".464" d="M310 407.626c0 5.836-4.286 10.475-9.677 10.475h-27.649c-5.391 0-9.677-4.64-9.677-10.475 0-5.837 4.286-10.475 9.677-10.475h27.649c5.391 0 9.677 4.638 9.677 10.475z"/>
+        <use fill="#000" filter="url(#e)" xlink:href="#f"/>
+        <use fill="#BDBDBD" xlink:href="#f"/>
+        <ellipse cx="272.674" cy="407.626" stroke="url(#c)" stroke-width=".5" rx="13.574" ry="13.7"/>
+        <ellipse cx="272.674" cy="407.626" stroke="url(#d)" stroke-width=".5" rx="13.574" ry="13.7"/>
+        <use fill="#000" filter="url(#h)" xlink:href="#g"/>
+        <use fill="#FFF" xlink:href="#g"/>
+        <path stroke="url(#i)" stroke-width=".5" d="M9.25 9.25h319.5v355.5H9.25z"/>
+        <path stroke="url(#j)" stroke-width=".5" d="M9.25 9.25h319.5v355.5H9.25z"/>
+        <text fill="#000" fill-opacity=".54" font-family="Roboto-Regular, Roboto" font-size="12">
+            <tspan x="25" y="237">Biaya Asuransi</tspan>
+        </text>
+        <text fill="#000" font-family="Roboto-Regular, Roboto" font-size="14" opacity=".38">
+            <tspan x="249.111" y="237">Rp 15.000</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".54" font-family="Roboto-Regular, Roboto" font-size="12">
+            <tspan x="25" y="208">Total Belanja</tspan>
+        </text>
+        <text fill="#000" font-family="Roboto-Regular, Roboto" font-size="14" opacity=".38">
+            <tspan x="229.595" y="208">Rp 2.820.000</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".54" font-family="Roboto-Regular, Roboto" font-size="12">
+            <tspan x="25" y="178">Jumlah Barang</tspan>
+        </text>
+        <text fill="#000" font-family="Roboto-Regular, Roboto" font-size="14" opacity=".38">
+            <tspan x="269.421" y="178">2 (5kg)</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".54" font-family="Roboto-Regular, Roboto" font-size="12">
+            <tspan x="25" y="266">Ongkos Kirim</tspan>
+        </text>
+        <text fill="#000" font-family="Roboto-Regular, Roboto" font-size="14" opacity=".38">
+            <tspan x="249.104" y="266">Rp 50.000</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".54" font-family="Roboto-Regular, Roboto" font-size="12">
+            <tspan x="25" y="298">Biaya Tambahan</tspan>
+        </text>
+        <path fill="#999" fill-rule="nonzero" d="M128.5 287.321a7.179 7.179 0 1 0 0 14.358 7.179 7.179 0 0 0 0-14.358zm1.429 10.965c-.358.143-.643.25-.858.321a2.374 2.374 0 0 1-.75.107c-.428 0-.75-.107-1-.321a.964.964 0 0 1-.357-.786c0-.143 0-.25.036-.393 0-.143.036-.285.071-.428l.429-1.572.107-.428c.036-.143.036-.25.036-.357 0-.215-.036-.322-.143-.429-.071-.071-.25-.107-.464-.107-.107 0-.25 0-.357.036l-.322.107.107-.465c.286-.107.572-.214.822-.321.25-.071.5-.143.75-.143.428 0 .75.107 1 .322.214.214.357.464.357.785 0 .072 0 .179-.036.357 0 .179-.036.322-.071.465l-.429 1.571-.107.429c-.036.143-.036.285-.036.357 0 .214.036.357.143.428.107.072.25.108.5.108.107 0 .214-.036.357-.072s.25-.071.286-.107l-.071.536zm-.072-6.322a1.153 1.153 0 0 1-.75.286c-.286 0-.536-.107-.75-.286a.88.88 0 0 1-.321-.678c0-.286.107-.5.321-.715.214-.178.464-.285.75-.285s.536.107.75.285a.9.9 0 0 1 .322.715c-.036.25-.143.464-.322.678z"/>
+        <text fill="#000" fill-opacity=".7" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500">
+            <tspan x="25" y="347.188">Total Pembayaaran:</tspan>
+        </text>
+        <text fill="#FF5722" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500">
+            <tspan x="219.881" y="346.316">Rp 2.935.000</tspan>
+        </text>
+        <text fill="#000" font-family="Roboto-Regular, Roboto" font-size="14" opacity=".38">
+            <tspan x="249.104" y="298">Rp 50.000</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="OpenSans, Open Sans" font-size="12">
+            <tspan x="24" y="60">Kirimkan stok yang tersedia</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".7" font-family="OpenSans, Open Sans" font-size="14">
+            <tspan x="24" y="42">Kirim Stok Tersedia</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="OpenSans, Open Sans" font-size="12">
+            <tspan x="24" y="128">Kirim sebagai dropshipper</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".7" font-family="OpenSans, Open Sans" font-size="14">
+            <tspan x="24" y="110">Dropshipper</tspan>
+        </text>
+        <path fill="#EBEBEB" fill-opacity=".464" d="M310 45.626c0 5.836-4.286 10.475-9.677 10.475h-27.649c-5.391 0-9.677-4.64-9.677-10.475 0-5.837 4.286-10.475 9.677-10.475h27.649c5.391 0 9.677 4.638 9.677 10.475z"/>
+        <use fill="#000" filter="url(#k)" xlink:href="#l"/>
+        <use fill="#BDBDBD" xlink:href="#l"/>
+        <ellipse cx="272.674" cy="45.626" stroke="url(#c)" stroke-width=".5" rx="13.574" ry="13.7"/>
+        <ellipse cx="272.674" cy="45.626" stroke="url(#d)" stroke-width=".5" rx="13.574" ry="13.7"/>
+        <path fill="#EBEBEB" fill-opacity=".464" d="M310 114.626c0 5.836-4.286 10.475-9.677 10.475h-27.649c-5.391 0-9.677-4.64-9.677-10.475 0-5.837 4.286-10.475 9.677-10.475h27.649c5.391 0 9.677 4.638 9.677 10.475z"/>
+        <use fill="#000" filter="url(#m)" xlink:href="#n"/>
+        <use fill="#BDBDBD" xlink:href="#n"/>
+        <ellipse cx="272.674" cy="114.626" stroke="url(#c)" stroke-width=".5" rx="13.574" ry="13.7"/>
+        <ellipse cx="272.674" cy="114.626" stroke="url(#d)" stroke-width=".5" rx="13.574" ry="13.7"/>
+        <use fill="#000" filter="url(#o)" xlink:href="#p"/>
+        <use fill="#FFF" xlink:href="#p"/>
+        <text fill="#000" fill-opacity=".7" font-family="OpenSans-Semibold, Open Sans" font-size="16" font-weight="500">
+            <tspan x="56" y="45">Keranjang Belanja</tspan>
+        </text>
+        <path fill="#666" d="M33.85 30L25 38.761l8.719 8.718 2.016-2.105-6.701-6.701L36 32.15z"/>
+        <path fill="#000" fill-opacity=".7" d="M300.494 6.5h19.512c.82 0 1.494.674 1.494 1.505v6.49c0 .837-.669 1.505-1.494 1.505h-19.512c-.82 0-1.494-.674-1.494-1.505v-6.49c0-.837.669-1.505 1.494-1.505zM322 9.5h.75c.417 0 .75.332.75.742v2.016a.748.748 0 0 1-.75.742H322V9.5zM300.508 7c-.557 0-1.008.457-1.008 1.008v6.484c0 .557.45 1.008 1.008 1.008h19.484c.557 0 1.008-.457 1.008-1.008V8.008c0-.557-.45-1.008-1.008-1.008h-19.484zm-.001.5h19.486c.277 0 .507.22.507.492v6.516a.497.497 0 0 1-.507.492h-19.486a.502.502 0 0 1-.507-.492V7.992c0-.276.227-.492.507-.492z"/>
+        <text fill="#000" fill-opacity=".7" font-family="OpenSans-Semibold, Open Sans" font-size="12" font-weight="500">
+            <tspan x="265.109" y="14.5">100%</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".7" font-family="OpenSans-Semibold, Open Sans" font-size="12" font-weight="500">
+            <tspan x="153.514" y="15.5">9:41 AM</tspan>
+        </text>
+        <path fill="#FFF" d="M105.144 13.439l-2.121 2.061-2.163-2.095a2.857 2.857 0 0 1 2.128-.936c.864 0 1.638.376 2.156.97zm2.18-2.118l-1.09 1.058a4.417 4.417 0 0 0-3.246-1.402c-1.274 0-2.42.528-3.219 1.372l-1.09-1.056a5.979 5.979 0 0 1 4.309-1.809c1.713 0 3.257.708 4.335 1.837zm2.176-2.114l-1.088 1.057a7.539 7.539 0 0 0-5.424-2.272 7.54 7.54 0 0 0-5.398 2.245L96.5 9.182a9.1 9.1 0 0 1 6.488-2.682 9.1 9.1 0 0 1 6.512 2.707z"/>
+        <text fill="#000" fill-opacity=".7" font-family="OpenSans-Semibold, Open Sans" font-size="12" font-weight="500">
+            <tspan x="53" y="14.5">Sketch</tspan>
+        </text>
+        <path fill="#000" fill-opacity=".7" d="M18.25 14a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5zm7 0a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5zm7 0a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5zm7 0a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5zm7 0a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5z"/>
+        <path fill="#FFF" fill-opacity=".65" d="M7 0h324v571H7z"/>
+        <g>
+            <use fill="#000" filter="url(#q)" xlink:href="#r"/>
+            <use fill="#FFF" xlink:href="#r"/>
+        </g>
+        <text fill="#000" fill-opacity=".54" font-family="SanFranciscoText-Regular, San Francisco Text" font-size="14" letter-spacing=".1">
+            <tspan x="25" y="440">Type your information about the hint in a </tspan> <tspan x="25" y="458">compact way, don’t take it to long. No </tspan> <tspan x="25" y="476">illustration may use in some case</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".7" font-family="SanFranciscoText-Semibold, San Francisco Text" font-size="14" font-weight="500">
+            <tspan x="25" y="412">Title Goes Here</tspan>
+        </text>
+        <rect width="288" height="48" x="25" y="505" fill="#42B549" rx="4"/>
+        <text fill="#FFF" font-family="SanFranciscoText-Bold, San Francisco Text" font-size="14" font-weight="bold">
+            <tspan x="139.042" y="534">CTA Here</tspan>
+        </text>
+        <g transform="translate(0 425)">
+            <path fill="#50E3C2" d="M9 29h16v1H9z"/>
+            <path fill="#50E3C2" d="M9 27h1v5H9zM24 27h1v5h-1z"/>
+            <rect width="35" height="22" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M14 22l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="4.162" y="15">16px</tspan>
+            </text>
+        </g>
+        <g transform="translate(304 425)">
+            <path fill="#50E3C2" d="M9 29h16v1H9z"/>
+            <path fill="#50E3C2" d="M9 27h1v5H9zM24 27h1v5h-1z"/>
+            <rect width="35" height="22" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M14 22l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="4.162" y="15">16px</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

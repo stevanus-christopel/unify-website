@@ -21,9 +21,6 @@ class Grid extends React.Component {
         <Tab href="/style/grid/design" label="Design">
           <MarkdownPage content={require('../../content/style/spacing/design.md')} />
         </Tab>
-        <Tab href="/style/grid/code" label="Code">
-          <MarkdownPage content={require('../../content/style/spacing/code.md')} />
-        </Tab>
       </PageTabs>
     );
   }

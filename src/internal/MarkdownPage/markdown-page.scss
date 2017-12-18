@@ -206,16 +206,16 @@
 
   ul,
   ol {
-    @include font-size('16');
     @include font-smoothing;
     margin-left: 14px;
     margin-top: 24px;
     margin-bottom: 24px;
-    line-height: 24px;
     max-width: 100%;
 
     li {
-      color: $font-color-black-secondary;
+      color: $font-color-black-primary;
+      font-size: 18px;
+      line-height: 30px;
     }
 
     & + h3 {

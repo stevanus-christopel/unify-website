@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330" height="576" viewBox="0 0 330 576">
+    <defs>
+        <filter id="a" width="106.6%" height="102.3%" x="-3.3%" y="-1%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <rect id="c" width="288" height="188" rx="4"/>
+        <filter id="b" width="123.6%" height="136.2%" x="-11.8%" y="-13.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(5 3)">
+        <path fill="#FFF" fill-opacity=".65" d="M0 0h320v568H0z"/>
+        <g transform="translate(16 190)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+        </g>
+        <g transform="translate(207 322)">
+            <rect width="93" height="48" rx="2"/>
+            <text fill="#42B549" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="14" font-weight="400">
+                <tspan x="17.164" y="29">CTA Here</tspan>
+            </text>
+        </g>
+        <g fill="#000">
+            <text fill-opacity=".7" font-family="SanFranciscoText-Semibold, San Francisco Text" font-size="16" font-weight="500" transform="translate(32 206)">
+                <tspan x="0" y="15">Title Goes Here</tspan>
+            </text>
+            <text fill-opacity=".541" font-family="SanFranciscoText-Regular, San Francisco Text" font-size="14" transform="translate(32 206)">
+                <tspan x="0" y="51">Make the copy compact to </tspan> <tspan x="0" y="69">communicate what you want, approx 50 </tspan> <tspan x="0" y="87">character like this</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

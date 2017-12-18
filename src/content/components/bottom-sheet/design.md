@@ -27,6 +27,7 @@
     Full Page Bottom Sheets<br />
     ![Normal Bottom Sheets](images/bottom-sheet-2.svg)
   </div>
+  <div></div>
 </div>
 
 ## Spec
@@ -37,8 +38,6 @@
     <div class="img-width-initial mt-16">
       ![Bottom Sheets Usage Spec](images/bottom-sheet-usage-spec.png)
     </div>
-  </div>
-  <div>
   </div>
   <div>
   </div>

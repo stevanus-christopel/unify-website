@@ -22,7 +22,7 @@ class SearchPage extends Component {
         link: '/components/button'
       },
       {
-        name: 'Dialog',
+        name: 'Dialogs',
         img: require('../OverviewPage/images/Dialog.svg'),
         link: '/components/dialog'
       },
@@ -68,7 +68,7 @@ class SearchPage extends Component {
         link: '/style/copywriting'
       },
       {
-        name: 'Spacing',
+        name: 'Size & Spacing',
         img: codeSnippetExample,
         link: '/style/spacing'
       },

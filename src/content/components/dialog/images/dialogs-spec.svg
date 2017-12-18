@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="228" viewBox="0 0 328 228">
+    <defs>
+        <rect id="b" width="288" height="188" x="9" y="3" rx="4"/>
+        <filter id="a" width="123.6%" height="136.2%" x="-11.8%" y="-13.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(11 9)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <g transform="translate(209 144)">
+            <rect width="93" height="48" rx="2"/>
+            <text fill="#42B549" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="14" font-weight="400">
+                <tspan x="17.164" y="29">CTA Here</tspan>
+            </text>
+        </g>
+        <g transform="translate(116.5 144)">
+            <rect width="93" height="48" rx="2"/>
+            <text fill="#000" fill-opacity=".54" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="14" font-weight="400">
+                <tspan x="17.164" y="29">CTA Here</tspan>
+            </text>
+        </g>
+        <g fill="#000">
+            <text fill-opacity=".7" font-family="SanFranciscoText-Semibold, San Francisco Text" font-size="16" font-weight="500" transform="translate(36 28)">
+                <tspan x="0" y="15">Title Goes Here</tspan>
+            </text>
+            <text fill-opacity=".541" font-family="SanFranciscoText-Regular, San Francisco Text" font-size="14" transform="translate(36 28)">
+                <tspan x="0" y="51">Make the copy compact to </tspan> <tspan x="0" y="69">communicate what you want, approx 50 </tspan> <tspan x="0" y="87">character like this</tspan>
+            </text>
+        </g>
+        <g transform="translate(91 9)">
+            <path fill="#50E3C2" d="M2 3h1v16H2z"/>
+            <path fill="#50E3C2" d="M0 3h5v1H0zM0 18h5v1H0z"/>
+            <rect width="35" height="22" x="8" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M4 11l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="12.162" y="15">16px</tspan>
+            </text>
+        </g>
+        <g transform="translate(11 10)">
+            <path fill="#50E3C2" d="M9 29h16v1H9z"/>
+            <path fill="#50E3C2" d="M9 27h1v5H9zM24 27h1v5h-1z"/>
+            <rect width="35" height="22" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M14 22l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="4.162" y="15">16px</tspan>
+            </text>
+        </g>
+        <g transform="translate(162 47)">
+            <path fill="#50E3C2" d="M2 3h1v16H2z"/>
+            <path fill="#50E3C2" d="M0 3h5v1H0zM0 18h5v1H0z"/>
+            <rect width="35" height="22" x="8" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M4 11l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="12.162" y="15">16px</tspan>
+            </text>
+        </g>
+        <g transform="translate(153 120)">
+            <path fill="#50E3C2" d="M41 0h1v24h-1z"/>
+            <path fill="#50E3C2" d="M39 0h5v1h-5zM39 23h5v1h-5z"/>
+            <rect width="35" height="22" y="1" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M31 12l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="4.162" y="16">24px</tspan>
+            </text>
+        </g>
+        <g transform="translate(254 141)">
+            <path fill="#50E3C2" d="M2 3h1v16H2z"/>
+            <path fill="#50E3C2" d="M0 3h5v1H0zM0 18h5v1H0z"/>
+            <rect width="35" height="22" x="8" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M4 11l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="12.162" y="15">16px</tspan>
+            </text>
+        </g>
+        <g transform="translate(254 173)">
+            <path fill="#50E3C2" d="M2 3h1v16H2z"/>
+            <path fill="#50E3C2" d="M0 3h5v1H0zM0 18h5v1H0z"/>
+            <rect width="35" height="22" x="8" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M4 11l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="12.162" y="15">16px</tspan>
+            </text>
+        </g>
+        <g transform="translate(181 166)">
+            <path fill="#50E3C2" d="M12 2h16.25v1H12z"/>
+            <path fill="#50E3C2" d="M12 0h1v5h-1zM27.25 0h1v5h-1z"/>
+            <rect width="40" height="22" y="9" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M16 9l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="6.162" y="24">16px</tspan>
+            </text>
+        </g>
+        <g transform="translate(107 139)">
+            <path fill="#50E3C2" d="M10 29h16.75v1H10z"/>
+            <path fill="#50E3C2" d="M10 27h1v5h-1zM25.75 27h1v5h-1z"/>
+            <rect width="38" height="22" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M15 22l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="5.162" y="15">16px</tspan>
+            </text>
+        </g>
+        <g transform="translate(199 139)">
+            <path fill="#50E3C2" d="M10 29h16.75v1H10z"/>
+            <path fill="#50E3C2" d="M10 27h1v5h-1zM25.75 27h1v5h-1z"/>
+            <rect width="37" height="22" fill="#50E3C2" rx="2"/>
+            <path fill="#50E3C2" d="M15 22l4-4 4 4-4 4z"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="5.162" y="15">16px</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

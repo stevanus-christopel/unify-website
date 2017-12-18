@@ -22,7 +22,7 @@ class OverviewPage extends Component {
         link: '/components/button'
       },
       {
-        name: 'Dialog',
+        name: 'Dialogs',
         img: require('./images/Dialog.svg'),
         link: '/components/dialog'
       },
