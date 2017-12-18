@@ -11,7 +11,7 @@ class Overview extends React.Component {
   render() {
     const codeSnippetExample = require('../../content/style/overview/images/Code Snippet.svg');
 
-    const styleData = [
+    const patternData = [
       {
         name: 'Empty State',
         img: codeSnippetExample,
@@ -25,14 +25,14 @@ class Overview extends React.Component {
     ];
 
     let key = 0;
-    const styleTemplate = styleData.map(style => {
+    const patternTemplate = patternData.map(pattern => {
       key++;
       return (
         <li key={key} className="component-item">
           <div className="flex-item">
-            <Link to={style.link}>
-              <img src={style.img} />
-              <p className="component-name">{style.name}</p>
+            <Link to={pattern.link}>
+              <img src={pattern.img} />
+              <p className="component-name">{pattern.name}</p>
             </Link>
           </div>
         </li>
@@ -41,7 +41,7 @@ class Overview extends React.Component {
 
     const content = (
       <div className="page">
-        <ul className="flex-container">{styleTemplate}</ul>
+        <ul className="flex-container">{patternTemplate}</ul>
       </div>
     );
     return <Page label="Patterns" title="Overview" content={content} />;

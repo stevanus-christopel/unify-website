@@ -198,60 +198,13 @@ const routes = {
       ],
     },
     {
-      path: 'resources',
+      path: 'search/:searchQuery',
       getComponent(location, cb) {
-        import('./pages/Resources').then(loadRoute(cb)).catch(errorLoading);
-      },
-    },
-    {
-      path: 'themes',
-      getComponent(location, cb) {
-        import('./pages/Themes').then(loadRoute(cb)).catch(errorLoading);
-      },
-    },
-    {
-      path: 'component-status',
-      getComponent(location, cb) {
-        import('./pages/ComponentStatus')
+        import('./pages/components/ComponentPage')
           .then(loadRoute(cb))
           .catch(errorLoading);
       },
     },
-
-    {
-      path: 'data-vis',
-      indexRoute: {
-        onEnter: (nextState, replace) => replace('/data-vis/overview/general'),
-      },
-      childRoutes: [
-        {
-          path: '/data-vis/:name',
-          indexRoute: {
-            onEnter: (nextState, replace) => {
-              if (!(nextState.params.name === 'overview')) {
-                replace(`/data-vis/${nextState.params.name}/code`)
-              } else {
-                replace(`/data-vis/overview/general`)
-              }
-            },
-          },
-          getComponent(location, cb) {
-            import ('./pages/data-vis/DataVis')
-              .then(loadRoute(cb))
-              .catch(errorLoading)
-          }
-        },
-        {
-          path: '/data-vis/:name/:page',
-          getComponent(location, cb) {
-            import('./pages/data-vis/DataVis')
-              .then(loadRoute(cb))
-              .catch(errorLoading);
-          },
-        },
-      ],
-    },
-
     {
       path: '*',
       getComponent(location, cb) {

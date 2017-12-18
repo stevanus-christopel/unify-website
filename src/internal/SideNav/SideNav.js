@@ -79,9 +79,6 @@ class SideNav extends Component {
         menus[i].className = "main-nav-item";
       }
     }
-    /*this.setState({
-      subNavItems: []
-    });*/
   };
 
   crawlSiteContent = query => {
@@ -197,6 +194,14 @@ class SideNav extends Component {
       );
     });
 
+  handleSearch = (event) => {
+    if(event.key === 'Enter' && document.getElementById("txt-search").value.length > 0) {
+      browserHistory.push("/search/" + document.getElementById("txt-search").value);
+      document.getElementById("txt-search").value = "";
+      this.props.onToggleBtnClick();
+    }
+  }
+
   render() {
     const { isOpen, isFinal } = this.props;
 
@@ -226,8 +231,8 @@ class SideNav extends Component {
         <div className="side-nav__column"></div>
         <div className="side-nav__column">
           <div className="side-nav__search">
-            <input className="side-nav__search-txt" type="text" placeholder="Type for Search..."
-            style={ {backgroundImage: "url(" + iconSearch + ")" } } />
+            <input id="txt-search" className="side-nav__search-txt" type="text" placeholder="Type for Search..."
+            style={ {backgroundImage: "url(" + iconSearch + ")" } } onKeyPress={this.handleSearch} />
           </div>
           <div className={bottomClasses} onMouseLeave={this.handleMouseLeave}>
             <ul
@@ -282,7 +287,10 @@ class SideNav extends Component {
                     return;
                   }
                   return <li key={index}>
-                  <Link to={subNavItem.url}>{subNavItem.title}</Link>
+                  <Link to={subNavItem.url}
+                  onClick={this.props.onToggleBtnClick}>
+                  {subNavItem.title}
+                  </Link>
                   </li>
                 })
               }

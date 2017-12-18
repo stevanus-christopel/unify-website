@@ -11,7 +11,7 @@ class Overview extends React.Component {
   render() {
     const codeSnippetExample = require('../../content/style/overview/images/Code Snippet.svg');
 
-    const styleData = [
+    const interactionData = [
       {
         name: 'Sound',
         img: codeSnippetExample,
@@ -30,14 +30,14 @@ class Overview extends React.Component {
     ];
 
     let key = 0;
-    const styleTemplate = styleData.map(style => {
+    const interactionTemplate = interactionData.map(interaction => {
       key++;
       return (
         <li key={key} className="component-item">
           <div className="flex-item">
-            <Link to={style.link}>
-              <img src={style.img} />
-              <p className="component-name">{style.name}</p>
+            <Link to={interaction.link}>
+              <img src={interaction.img} />
+              <p className="component-name">{interaction.name}</p>
             </Link>
           </div>
         </li>
@@ -46,7 +46,7 @@ class Overview extends React.Component {
 
     const content = (
       <div className="page">
-        <ul className="flex-container">{styleTemplate}</ul>
+        <ul className="flex-container">{interactionTemplate}</ul>
       </div>
     );
     return <Page label="Interactions" title="Overview" content={content} />;

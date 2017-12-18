@@ -165,6 +165,18 @@ td {position: relative;}
       }
     }
   }
+
+  & h2.header-search-page {
+    margin: 16px 16px 0 16px;
+    background-image: url('./images/h2-before.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    text-indent: 24px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .page pre.line-numbers {
