@@ -13,36 +13,57 @@ import overview_background from '../../content/overview/images/header-purple/ove
 const img_top_banner_movement = 5;
 
 const img_top_banner_1_top = 16;
+var current_img_top_banner_1_top = img_top_banner_1_top;
 const img_top_banner_1_left = 15;
+var current_img_top_banner_1_left = img_top_banner_1_left;
 var img_top_banner_1_is_hover = false;
 
 const img_top_banner_2_bottom = 20;
+var current_img_top_banner_2_bottom = img_top_banner_2_bottom;
 const img_top_banner_2_left = 18;
+var current_img_top_banner_2_left = img_top_banner_2_left;
 var img_top_banner_2_is_hover = false;
 
 const img_top_banner_3_bottom = 22;
+var current_img_top_banner_3_bottom = img_top_banner_3_bottom;
 const img_top_banner_3_left = 22;
+var current_img_top_banner_3_left = img_top_banner_3_left;
 var img_top_banner_3_is_hover = false;
 
 const img_top_banner_4_bottom = 22;
+var current_img_top_banner_4_bottom = img_top_banner_4_bottom;
 const img_top_banner_4_left = 32;
+var current_img_top_banner_4_left  = img_top_banner_4_left;
 var img_top_banner_4_is_hover = false;
 
 const img_top_banner_5_top = 12;
+var current_img_top_banner_5_top = img_top_banner_5_top;
 const img_top_banner_5_right = 38;
+var current_img_top_banner_5_right = img_top_banner_5_right;
 var img_top_banner_5_is_hover = false;
 
 const img_top_banner_6_top = 16;
+var current_img_top_banner_6_top = img_top_banner_6_top;
 const img_top_banner_6_right = 19;
+var current_img_top_banner_6_right = img_top_banner_6_right;
 var img_top_banner_6_is_hover = false;
 
 const img_top_banner_7_top = 18;
+var current_img_top_banner_7_top = img_top_banner_7_top;
 const img_top_banner_7_right = 18;
-var img_top_banner_5_is_hover = false;
+var current_img_top_banner_7_right = img_top_banner_7_right;
+var img_top_banner_7_is_hover = false;
 
 const img_top_banner_8_bottom = 0;
+var current_img_top_banner_8_bottom = img_top_banner_8_bottom;
 const img_top_banner_8_right = 0;
+var current_img_top_banner_8_right = img_top_banner_8_right;
 var img_top_banner_8_is_hover = false;
+
+var last_mouse_x = 0;
+var last_mouse_y = 0;
+var diff_mouse_x = 0;
+var diff_mouse_y = 0;
 
 const backgroundStyle = {
     backgroundImage: "url(" + overview_background + ")"
@@ -74,6 +95,18 @@ class HomeHeaderPurple extends Component {
     }
     
     handleMouseMoveTopBanner(e) {
+        if(last_mouse_x != 0) {
+            diff_mouse_x = (e.x - last_mouse_x) / 8;
+        }
+
+        if(last_mouse_y != 0) {
+            diff_mouse_y = (e.y - last_mouse_y) / 8;
+        }
+
+        
+
+        last_mouse_x = e.x;
+        last_mouse_y = e.y;
     }
 
     handleMouseLeaveTopBanner() {
@@ -93,6 +126,28 @@ class HomeHeaderPurple extends Component {
         document.getElementsByClassName("overview-page__top-banner--image-purple-7")[0].style.right = img_top_banner_7_right + "%";
         document.getElementsByClassName("overview-page__top-banner--image-purple-8")[0].style.bottom = img_top_banner_8_bottom + "%";
         document.getElementsByClassName("overview-page__top-banner--image-purple-8")[0].style.right = img_top_banner_8_right + "%";
+        
+        current_img_top_banner_1_top = img_top_banner_1_top;
+        current_img_top_banner_1_left = img_top_banner_1_left;
+        current_img_top_banner_2_bottom  = img_top_banner_2_bottom ;
+        current_img_top_banner_2_left = img_top_banner_2_left;
+        current_img_top_banner_3_bottom = img_top_banner_3_bottom;
+        current_img_top_banner_3_left = img_top_banner_3_left;
+        current_img_top_banner_4_bottom = img_top_banner_4_bottom;
+        current_img_top_banner_4_left = img_top_banner_4_left;
+        current_img_top_banner_5_top = img_top_banner_5_top;
+        current_img_top_banner_5_right = img_top_banner_5_right;
+        current_img_top_banner_6_top = img_top_banner_6_top;
+        current_img_top_banner_6_right = img_top_banner_6_right;
+        current_img_top_banner_7_top = img_top_banner_7_top;
+        current_img_top_banner_7_right = img_top_banner_7_right;
+        current_img_top_banner_8_bottom = img_top_banner_8_bottom;
+        current_img_top_banner_8_right = img_top_banner_8_right;
+
+        last_mouse_x = 0;
+        last_mouse_y = 0;
+        diff_mouse_x = 0;
+        diff_mouse_y = 0;
     }
 
     render() {
