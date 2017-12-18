@@ -72,10 +72,12 @@
         "url": "/style/colors"
       },
       {
-        "title": "Font"
+        "title": "Font",
+        "url": "/coming-soon/style/font"
       },
       {
-        "title": "Icon"
+        "title": "Icon",
+        "url": "/coming-soon/style/icon"
       }
     ]
   },
@@ -84,13 +86,16 @@
     "url": "interactions",
     "children": [
       {
-        "title": "Sound"
+        "title": "Sound",
+        "url": "/coming-soon/interaction/sound"
       },
       {
-        "title": "Feedback"
+        "title": "Feedback",
+        "url": "/coming-soon/interaction/feedback"
       },
       {
-        "title": "Transition"
+        "title": "Transition",
+        "url": "/coming-soon/interaction/transition"
       }
     ]
   },
@@ -99,10 +104,12 @@
     "url": "patterns",
     "children": [
       {
-        "title": "Empty State"
+        "title": "Empty State",
+        "url": "/coming-soon/pattern/empty-state"
       },
       {
-        "title": "Navigation"
+        "title": "Navigation",
+        "url": "/coming-soon/pattern/navigation"
       }
     ]
   }

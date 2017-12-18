@@ -98,3 +98,20 @@ main[data-page="getting-started-FAQ"] {
   }
 }
 
+/*
+  Custom by STV
+*/
+
+.coming-soon {
+  & .page-tabs .bx--tabs__nav-item--selected .bx--tabs__nav-link {
+    color: rgba(74, 74, 74, 0.54);
+  }
+
+  & .page-tabs .bx--tabs__nav-item--selected {
+    border-bottom-color: #666666 !important;
+  }
+
+  & .page-tabs .bx--tabs__nav {
+    border-bottom-color: #BDBDBD;
+  }
+}

@@ -198,12 +198,36 @@ const routes = {
       ],
     },
     {
-      path: 'search/:searchQuery',
-      getComponent(location, cb) {
-        import('./pages/components/ComponentPage')
-          .then(loadRoute(cb))
-          .catch(errorLoading);
+      path: 'search',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/search/-'),
       },
+      childRoutes: [
+        {
+          path: '/search/:searchQuery',
+          getComponent(location, cb) {
+            import('./pages/components/ComponentPage')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          }
+        }
+      ]
+    },
+    {
+      path: 'coming-soon',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/coming-soon/-'),
+      },
+      childRoutes: [
+        {
+          path: '/coming-soon/:group/:element',
+          getComponent(location, cb) {
+            import('./pages/ComingSoon')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          }
+        }
+      ]
     },
     {
       path: '*',

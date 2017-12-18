@@ -20,6 +20,7 @@ class Style extends React.Component {
     } = this.props;
     const paramsName = params.name;
     const paramsPage = params.page;
+    
     const title = paramsName.charAt(0).toUpperCase() + paramsName.substring(1);
     let content;
     if (paramsName === 'overview') {

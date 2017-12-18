@@ -186,6 +186,7 @@ class Page extends Component {
         tabIndex="-1"
         data-page={this.addPageClass()}
         onKeyDown={this.handleKeyDown}
+        className={this.props.className}
       >
         <PageHeader label={label} title={title} />
         {pageContent}

@@ -80,12 +80,12 @@ class SearchPage extends Component {
       {
         name: 'Font',
         img: codeSnippetExample,
-        link: '/style/font'
+        link: '/coming-soon/style/font'
       },
       {
         name: 'Icon',
         img: codeSnippetExample,
-        link: '/style/icon'
+        link: '/coming-soon/style/icon'
       }
     ];
 
@@ -93,17 +93,17 @@ class SearchPage extends Component {
         {
             name: 'Sound',
             img: codeSnippetExample,
-            link: '/interactions/sound'
+            link: '/coming-soon/interactions/sound'
         },
         {
             name: 'Component Feedback',
             img: codeSnippetExample,
-            link: '/interactions/component-feedback'
+            link: '/coming-soon/interactions/component-feedback'
         },
         {
             name: 'Transition',
             img: codeSnippetExample,
-            link: '/interactions/transition'
+            link: '/coming-soon/interactions/transition'
         }
     ];
 
@@ -111,12 +111,12 @@ class SearchPage extends Component {
         {
           name: 'Empty State',
           img: codeSnippetExample,
-          link: '/patterns/emptystate'
+          link: '/coming-soon/patterns/emptystate'
         },
         {
           name: 'Navigation',
           img: codeSnippetExample,
-          link: '/patterns/navigation'
+          link: '/coming-soon/patterns/navigation'
         }
     ];
 
@@ -205,25 +205,25 @@ class SearchPage extends Component {
       <div className="page">
         {
             (componentCount > 0) &&
-            <h2 className="header-search-page">Components</h2>
+            <h2 className="header-unify-page">Components</h2>
         }
         <ul className="flex-container">{componentTemplate}</ul>
 
         {
             (styleCount > 0) &&
-            <h2 className="header-search-page">Styles</h2>
+            <h2 className="header-unify-page">Styles</h2>
         }
         <ul className="flex-container">{styleTemplate}</ul>
 
         {
             (interactionCount > 0) &&
-            <h2 className="header-search-page">Interactions</h2>
+            <h2 className="header-unify-page">Interactions</h2>
         }
         <ul className="flex-container">{interactionTemplate}</ul>
 
         {
             (patternCount > 0) &&
-            <h2 className="header-search-page">Patterns</h2>
+            <h2 className="header-unify-page">Patterns</h2>
         }
         <ul className="flex-container">{patternTemplate}</ul>
       </div>

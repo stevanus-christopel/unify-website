@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Overview from './Overview';
+import Page from '../../internal/Page';
 
 class Interactions extends React.Component {
   static propTypes = {

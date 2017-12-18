@@ -37,7 +37,7 @@ class Colors extends React.Component {
       <PageTabs tabs={tabs} currentPage={currentPage}>
         <Tab href="/style/colors/palette" label="Palette">
           <div className="page">
-            <h2>Main Colors</h2>
+            <h2 className="header-unify-page ml-0 mb-16">Main Colors</h2>
             <div className="wrapped-list">
               {this.renderColorCards(ColorList['main-colors-cta'])}
             </div>
@@ -54,7 +54,7 @@ class Colors extends React.Component {
               {this.renderColorCards(ColorList['main-colors-star'])}
             </div>
             
-            <h2>Monochromatic Colors</h2>
+            <h2 className="header-unify-page ml-0 mb-16">Monochromatic Colors</h2>
             <div className="wrapped-list">
               {this.renderColorCards(ColorList['monochromatic-colors-green'])}
             </div>

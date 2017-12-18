@@ -140,7 +140,6 @@ module.exports = {
       fileName: 'asset-manifest.json',
     }),
     new CopyWebpackPlugin([
-      { from: 'src/assets/downloads', to: 'downloads/' },
       { from: 'src/assets/fonts', to: 'assets/fonts/' },
       { from: 'src/assets/images', to: 'images/' },
       { from: 'src/assets/googleb9799b851dc5160a.html', to: '' },
