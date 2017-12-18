@@ -62,11 +62,11 @@ class HomeHeaderGreen extends Component {
     
     handleMouseMoveTopBanner(e) {
         if(last_mouse_x != 0) {
-            diff_mouse_x = (e.x - last_mouse_x) / 8;
+            diff_mouse_x = (e.x - last_mouse_x) / 60;
         }
 
         if(last_mouse_y != 0) {
-            diff_mouse_y = (e.y - last_mouse_y) / 8;
+            diff_mouse_y = (e.y - last_mouse_y) / 6;
         }
 
         if((diff_mouse_y < 0 && (current_img_top_banner_2_top + diff_mouse_y) < 80) ||
@@ -76,8 +76,8 @@ class HomeHeaderGreen extends Component {
             current_img_top_banner_2_top+ "%";
         }
 
-        if((diff_mouse_x > 0 && (current_img_top_banner_2_left - diff_mouse_x) > 8) ||
-        (diff_mouse_x < 0 && (current_img_top_banner_2_left + diff_mouse_x) < 64)) {
+        if((diff_mouse_x > 0 && (current_img_top_banner_2_left - diff_mouse_x) > 16) ||
+        (diff_mouse_x < 0 && (current_img_top_banner_2_left - diff_mouse_x) < 80)) {
             current_img_top_banner_2_left= (current_img_top_banner_2_left - diff_mouse_x);
             document.getElementsByClassName("overview-page__top-banner--image-green-2")[0].style.left = 
             current_img_top_banner_2_left + "%";

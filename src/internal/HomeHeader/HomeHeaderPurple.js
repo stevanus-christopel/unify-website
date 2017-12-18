@@ -96,21 +96,94 @@ class HomeHeaderPurple extends Component {
     
     handleMouseMoveTopBanner(e) {
         if(last_mouse_x != 0) {
-            diff_mouse_x = (e.x - last_mouse_x) / 8;
+            diff_mouse_x = (e.x - last_mouse_x) / 32;
         }
 
         if(last_mouse_y != 0) {
             diff_mouse_y = (e.y - last_mouse_y) / 8;
         }
 
-        
+        if((diff_mouse_y < 0 && (current_img_top_banner_1_top - diff_mouse_y) < 30) ||
+        diff_mouse_y > 0 && (current_img_top_banner_1_top - diff_mouse_y) > 4) {
+            current_img_top_banner_1_top = current_img_top_banner_1_top - diff_mouse_y;
+            document.getElementsByClassName("overview-page__top-banner--image-purple-1")[0].style.top = 
+            current_img_top_banner_1_top + "%";
+
+            current_img_top_banner_2_bottom = current_img_top_banner_2_bottom + diff_mouse_y;
+            document.getElementsByClassName("overview-page__top-banner--image-purple-2")[0].style.bottom = 
+            current_img_top_banner_2_bottom + "%";
+
+            current_img_top_banner_3_bottom = current_img_top_banner_3_bottom + diff_mouse_y;
+            document.getElementsByClassName("overview-page__top-banner--image-purple-3")[0].style.bottom = 
+            current_img_top_banner_3_bottom + "%";
+
+            current_img_top_banner_4_bottom = current_img_top_banner_4_bottom + diff_mouse_y;
+            document.getElementsByClassName("overview-page__top-banner--image-purple-4")[0].style.bottom = 
+            current_img_top_banner_4_bottom + "%";
+
+            current_img_top_banner_5_top = current_img_top_banner_5_top - diff_mouse_y;
+            document.getElementsByClassName("overview-page__top-banner--image-purple-5")[0].style.top = 
+            current_img_top_banner_5_top + "%";
+
+            current_img_top_banner_6_top = current_img_top_banner_6_top - diff_mouse_y;
+            document.getElementsByClassName("overview-page__top-banner--image-purple-6")[0].style.top = 
+            current_img_top_banner_6_top + "%";
+
+            current_img_top_banner_7_top = current_img_top_banner_7_top - diff_mouse_y;
+            document.getElementsByClassName("overview-page__top-banner--image-purple-7")[0].style.top = 
+            current_img_top_banner_7_top + "%";
+
+            if(current_img_top_banner_8_bottom + diff_mouse_y <= 0) {
+                current_img_top_banner_8_bottom = current_img_top_banner_8_bottom + diff_mouse_y;
+                document.getElementsByClassName("overview-page__top-banner--image-purple-8")[0].style.bottom = 
+                current_img_top_banner_8_bottom + "%";
+            }
+        }
+
+        if((diff_mouse_x > 0 && (current_img_top_banner_1_left - diff_mouse_x) > 4) ||
+        (diff_mouse_x < 0 && (current_img_top_banner_1_left - diff_mouse_x) < 32)) {
+            current_img_top_banner_1_left= (current_img_top_banner_1_left - diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-purple-1")[0].style.left = 
+            current_img_top_banner_1_left + "%";
+
+            current_img_top_banner_2_left= (current_img_top_banner_2_left - diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-purple-2")[0].style.left = 
+            current_img_top_banner_2_left + "%";
+
+            current_img_top_banner_3_left= (current_img_top_banner_3_left - diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-purple-3")[0].style.left = 
+            current_img_top_banner_3_left + "%";
+
+            current_img_top_banner_4_left= (current_img_top_banner_4_left - diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-purple-4")[0].style.left = 
+            current_img_top_banner_4_left + "%";
+
+            current_img_top_banner_5_right = (current_img_top_banner_5_right + diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-purple-5")[0].style.right = 
+            current_img_top_banner_5_right + "%";
+
+            current_img_top_banner_6_right = (current_img_top_banner_6_right + diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-purple-6")[0].style.right = 
+            current_img_top_banner_6_right + "%";
+
+            current_img_top_banner_7_right = (current_img_top_banner_7_right + diff_mouse_x);
+            document.getElementsByClassName("overview-page__top-banner--image-purple-7")[0].style.right = 
+            current_img_top_banner_7_right + "%";
+
+            if((current_img_top_banner_8_right + diff_mouse_x) <= 0 &&
+            (current_img_top_banner_8_right + diff_mouse_x) >= -10) {
+                current_img_top_banner_8_right = (current_img_top_banner_8_right + diff_mouse_x);
+                document.getElementsByClassName("overview-page__top-banner--image-purple-8")[0].style.right = 
+                current_img_top_banner_8_right + "%";
+            }
+        }
 
         last_mouse_x = e.x;
         last_mouse_y = e.y;
     }
 
     handleMouseLeaveTopBanner() {
-        document.getElementsByClassName("overview-page__top-banner--image-purple-1")[0].style.bottom = img_top_banner_1_top + "%";
+        document.getElementsByClassName("overview-page__top-banner--image-purple-1")[0].style.top = img_top_banner_1_top + "%";
         document.getElementsByClassName("overview-page__top-banner--image-purple-1")[0].style.left = img_top_banner_1_left + "%";
         document.getElementsByClassName("overview-page__top-banner--image-purple-2")[0].style.bottom = img_top_banner_2_bottom + "%";
         document.getElementsByClassName("overview-page__top-banner--image-purple-2")[0].style.left = img_top_banner_2_left + "%";
