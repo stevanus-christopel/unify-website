@@ -40,6 +40,9 @@
 <div data-insert-component="ImageGrid">
   <div>
     ![Dialog Spec](images/dialogs-spec.svg)
+    <div class="img-width-initial mt-16">
+      ![Dialog Usage Spec](images/dialogs-usage-spec.svg)
+    </div>
   </div>
   <div>
   </div>

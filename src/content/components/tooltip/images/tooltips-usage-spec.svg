@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="877" height="75" viewBox="0 0 877 75">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="16" font-weight="bold" transform="translate(0 -1)">
+            <tspan x="0" y="34">Font Size</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(0 -1)">
+            <tspan x="0" y="55">Title Text Size : Medium 14px, Hex Color : 00000 / 70%</tspan> <tspan x="0" y="73">Body Content Text : Regular 14px, Hex Color : 00000 / 54 %</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="16" font-weight="bold" transform="translate(0 -1)">
+            <tspan x="407" y="34">Background</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(0 -1)">
+            <tspan x="407" y="55">Hex Color : ffffff / Opacity : 65%</tspan> <tspan x="407" y="73">Background Blur : 2px</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="16" font-weight="bold" transform="translate(0 -1)">
+            <tspan x="724" y="34">Button &amp; Image</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(0 -1)">
+            <tspan x="724" y="55">Big Button Size : 48px</tspan> <tspan x="724" y="73">Image Area : 75 x 75 (px)</tspan>
+        </text>
+        <path stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round" d="M.5.5h138.514"/>
+    </g>
+</svg>

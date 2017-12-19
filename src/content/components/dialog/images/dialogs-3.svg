@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="604" viewBox="0 0 332 604">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="579" viewBox="0 0 332 579">
     <defs>
         <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="99.021%">
             <stop offset="0%" stop-opacity="0"/>
@@ -107,7 +107,7 @@
         </filter>
     </defs>
     <g fill="none" fill-rule="evenodd">
-        <g transform="translate(6 29)">
+        <g transform="translate(6 4)">
             <text fill="#000" fill-opacity=".7" font-family="OpenSans, Open Sans" font-size="14">
                 <tspan x="16" y="538">Tagihan (2 barang) :</tspan>
             </text>
@@ -231,34 +231,31 @@
             </g>
         </g>
         <g>
-            <path fill="#FFF" fill-opacity=".65" d="M4 28h324v571H4z"/>
-            <g transform="translate(22 194)">
+            <path fill="#FFF" fill-opacity=".65" d="M4 3h324v571H4z"/>
+            <g transform="translate(22 169)">
                 <use fill="#000" filter="url(#s)" xlink:href="#t"/>
                 <use fill="#FFF" xlink:href="#t"/>
             </g>
-            <g transform="translate(146 326)">
+            <g transform="translate(146 301)">
                 <rect width="160" height="48" rx="2"/>
                 <text fill="#42B549" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="14" font-weight="400">
                     <tspan x="17.133" y="29">Long Text CTA Here</tspan>
                 </text>
             </g>
-            <g transform="translate(213 374)">
+            <g transform="translate(213 349)">
                 <rect width="93" height="48" rx="2"/>
                 <text fill="#000" fill-opacity=".54" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="14" font-weight="400">
                     <tspan x="17.164" y="29">CTA Here</tspan>
                 </text>
             </g>
             <g fill="#000">
-                <text fill-opacity=".7" font-family="SanFranciscoText-Semibold, San Francisco Text" font-size="16" font-weight="500" transform="translate(38 210)">
+                <text fill-opacity=".7" font-family="SanFranciscoText-Semibold, San Francisco Text" font-size="16" font-weight="500" transform="translate(38 185)">
                     <tspan x="0" y="15">Title Goes Here</tspan>
                 </text>
-                <text fill-opacity=".541" font-family="SanFranciscoText-Regular, San Francisco Text" font-size="14" transform="translate(38 210)">
+                <text fill-opacity=".541" font-family="SanFranciscoText-Regular, San Francisco Text" font-size="14" transform="translate(38 185)">
                     <tspan x="0" y="51">Make the copy compact to </tspan> <tspan x="0" y="69">communicate what you want, approx 50 </tspan> <tspan x="0" y="87">character like this</tspan>
                 </text>
             </g>
         </g>
-        <text fill="#000" fill-opacity=".38" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500" transform="translate(6 -8)">
-            <tspan x="0" y="16">Avatar / Avatar + Icon</tspan>
-        </text>
     </g>
 </svg>

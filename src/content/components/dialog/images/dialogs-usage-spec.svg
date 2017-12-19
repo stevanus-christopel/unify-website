@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="129" viewBox="0 0 410 129">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="16" font-weight="bold" transform="translate(0 -1)">
+            <tspan x="0" y="34">Font</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(0 -1)">
+            <tspan x="0" y="55">Title Text Size : Medium 14px, Hex Color : 000000 / 70%</tspan> <tspan x="0" y="73">Body Content Text Size: Regular 14px, Hex Color : 000000 / 54 %</tspan>  <tspan x="0" y="109">Main CTA : Medium 14px, Hex Color : 42B549 / 100%</tspan> <tspan x="0" y="127">Secondary CTA : Medium 14px, Hex Color : 000000 / 38% </tspan>
+        </text>
+        <path stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round" d="M.5.5h138.514"/>
+    </g>
+</svg>

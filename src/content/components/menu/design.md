@@ -34,6 +34,9 @@
 <div data-insert-component="ImageGrid">
   <div>
     ![Menu Spec](images/menus-spec.svg)
+    <div class="img-width-initial mt-16">
+      ![Menu Usage Spec](images/menus-usage-spec.svg)
+    </div>
   </div>
   <div>
   </div>

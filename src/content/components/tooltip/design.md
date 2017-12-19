@@ -19,8 +19,12 @@
   </div>
   <div>
     Text Only<br />
-    ![Dialog prominance](images/tooltips-2.svg)
+    ![Text Only](images/tooltips-2.svg)
   </div>
   <div>
   </div>
+</div>
+
+<div class="img-width-initial mt-8">
+  ![Tooltips Usage Spec](images/tooltips-usage-spec.svg)
 </div>
