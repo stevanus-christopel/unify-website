@@ -27,6 +27,10 @@
       & .main-nav-item__children--small {
         max-height: 400px !important;
       }
+
+      & .main-nav-item__heading--hover {
+        display: block;
+      }
     }
 
     &__active {
@@ -47,6 +51,10 @@
       &.hover {
         color: $font-color-white;
         opacity: 1;
+
+        & .main-nav-item__heading--hover {
+          display: block;
+        }
       }
     }
 
@@ -77,12 +85,6 @@
         display: none;
         margin-left: 16px;
         margin-top: 8px;
-      }
-
-      @include breakpoint('1280px') {
-        &:hover .main-nav-item__heading--hover {
-          display: block;
-        }
       }
 
       @include breakpoint('600px') {

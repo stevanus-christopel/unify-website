@@ -15,6 +15,13 @@ import iconGithub from './images/github.svg';
 import iconSketch from './images/sketch.svg';
 import iconSearch from './images/search-main-menu.svg';
 
+var last_mouse_x = 0;
+var last_mouse_y = 0;
+var diff_mouse_x = 0;
+var diff_mouse_y = 0;
+
+var isHoverActive = true;
+
 class SideNav extends Component {
   static propTypes = {
     isOpen: PropTypes.bool,
@@ -72,36 +79,61 @@ class SideNav extends Component {
   }
   
   handleMouseEnter = (title, subNavItems) => {
-    const currentPath = browserHistory
-      .getCurrentLocation()
-      .pathname.split('/')[1];
-    
-    let menus = document.getElementsByClassName("main-nav-item");
-    for(var i=0;i<menus.length; i++) {
-      if(title === menus[i].childNodes[0].getAttribute("aria-label")) {
-        if(menus[i].childNodes[0].dataset.url === currentPath ||
-          (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
-          menus[i].className = "main-nav-item main-nav-item__active hover";
+    if(isHoverActive) {
+      const currentPath = browserHistory
+        .getCurrentLocation()
+        .pathname.split('/')[1];
+      
+      let menus = document.getElementsByClassName("main-nav-item");
+      for(var i=0;i<menus.length; i++) {
+        if(title === menus[i].childNodes[0].getAttribute("aria-label")) {
+          if(menus[i].childNodes[0].dataset.url === currentPath ||
+            (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
+            menus[i].className = "main-nav-item main-nav-item__active hover";
+          } else {
+            menus[i].className = "main-nav-item hover";
+          }
         } else {
-          menus[i].className = "main-nav-item hover";
-        }
-      } else {
-        if(menus[i].childNodes[0].dataset.url === currentPath ||
-          (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
-          menus[i].className = "main-nav-item main-nav-item__active no-hover";
-        } else {
-          menus[i].className = "main-nav-item no-hover";
+          if(menus[i].childNodes[0].dataset.url === currentPath ||
+            (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
+            menus[i].className = "main-nav-item main-nav-item__active no-hover";
+          } else {
+            menus[i].className = "main-nav-item no-hover";
+          }
         }
       }
+      this.setState({
+        subNavItems: subNavItems
+      });
     }
-    this.setState({
-      subNavItems: subNavItems
-    });
   };
     
   handleMouseLeave = () => {
     this.clearHoverState();
+
+    last_mouse_x = 0;
+    last_mouse_y = 0;
+    diff_mouse_x = 0;
+    diff_mouse_y = 0;
+    isHoverActive = true;
   };
+
+  handleMouseMove = (e) => {
+    diff_mouse_x = (e.clientX - last_mouse_x);
+    diff_mouse_y = (e.clientY - last_mouse_y);
+
+    last_mouse_x = e.clientX;
+    last_mouse_y = e.clientY;
+
+    if(diff_mouse_x > 4) {
+      isHoverActive = false;
+    } else {
+      isHoverActive = true;
+    }
+
+    // console.log("x : " + diff_mouse_x);
+    // console.log("y : " + diff_mouse_y);
+  }
 
   crawlSiteContent = query => {
     const newResults = [];
@@ -256,7 +288,7 @@ class SideNav extends Component {
             <input id="txt-search" className="side-nav__search-txt" type="text" placeholder="Type for Search..."
             style={ {backgroundImage: "url(" + iconSearch + ")" } } onKeyPress={this.handleSearch} />
           </div>
-          <div className={bottomClasses} onMouseLeave={this.handleMouseLeave}>
+          <div className={bottomClasses} onMouseLeave={this.handleMouseLeave} onMouseMove={(event) => this.handleMouseMove(event)}>
             <ul
               role="menu"
               aria-label="Page main menu"
