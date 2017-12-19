@@ -35,7 +35,7 @@ class Colors extends React.Component {
 
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
-        <Tab href="/style/colors/palette" label="Palette">
+        <Tab href="/styles/colors/palette" label="Palette">
           <div className="page">
             <h2 className="header-unify-page ml-0 mb-16">Main Colors</h2>
             <div className="wrapped-list">
@@ -72,9 +72,9 @@ class Colors extends React.Component {
             </div>
           </div>
         </Tab>
-        <Tab href="/style/colors/usage" label="Usage">
+        <Tab href="/styles/colors/usage" label="Usage">
           <MarkdownPage
-            content={require('../../content/style/colors/usage.md')}
+            content={require('../../content/styles/colors/usage.md')}
           />
         </Tab>
       </PageTabs>

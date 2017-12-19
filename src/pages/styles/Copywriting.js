@@ -18,8 +18,8 @@ class Grid extends React.Component {
 
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
-        <Tab href="/style/grid/design" label="Design">
-          <MarkdownPage content={require('../../content/style/spacing/design.md')} />
+        <Tab href="/styles/grid/design" label="Design">
+          <MarkdownPage content={require('../../content/styles/copywriting/design.md')} />
         </Tab>
       </PageTabs>
     );

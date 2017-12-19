@@ -37,10 +37,10 @@ class Style extends React.Component {
       content = <Spacing currentPage={paramsPage} />;
     } else {
       content = (
-        <MarkdownPage content={require(`../../content/style/${paramsName}/${paramsName}.md`)} />
+        <MarkdownPage content={require(`../../content/styles/${paramsName}/${paramsName}.md`)} />
       );
     }
-    return <Page label="Style" title={title} content={content} />;
+    return <Page label="Styles" title={title} content={content} />;
   }
 }
 

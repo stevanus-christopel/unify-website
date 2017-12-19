@@ -92,7 +92,7 @@ class ComponentPage extends Component {
         </Tab>
       </Tabs>
     );
-    return <Page label="component" title={componentTitle} content={content} />;
+    return <Page label="components" title={componentTitle} content={content} />;
   }
 }
 

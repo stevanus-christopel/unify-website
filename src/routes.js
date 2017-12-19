@@ -37,21 +37,21 @@ const routes = {
       }
     },
     {
-      path: 'style',
+      path: 'styles',
       indexRoute: {
-        onEnter: (nextState, replace) => replace('/style/overview'),
+        onEnter: (nextState, replace) => replace('/styles/overview'),
       },
       childRoutes: [
         {
-          path: '/style/copywriting',
+          path: '/styles/copywriting',
           indexRoute: {
-            onEnter: (nextState, replace) => replace('/style/copywriting/design'),
+            onEnter: (nextState, replace) => replace('/styles/copywriting/design'),
           },
           childRoutes: [
             {
-              path: '/style/:name/:page',
+              path: '/styles/:name/:page',
               getComponent(location, cb) {
-                import('./pages/style/Style')
+                import('./pages/styles/Style')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -59,15 +59,15 @@ const routes = {
           ],
         },
         {
-          path: '/style/colors',
+          path: '/styles/colors',
           indexRoute: {
-            onEnter: (nextState, replace) => replace('/style/colors/palette'),
+            onEnter: (nextState, replace) => replace('/styles/colors/palette'),
           },
           childRoutes: [
             {
-              path: '/style/:name/:page',
+              path: '/styles/:name/:page',
               getComponent(location, cb) {
-                import('./pages/style/Style')
+                import('./pages/styles/Style')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -75,33 +75,16 @@ const routes = {
           ],
         },
         {
-          path: '/style/iconography',
-          indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace('/style/iconography/library'),
-          },
-          childRoutes: [
-            {
-              path: '/style/:name/:page',
-              getComponent(location, cb) {
-                import('./pages/style/Style')
-                  .then(loadRoute(cb))
-                  .catch(errorLoading);
-              },
-            },
-          ],
-        },
-        {
-          path: '/style/spacing',
+          path: '/styles/iconography',
           indexRoute: {
             onEnter: (nextState, replace) =>
-              replace('/style/spacing/design'),
+              replace('/styles/iconography/library'),
           },
           childRoutes: [
             {
-              path: '/style/:name/:page',
+              path: '/styles/:name/:page',
               getComponent(location, cb) {
-                import('./pages/style/Style')
+                import('./pages/styles/Style')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -109,15 +92,16 @@ const routes = {
           ],
         },
         {
-          path: '/style/layer',
+          path: '/styles/spacing',
           indexRoute: {
-            onEnter: (nextState, replace) => replace('/style/layer/overview'),
+            onEnter: (nextState, replace) =>
+              replace('/styles/spacing/design'),
           },
           childRoutes: [
             {
-              path: '/style/:name/:page',
+              path: '/styles:name/:page',
               getComponent(location, cb) {
-                import('./pages/style/Style')
+                import('./pages/styles/Style')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -125,9 +109,25 @@ const routes = {
           ],
         },
         {
-          path: '/style/:name',
+          path: '/styles/layer',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/styles/layer/overview'),
+          },
+          childRoutes: [
+            {
+              path: '/styles/:name/:page',
+              getComponent(location, cb) {
+                import('./pages/styles/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
+          path: '/styles/:name',
           getComponent(location, cb) {
-            import('./pages/style/Style')
+            import('./pages/styles/Style')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },

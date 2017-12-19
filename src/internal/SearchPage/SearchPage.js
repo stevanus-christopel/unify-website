@@ -7,14 +7,14 @@ class SearchPage extends Component {
   render() {
     const componentData = [
       {
-        name: 'Bottom Nav',
+        name: 'Bottom Navigation',
         img: require('../OverviewPage/images/Bottom Nav.svg'),
-        link: '/components/bottom-nav'
+        link: '/components/bottom-navigation`'
       },
       {
         name: 'Bottom Sheets',
         img: require('../OverviewPage/images/Bottom Sheet.svg'),
-        link: '/components/bottom-sheet'
+        link: '/components/bottom-sheets'
       },
       {
         name: 'Button',
@@ -24,17 +24,17 @@ class SearchPage extends Component {
       {
         name: 'Dialogs',
         img: require('../OverviewPage/images/Dialog.svg'),
-        link: '/components/dialog'
+        link: '/components/dialogs'
       },
       {
-        name: 'Menu',
+        name: 'Menus',
         img: require('../OverviewPage/images/Menu.svg'),
-        link: '/components/menu'
+        link: '/components/menus'
       },
       {
         name: 'Navigation Bar',
         img: require('../OverviewPage/images/Navigation Bar.svg'),
-        link: '/components/nav-bar'
+        link: '/components/navigation-bar'
       },
       {
         name: 'Tabs',
@@ -42,9 +42,9 @@ class SearchPage extends Component {
         link: '/components/tabs'
       },
       {
-        name: 'Ticker',
+        name: 'Tickers',
         img: require('../OverviewPage/images/Ticker.svg'),
-        link: '/components/ticker'
+        link: '/components/tickers'
       },
       {
         name: 'Toaster',
@@ -52,40 +52,40 @@ class SearchPage extends Component {
         link: '/components/toaster'
       },
       {
-        name: 'Tooltip',
+        name: 'Tooltips',
         img: require('../OverviewPage/images/Tooltip.svg'),
-        link: '/components/tooltip'
+        link: '/components/tooltips'
       }
     ];
 
-    const codeSnippetExample = require('../../content/style/overview/images/Code Snippet.svg');
-    const copywritingImage = require('../../content/style/overview/images/Copywriting.svg');
+    const codeSnippetExample = require('../../content/styles/overview/images/Code Snippet.svg');
+    const copywritingImage = require('../../content/styles/overview/images/Copywriting.svg');
 
     const styleData = [
       {
         name: 'Copywriting',
         img: copywritingImage,
-        link: '/style/copywriting'
+        link: '/styles/copywriting'
       },
       {
         name: 'Size & Spacing',
         img: codeSnippetExample,
-        link: '/style/spacing'
+        link: '/styles/spacing'
       },
       {
         name: 'Colors',
         img: codeSnippetExample,
-        link: '/style/colors'
+        link: '/styles/colors'
       },
       {
         name: 'Font',
         img: codeSnippetExample,
-        link: '/coming-soon/style/font'
+        link: '/coming-soon/styles/font'
       },
       {
         name: 'Icon',
         img: codeSnippetExample,
-        link: '/coming-soon/style/icon'
+        link: '/coming-soon/styles/icon'
       }
     ];
 

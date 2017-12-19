@@ -15,27 +15,27 @@
     "children": [
       {
         "title": "Bottom Nav",
-        "url": "/components/bottom-nav"
+        "url": "/components/bottom-navigation"
       },
       {
         "title": "Bottom Sheets",
-        "url": "/components/bottom-sheet"
+        "url": "/components/bottom-sheets"
       },
       {
-        "title": "Buttons",
+        "title": "Button",
         "url": "/components/button"
       },
       {
         "title": "Dialogs",
-        "url": "/components/dialog"
+        "url": "/components/dialogs"
       },
       {
         "title": "Menus",
-        "url": "/components/menu"
+        "url": "/components/menus"
       },
       {
         "title": "Navigation Bar",
-        "url": "/components/nav-bar"
+        "url": "/components/navigation-bar"
       },
       {
         "title": "Tabs",
@@ -43,41 +43,41 @@
       },
       {
         "title": "Tickers",
-        "url": "/components/ticker"
+        "url": "/components/tickers"
       },
       {
         "title": "Toaster",
         "url": "/components/toaster"
       },
       {
-        "title": "Tooltip",
-        "url": "/components/tooltip"
+        "title": "Tooltips",
+        "url": "/components/tooltips"
       }
     ]
   },
-  "style": {
+  "styles": {
     "title": "Styles",
-    "url": "style",
+    "url": "styles",
     "children": [
       {
         "title": "Copywriting",
-        "url": "/style/copywriting"
+        "url": "/styles/copywriting"
       },
       {
         "title": "Size & Spacing",
-        "url": "/style/spacing"
+        "url": "/styles/spacing"
       },
       {
         "title": "Colors",
-        "url": "/style/colors"
+        "url": "/styles/colors"
       },
       {
         "title": "Font",
-        "url": "/coming-soon/style/font"
+        "url": "/coming-soon/styles/font"
       },
       {
         "title": "Icon",
-        "url": "/coming-soon/style/icon"
+        "url": "/coming-soon/styles/icon"
       }
     ]
   },

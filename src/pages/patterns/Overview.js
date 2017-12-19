@@ -9,7 +9,7 @@ class Overview extends React.Component {
   };
 
   render() {
-    const codeSnippetExample = require('../../content/style/overview/images/Code Snippet.svg');
+    const codeSnippetExample = require('../../content/styles/overview/images/Code Snippet.svg');
 
     const patternData = [
       {

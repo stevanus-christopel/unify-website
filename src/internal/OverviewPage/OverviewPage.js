@@ -7,14 +7,14 @@ class OverviewPage extends Component {
   render() {
     const componentData = [
       {
-        name: 'Bottom Nav',
+        name: 'Bottom Navigation',
         img: require('./images/Bottom Nav.svg'),
-        link: '/components/bottom-nav'
+        link: '/components/bottom-navigation'
       },
       {
         name: 'Bottom Sheets',
         img: require('./images/Bottom Sheet.svg'),
-        link: '/components/bottom-sheet'
+        link: '/components/bottom-sheets'
       },
       {
         name: 'Button',
@@ -24,17 +24,17 @@ class OverviewPage extends Component {
       {
         name: 'Dialogs',
         img: require('./images/Dialog.svg'),
-        link: '/components/dialog'
+        link: '/components/dialogs'
       },
       {
-        name: 'Menu',
+        name: 'Menus',
         img: require('./images/Menu.svg'),
-        link: '/components/menu'
+        link: '/components/menus'
       },
       {
         name: 'Navigation Bar',
         img: require('./images/Navigation Bar.svg'),
-        link: '/components/nav-bar'
+        link: '/components/navigation-bar'
       },
       {
         name: 'Tabs',
@@ -42,9 +42,9 @@ class OverviewPage extends Component {
         link: '/components/tabs'
       },
       {
-        name: 'Ticker',
+        name: 'Tickers',
         img: require('./images/Ticker.svg'),
-        link: '/components/ticker'
+        link: '/components/tickers'
       },
       {
         name: 'Toaster',
@@ -52,9 +52,9 @@ class OverviewPage extends Component {
         link: '/components/toaster'
       },
       {
-        name: 'Tooltip',
+        name: 'Tooltips',
         img: require('./images/Tooltip.svg'),
-        link: '/components/tooltip'
+        link: '/components/tooltips'
       }
     ];
     let key = 0;
@@ -77,7 +77,7 @@ class OverviewPage extends Component {
         <ul className="flex-container">{componentTemplate}</ul>
       </div>
     );
-    return <Page label="Component" title="Overview" content={content} />;
+    return <Page label="Components" title="Overview" content={content} />;
   }
 }
 

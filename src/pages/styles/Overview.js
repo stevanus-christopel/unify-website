@@ -12,28 +12,28 @@ class Overview extends React.Component {
     const styleData = [
       {
         name: 'Copywriting',
-        img: require('../../content/style/overview/images/Copywriting.svg'),
-        link: '/style/copywriting'
+        img: require('../../content/styles/overview/images/Copywriting.svg'),
+        link: '/styles/copywriting'
       },
       {
         name: 'Size & Spacing',
-        img: require('../../content/style/overview/images/Spacing.svg'),
-        link: '/style/spacing'
+        img: require('../../content/styles/overview/images/Spacing.svg'),
+        link: '/styles/spacing'
       },
       {
         name: 'Colors',
-        img: require('../../content/style/overview/images/Color.svg'),
-        link: '/coming-soon/style/colors'
+        img: require('../../content/styles/overview/images/Color.svg'),
+        link: '/coming-soon/styles/colors'
       },
       {
         name: 'Font',
-        img: require('../../content/style/overview/images/Font.svg'),
-        link: '/coming-soon/style/font'
+        img: require('../../content/styles/overview/images/Font.svg'),
+        link: '/coming-soon/styles/font'
       },
       {
         name: 'Icon',
-        img: require('../../content/style/overview/images/Icon.svg'),
-        link: '/coming-soon/style/icon'
+        img: require('../../content/styles/overview/images/Icon.svg'),
+        link: '/coming-soon/styles/icon'
       }
     ];
 

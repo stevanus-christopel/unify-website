@@ -7,7 +7,7 @@ class Video extends Component {
   }
 
   render() {
-    const video = require(`../../content/style/iconography/images/${this.props.videoLink}`);
+    const video = require(`../../content/styles/iconography/images/${this.props.videoLink}`);
 
     return (
       <div className="video">

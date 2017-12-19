@@ -4,13 +4,13 @@ import { Tab } from 'carbon-components-react';
 import MarkdownPage from '../../internal/MarkdownPage';
 import PageTabs from '../../internal/PageTabs';
 
-class Grid extends React.Component {
+class Layer extends React.Component {
   static propTypes = {
     currentPage: PropTypes.string,
   }
 
   render() {
-    const tabs = ['design', 'code'];
+    const tabs = ['overview', 'usage'];
     let currentPage = tabs[0];
     if (this.props.currentPage) {
       currentPage = this.props.currentPage;
@@ -18,12 +18,15 @@ class Grid extends React.Component {
 
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
-        <Tab href="/style/grid/design" label="Design">
-          <MarkdownPage content={require('../../content/style/copywriting/design.md')} />
+        <Tab href="/styles/layer/overview" label="Overview">
+          <MarkdownPage content={require('../../content/styles/layer/overview.md')} />
+        </Tab>
+        <Tab href="/styles/layer/usage" label="Usage">
+          <MarkdownPage content={require('../../content/styles/layer/usage.md')} />
         </Tab>
       </PageTabs>
     );
   }
 }
 
-export default Grid;
+export default Layer;

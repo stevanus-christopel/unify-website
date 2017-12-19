@@ -121,7 +121,7 @@ class Iconography extends React.Component {
 
     return (
       <PageTabs tabs={['library', 'usage', 'contribution']} currentPage={currentPage}>
-        <Tab href="/style/iconography/library" label="Library">
+        <Tab href="/styles/iconography/library" label="Library">
           <div className="page iconography">
             <div className="icon-container">
               <Search
@@ -136,12 +136,12 @@ class Iconography extends React.Component {
             {this.state.searchValue.length > 0 ? searchResults : initialIcons}
           </div>
         </Tab>
-        <Tab href="/style/iconography/usage" label="Usage">
-          <MarkdownPage content={require('../../content/style/iconography/usage.md')} />
+        <Tab href="/styles/iconography/usage" label="Usage">
+          <MarkdownPage content={require('../../content/styles/iconography/usage.md')} />
         </Tab>
-        <Tab href="/style/iconography/contribution" label="Contribution">
+        <Tab href="/styles/iconography/contribution" label="Contribution">
           <MarkdownPage
-            content={require('../../content/style/iconography/contribution.md')}
+            content={require('../../content/styles/iconography/contribution.md')}
           />
         </Tab>
       </PageTabs>
