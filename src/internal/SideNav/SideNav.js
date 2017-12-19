@@ -54,18 +54,8 @@ class SideNav extends Component {
       activeSearch: false,
     });
   };
-  
-  handleMouseEnter = (subNavItems) => {
-    let menus = document.getElementsByClassName("main-nav-item");
-    for(var i=0;i<menus.length; i++) {
-      menus[i].className += " no-hover";
-    }
-    this.setState({
-      subNavItems: subNavItems
-    });
-  };
-    
-  handleMouseLeave = () => {
+
+  clearHoverState = () => {
     const currentPath = browserHistory
       .getCurrentLocation()
       .pathname.split('/')[1];
@@ -79,6 +69,38 @@ class SideNav extends Component {
         menus[i].className = "main-nav-item";
       }
     }
+  }
+  
+  handleMouseEnter = (title, subNavItems) => {
+    const currentPath = browserHistory
+      .getCurrentLocation()
+      .pathname.split('/')[1];
+    
+    let menus = document.getElementsByClassName("main-nav-item");
+    for(var i=0;i<menus.length; i++) {
+      if(title === menus[i].childNodes[0].getAttribute("aria-label")) {
+        if(menus[i].childNodes[0].dataset.url === currentPath ||
+          (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
+          menus[i].className = "main-nav-item main-nav-item__active hover";
+        } else {
+          menus[i].className = "main-nav-item hover";
+        }
+      } else {
+        if(menus[i].childNodes[0].dataset.url === currentPath ||
+          (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
+          menus[i].className = "main-nav-item main-nav-item__active no-hover";
+        } else {
+          menus[i].className = "main-nav-item no-hover";
+        }
+      }
+    }
+    this.setState({
+      subNavItems: subNavItems
+    });
+  };
+    
+  handleMouseLeave = () => {
+    this.clearHoverState();
   };
 
   crawlSiteContent = query => {
@@ -157,7 +179,7 @@ class SideNav extends Component {
       const isCurrentPath = currentPath[1] === navItem;
       return (
         <SideNavItem key={navItem} isActiveItem={isCurrentPath}
-          onMouseEnter={() => this.handleMouseEnter(navItemObj.children)}>
+          onMouseEnter={() => this.handleMouseEnter(navItemObj.title, navItemObj.children)}>
           <Link
             aria-label={navItemObj.title}
             data-url={navItemObj.url}

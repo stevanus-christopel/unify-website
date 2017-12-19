@@ -20,7 +20,7 @@
       opacity: 0.1;
     }
 
-    &:hover {
+    &.hover {
       color: $font-color-white;
       opacity: 1;
 
@@ -44,7 +44,7 @@
         }
       }
 
-      &:hover {
+      &.hover {
         color: $font-color-white;
         opacity: 1;
       }
