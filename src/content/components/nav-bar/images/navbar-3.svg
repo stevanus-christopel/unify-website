@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="334" height="582" viewBox="0 0 334 582">
+    <defs>
+        <rect id="a" width="320" height="568" y=".579" rx="4"/>
+        <filter id="b" width="106.9%" height="103.9%" x="-3.4%" y="-2.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+        <path id="e" d="M0 0h320v72H0z"/>
+        <filter id="d" width="106.9%" height="130.6%" x="-3.4%" y="-16.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(7 7)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+            <use fill="#FFF" xlink:href="#a"/>
+            <g mask="url(#c)">
+                <g transform="translate(0 1)">
+                    <use fill="#000" filter="url(#d)" xlink:href="#e"/>
+                    <use fill="#FFF" xlink:href="#e"/>
+                </g>
+                <text fill-opacity=".7" font-family="SanFranciscoText-Bold, San Francisco Text" font-size="16" font-weight="bold" transform="translate(0 1)">
+                    <tspan x="51" y="51" fill="#000">Text Goes Here</tspan>
+                </text>
+                <text fill-opacity=".7" font-family="SanFranciscoText-Regular, San Francisco Text" font-size="14" transform="translate(0 1)">
+                    <tspan x="262" y="51" fill="#000">Action</tspan>
+                </text>
+                <path fill="#666" d="M24.85 40L16 48.52 24.719 57l2.016-2.047-6.701-6.518L27 42.091z"/>
+            </g>
+        </g>
+        <path fill="#FFF" d="M155.9 24.693c-1.435 0-2.502-.85-2.771-2.209h1.084c.228.791.867 1.272 1.7 1.272 1.376 0 2.155-1.219 2.214-3.469h-.094c-.416.82-1.242 1.3-2.25 1.3-1.611 0-2.777-1.189-2.777-2.83 0-1.698 1.23-2.911 2.965-2.911 1.265 0 2.244.674 2.771 1.922.276.644.41 1.423.41 2.355 0 2.906-1.183 4.57-3.252 4.57zm.07-4.02c1.12 0 1.923-.796 1.923-1.915 0-1.131-.827-1.987-1.91-1.987-1.085 0-1.91.844-1.91 1.952 0 1.154.779 1.95 1.898 1.95zm5.714 2.86a.764.764 0 0 0 .761-.762.76.76 0 0 0-.761-.761.764.764 0 0 0-.762.761c0 .416.346.762.762.762zm0-4.506a.764.764 0 0 0 .761-.761.76.76 0 0 0-.761-.762.764.764 0 0 0-.762.762c0 .416.346.761.762.761zm6.586 5.473v-1.752h-4.12v-.96c.756-1.343 2.098-3.464 3.621-5.743h1.53v5.76h1.201v.943h-1.201V24.5h-1.031zm-3.041-2.76v.07h3.046v-4.787h-.07c-.867 1.26-1.969 3.006-2.976 4.717zm8.923 2.76h1.055v-8.455h-1.049l-2.25 1.617v1.113l2.15-1.558h.094V24.5zm12.592 0l-.85-2.42h-3.363l-.85 2.42h-1.107l3.117-8.455h1.043l3.118 8.455h-1.108zm-2.578-7.09l-1.324 3.774h2.742l-1.324-3.774h-.094zm6.152 7.09v-6.457h.07l2.667 6.398h.89l2.666-6.398h.07V24.5h.985v-8.455h-1.225l-2.894 6.996h-.094l-2.894-6.996h-1.225V24.5h.984z"/>
+        <path fill="#DBDBDB" d="M299.494 14.5h19.512c.82 0 1.494.674 1.494 1.505v6.49c0 .837-.669 1.505-1.494 1.505h-19.512c-.82 0-1.494-.674-1.494-1.505v-6.49c0-.837.669-1.505 1.494-1.505zm21.506 3h.75c.417 0 .75.332.75.742v2.016a.748.748 0 0 1-.75.742H321v-3.5zM299.508 15c-.557 0-1.008.457-1.008 1.008v6.484c0 .557.45 1.008 1.008 1.008h19.484c.557 0 1.008-.457 1.008-1.008v-6.484c0-.557-.45-1.008-1.008-1.008h-19.484zm-.001.5h19.486c.277 0 .507.22.507.492v6.516a.497.497 0 0 1-.507.492h-19.486a.502.502 0 0 1-.507-.492v-6.516c0-.276.227-.492.507-.492zM17.25 22a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5zm7 0a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5zm7 0a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5zm7 0a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5zm7 0a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5z"/>
+    </g>
+</svg>

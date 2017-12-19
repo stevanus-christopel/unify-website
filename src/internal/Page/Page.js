@@ -188,7 +188,7 @@ class Page extends Component {
         onKeyDown={this.handleKeyDown}
         className={this.props.className}
       >
-        <PageHeader label={label} title={title} />
+        <PageHeader grayscale={this.props.grayscale} label={label} title={title} />
         {pageContent}
       </main>
     );

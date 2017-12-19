@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="501" height="146" viewBox="0 0 501 146">
+    <defs>
+        <rect id="b" width="82" height="72" rx="4"/>
+        <filter id="a" width="126.8%" height="130.6%" x="-13.4%" y="-16.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+        <rect id="d" width="82" height="72" rx="4"/>
+        <filter id="c" width="126.8%" height="130.6%" x="-13.4%" y="-16.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h687v113H0z"/>
+        <g transform="translate(190 68)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(190 68)">
+            <tspan x="13" y="24">IOS</tspan>
+        </text>
+        <path fill="#666" d="M214.85 107l-8.85 8.52 8.719 8.48 2.016-2.047-6.701-6.518 6.966-6.344z"/>
+        <g transform="translate(302 68)">
+            <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+            <use fill="#FFF" xlink:href="#d"/>
+        </g>
+        <g stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <path d="M336 115.25h-18M325.438 123.5l-7.146-7.545a.997.997 0 0 1 0-1.41l7.146-7.545"/>
+        </g>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(302 68)">
+            <tspan x="6" y="24">Android</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="16" font-weight="bold" transform="translate(0 -1)">
+            <tspan x="190" y="34">Note*</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(0 -1)">
+            <tspan x="190" y="55">Use native back icon for IOS or Android platforms</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="16" font-weight="bold" transform="translate(0 -1)">
+            <tspan x="0" y="34">Font Size</tspan>
+        </text>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" transform="translate(0 -1)">
+            <tspan x="0" y="55">Title size : 17px</tspan> <tspan x="0" y="73">subtitle size: 12px</tspan>
+        </text>
+        <path stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round" d="M.5.5h138.514"/>
+    </g>
+</svg>

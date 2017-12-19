@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="310" viewBox="0 0 590 310">
+    <g fill="#F1F1F1" fill-rule="evenodd">
+        <rect width="181" height="74" y="236" rx="4"/>
+        <rect width="181" height="74" x="204" y="236" rx="4"/>
+        <rect width="181" height="74" x="408" y="236" rx="4"/>
+        <rect width="78" height="10" rx="5"/>
+        <rect width="258" height="10" y="34" rx="5"/>
+        <rect width="68" height="10" x="274" y="34" rx="5"/>
+        <rect width="188" height="10" x="358" y="34" rx="5"/>
+        <rect width="28" height="10" x="562" y="34" rx="5"/>
+        <rect width="258" height="10" y="60" rx="5"/>
+        <rect width="138" height="10" y="86" rx="5"/>
+        <rect width="358" height="10" x="154" y="86" rx="5"/>
+        <rect width="158" height="10" x="274" y="60" rx="5"/>
+        <rect width="118" height="10" x="448" y="60" rx="5"/>
+        <rect width="258" height="10" y="112" rx="5"/>
+        <rect width="68" height="10" x="274" y="112" rx="5"/>
+        <rect width="188" height="10" x="358" y="112" rx="5"/>
+        <rect width="258" height="10" y="138" rx="5"/>
+        <rect width="138" height="10" y="164" rx="5"/>
+        <rect width="358" height="10" x="154" y="164" rx="5"/>
+        <rect width="158" height="10" x="274" y="138" rx="5"/>
+        <rect width="158" height="10" y="190" rx="5"/>
+        <rect width="118" height="10" x="448" y="138" rx="5"/>
+        <rect width="118" height="10" x="174" y="190" rx="5"/>
+    </g>
+</svg>

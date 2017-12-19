@@ -1,32 +1,44 @@
-## Color
+**Navigation Bar** appears at the top of an app screen, below the status bar, and enables navigation through a series of hierarchical screens. 
 
-| ATTRIBUTE      | SCSS      | HEX      |
-|----------  |----------|-----------|
-| Title      | $brand-01| #3d70b2   |
-| Slash      | $text-02 | #5a6872   |
-| Dropdown text  | $text-01  | #152934   |
-| Dropdown text: hover  | $inverse-01| #3d70b2   |
+## Usage
+<div data-insert-component="ImageGrid">
+  <div class="mb-16">
+    When a new screen is displayed, a back button appears on the left side of the bar. Sometimes, the right side of a navigation bar contains a control, like an Edit or a Done button, for managing the content within the active view.
+    <br /><br />
+    Consider showing the title of the current view in the navigation bar. In most cases, a title helps people understand what they’re looking at. However, if titling a navigation bar seems redundant, you can leave the title empty.
+    <br /><br />
+    Use a large title when you need to provide extra emphasis on context. In some apps, the big, bold text of a large title can help orient people as they browse and search. In a tabbed layout, for example, large titles can help clarify the active tab and inform the user when they've scrolled to the top
+  </div>
+  <div class="img-block">
+    ![Navigation Bar Usage](images/navbar-usage.svg)
+  </div>
+</div>
 
-## Typography
+## Type
 
-When a user hovers overs a Breadcrumb, the Breadcrumb title should be underlined.
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Navigation Bar Single](images/navbar-1.svg)
+  </div>
+  <div>
+    ![Navigation Bar Double](images/navbar-2.svg)
+  </div>
+  <div>
+    ![Navigation Bar Action](images/navbar-3.svg)
+  </div>
+</div>
 
-| PROPERTY | FONT-SIZE    | FONT-WEIGHT  |
-|------------|-----------------|--------------|
-| Title      | 14 / 0.875 | Roman / 400  |
-| Dropdown text | 14 / 0.875 | Roman / 400  |
+## Spec
 
-![Breadcrumb typography treatment example](images/breadcrumb-style-1.png)
-_Breadcrumb typography treatment example_
-
-## Structure
-
-The on-click dropdown should follow the [Overflow Menu](/components/overflow-menu) specs for sizing, padding, and interaction.
-
-| SPACING         | PX | REM |
-|-----------------|----|-----|
-| Title & slash   | 16 | 1   |
-| Icon & dropdown | 8  | 0.5 |
-
-![Truncated breadcrumb dropdown example](images/breadcrumb-style-2.png)
-_Structure and spacing measurements for Breadcrumb | px / rem_
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Navigation Bar Spec](images/navbar-spec.svg)
+    <div class="img-width-initial mt-16">
+      ![Navigation Bar Usage Spec](images/navbar-usage-spec.svg)
+    </div>
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+</div>

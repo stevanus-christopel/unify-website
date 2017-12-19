@@ -20,15 +20,15 @@ class Grid extends React.Component {
     let content = (
         <PageTabs tabs={tabs} currentPage={currentPage}>
             <Tab href={('/coming-soon/' + this.props.params.group + '/' + this.props.params.element)} label="Design">
-                <MarkdownPage content={require('../content/coming-soon.md')} />
+                <MarkdownPage content={require('../content/coming-soon/coming-soon.md')} />
             </Tab>
             <Tab href={('/coming-soon/' + this.props.params.group + '/' + this.props.params.element)} label="Code">
-                <MarkdownPage content={require('../content/coming-soon.md')} />
+                <MarkdownPage content={require('../content/coming-soon/coming-soon.md')} />
             </Tab>
         </PageTabs>
     );
 
-    return <Page className="coming-soon" label={this.props.params.group} title={this.props.params.element} content={content} />;
+    return <Page grayscale className="coming-soon" label={this.props.params.group} title={this.props.params.element} content={content} />;
   }
 }
 

@@ -33,7 +33,7 @@ class SearchPage extends Component {
       },
       {
         name: 'Navigation Bar',
-        img: require('../OverviewPage/images/Breadcrumb.svg'),
+        img: require('../OverviewPage/images/Navigation Bar.svg'),
         link: '/components/nav-bar'
       },
       {
@@ -228,7 +228,9 @@ class SearchPage extends Component {
         <ul className="flex-container">{patternTemplate}</ul>
       </div>
     );
-    return <Page label="Search" title={this.props.searchQuery} content={content} />;
+    return <Page className="search-page" label={ (componentCount + styleCount + interactionCount + patternCount) + 
+        " result found.."} 
+        title={"search for \"" + this.props.searchQuery + "\""} content={content} />;
   }
 }
 
