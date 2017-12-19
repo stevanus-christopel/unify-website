@@ -9,23 +9,22 @@ class Overview extends React.Component {
   };
 
   render() {
-    const codeSnippetExample = require('../../content/style/overview/images/Code Snippet.svg');
 
     const interactionData = [
       {
         name: 'Sound',
-        img: codeSnippetExample,
-        link: '/interactions/sound'
+        img: require('../../content/interaction/overview/images/Sound.svg'),
+        link: '/coming-soon/interactions/sound'
       },
       {
         name: 'Component Feedback',
-        img: codeSnippetExample,
-        link: '/interactions/component-feedback'
+        img: require('../../content/interaction/overview/images/Feedback.svg'),
+        link: '/coming-soon/interactions/component-feedback'
       },
       {
         name: 'Transition',
-        img: codeSnippetExample,
-        link: '/interactions/transition'
+        img: require('../../content/interaction/overview/images/Transition.svg'),
+        link: '/coming-soon/interactions/transition'
       }
     ];
 

@@ -9,13 +9,10 @@ class Overview extends React.Component {
   };
 
   render() {
-    const codeSnippetExample = require('../../content/style/overview/images/Code Snippet.svg');
-    const copywritingImage = require('../../content/style/overview/images/Copywriting.svg');
-
     const styleData = [
       {
         name: 'Copywriting',
-        img: copywritingImage,
+        img: require('../../content/style/overview/images/Copywriting.svg'),
         link: '/style/copywriting'
       },
       {
@@ -25,18 +22,18 @@ class Overview extends React.Component {
       },
       {
         name: 'Colors',
-        img: codeSnippetExample,
-        link: '/style/colors'
+        img: require('../../content/style/overview/images/Color.svg'),
+        link: '/coming-soon/style/colors'
       },
       {
         name: 'Font',
-        img: codeSnippetExample,
-        link: '/style/font'
+        img: require('../../content/style/overview/images/Font.svg'),
+        link: '/coming-soon/style/font'
       },
       {
         name: 'Icon',
-        img: codeSnippetExample,
-        link: '/style/icon'
+        img: require('../../content/style/overview/images/Icon.svg'),
+        link: '/coming-soon/style/icon'
       }
     ];
 

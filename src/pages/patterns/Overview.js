@@ -15,12 +15,12 @@ class Overview extends React.Component {
       {
         name: 'Empty State',
         img: codeSnippetExample,
-        link: '/patterns/emptystate'
+        link: '/coming-soon/patterns/emptystate'
       },
       {
         name: 'Navigation',
         img: codeSnippetExample,
-        link: '/patterns/navigation'
+        link: '/coming-soon/patterns/navigation'
       }
     ];
 

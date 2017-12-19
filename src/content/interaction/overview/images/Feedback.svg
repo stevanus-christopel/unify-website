@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258px" height="165px" viewBox="0 0 458 290">
+    <defs>
+        <rect id="a" width="147" height="210" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(0 -33)">
+        <rect width="458" height="290" y="33" fill="#F8F8F8" rx="4"/>
+        <rect width="147" height="210" x="136" y="73" fill="#FFF" rx="4"/>
+        <ellipse cx="281" cy="104.5" stroke="#E0E0E0" stroke-dasharray="8,4" stroke-width="3" rx="103" ry="104.5"/>
+        <rect width="147" height="210" x="136" y="73" fill="#FFF" rx="4"/>
+        <g transform="translate(136 73)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#a"/>
+            <ellipse cx="143" cy="32.5" fill="#BDBDBD" mask="url(#b)" rx="103" ry="104.5"/>
+        </g>
+        <circle cx="171.132" cy="248.974" r="24.871" fill="#BDBDBD" transform="rotate(30 171.132 248.974)"/>
+        <g fill="#BDBDBD">
+            <path d="M189.562 224.888c.881.664 2.163.452 2.86-.474l5.898-7.826c.698-.926.549-2.217-.333-2.88-.882-.665-2.163-.453-2.861.473l-5.898 7.826c-.698.926-.548 2.217.334 2.881M161.53 219.816c-1.118.14-2.178-.635-2.407-1.759l-1.716-9.842c-.204-1.165.563-2.243 1.713-2.407 1.15-.164 2.248.649 2.452 1.814l1.716 9.842c.17 1.16-.614 2.21-1.759 2.352M198.56 236.374c.434 1.035 1.612 1.514 2.672 1.085l9.19-3.879c1.087-.46 1.631-1.71 1.213-2.792-.418-1.082-1.639-1.587-2.727-1.127l-9.189 3.878c-1.081.477-1.604 1.734-1.17 2.809l.01.026M176.22 219.54c-1.114-.132-1.899-1.133-1.779-2.27l1.195-9.902c.143-1.173 1.195-2.04 2.35-1.936 1.155.103 1.977 1.138 1.835 2.31l-1.195 9.902c-.16 1.171-1.225 2.02-2.377 1.9l-.03-.004"/>
+        </g>
+        <rect width="15" height="77" x="119.75" y="225.245" fill="#E0E0E0" rx="7.5" transform="rotate(60 127.25 263.745)"/>
+        <rect width="15" height="77" x="144.75" y="233.245" fill="#E0E0E0" rx="7.5" transform="rotate(60 152.25 271.745)"/>
+    </g>
+</svg>

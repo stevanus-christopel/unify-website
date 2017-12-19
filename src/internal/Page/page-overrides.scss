@@ -114,4 +114,10 @@ main[data-page="getting-started-FAQ"] {
   & .page-tabs .bx--tabs__nav {
     border-bottom-color: #BDBDBD;
   }
+
+  &__right-top {
+    width: 90%;
+    height: 90%;
+    background-color: #F1F1F1;
+  }
 }
