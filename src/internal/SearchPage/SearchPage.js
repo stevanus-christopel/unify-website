@@ -9,7 +9,7 @@ class SearchPage extends Component {
       {
         name: 'Bottom Navigation',
         img: require('../OverviewPage/images/Bottom Nav.svg'),
-        link: '/components/bottom-navigation`'
+        link: '/components/bottom-navigation'
       },
       {
         name: 'Bottom Sheets',

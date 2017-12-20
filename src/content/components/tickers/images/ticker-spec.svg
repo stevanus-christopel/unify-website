@@ -1,16 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="291" height="59" viewBox="0 0 291 59">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="70px" viewBox="0 0 323 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Ticker Spec</title>
+    <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="a" width="288" height="56" rx="4"/>
+        <rect id="path-1" x="0" y="0" width="288" height="56" rx="4"></rect>
     </defs>
-    <g fill="none" fill-rule="evenodd">
-        <g transform="translate(1.021 1.012)">
-            <use fill="#FFF" xlink:href="#a"/>
-            <rect width="289" height="57" x="-.5" y="-.5" stroke="#D3F0D4" rx="4"/>
+    <g id="CEKUNIFY-Website---Detail---Bottom-Navigation-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-376.000000, -1101.000000)">
+        <g id="Ticker-Spec" transform="translate(376.000000, 1101.000000)">
+            <g id="Announcement-Ticker-Multiple-Content" transform="translate(10.000000, 7.000000)">
+                <g id="Rectangle">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#D3F0D4" stroke-width="1" x="-0.5" y="-0.5" width="289" height="57" rx="4"></rect>
+                </g>
+                <g id="icon_right_grey-copy-3" transform="translate(268.000000, 8.000000)" fill="#87D58B" fill-rule="nonzero">
+                    <path d="M5.99987262,6.67868155 L0.819627484,11.8587015 C0.632175498,12.0461453 0.328262386,12.0461387 0.14081855,11.8586867 C-0.0466252859,11.6712347 -0.046618679,11.3673216 0.140833307,11.1798778 L5.32106368,5.99987262 L0.140825929,0.819634862 C-0.0466219826,0.632186951 -0.0466219826,0.32827384 0.140825929,0.140825929 C0.32827384,-0.0466219826 0.632186951,-0.0466219826 0.819634862,0.140825929 L5.99988738,5.32107844 L11.1806125,0.140578555 C11.3680645,-0.0468652811 11.6719776,-0.0468586742 11.8594214,0.140593312 C12.0468653,0.328045298 12.0468587,0.63195841 11.8594067,0.819402246 L6.67869631,5.99988738 L11.8594141,11.1806051 C12.046862,11.368053 12.046862,11.6719662 11.8594141,11.8594141 C11.6719662,12.046862 11.368053,12.046862 11.1806051,11.8594141 L5.99987262,6.67868155 Z" id="Combined-Shape"></path>
+                </g>
+                <path d="M0,0.995751992 C0,0.445813352 0.443864822,0 1,0 L2,0 L2,56 L1,56 C0.44771525,56 0,55.5492312 0,55.004248 L0,0.995751992 Z" id="Rectangle" fill="#ADE3AF"></path>
+                <text id="Type-information-wit" font-family="SanFranciscoText-Medium, San Francisco Text" font-size="11" font-weight="400" line-spacing="16">
+                    <tspan x="16" y="18" fill="#000000" fill-opacity="0.7">Type information with approx. 80 CHARACTER,  </tspan>
+                    <tspan x="16" y="34" fill="#000000" fill-opacity="0.7">for more or another direction. </tspan>
+                    <tspan x="170.177246" y="34" font-family="SanFranciscoText-Bold, San Francisco Text" font-weight="bold" fill="#42B549">Text Link</tspan>
+                </text>
+                <g id="pagination" transform="translate(130.000000, 44.000000)" fill="#87D58B">
+                    <circle id="Oval" cx="2" cy="2" r="2"></circle>
+                    <circle id="Oval-Copy" fill-opacity="0.38" cx="14" cy="2" r="2"></circle>
+                    <circle id="Oval-Copy-2" fill-opacity="0.38" cx="26" cy="2" r="2"></circle>
+                </g>
+            </g>
+            <g id="Group-2">
+                <g id="#spacing-top-E3DC05D8-C614-448A-9892-136885F3DF93-3400BC0B-F8CD-4C48-89CD-DBD324DF30FB" transform="translate(144.000000, 0.000000)">
+                    <rect id="line" fill="#50E3C2" x="2" y="7" width="1" height="8"></rect>
+                    <rect id="start" fill="#50E3C2" x="0" y="7" width="5" height="1"></rect>
+                    <rect id="end" fill="#50E3C2" x="0" y="14" width="5" height="1"></rect>
+                    <rect id="box" fill="#50E3C2" x="7" y="0" width="29" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#50E3C2" points="3 11 7 7 11 11 7 15"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="11.498" y="15">8px</tspan>
+                    </text>
+                </g>
+                <g id="#spacing-vertical-D7FA5F7C-3E2A-49DF-9BDF-E7B39751D089-E3DC05D8-C614-448A-9892-136885F3DF93" transform="translate(163.000000, 38.000000)">
+                    <rect id="line" fill="#50E3C2" x="2" y="9" width="1" height="4"></rect>
+                    <rect id="start" fill="#50E3C2" x="0" y="9" width="5" height="1"></rect>
+                    <rect id="end" fill="#50E3C2" x="0" y="12" width="5" height="1"></rect>
+                    <rect id="box" fill="#50E3C2" x="7" y="0" width="29" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#50E3C2" points="3 11 7 7 11 11 7 15"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="11.498" y="15">4px</tspan>
+                    </text>
+                </g>
+                <g id="#spacing-bottom-CC6318AA-92D4-4C09-8C64-255EA9C47E6A-3400BC0B-F8CD-4C48-89CD-DBD324DF30FB" transform="translate(107.000000, 48.000000)">
+                    <rect id="line" fill="#50E3C2" x="35" y="7" width="1" height="8"></rect>
+                    <rect id="start" fill="#50E3C2" x="33" y="7" width="5" height="1"></rect>
+                    <rect id="end" fill="#50E3C2" x="33" y="14" width="5" height="1"></rect>
+                    <rect id="box" fill="#50E3C2" x="0" y="0" width="29" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#50E3C2" points="25 11 29 7 33 11 29 15"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="4.498" y="15">8px</tspan>
+                    </text>
+                </g>
+                <g id="#spacing-horizontal-E3DC05D8-C614-448A-9892-136885F3DF93-9AD3B336-E782-47C3-A761-D620047E25F7" transform="translate(245.000000, 29.000000)">
+                    <rect id="line" fill="#50E3C2" x="21" y="2" width="12" height="1"></rect>
+                    <rect id="start" fill="#50E3C2" x="21" y="0" width="1" height="5"></rect>
+                    <rect id="end" fill="#50E3C2" x="32" y="0" width="1" height="5"></rect>
+                    <rect id="box" fill="#50E3C2" x="0" y="10" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#50E3C2" points="23 10 27 6 31 10 27 14"></polygon>
+                    <text id="8px" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="7.498" y="25">8px</tspan>
+                    </text>
+                </g>
+                <g id="#spacing-horizontal-E3DC05D8-C614-448A-9892-136885F3DF93-9AD3B336-E782-47C3-A761-D620047E25F7" transform="translate(288.000000, 18.000000)">
+                    <rect id="line" fill="#50E3C2" x="3" y="2" width="7" height="1"></rect>
+                    <rect id="start" fill="#50E3C2" x="3" y="0" width="1" height="5"></rect>
+                    <rect id="end" fill="#50E3C2" x="9" y="0" width="1" height="5"></rect>
+                    <rect id="box" fill="#50E3C2" x="0" y="10" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#50E3C2" points="3 10 7 6 11 10 7 14"></polygon>
+                    <text id="8px" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="7.498" y="25">8px</tspan>
+                    </text>
+                </g>
+                <g id="#spacing-left-E3DC05D8-C614-448A-9892-136885F3DF93-3400BC0B-F8CD-4C48-89CD-DBD324DF30FB" transform="translate(0.000000, 37.000000)">
+                    <rect id="line" fill="#50E3C2" x="10" y="2" width="16" height="1"></rect>
+                    <rect id="start" fill="#50E3C2" x="10" y="0" width="1" height="5"></rect>
+                    <rect id="end" fill="#50E3C2" x="25" y="0" width="1" height="5"></rect>
+                    <rect id="box" fill="#50E3C2" x="0" y="9" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#50E3C2" points="14 9 18 5 22 9 18 13"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="4.162" y="24">16px</tspan>
+                    </text>
+                </g>
+                <g id="#spacing-top-2A141FA6-9BFB-4330-948E-9353D10BD644-3400BC0B-F8CD-4C48-89CD-DBD324DF30FB" transform="translate(248.000000, 0.000000)">
+                    <rect id="line" fill="#50E3C2" x="36" y="7" width="1" height="8"></rect>
+                    <rect id="start" fill="#50E3C2" x="34" y="7" width="5" height="1"></rect>
+                    <rect id="end" fill="#50E3C2" x="34" y="14" width="5" height="1"></rect>
+                    <rect id="box" fill="#50E3C2" x="0" y="0" width="29" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#50E3C2" points="25 11 29 7 33 11 29 15"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="4.498" y="15">8px</tspan>
+                    </text>
+                </g>
+            </g>
         </g>
-        <path fill="#87D58B" fill-rule="nonzero" d="M275.521 15.691l-4.748 5.18a.415.415 0 0 1-.623 0 .511.511 0 0 1 0-.679l4.749-5.18-4.749-5.18a.511.511 0 0 1 0-.679.415.415 0 0 1 .623 0l4.748 5.18 4.75-5.18a.415.415 0 0 1 .621 0 .511.511 0 0 1 0 .679l-4.749 5.18 4.75 5.181a.511.511 0 0 1 0 .679.415.415 0 0 1-.623 0l-4.749-5.18z"/>
-        <path fill="#ADE3AF" d="M3.021 1.012v56a2 2 0 0 1-2-2v-52a2 2 0 0 1 2-2z"/>
-        <text font-family="SanFranciscoText-Medium, San Francisco Text" font-size="11" font-weight="400" transform="translate(1.021 1.012)">
-            <tspan x="16" y="26" fill="#000" fill-opacity=".7">Type information with approx. 80 CHARACTER, </tspan> <tspan x="16" y="38" fill="#000" fill-opacity=".7">for more or another direction. </tspan> <tspan x="169.828" y="38.005" fill="#42B549" font-family="SanFranciscoText-Bold, San Francisco Text" font-weight="bold">Text Link</tspan>
-        </text>
     </g>
 </svg>

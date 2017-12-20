@@ -39,6 +39,10 @@ class SideNav extends Component {
     subNavItems: [],
   };
 
+  componentDidMount() {
+      document.getElementsByClassName("side-nav__bottom-container")[0].onmousemove = this.handleMouseMove;
+  }
+
   componentWillReceiveProps(nextProps) {
     if(this.props.isOpen && !nextProps.isOpen) {
       this.setState({
@@ -119,13 +123,13 @@ class SideNav extends Component {
   };
 
   handleMouseMove = (e) => {
-    diff_mouse_x = (e.clientX - last_mouse_x);
-    diff_mouse_y = (e.clientY - last_mouse_y);
+    diff_mouse_x = (e.x - last_mouse_x);
+    diff_mouse_y = (e.y - last_mouse_y);
 
-    last_mouse_x = e.clientX;
-    last_mouse_y = e.clientY;
+    last_mouse_x = e.x;
+    last_mouse_y = e.y;
 
-    if(diff_mouse_x > 4) {
+    if(diff_mouse_x > 40) {
       isHoverActive = false;
     } else {
       isHoverActive = true;
@@ -288,7 +292,7 @@ class SideNav extends Component {
             <input id="txt-search" className="side-nav__search-txt" type="text" placeholder="Type for Search..."
             style={ {backgroundImage: "url(" + iconSearch + ")" } } onKeyPress={this.handleSearch} />
           </div>
-          <div className={bottomClasses} onMouseLeave={this.handleMouseLeave} onMouseMove={(event) => this.handleMouseMove(event)}>
+          <div className={bottomClasses} onMouseLeave={this.handleMouseLeave}>
             <ul
               role="menu"
               aria-label="Page main menu"

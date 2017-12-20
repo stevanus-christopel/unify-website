@@ -23,7 +23,7 @@ class Overview extends React.Component {
       {
         name: 'Colors',
         img: require('../../content/styles/overview/images/Color.svg'),
-        link: '/coming-soon/styles/colors'
+        link: '/styles/colors'
       },
       {
         name: 'Font',
