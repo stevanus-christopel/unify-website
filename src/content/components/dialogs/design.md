@@ -22,16 +22,16 @@
 
 <div data-insert-component="ImageGrid">
   <div>
-    Rhetoric dialog<br />
+    Rhetoric Dialog<br />
     ![Rhetoric Dialog](images/dialogs-1.svg)
   </div>
   <div>
-    Dialog prominence<br />
+    Dialog Prominance<br />
     ![Dialog prominance](images/dialogs-2.svg)
   </div>
   <div>
-    Avatar / Avatar + Icon<br />
-    ![Avatar / Avatar + Icon](images/dialogs-3.svg)
+    Dialog Prominance Long CTA<br />
+    ![Dialog Prominance Long CTA](images/dialogs-3.svg)
   </div>
 </div>
 

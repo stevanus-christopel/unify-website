@@ -21,6 +21,7 @@ var diff_mouse_x = 0;
 var diff_mouse_y = 0;
 
 var isHoverActive = true;
+var isInsideChildren = false;
 
 class SideNav extends Component {
   static propTypes = {
@@ -48,6 +49,8 @@ class SideNav extends Component {
       this.setState({
         subNavItems: []
       });
+      this.clearInput();
+      this.clearOnMouseLeave();
     }
   }
 
@@ -59,11 +62,7 @@ class SideNav extends Component {
   };
 
   clearInput = () => {
-    this.searchInput.value = '';
-    this.setState({
-      val: '',
-      activeSearch: false,
-    });
+    document.getElementById("txt-search").value = '';
   };
 
   clearHoverState = () => {
@@ -80,6 +79,20 @@ class SideNav extends Component {
         menus[i].className = "main-nav-item";
       }
     }
+  }
+
+  clearOnMouseLeave = () => {
+    this.clearHoverState();
+
+    last_mouse_x = 0;
+    last_mouse_y = 0;
+    diff_mouse_x = 0;
+    diff_mouse_y = 0;
+    isHoverActive = true;
+
+    this.setState({
+      subNavItems: []
+    });
   }
   
   handleMouseEnter = (title, subNavItems) => {
@@ -113,31 +126,41 @@ class SideNav extends Component {
   };
     
   handleMouseLeave = () => {
-    this.clearHoverState();
-
-    last_mouse_x = 0;
-    last_mouse_y = 0;
-    diff_mouse_x = 0;
-    diff_mouse_y = 0;
-    isHoverActive = true;
+    let that = this;
+    setTimeout(
+      function(){ 
+        if(!isInsideChildren) {
+          that.clearOnMouseLeave();
+        }
+    }, 500);
   };
 
   handleMouseMove = (e) => {
     diff_mouse_x = (e.x - last_mouse_x);
     diff_mouse_y = (e.y - last_mouse_y);
 
-    last_mouse_x = e.x;
-    last_mouse_y = e.y;
+    if(diff_mouse_x != 0 || diff_mouse_y != 0) {
+      last_mouse_x = e.x;
+      last_mouse_y = e.y;
 
-    if(diff_mouse_x > 40) {
-      isHoverActive = false;
-    } else {
-      isHoverActive = true;
+      if(diff_mouse_x >= 4) {
+        isHoverActive = false;
+      } else {
+        isHoverActive = true;
+      }
+
+      // console.log("x : " + diff_mouse_x);
+      // console.log("y : " + diff_mouse_y);
     }
-
-    // console.log("x : " + diff_mouse_x);
-    // console.log("y : " + diff_mouse_y);
   }
+    
+  handleMouseEnterChildren = () => {
+    isInsideChildren = true;
+  };
+    
+  handleMouseLeaveChildren = () => {
+    isInsideChildren = false;
+  };
 
   crawlSiteContent = query => {
     const newResults = [];
@@ -318,7 +341,7 @@ class SideNav extends Component {
         <div className="side-nav__column">
           {
             this.state.subNavItems.length > 0 &&
-            <ul className="main-nav-item__children">
+            <ul className="main-nav-item__children" onMouseEnter={this.handleMouseEnterChildren} onMouseLeave={this.handleMouseLeaveChildren}>
               { 
                 this.state.subNavItems.map((subNavItem, index)=> {
                   if(index > 8) {
@@ -338,7 +361,7 @@ class SideNav extends Component {
         <div className="side-nav__column">
           {
             this.state.subNavItems.length > 8 &&
-            <ul className="main-nav-item__children">
+            <ul className="main-nav-item__children" onMouseEnter={this.handleMouseEnterChildren} onMouseLeave={this.handleMouseLeaveChildren}>
               { 
                 this.state.subNavItems.map((subNavItem, index)=> {
                   if(index <= 8) {
