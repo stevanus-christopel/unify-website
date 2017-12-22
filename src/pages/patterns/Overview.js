@@ -14,7 +14,7 @@ class Overview extends React.Component {
     const patternData = [
       {
         name: 'Empty State',
-        img: codeSnippetExample,
+        img: require('../../content/patterns/overview/images/Empty State.svg'),
         link: '/coming-soon/patterns/emptystate'
       },
       {

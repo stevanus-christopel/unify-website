@@ -96,11 +96,11 @@ class HomeHeaderPurple extends Component {
     
     handleMouseMoveTopBanner(e) {
         if(last_mouse_x != 0) {
-            diff_mouse_x = (e.x - last_mouse_x) / 32;
+            diff_mouse_x = (e.x - last_mouse_x) / 88;
         }
 
         if(last_mouse_y != 0) {
-            diff_mouse_y = (e.y - last_mouse_y) / 8;
+            diff_mouse_y = (e.y - last_mouse_y) / 88;
         }
 
         if((diff_mouse_y < 0 && (current_img_top_banner_1_top - diff_mouse_y) < 30) ||

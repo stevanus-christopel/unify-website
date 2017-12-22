@@ -62,11 +62,11 @@ class HomeHeaderGreen extends Component {
     
     handleMouseMoveTopBanner(e) {
         if(last_mouse_x != 0) {
-            diff_mouse_x = (e.x - last_mouse_x) / 60;
+            diff_mouse_x = (e.x - last_mouse_x) / 80;
         }
 
         if(last_mouse_y != 0) {
-            diff_mouse_y = (e.y - last_mouse_y) / 6;
+            diff_mouse_y = (e.y - last_mouse_y) / 56;
         }
 
         if((diff_mouse_y < 0 && (current_img_top_banner_2_top + diff_mouse_y) < 80) ||

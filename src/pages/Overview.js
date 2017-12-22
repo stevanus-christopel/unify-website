@@ -51,9 +51,15 @@ class Overview extends React.Component {
     const icon1 = require('../content/overview/images/icon-home-1.svg');
     const icon2 = require('../content/overview/images/icon-home-2.svg');
     const icon3 = require('../content/overview/images/icon-home-3.svg');
+    const unifyOld = require('../content/overview/images/unify-old.png');
 
     return (
       <div>
+        <div className="overview-page__unify-old">
+          <a href="http://product.tkp.me/unify/" target="_blank">
+            <img alt="" src={unifyOld} />
+          </a>
+        </div>
         <div className="overview-page__top">
           <TransitionGroup>
             <CSSTransition key={this.state.headerPage} classNames="home-header"
@@ -113,7 +119,7 @@ class Overview extends React.Component {
                     Unify Design Kit
                   </h2>
                   <p className="overview-page__tile--text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla profecto est, quin suam vim retineat a primo ad extremum.
+                  A Sketch file containing core visual styles, components, and patterns a designers needs to use this kit as a framework for building product experiences.
                   </p>
                   <a
                     href="https://drive.google.com/drive/folders/0AFAID-GJ_Se0Uk9PVA"
@@ -136,7 +142,7 @@ class Overview extends React.Component {
                   <p
                     className="overview-page__tile--text"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla profecto est, quin suam vim retineat a primo ad extremum.
+                    Components are written in two languages, React and React Native. You can access the component library via Node Package Manager and Github (by request).
                   </p>
                   <a
                     href="https://github.com/tokopedia/unify-react-mobile"
