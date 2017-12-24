@@ -53,11 +53,11 @@ class Overview extends React.Component {
     });
 
     const content = (
-      <div className="page">
+      <div className="page page--overview">
         <ul className="flex-container">{styleTemplate}</ul>
       </div>
     );
-    return <Page label="Style" title="Overview" content={content} />;
+    return <Page label="Styles" title="Overview" content={content} />;
   }
 }
 

@@ -40,7 +40,7 @@ class Overview extends React.Component {
     });
 
     const content = (
-      <div className="page">
+      <div className="page page--overview">
         <ul className="flex-container">{patternTemplate}</ul>
       </div>
     );

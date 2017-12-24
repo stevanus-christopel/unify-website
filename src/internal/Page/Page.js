@@ -20,7 +20,7 @@ class Page extends Component {
   static propTypes = {
     content: PropTypes.any,
     label: PropTypes.string,
-    title: PropTypes.string,
+    title: PropTypes.string
   };
 
   componentDidMount() {

@@ -44,6 +44,18 @@ td {position: relative;}
     padding-right: 64px;
   }
 
+  &--overview {
+    margin-top: -67px;
+    padding-top: 69px;
+    border-radius: 8px;
+
+    @include breakpoint('768px') {
+      margin-top: -97px;
+      padding-top: 129px;
+      border-radius: 8px;
+    }
+  }
+
   .page__sub-heading {
     color: $color__blue-30;
     margin-top: 2rem;

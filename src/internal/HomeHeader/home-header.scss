@@ -1,13 +1,13 @@
 .overview-page {
     &__unify-old {
         position: fixed;
-        top: 32px;
-        right: 32px;
+        top: 16px;
+        right: 16px;
         z-index: 20;
         animation: flying_object_top 4000ms infinite linear;
 
         & img {
-            width: 153px;
+            width: 72px;
         }
     }
     &__top {
