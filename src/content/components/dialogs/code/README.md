@@ -15,10 +15,12 @@ Use these props on each `<Dialog />` component. The bold one in Value section is
 | Props            | Description                         | Type            | Value
 |---------------------|----------------------------------|-----------------|---------------------|
 | className   | Props for applying custom classes   | string            | **""**
-| title   | Props to set title for dialog   | bool            | **""**
+| title   | Props to set title for dialog   | string            | **""**
 | longAction   | Props for making long action dialog styles   | bool            | **false**, true
-| actionPrimaryText   | Props to set text for dialog's primary action   | bool            | **""**
+| actionPrimaryText   | Props to set text for dialog's primary action   | string            | **""**
 | onActionPrimaryClick   | Props for adding click function to dialog's primary action   | func            | -
-| actionSecondaryText   | Props to set text for dialog's secondary action   | bool            | **""**
+| actionSecondaryText   | Props to set text for dialog's secondary action   | string            | **""**
 | onActionSecondaryClick   | Props for adding click function to dialog's secondary action   | func            | -
+| onClose   | Props for adding function to close the dialog (toggle display state)   | func            | -
+| display   | Props to display the dialog   | bool            | **false**, true
 | children   | Props to give dialog description   | string            | **""**

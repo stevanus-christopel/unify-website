@@ -46,13 +46,20 @@ td {position: relative;}
 
   &--overview {
     margin-top: -67px;
-    padding-top: 69px;
+    padding-top: 0;
     border-radius: 8px;
+
+    @include breakpoint('360px') {
+      padding-top: 12px;
+    }
 
     @include breakpoint('768px') {
       margin-top: -97px;
-      padding-top: 129px;
       border-radius: 8px;
+    }
+
+    @include breakpoint('1366px') {
+      padding-top: 44px;
     }
   }
 
