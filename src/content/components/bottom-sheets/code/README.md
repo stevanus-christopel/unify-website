@@ -17,6 +17,6 @@ Use these props on each `<BottomSheet />` component. The bold one in Value secti
 | className   | Props for applying custom classes   | string            | **""**
 | title   | Props for set bottom sheets title   | string            | **""**
 | full   | Props for making full bottom sheet   | bool            | **false**, true
-| onClose   | Props for adding function to close the dialog (toggle display state)   | func            | -
-| display   | Props to display the dialog   | bool            | **false**, true
+| onClose   | Props for adding function to close the bottom sheet (toggle display state)   | func            | -
+| display   | Props to display the bottom sheet   | bool            | **false**, true
 | children   | Props for give bottom sheet content   | object            | -

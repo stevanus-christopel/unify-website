@@ -19,4 +19,5 @@ Use these props on each `<Menu />` component. The bold one in Value section is t
 | items   | Props to set items inside menu. Use same format as the sample above.   | array            | **[]**
 | actionText   | Props to set text for menu's action   | string            | **""**
 | onAction   | Props for adding press function to menu's action   | func            | -
-| onClose   | Props for triggering function when menu's closed   | func            | -
+| onClose   | Props for adding function to close the menu (toggle display state)   | func            | -
+| display   | Props to display the menu   | bool            | **false**, true

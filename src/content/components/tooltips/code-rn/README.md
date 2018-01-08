@@ -19,4 +19,6 @@ Use these props on each `<Tooltip />` component. The bold one in Value section i
 | actionText   | Props for set action text to tooltip   | string            | **""**
 | onActionClick   | Props for set click function to action text on tooltip   | func            | -
 | image   | Props for adding icon to tooltip   | string            | -, image object
+| onClose   | Props for adding function to close the tooltip (toggle display state)   | func            | -
+| display   | Props to display the tooltip   | bool            | **false**, true
 | children   | Props for give tooltip text   | string            | **""**
