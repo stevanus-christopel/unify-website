@@ -21,3 +21,4 @@ Use these props on each `<Menu />` component. The bold one in Value section is t
 | onAction   | Props for adding click function to menu's action   | func            | -
 | onClose   | Props for adding function to close the menu (toggle display state)   | func            | -
 | display   | Props to display the menu   | bool            | **false**, true
+| root   | Props to set the root of menu   | object            | document.body

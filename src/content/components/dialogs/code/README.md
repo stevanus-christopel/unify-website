@@ -23,4 +23,5 @@ Use these props on each `<Dialog />` component. The bold one in Value section is
 | onActionSecondaryClick   | Props for adding click function to dialog's secondary action   | func            | -
 | onClose   | Props for adding function to close the dialog (toggle display state)   | func            | -
 | display   | Props to display the dialog   | bool            | **false**, true
+| root   | Props to set the root of dialog   | object            | document.body
 | children   | Props to give dialog description   | string            | **""**
