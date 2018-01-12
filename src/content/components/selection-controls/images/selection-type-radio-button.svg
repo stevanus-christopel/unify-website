@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="361px" height="181px" viewBox="0 0 361 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="137.685033%" id="linearGradient-1">
+            <stop stop-color="#42B549" offset="0%"></stop>
+            <stop stop-color="#87D58B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="CEKUNIFY-Website---Detail---Bottom-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-779.000000, -1020.000000)">
+        <g id="Group-4" transform="translate(386.000000, 920.000000)">
+            <g id="Group-5" transform="translate(393.000000, 100.000000)">
+                <g id="Group-7" fill="#F8F8F8">
+                    <rect id="Rectangle-7" x="0.75" y="0.123437814" width="360" height="180" rx="4"></rect>
+                </g>
+                <g id="Group-8" transform="translate(130.750000, 76.623438)">
+                    <g id="Group" transform="translate(74.797317, 0.609890)">
+                        <circle id="Oval" fill="url(#linearGradient-1)" cx="12.5" cy="13" r="9.5"></circle>
+                        <circle id="Oval-Copy" stroke="#42B549" stroke-width="1.5" cx="12.5" cy="13" r="12.5"></circle>
+                    </g>
+                    <circle id="Oval-Copy" stroke="#BDBDBD" stroke-width="1.5" cx="13.4686921" cy="13.6098899" r="12.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

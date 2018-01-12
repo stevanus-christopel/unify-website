@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="458" height="290" viewBox="0 0 458 290">
+    <defs>
+        <rect id="a" width="277" height="48" rx="4"/>
+        <rect id="d" width="18" height="18" x="244" y="15" rx="9"/>
+        <filter id="c" width="161.1%" height="161.1%" x="-30.6%" y="-19.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.32 0"/>
+        </filter>
+        <rect id="e" width="277" height="48" rx="4"/>
+        <rect id="g" width="277" height="48" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="458" height="290" fill="#F8F8F8" rx="4"/>
+        <g transform="translate(90.5 201)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#a"/>
+            <rect width="30" height="16" x="225" y="16" fill="#EAEAEA" mask="url(#b)" rx="8"/>
+            <g mask="url(#b)">
+                <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+                <use fill="#BDBDBD" xlink:href="#d"/>
+            </g>
+            <rect width="132" height="6" x="16" y="21" fill="#E0E0E0" mask="url(#b)" rx="3"/>
+        </g>
+        <g transform="translate(90.5 121)">
+            <mask id="f" fill="#fff">
+                <use xlink:href="#e"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#e"/>
+            <rect width="15" height="15" x="245.5" y="16.5" stroke="#BDBDBD" mask="url(#f)" rx="7.5"/>
+            <rect width="132" height="6" x="16" y="21" fill="#E0E0E0" mask="url(#f)" rx="3"/>
+        </g>
+        <g transform="translate(90.5 41)">
+            <mask id="h" fill="#fff">
+                <use xlink:href="#g"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#g"/>
+            <rect width="16" height="16" x="245" y="16" fill="#EAEAEA" mask="url(#h)" rx="3"/>
+            <rect width="132" height="6" x="16" y="21" fill="#E0E0E0" mask="url(#h)" rx="3"/>
+        </g>
+    </g>
+</svg>

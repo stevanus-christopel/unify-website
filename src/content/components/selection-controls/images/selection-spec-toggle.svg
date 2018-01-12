@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="361px" height="181px" viewBox="0 0 361 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="125.958807%" y1="50%" x2="56.4946338%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F8F8F8" offset="0%"></stop>
+            <stop stop-color="#E0E0E0" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="14.5" cy="14.5" r="14"></circle>
+        <filter x="-33.9%" y="-12.5%" width="167.9%" height="175.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter3"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter3" result="shadowOffsetOuter3"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter3" result="shadowBlurOuter3"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter3" in2="SourceAlpha" operator="out" result="shadowBlurOuter3"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0510643116 0" type="matrix" in="shadowBlurOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="-7.14567551%" y1="50%" x2="59.8484848%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#77DB80" offset="0%"></stop>
+            <stop stop-color="#42B549" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="35.5" cy="14.5" r="14"></circle>
+        <filter x="-33.9%" y="-12.5%" width="167.9%" height="175.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter3"></feMorphology>
+            <feOffset dx="0" dy="3" in="shadowSpreadOuter3" result="shadowOffsetOuter3"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter3" result="shadowBlurOuter3"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter3" in2="SourceAlpha" operator="out" result="shadowBlurOuter3"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0510643116 0" type="matrix" in="shadowBlurOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="CEKUNIFY-Website---Detail---Bottom-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1172.000000, -1659.000000)">
+        <g id="Group-4-Copy" transform="translate(386.000000, 1559.500000)">
+            <g id="Group-15" transform="translate(785.000000, 100.000000)">
+                <g id="Group-14">
+                    <g id="Group-7-Copy" transform="translate(0.362942, 0.000000)">
+                        <g id="Group-9" transform="translate(0.637058, 0.000000)">
+                            <g id="Group-11">
+                                <rect id="Rectangle-7" fill="#F8F8F8" x="0.75" y="0.123437814" width="360" height="180" rx="4"></rect>
+                                <g id="Group-10" transform="translate(84.750000, 75.623438)">
+                                    <g id="Off" transform="translate(0.000000, 0.375955)">
+                                        <rect id="White-Background" fill="url(#linearGradient-1)" x="0.5" y="2" width="49.5" height="26" rx="13"></rect>
+                                        <g id="Knob">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                            <circle stroke="#E0E0E0" stroke-width="0.5" cx="14.5" cy="14.5" r="14.25"></circle>
+                                        </g>
+                                        <path d="M9.63500977,19.0251465 L19.0251465,9.63500977" id="Line" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M9.63500977,9.63500977 L19.0251465,19.0251465" id="Line" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                    <g id="On" transform="translate(162.000000, 0.375955)">
+                                        <rect id="Green-Background" fill="url(#linearGradient-4)" x="0" y="2" width="49.5" height="26" rx="13"></rect>
+                                        <g id="Knob">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                            <circle stroke="#42B549" stroke-width="0.5" cx="35.5" cy="14.5" r="14.25"></circle>
+                                        </g>
+                                        <polyline id="Stroke-4" stroke="#42B549" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="42.5186194 9.96207742 33.6802968 18.8004 28.8820387 14.0029806"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="#height-left-5C18EC22-D829-4750-A6F0-B2212F0D4D68" transform="translate(41.000000, 76.499393)">
+                    <rect id="line" fill="#FF5500" x="41" y="0" width="1" height="28"></rect>
+                    <rect id="start" fill="#FF5500" x="39" y="0" width="5" height="1"></rect>
+                    <rect id="end" fill="#FF5500" x="39" y="27" width="5" height="1"></rect>
+                    <rect id="box" fill="#FF5500" x="0" y="3" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#FF5500" points="31 14 35 10 39 14 35 18"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="4.162" y="18">28px</tspan>
+                    </text>
+                </g>
+                <g id="#height-right-B495BEC5-D7D9-4B40-801B-DD50B5C336E7" transform="translate(137.000000, 77.999393)">
+                    <rect id="line" fill="#FF5500" x="2" y="0" width="1" height="26"></rect>
+                    <rect id="start" fill="#FF5500" x="0" y="0" width="5" height="1"></rect>
+                    <rect id="end" fill="#FF5500" x="0" y="25" width="5" height="1"></rect>
+                    <rect id="box" fill="#FF5500" x="9" y="2" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#FF5500" points="5 13 9 9 13 13 9 17"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="13.162" y="17">26px</tspan>
+                    </text>
+                </g>
+                <g id="#height-right-96670A15-CFC8-4960-A33F-667F5CBCD7F0" transform="translate(298.000000, 76.499393)">
+                    <rect id="line" fill="#FF5500" x="2" y="0" width="1" height="28"></rect>
+                    <rect id="start" fill="#FF5500" x="0" y="0" width="5" height="1"></rect>
+                    <rect id="end" fill="#FF5500" x="0" y="27" width="5" height="1"></rect>
+                    <rect id="box" fill="#FF5500" x="9" y="3" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#FF5500" points="5 14 9 10 13 14 9 18"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="13.162" y="18">28px</tspan>
+                    </text>
+                </g>
+                <g id="#height-left-BBCAE8B5-1AAF-4987-8392-EF8916D45DCA" transform="translate(203.000000, 77.999393)">
+                    <rect id="line" fill="#FF5500" x="41" y="0" width="1" height="26"></rect>
+                    <rect id="start" fill="#FF5500" x="39" y="0" width="5" height="1"></rect>
+                    <rect id="end" fill="#FF5500" x="39" y="25" width="5" height="1"></rect>
+                    <rect id="box" fill="#FF5500" x="0" y="2" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#FF5500" points="31 13 35 9 39 13 35 17"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="4.162" y="17">26px</tspan>
+                    </text>
+                </g>
+                <g id="#width-top-40F651F4-4A89-4EB5-ABF4-6DA1BEC4FC99" transform="translate(247.750000, 43.500000)">
+                    <rect id="line" fill="#FF5500" x="0" y="28" width="50" height="1"></rect>
+                    <rect id="start" fill="#FF5500" x="0" y="26" width="1" height="5"></rect>
+                    <rect id="end" fill="#FF5500" x="49" y="26" width="1" height="5"></rect>
+                    <rect id="box" fill="#FF5500" x="8" y="0" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#FF5500" points="22 22 26 18 30 22 26 26"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="12.162" y="15">50px</tspan>
+                    </text>
+                </g>
+                <g id="#width-top-8990A767-637F-4613-B56D-2EC27058C8BE" transform="translate(85.750000, 43.500000)">
+                    <rect id="line" fill="#FF5500" x="0" y="28" width="50" height="1"></rect>
+                    <rect id="start" fill="#FF5500" x="0" y="26" width="1" height="5"></rect>
+                    <rect id="end" fill="#FF5500" x="49" y="26" width="1" height="5"></rect>
+                    <rect id="box" fill="#FF5500" x="8" y="0" width="35" height="22" rx="2"></rect>
+                    <polygon id="arrow" fill="#FF5500" points="22 22 26 18 30 22 26 26"></polygon>
+                    <text id="Text" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="12.162" y="15">50px</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

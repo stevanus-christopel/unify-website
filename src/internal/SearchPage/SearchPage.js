@@ -42,6 +42,11 @@ class SearchPage extends Component {
         link: '/components/pickers'
       },
       {
+        name: 'Selection Controls',
+        img: require('../OverviewPage/images/Selection Controls.svg'),
+        link: '/components/selection-controls'
+      },
+      {
         name: 'Sliders',
         img: require('../OverviewPage/images/Tabs.svg'),
         link: '/components/sliders'

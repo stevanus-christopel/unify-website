@@ -42,6 +42,11 @@ class OverviewPage extends Component {
         link: '/components/pickers'
       },
       {
+        name: 'Selection Controls',
+        img: require('./images/Selection Controls.svg'),
+        link: '/components/selection-controls'
+      },
+      {
         name: 'Sliders',
         img: require('./images/Sliders.svg'),
         link: '/components/sliders'
