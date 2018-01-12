@@ -20,11 +20,11 @@
 
 <div data-insert-component="ImageGrid">
   <div>
-    Normal Bottom Sheets<br />
+    <b class="display-block mb-16">Normal Bottom Sheets</b>
     ![Normal Bottom Sheets](images/bottom-sheet-1.svg)
   </div>
   <div>
-    Full Page Bottom Sheets<br />
+    <b class="display-block mb-16">Full Page Bottom Sheets</b>
     ![Normal Bottom Sheets](images/bottom-sheet-2.svg)
   </div>
   <div></div>

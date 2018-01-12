@@ -22,15 +22,15 @@
 
 <div data-insert-component="ImageGrid">
   <div>
-    Rhetoric Dialog<br />
+    <b class="display-block mb-16">Rhetoric Dialog</b>
     ![Rhetoric Dialog](images/dialogs-1.svg)
   </div>
   <div>
-    Dialog Prominance<br />
+    <b class="display-block mb-16">Dialog Prominance</b>
     ![Dialog prominance](images/dialogs-2.svg)
   </div>
   <div>
-    Dialog Prominance Long CTA<br />
+    <b class="display-block mb-16">Dialog Prominance Long CTA</b>
     ![Dialog Prominance Long CTA](images/dialogs-3.svg)
   </div>
 </div>

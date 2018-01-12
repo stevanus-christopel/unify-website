@@ -12,7 +12,7 @@
 
 ## Type
 
-Primary Button
+<b class="display-block">Primary Button</b>
 <div data-insert-component="ImageGrid">
   <div>
     ![Primary Big Button](images/primary-big-button.png)
@@ -25,7 +25,7 @@ Primary Button
   </div>
 </div>
 
-Secondary Button
+<b class="display-block">Secondary Button</b>
 <div data-insert-component="ImageGrid">
   <div>
     ![Primary Big Button](images/secondary-big-button.png)
@@ -38,7 +38,7 @@ Secondary Button
   </div>
 </div>
 
-Disabled Button
+<b class="display-block">Disabled Button</b>
 <div data-insert-component="ImageGrid">
   <div>
     ![Primary Big Button](images/disabled-big-button.png)
@@ -51,7 +51,7 @@ Disabled Button
   </div>
 </div>
 
-Floating Button
+<b class="display-block">Floating Button</b>
 <div data-insert-component="ImageGrid">
   <div>
     ![Primary Big Button](images/floating-button.png)

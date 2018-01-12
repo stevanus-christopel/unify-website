@@ -14,15 +14,15 @@
 
 <div data-insert-component="ImageGrid">
   <div>
-    Announcement Ticker<br />
+     <b class="display-block mb-16">Announcement Ticker</b>
     ![Announcement Ticker](images/ticker-1.svg)
   </div>
   <div>
-    Announcement Sliding Ticker<br />
+     <b class="display-block mb-16">Announcement Sliding Ticker</b>
     ![Announcement Sliding Ticker](images/ticker-2.svg)
   </div>
   <div>
-    Warning Ticker<br />
+     <b class="display-block mb-16">Warning Ticker</b>
     ![Warning Ticker](images/ticker-3.svg)
   </div>
 </div>

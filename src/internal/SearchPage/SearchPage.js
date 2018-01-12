@@ -27,6 +27,11 @@ class SearchPage extends Component {
         link: '/components/dialogs'
       },
       {
+        name: 'Lists',
+        img: require('../OverviewPage/images/Lists.svg'),
+        link: '/components/lists'
+      },
+      {
         name: 'Menus',
         img: require('../OverviewPage/images/Menu.svg'),
         link: '/components/menus'

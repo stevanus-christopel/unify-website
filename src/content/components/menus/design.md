@@ -18,11 +18,11 @@
 
 <div data-insert-component="ImageGrid">
   <div>
-    Menus with icon<br />
+    <b class="display-block mb-16">Menus with icon</b>
     ![Menu icon](images/menus-1.png)
   </div>
   <div>
-    Menus Normal<br />
+    <b class="display-block mb-16">Menus Normal</b>
     ![Menu normal](images/menus-2.png)
   </div>
   <div>

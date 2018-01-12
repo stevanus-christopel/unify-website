@@ -18,15 +18,15 @@
 
 <div data-insert-component="ImageGrid">
   <div>
-    Main Tab<br />
+     <b class="display-block mb-16">Main Tab</b>
     ![Main Tab](images/tabs-1.svg)
   </div>
   <div>
-    Main Tab - Many Item<br />
+     <b class="display-block mb-16">Main Tab - Many Item</b>
     ![Main Tab - Many Item](images/tabs-2.svg)
   </div>
   <div>
-    Secondary Tab<br />
+     <b class="display-block mb-16">Secondary Tab</b>
     ![Secondary Tab](images/tabs-3.svg)
   </div>
 </div>

@@ -16,15 +16,15 @@
 
 <div data-insert-component="ImageGrid">
   <div>
-    Toaster Normal<br />
+     <b class="display-block mb-16">Toaster Normal</b>
     ![Toaster Normal](images/toaster-1.svg)
   </div>
   <div>
-    Toaster - Bottom Nav<br />
+     <b class="display-block mb-16">Toaster - Bottom Nav</b>
     ![Toaster - Bottom Nav](images/toaster-2.svg)
   </div>
   <div>
-    Toaster Error<br />
+     <b class="display-block mb-16">Toaster Error</b>
     ![Toaster Error](images/toaster-3.svg)
   </div>
 </div>

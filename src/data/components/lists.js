@@ -1,24 +1,12 @@
 /* eslint-disable */
- module.exports = [
-  {
-    "desc": "<span>Lists</span> consist of related content grouped together and organized vertically.",
-    "variations": {
-      "list--ordered": [
-        "Ordered list"
-      ],
-      "list--unordered": [
-        "Unordered list"
-      ]
-    },
-    "__content": "\n"
+ module.exports = {
+  "variations": {
+    "single-line-lists": [
+      "Single Line"
+    ],
+    "two-line-lists": [
+      "Two Line"
+    ]
   },
-  {
-    "__content": "undefined"
-  },
-  {
-    "__content": "undefined"
-  },
-  {
-    "__content": "undefined"
-  }
-]
+  "__content": "\n"
+}

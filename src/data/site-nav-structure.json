@@ -30,6 +30,10 @@
         "url": "/components/dialogs"
       },
       {
+        "title": "Lists",
+        "url": "/components/lists"
+      },
+      {
         "title": "Menus",
         "url": "/components/menus"
       },
