@@ -38,6 +38,14 @@
         "url": "/components/navigation-bar"
       },
       {
+        "title": "Pickers",
+        "url": "/components/pickers"
+      },
+      {
+        "title": "Sliders",
+        "url": "/components/sliders"
+      },
+      {
         "title": "Tabs",
         "url": "/components/tabs"
       },
@@ -72,8 +80,8 @@
         "url": "/styles/colors"
       },
       {
-        "title": "Font",
-        "url": "/coming-soon/styles/font"
+        "title": "Typography",
+        "url": "/styles/typography"
       },
       {
         "title": "Icon",

@@ -37,6 +37,16 @@ class SearchPage extends Component {
         link: '/components/navigation-bar'
       },
       {
+        name: 'Pickers',
+        img: require('../OverviewPage/images/Pickers.svg'),
+        link: '/components/pickers'
+      },
+      {
+        name: 'Sliders',
+        img: require('../OverviewPage/images/Tabs.svg'),
+        link: '/components/sliders'
+      },
+      {
         name: 'Tabs',
         img: require('../OverviewPage/images/Tabs.svg'),
         link: '/components/tabs'
@@ -78,9 +88,9 @@ class SearchPage extends Component {
         link: '/styles/colors'
       },
       {
-        name: 'Font',
+        name: 'Typography',
         img: codeSnippetExample,
-        link: '/coming-soon/styles/font'
+        link: '/styles/typography'
       },
       {
         name: 'Icon',
@@ -228,8 +238,8 @@ class SearchPage extends Component {
         <ul className="flex-container">{patternTemplate}</ul>
       </div>
     );
-    return <Page className="search-page" label={ (componentCount + styleCount + interactionCount + patternCount) + 
-        " result found.."} 
+    return <Page className="search-page" label={ (componentCount + styleCount + interactionCount + patternCount) +
+        " result found.."}
         title={"search for \"" + this.props.searchQuery + "\""} content={content} />;
   }
 }

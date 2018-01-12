@@ -10,7 +10,6 @@ import DosAndDonts3 from '../../internal/DosAndDonts/DosAndDonts3';
 import DosAndDonts4 from '../../internal/DosAndDonts/DosAndDonts4';
 import LayerTypes from '../../internal/LayerTypes';
 import LayerUsage from '../../internal/LayerUsage';
-import TypographyTable from '../../internal/TypographyTable';
 import BrandColors from '../../internal/BrandColors';
 import MotionExample from '../../internal/MotionExample';
 import MarkdownPage from '../../internal/MarkdownPage';
@@ -99,7 +98,6 @@ class Page extends Component {
       ColorContrast,
       LayerTypes,
       LayerUsage,
-      TypographyTable,
       MotionExample,
       BrandColors,
       DosAndDonts1,

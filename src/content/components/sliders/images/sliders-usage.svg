@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="458" height="290" viewBox="0 0 458 290">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="458" height="290" fill="#F8F8F8" rx="4"/>
+        <g stroke="#BDBDBD" transform="translate(31 183)">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M4.5 15.5h382.221"/>
+            <circle cx="14.5" cy="14.5" r="14.5" fill="#FFF"/>
+            <circle cx="381.5" cy="14.5" r="14.5" fill="#FFF"/>
+        </g>
+        <g transform="translate(35.5 130)">
+            <path stroke="#EAEAEA" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M4.5 15.5h382.221"/>
+            <path stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M4.5 15.5H174"/>
+            <circle cx="14.5" cy="14.5" r="14.5" fill="#FFF" stroke="#BDBDBD"/>
+            <circle cx="168" cy="14.5" r="14.5" fill="#FFF" stroke="#BDBDBD"/>
+        </g>
+        <g transform="translate(35.5 77)">
+            <path stroke="#EAEAEA" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M4.5 15.5h382.221"/>
+            <path stroke="#BDBDBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M4.5 15.5h242.22"/>
+            <circle cx="14.5" cy="14.5" r="14.5" fill="#FFF" stroke="#BDBDBD"/>
+            <circle cx="259.504" cy="14.5" r="14.5" fill="#FFF" stroke="#BDBDBD"/>
+        </g>
+    </g>
+</svg>

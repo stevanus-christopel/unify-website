@@ -59,9 +59,42 @@ const routes = {
           ],
         },
         {
+          path: '/styles/spacing',
+          indexRoute: {
+            onEnter: (nextState, replace) =>
+              replace('/styles/spacing/design'),
+          },
+          childRoutes: [
+            {
+              path: '/styles:name/:page',
+              getComponent(location, cb) {
+                import('./pages/styles/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
           path: '/styles/colors',
           indexRoute: {
             onEnter: (nextState, replace) => replace('/styles/colors/palette'),
+          },
+          childRoutes: [
+            {
+              path: '/styles/:name/:page',
+              getComponent(location, cb) {
+                import('./pages/styles/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
+          path: '/styles/typography',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/styles/typography/design'),
           },
           childRoutes: [
             {
@@ -83,23 +116,6 @@ const routes = {
           childRoutes: [
             {
               path: '/styles/:name/:page',
-              getComponent(location, cb) {
-                import('./pages/styles/Style')
-                  .then(loadRoute(cb))
-                  .catch(errorLoading);
-              },
-            },
-          ],
-        },
-        {
-          path: '/styles/spacing',
-          indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace('/styles/spacing/design'),
-          },
-          childRoutes: [
-            {
-              path: '/styles:name/:page',
               getComponent(location, cb) {
                 import('./pages/styles/Style')
                   .then(loadRoute(cb))

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258" height="165" viewBox="0 0 458 290">
+    <defs>
+        <rect id="a" width="213" height="251.938" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="458" height="290" fill="#F8F8F8" rx="4"/>
+        <g transform="translate(122.5 19)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#a"/>
+            <path fill="#F1F1F1" d="M-19 208h263v72H-19z" mask="url(#b)"/>
+            <path fill="#FFF" d="M0 0h325.891v48H0z" mask="url(#b)"/>
+            <circle cx="24" cy="24" r="8" fill="#EAEAEA" mask="url(#b)"/>
+            <g mask="url(#b)">
+                <g transform="translate(16 113)">
+                    <circle cx="6" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="34.1" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="62.2" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="90.3" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="118.4" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="146.5" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="174.6" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="6" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="34.1" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="62.2" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="90.3" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="118.4" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="146.5" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="174.6" cy="6" r="6" fill="#EAEAEA"/>
+                    <circle cx="6.7" cy="36" r="6" fill="#EAEAEA"/>
+                    <rect width="127" height="18" x="28" y="27" fill="#F1F1F1" rx="9"/>
+                    <circle cx="35.8" cy="36" r="9" fill="#BDBDBD"/>
+                    <circle cx="62.9" cy="36" r="6" fill="#E2E2E2"/>
+                    <circle cx="91" cy="36" r="6" fill="#E2E2E2"/>
+                    <circle cx="118.5" cy="36" r="6" fill="#E2E2E2"/>
+                    <circle cx="146.6" cy="36" r="9" fill="#BDBDBD"/>
+                    <circle cx="174.7" cy="36" r="6" fill="#EAEAEA"/>
+                    <circle cx="6.7" cy="66" r="6" fill="#EAEAEA"/>
+                    <circle cx="34.8" cy="66" r="6" fill="#EAEAEA"/>
+                    <circle cx="62.9" cy="66" r="6" fill="#EAEAEA"/>
+                    <circle cx="91" cy="66" r="6" fill="#EAEAEA"/>
+                    <circle cx="119.1" cy="66" r="6" fill="#EAEAEA"/>
+                </g>
+            </g>
+            <rect width="102" height="6" x="48" y="21" fill="#E0E0E0" mask="url(#b)" rx="3"/>
+            <rect width="52" height="5" x="16" y="70" fill="#BDBDBD" mask="url(#b)" rx="2.5"/>
+            <rect width="31" height="5" x="16" y="228" fill="#BDBDBD" mask="url(#b)" rx="2.5"/>
+            <rect width="81" height="5" x="71" y="228" fill="#E5E5E5" mask="url(#b)" rx="2.5"/>
+            <rect width="52" height="5" x="100.667" y="70" fill="#EAEAEA" mask="url(#b)" rx="2.5"/>
+            <rect width="52" height="5" x="185.333" y="70" fill="#EAEAEA" mask="url(#b)" rx="2.5"/>
+            <path stroke="#E0E0E0" d="M0 48.5h327" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>

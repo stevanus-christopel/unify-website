@@ -26,9 +26,9 @@ class Overview extends React.Component {
         link: '/styles/colors'
       },
       {
-        name: 'Font',
-        img: require('../../content/styles/overview/images/Font.svg'),
-        link: '/coming-soon/styles/font'
+        name: 'Typography',
+        img: require('../../content/styles/overview/images/Typography.svg'),
+        link: '/styles/typography'
       },
       {
         name: 'Icon',

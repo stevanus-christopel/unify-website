@@ -37,6 +37,16 @@ class OverviewPage extends Component {
         link: '/components/navigation-bar'
       },
       {
+        name: 'Pickers',
+        img: require('./images/Pickers.svg'),
+        link: '/components/pickers'
+      },
+      {
+        name: 'Sliders',
+        img: require('./images/Sliders.svg'),
+        link: '/components/sliders'
+      },
+      {
         name: 'Tabs',
         img: require('./images/Tabs.svg'),
         link: '/components/tabs'
