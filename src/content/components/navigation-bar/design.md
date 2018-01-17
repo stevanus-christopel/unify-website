@@ -17,13 +17,13 @@
 ## Type
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Navigation Bar Single](images/navbar-1.svg)
   </div>
-  <div>
+  <div class="img-block">
     ![Navigation Bar Double](images/navbar-2.svg)
   </div>
-  <div>
+  <div class="img-block">
     ![Navigation Bar Action](images/navbar-3.svg)
   </div>
 </div>
@@ -31,7 +31,7 @@
 ## Spec
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Navigation Bar Spec](images/navbar-spec.svg)
     <div class="img-width-initial mt-16">
       ![Navigation Bar Usage Spec](images/navbar-usage-spec.svg)

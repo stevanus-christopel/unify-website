@@ -128,8 +128,10 @@ input, button, a {
 }
 
 .img-block img {
-  width: 100% !important;
-  max-width: initial !important;
+  @include breakpoint('1280px') {
+    width: 100% !important;
+    max-width: initial !important;
+  }
 }
 
 .img-width-initial img {

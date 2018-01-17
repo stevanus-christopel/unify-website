@@ -22,6 +22,11 @@ class OverviewPage extends Component {
         link: '/components/button'
       },
       {
+        name: 'Cards',
+        img: require('./images/Cards.svg'),
+        link: '/components/cards'
+      },
+      {
         name: 'Dialogs',
         img: require('./images/Dialog.svg'),
         link: '/components/dialogs'

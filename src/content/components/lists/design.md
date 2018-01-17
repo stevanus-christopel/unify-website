@@ -15,23 +15,23 @@
 ## Type
 <b class="display-block">Single Line</b>
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Single Line - Plain + Icon](images/single-plain.svg)
   </div>
-  <div>
+  <div class="img-block">
     ![Single Line - Value + Icon](images/single-value.svg)
   </div>
-  <div>
+  <div class="img-block">
     ![Single Line - Avatar + Icon](images/single-avatar.svg)
   </div>
 </div>
 
 <b class="display-block">Two Line</b>
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Two Line - Plain + Icon](images/two-plain.svg)
   </div>
-  <div>
+  <div class="img-block">
     ![Two Line - Avatar + Icon](images/two-avatar.svg)
   </div>
   <div></div>
@@ -40,23 +40,23 @@
 ## Spec
 <b class="display-block">Single Line</b>
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Single Line - Plain + Icon](images/single-plain-spec.svg)
   </div>
-  <div>
+  <div class="img-block">
     ![Single Line - Value + Icon](images/single-value-spec.svg)
   </div>
-  <div>
+  <div class="img-block">
     ![Single Line - Avatar + Icon](images/single-avatar-spec.svg)
   </div>
 </div>
 
 <b class="display-block">Two Line</b>
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Two Line - Plain + Icon](images/two-plain-spec.svg)
   </div>
-  <div>
+  <div class="img-block">
     ![Two Line - Avatar + Icon](images/two-avatar-spec.svg)
   </div>
   <div></div>

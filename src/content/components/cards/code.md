@@ -1,0 +1,5 @@
+---
+variations:
+  card:
+  - Card
+---

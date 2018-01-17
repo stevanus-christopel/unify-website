@@ -22,6 +22,11 @@ class SearchPage extends Component {
         link: '/components/button'
       },
       {
+        name: 'Cards',
+        img: require('../OverviewPage/images/Cards.svg'),
+        link: '/components/cards'
+      },
+      {
         name: 'Dialogs',
         img: require('../OverviewPage/images/Dialog.svg'),
         link: '/components/dialogs'

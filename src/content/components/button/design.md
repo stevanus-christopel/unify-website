@@ -14,46 +14,46 @@
 
 <b class="display-block">Primary Button</b>
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Primary Big Button](images/primary-big-button.png)
   </div>
-  <div>
+  <div class="img-block">
     ![Primary Medium Button](images/primary-medium-button.png)
   </div>
-  <div>
+  <div class="img-block">
     ![Primary Small Button](images/primary-small-button.png)
   </div>
 </div>
 
 <b class="display-block">Secondary Button</b>
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Primary Big Button](images/secondary-big-button.png)
   </div>
-  <div>
+  <div class="img-block">
     ![Primary Medium Button](images/secondary-medium-button.png)
   </div>
-  <div>
+  <div class="img-block">
     ![Primary Small Button](images/secondary-small-button.png)
   </div>
 </div>
 
 <b class="display-block">Disabled Button</b>
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Primary Big Button](images/disabled-big-button.png)
   </div>
-  <div>
+  <div class="img-block">
     ![Primary Medium Button](images/disabled-medium-button.png)
   </div>
-  <div>
+  <div class="img-block">
     ![Primary Small Button](images/disabled-small-button.png)
   </div>
 </div>
 
 <b class="display-block">Floating Button</b>
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Primary Big Button](images/floating-button.png)
   </div>
   <div>

@@ -19,11 +19,11 @@
 ## Type
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     <b class="display-block mb-16">Normal Bottom Sheets</b>
     ![Normal Bottom Sheets](images/bottom-sheet-1.svg)
   </div>
-  <div>
+  <div class="img-block">
     <b class="display-block mb-16">Full Page Bottom Sheets</b>
     ![Normal Bottom Sheets](images/bottom-sheet-2.svg)
   </div>
@@ -33,7 +33,7 @@
 ## Spec
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Bottom Sheets Spec](images/bottom-sheet-spec.svg)
     <div class="img-width-initial mt-16">
       ![Bottom Sheets Usage Spec](images/bottom-sheet-usage-spec.png)

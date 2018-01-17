@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258" height="165" viewBox="0 0 458 290">
+    <defs>
+        <path id="a" d="M0 0h147v262H0z"/>
+        <rect id="d" width="131" height="80" x="8" y="95" rx="4"/>
+        <filter id="c" width="115.3%" height="125%" x="-7.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+        </filter>
+        <rect id="f" width="131" height="31" x="8" y="48" rx="4"/>
+        <filter id="e" width="115.3%" height="164.5%" x="-7.6%" y="-25.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+        </filter>
+        <rect id="h" width="131" height="80" x="8" y="191" rx="4"/>
+        <filter id="g" width="115.3%" height="125%" x="-7.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="458" height="290" fill="#F8F8F8" rx="4"/>
+        <g transform="translate(157 14)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#FFF" fill-opacity=".8" xlink:href="#a"/>
+            <g mask="url(#b)">
+                <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+                <use fill="#FFF" xlink:href="#d"/>
+            </g>
+            <g mask="url(#b)">
+                <use fill="#000" filter="url(#e)" xlink:href="#f"/>
+                <use fill="#FFF" xlink:href="#f"/>
+            </g>
+            <g mask="url(#b)">
+                <use fill="#000" filter="url(#g)" xlink:href="#h"/>
+                <use fill="#FFF" xlink:href="#h"/>
+            </g>
+            <path fill="#42B549" fill-opacity=".8" d="M0 0h147v32H0z" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>

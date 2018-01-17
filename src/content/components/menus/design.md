@@ -17,11 +17,11 @@
 ## Type
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     <b class="display-block mb-16">Menus with icon</b>
     ![Menu icon](images/menus-1.png)
   </div>
-  <div>
+  <div class="img-block">
     <b class="display-block mb-16">Menus Normal</b>
     ![Menu normal](images/menus-2.png)
   </div>
@@ -32,7 +32,7 @@
 ## Spec
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Menu Spec](images/menus-spec.svg)
     <div class="img-width-initial mt-16">
       ![Menu Usage Spec](images/menus-usage-spec.svg)

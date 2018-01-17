@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="345" viewBox="0 0 360 345">
+    <defs>
+        <rect id="b" width="288" height="220" rx="4"/>
+        <filter id="a" width="106.9%" height="109.1%" x="-3.5%" y="-3.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="360" height="268" fill="#F8F8F8" rx="4"/>
+        <g transform="translate(36 24)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="14" font-weight="bold">
+            <tspan x="0" y="290">Color (HEX)</tspan> <tspan x="0" y="308" font-family="CircularStd-Book, Circular Std" font-weight="300">Label : 00000 Opacity 54 </tspan> <tspan x="0" y="326" font-family="CircularStd-Book, Circular Std" font-weight="300">Placeholder : 00000 Opacity 18%</tspan> <tspan x="0" y="344" font-family="CircularStd-Book, Circular Std" font-weight="300">Line : E0E0E0</tspan>
+        </text>
+        <g transform="translate(36 9)">
+            <path fill="#F50" d="M0 11h288v1H0z"/>
+            <path fill="#F50" d="M0 9h1v5H0zM287 9h1v5h-1z"/>
+            <rect width="42" height="22" x="122" fill="#F50" rx="2"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="126.326" y="15">288px</tspan>
+            </text>
+        </g>
+        <g transform="translate(306 24)">
+            <path fill="#F50" d="M21 0h1v220h-1z"/>
+            <path fill="#F50" d="M19 0h5v1h-5zM19 219h5v1h-5z"/>
+            <rect width="42" height="22" y="99" fill="#F50" rx="2"/>
+            <text fill="#FFF" font-family="HelveticaNeue, Helvetica Neue" font-size="12">
+                <tspan x="4.326" y="114">220px</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

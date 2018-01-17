@@ -15,7 +15,7 @@
 ## Spec
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Bottom Navigation Spec](images/bottomnav-spec.svg)
     <div class="img-width-initial mt-16">
       ![Bottom Navigation Usage Spec](images/bottomnav-usage-spec.svg)

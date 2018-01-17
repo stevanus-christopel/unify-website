@@ -26,6 +26,10 @@
         "url": "/components/button"
       },
       {
+        "title": "Cards",
+        "url": "/components/cards"
+      },
+      {
         "title": "Dialogs",
         "url": "/components/dialogs"
       },

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="329" viewBox="0 0 360 329">
+    <defs>
+        <rect id="b" width="288" height="220" rx="4"/>
+        <filter id="a" width="106.9%" height="109.1%" x="-3.5%" y="-3.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="360" height="268" fill="#F8F8F8" rx="4"/>
+        <g transform="translate(36 24)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <text fill="#000" fill-opacity=".38" font-family="CircularStd-Bold, Circular Std" font-size="14" font-weight="bold">
+            <tspan x="2" y="290">Font Size </tspan> <tspan x="2" y="308" font-family="CircularStd-Book, Circular Std" font-weight="300">Label 12px</tspan> <tspan x="2" y="326" font-family="CircularStd-Book, Circular Std" font-weight="300">Placeholder 16px</tspan>
+        </text>
+    </g>
+</svg>

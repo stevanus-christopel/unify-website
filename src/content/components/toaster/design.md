@@ -15,15 +15,15 @@
 ## Type
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Toaster Normal</b>
     ![Toaster Normal](images/toaster-1.svg)
   </div>
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Toaster - Bottom Nav</b>
     ![Toaster - Bottom Nav](images/toaster-2.svg)
   </div>
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Toaster Error</b>
     ![Toaster Error](images/toaster-3.svg)
   </div>
@@ -32,7 +32,7 @@
 ## Spec
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Toaster Spec](images/toaster-spec.svg)
     <div class="img-width-initial mt-16">
       ![Toaster Usage Spec](images/toaster-usage-spec.svg)

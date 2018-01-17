@@ -13,11 +13,11 @@
 ## Type
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Full Page</b>
     ![Full Pickers](images/full-pickers.svg)
   </div>
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Half Page</b>
     ![Half Pickers](images/half-pickers.svg)
   </div>

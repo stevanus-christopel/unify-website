@@ -13,15 +13,15 @@
 ## Type
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Announcement Ticker</b>
     ![Announcement Ticker](images/ticker-1.svg)
   </div>
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Announcement Sliding Ticker</b>
     ![Announcement Sliding Ticker](images/ticker-2.svg)
   </div>
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Warning Ticker</b>
     ![Warning Ticker](images/ticker-3.svg)
   </div>
@@ -30,7 +30,7 @@
 ## Spec
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Ticker Spec](images/ticker-spec.svg)
     <div class="img-width-initial mt-16">
       ![Ticker Usage Spec](images/ticker-usage-spec.png)

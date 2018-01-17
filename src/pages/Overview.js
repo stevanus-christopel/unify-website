@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import { 
-  HomeHeaderWhite, 
+import {
+  HomeHeaderWhite,
   HomeHeaderGreen,
   HomeHeaderPurple,
-  HomeHeaderYellow 
+  HomeHeaderYellow
 } from '../internal/HomeHeader';
 import Letter from '../internal/Letters';
 import LiquidButton from '../internal/LiquidButton';
@@ -23,7 +23,7 @@ const transitionStyles = {
 };
 
 class Overview extends React.Component {
-  
+
   constructor(props) {
     super(props);
 
@@ -75,7 +75,7 @@ class Overview extends React.Component {
               }
             </CSSTransition>
           </TransitionGroup>
-              
+
           <div className="overview-page__title">
               <Letter headerPage={this.state.headerPage} letter="U" onClick={() => this.changeHeader(1)}  />
               <Letter headerPage={this.state.headerPage} letter="N" onClick={() => this.changeHeader(2)}  />
@@ -119,7 +119,7 @@ class Overview extends React.Component {
                     Unify Design Kit
                   </h2>
                   <p className="overview-page__tile--text">
-                  A Sketch file containing core visual styles, components, and patterns a designers needs to use this kit as a framework for building product experiences.
+                  A Sketch file containing core visual styles, components, and patterns. A designers needs to use this kit as a framework for building product experiences.
                   </p>
                   <a
                     href="https://drive.google.com/drive/folders/0AFAID-GJ_Se0Uk9PVA"

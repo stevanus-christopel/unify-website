@@ -13,11 +13,11 @@
 ## Type & Spec
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Illustration Helper</b>
     ![Illustration Helper](images/tooltips-1.svg)
   </div>
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Text Only</b>
     ![Text Only](images/tooltips-2.svg)
   </div>

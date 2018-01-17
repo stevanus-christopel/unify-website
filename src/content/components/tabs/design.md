@@ -17,15 +17,15 @@
 ## Type
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Main Tab</b>
     ![Main Tab](images/tabs-1.svg)
   </div>
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Main Tab - Many Item</b>
     ![Main Tab - Many Item](images/tabs-2.svg)
   </div>
-  <div>
+  <div class="img-block">
      <b class="display-block mb-16">Secondary Tab</b>
     ![Secondary Tab](images/tabs-3.svg)
   </div>
@@ -34,7 +34,7 @@
 ## Spec
 
 <div data-insert-component="ImageGrid">
-  <div>
+  <div class="img-block">
     ![Tabs Spec](images/tabs-spec.svg)
     <div class="img-width-initial mt-16">
       ![Tabs Usage Spec](images/tabs-usage-spec.svg)
