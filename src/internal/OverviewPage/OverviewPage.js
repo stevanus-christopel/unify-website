@@ -67,6 +67,11 @@ class OverviewPage extends Component {
         link: '/components/tabs'
       },
       {
+        name: 'Text Fields',
+        img: require('./images/Text Fields.svg'),
+        link: '/components/text-fields'
+      },
+      {
         name: 'Tickers',
         img: require('./images/Ticker.svg'),
         link: '/components/tickers'

@@ -67,6 +67,11 @@ class SearchPage extends Component {
         link: '/components/tabs'
       },
       {
+        name: 'Text Fields',
+        img: require('../OverviewPage/images/Text Fields.svg'),
+        link: '/components/text-fields'
+      },
+      {
         name: 'Tickers',
         img: require('../OverviewPage/images/Ticker.svg'),
         link: '/components/tickers'

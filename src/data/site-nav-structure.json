@@ -62,6 +62,10 @@
         "url": "/components/tabs"
       },
       {
+        "title": "Text Fields",
+        "url": "/components/text-fields"
+      },
+      {
         "title": "Tickers",
         "url": "/components/tickers"
       },

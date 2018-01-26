@@ -119,7 +119,7 @@ class Overview extends React.Component {
                     Unify Design Kit
                   </h2>
                   <p className="overview-page__tile--text">
-                  A Sketch file containing core visual styles, components, and patterns. A designers needs to use this kit as a framework for building product experiences.
+                  A Sketch file containing core visual styles, components, and patterns. A designer needs to use this kit as a framework for building product experiences.
                   </p>
                   <a
                     href="https://drive.google.com/drive/folders/0AFAID-GJ_Se0Uk9PVA"
