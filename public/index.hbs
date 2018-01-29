@@ -14,7 +14,20 @@
   <meta property="twitter:image:alt" content="Tokopedia Unify Design System">
   <meta name="description" content="Tokopedia Unify Design System">
   <meta name="keywords" content="Tokopedia, design, system, Unify, design system, styleguide, style, guide, components, library, pattern, kit, component">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="google-signin-client_id" content="504442687688-ebo801nj17927lvs3pb63fuc3n8uk72a.apps.googleusercontent.com">
   <title>Tokopedia Unify Design System</title>
+
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script type="text/javascript">
+    gapi.load('auth2', function() {
+      gapi.auth2.init({
+          client_id: "504442687688-ebo801nj17927lvs3pb63fuc3n8uk72a.apps.googleusercontent.com"
+      }).then(function(auth2) {
+          console.log( "signed in: " + auth2.isSignedIn.get() );
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -37,7 +50,6 @@
     <path class="shape-overlays__path"></path>
     <path class="shape-overlays__path"></path>
   </svg>
-
   <main id="root" role="main" aria-label="Main website wrapper"></main>
   <script src="/js/carbon-components.min.js"></script>
   <script>
