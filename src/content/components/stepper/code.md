@@ -1,0 +1,5 @@
+---
+variations:
+  stepper:
+  - Stepper
+---

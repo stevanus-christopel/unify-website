@@ -120,8 +120,6 @@
 <p class="pb-16"><b>Focus</b></p>
 <div data-insert-component="ImageGrid">
   <div class="mb-16">
-  Focus text fields
-  <br /><br />
   As the user types into the text field, input text replaces any placeholder text. Autocompleted text is displayed to the right of the cursor, using the same font size and color as placeholder text.
   </div>
   <div class="img-block">

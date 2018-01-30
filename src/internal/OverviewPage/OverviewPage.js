@@ -62,6 +62,11 @@ class OverviewPage extends Component {
         link: '/components/sliders'
       },
       {
+        name: 'Stepper',
+        img: require('./images/Stepper.svg'),
+        link: '/components/stepper'
+      },
+      {
         name: 'Tabs',
         img: require('./images/Tabs.svg'),
         link: '/components/tabs'

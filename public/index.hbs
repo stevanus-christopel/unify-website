@@ -15,15 +15,20 @@
   <meta name="description" content="Tokopedia Unify Design System">
   <meta name="keywords" content="Tokopedia, design, system, Unify, design system, styleguide, style, guide, components, library, pattern, kit, component">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="google-signin-client_id" content="504442687688-ebo801nj17927lvs3pb63fuc3n8uk72a.apps.googleusercontent.com">
+  <meta name="google-signin-client_id" content="504442687688-h81tncjpsrpt4ll6jkrcspfd11lsl588.apps.googleusercontent.com">
   <title>Tokopedia Unify Design System</title>
 
   <script src="https://apis.google.com/js/api.js"></script>
   <script type="text/javascript">
     gapi.load('auth2', function() {
       gapi.auth2.init({
-          client_id: "504442687688-ebo801nj17927lvs3pb63fuc3n8uk72a.apps.googleusercontent.com"
+          client_id: "504442687688-h81tncjpsrpt4ll6jkrcspfd11lsl588.apps.googleusercontent.com"
       }).then(function(auth2) {
+        /*if(!auth2.isSignedIn.get()) {
+          location.href = 'https://accounts.google.com/signin/oauth/oauthchooseaccount?'+
+          'client_id=504442687688-h81tncjpsrpt4ll6jkrcspfd11lsl588.apps.googleusercontent.com'+
+          '&destination=http%3A%2F%2Fproduct.tkp.me&approval_state=!ChQ5eTI3b1BPWFpqY1ZrYVRoMzA2RBIfazNUZjRmeGlDTjhRVU9xWmlfQjdtUjlFZlUwTkZCWQ%E2%88%99ACThZt4AAAAAWnAfitBxtHid49DyfqXOMWl0sW5cmPoG&xsrfsig=AHgIfE8a4iQ8op83f5yFC1qmUheod_7uYQ&flowName=GeneralOAuthFlow'
+        }*/
           console.log( "signed in: " + auth2.isSignedIn.get() );
       });
     });

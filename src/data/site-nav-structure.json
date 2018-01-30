@@ -58,6 +58,10 @@
         "url": "/components/sliders"
       },
       {
+        "title": "Stepper",
+        "url": "/components/stepper"
+      },
+      {
         "title": "Tabs",
         "url": "/components/tabs"
       },

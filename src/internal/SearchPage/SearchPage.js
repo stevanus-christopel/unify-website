@@ -62,6 +62,11 @@ class SearchPage extends Component {
         link: '/components/sliders'
       },
       {
+        name: 'Stepper',
+        img: require('../OverviewPage/images/Stepper.svg'),
+        link: '/components/stepper'
+      },
+      {
         name: 'Tabs',
         img: require('../OverviewPage/images/Tabs.svg'),
         link: '/components/tabs'
