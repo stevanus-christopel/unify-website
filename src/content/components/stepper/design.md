@@ -18,8 +18,10 @@
   Progress bar’s length count by dividing the length of screen with the total number of steps
   </div>
   <div class="img-block">
+    ![Stepper Spec 1](images/stepper-spec-1.svg)
   </div>
   <div class="img-block">
+    ![Stepper Spec 2](images/stepper-spec-2.svg)
   </div>
 </div>
 
@@ -29,7 +31,9 @@
   Since the normal stepper’s number of step replace the navigation bar title. Title of page (in this example “Open Shop”) can pushed the number of step in the Navigation Bar, when the page scrolled-down.
   </div>
   <div class="img-block">
+    ![Stepper Use Case 1](images/stepper-use-case-1.svg)
   </div>
   <div class="img-block">
+    ![Stepper Use Case 2](images/stepper-use-case-2.svg)
   </div>
 </div>
