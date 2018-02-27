@@ -134,4 +134,34 @@
     width: 400px;
     z-index: 1;
   }
+
+  & .unf-list {
+    width: 450px;
+    padding: 16px;
+    background: #FFF;
+  }
+
+  & .unf-slider {
+    width: 100%;
+    height: 60px;
+    background: #FFF;
+
+    &__range {
+        z-index: 1;
+    }
+
+    &__track-overlay {
+        z-index: 0;
+    }
+
+     &__input {
+        &::-webkit-slider-runnable-track {
+            z-index: 2;
+        }
+
+        &::-webkit-slider-thumb {
+            z-index: 3;
+        }
+    }
+  }
 }

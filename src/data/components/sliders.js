@@ -3,6 +3,9 @@
   "variations": {
     "slider": [
       "Slider"
+    ],
+    "slider-multiple": [
+      "Slider Multiple"
     ]
   },
   "__content": "\n"

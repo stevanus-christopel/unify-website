@@ -1,7 +1,7 @@
 ### Usage
 
-1. Install **unify-react-mobile** by running `yarn add unify-react-mobile` or `npm install unify-react-mobile` on your project.
-2. Use `import { Chip } from 'unify-react-mobile'` on top of your code.
+1. Install **unify-react-native** by running `yarn add unify-react-native` or `npm install unify-react-native` on your project.
+2. Use `import { Chip } from 'unify-react-native'` on top of your code.
 3. Code your `<Chip />` component based on your requirement with modifiers & props below.
 
 
