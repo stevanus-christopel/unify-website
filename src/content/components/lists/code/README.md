@@ -18,9 +18,10 @@ Props **item** below is the element of props **items**
 | className        | Props for applying custom classes   | string          | **""**
 | subheader        | Props for subheader text            | string          | ""
 | noMargin         | Props for removing margin           | bool            | **false**, true
-| items    | Props to set items inside tabs. Use same format as the sample above.  | array | **[]**
-| item.text       | Props for item text value          | string            | -
-| item.icon       | Props for item icon url            | string            | -
-| item.actionText | Props for item actionText value    | string            | -
-| item.arrow      | Props for showing arrow icon       | bool              | -
-| item.onClick    | Props for item click function       | func             | -
+| items   | Props to set items inside tabs. Use same format as the sample above.  | array | **[]**
+| item.key  | props for key of each element inside items array | number | **0**
+| item.text  | Props for text of each element inside items array  | string  | -
+| item.icon  | Props for item icon, can be string file location or child component  | string or object  | -
+| item.actionText | Props for adding action text of each element inside items array   | string  | -
+| item.arrow  | Props for showing arrow icon  | bool | -
+| item.onClick  | Props for adding click function of each element inside items array  | func | -
