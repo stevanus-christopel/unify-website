@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { Slider } from 'unify-react-mobile';
 
-const ComponentDemo = (
-  <Slider 
-    min={0} 
-    max={10} 
-    value={5}
-    step={1}
-    separator={4}
-    block
-    onChange={this.handleChangeSlider}
-  />
-)
+class ComponentDemo extends PureComponent {
+  state = {
+    value: 5
+  }
+  render() {
+    return(
+      <Slider 
+        min={0} 
+        max={10} 
+        value={this.state.value}
+        step={1}
+        separator={4}
+        block
+        onChange={(value) => { this.setState({value: value}) }}
+      />
+    )
+  }
+}
 
-export default ComponentDemo;
+export default <ComponentDemo />;

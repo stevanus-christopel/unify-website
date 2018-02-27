@@ -1,11 +1,12 @@
-<Slider min={0}
+<Slider 
+  min={0}
   max={10} 
-  value={2}
-  doubleValue={8}
+  value={this.state.value}
+  doubleValue={this.state.doubleValue}
   double
   step={1}
   separator={4}
   block
-  onChange={this.handleChangeSlider}
-  onChangeDouble={this.handleChangeSliderDouble}
+  onChange={(value) => { this.setState({value: value}) }}
+  onChangeDouble={(value) => { this.setState({doubleValue: value}) }}
 />

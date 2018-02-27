@@ -1,8 +1,9 @@
-<Slider min={0} 
+<Slider 
+  min={0} 
   max={10} 
-  value={5}
+  value={this.state.value}
   step={1}
   separator={4}
   block
-  onChange={this.handleChangeSlider}
+  onChange={(value) => { this.setState({value: value}) }}
 />
