@@ -4,6 +4,8 @@ import { Link } from 'react-router';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
 
+import 'unify-react-mobile/build/styles.css';
+
 class ComponentExample extends Component {
   static propTypes = {
     htmlFile: PropTypes.string,
@@ -27,7 +29,7 @@ class ComponentExample extends Component {
     const componentLink = component === 'detail-page-header'
       ? `/components/${variation}/live`
       : `/components/${component}/live`;
-    
+
     let codeFile;
 
     try{

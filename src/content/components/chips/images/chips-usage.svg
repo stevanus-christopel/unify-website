@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="458px" height="290px" viewBox="0 0 458 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>IMG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="140" height="40" rx="20"></rect>
+        <filter x="-12.9%" y="-45.0%" width="125.7%" height="190.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="179" height="40" rx="20"></rect>
+    </defs>
+    <g id="CEKUNIFY-Website---Chips" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1072.000000, -521.000000)">
+        <g id="intro-1" transform="translate(386.000000, 472.000000)">
+            <g id="IMG" transform="translate(686.000000, 49.000000)">
+                <rect id="Rectangle-7" fill="#F8F8F8" x="0" y="0" width="458" height="290" rx="4"></rect>
+                <g id="Group-14" transform="translate(269.000000, 125.000000)">
+                    <g id="Rectangle-Copy">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#F3FEF3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#87D58B" stroke-width="1" x="0.5" y="0.5" width="139" height="39" rx="19.5"></rect>
+                    </g>
+                    <rect id="Rectangle-8" fill="#EAEAEA" x="77" y="16" width="34" height="6" rx="3"></rect>
+                    <rect id="Rectangle-8-Copy" fill="#EAEAEA" x="16" y="16" width="52" height="6" rx="3"></rect>
+                </g>
+                <g id="Chips-selected" transform="translate(49.500000, 125.000000)">
+                    <g id="Rectangle">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#E0E0E0" stroke-width="1" x="0.5" y="0.5" width="178" height="39" rx="19.5"></rect>
+                    </g>
+                    <path d="M153.528125,16.5 L156,18.95 L158.49375,16.5 L159.478125,17.4625 L157.00625,20 L159.478125,22.45 L158.49375,23.4125 L156,20.9625 L153.528125,23.4125 L152.54375,22.45 L155.015625,20 L152.54375,17.4625 C152.54375,17.4625 153.528125,16.5 153.528125,16.5 Z M156,13 C152.134075,13 149,16.134075 149,20 C149,23.8661 152.134075,27 156,27 C159.8661,27 163,23.8661 163,20 C163,16.134075 159.8661,13 156,13 Z" id="Fill-1" fill="#BDBDBD"></path>
+                    <rect id="Rectangle-8" fill="#EAEAEA" x="18.5" y="16" width="30" height="6" rx="3"></rect>
+                    <rect id="Rectangle-8-Copy" fill="#EAEAEA" x="57.5" y="16" width="72" height="6" rx="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

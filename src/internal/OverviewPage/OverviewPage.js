@@ -27,6 +27,11 @@ class OverviewPage extends Component {
         link: '/components/cards'
       },
       {
+        name: 'Chips',
+        img: require('./images/Chips.svg'),
+        link: '/components/chips'
+      },
+      {
         name: 'Dialogs',
         img: require('./images/Dialog.svg'),
         link: '/components/dialogs'

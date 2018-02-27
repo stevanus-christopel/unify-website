@@ -30,6 +30,10 @@
         "url": "/components/cards"
       },
       {
+        "title": "Chips",
+        "url": "/components/chips"
+      },
+      {
         "title": "Dialogs",
         "url": "/components/dialogs"
       },
