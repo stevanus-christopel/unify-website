@@ -3,18 +3,23 @@ import { Slider } from 'unify-react-mobile';
 
 class ComponentDemo extends PureComponent {
   state = {
-    value: 5
+    single: 25,
+    double: 75
   }
+
   render() {
     return(
       <Slider 
-        min={0} 
-        max={10} 
-        value={this.state.value}
+        min={0}
+        max={100} 
+        value={this.state.single}
+        doubleValue={this.state.double}
+        double
         step={1}
         separator={4}
         block
-        onChange={(value) => { this.setState({value: value}) }}
+        onChange={(value) => { this.setState({single: value}) }}
+        onChangeDouble={(value) => { this.setState({double: value}) }}
       />
     )
   }
