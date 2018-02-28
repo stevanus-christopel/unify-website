@@ -16,5 +16,5 @@ Use these props on each `<Card />` component. The bold one in Value section is t
 |---------------------|----------------------------------|-----------------|---------------------|
 | className        | Props for applying custom classes   | string          | **""**
 | subheader        | Props for subheader text            | string          | ""
-| container   | Props for removing left and right margin | bool            | **false**, true
-| children         | Props for give card text            | string          | **""**
+| container     | Props for applying container style     | bool            | **false**, true
+| children         | Props for give card content           | string          | **""**
