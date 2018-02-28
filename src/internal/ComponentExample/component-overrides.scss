@@ -94,7 +94,7 @@
 */
 
 .component-example__live {
-  & .bottomnav {
+  & .unf-bottomnav {
     position: absolute;
     max-width: 400px;
     left: 50%;
@@ -103,10 +103,25 @@
     border-left: 1px solid $border-color;
   }
 
-  & .bottomsheet {
-    & p {
-      color: $font-color-black-secondary;
-    }
+  & .unf-btn__floating-container {
+    position: absolute;
+  }
+
+  & .unf-navbar-container {
+    width: 400px;
+    z-index: 1;
+  }
+
+  & .unf-overlay {
+    position: absolute;
+  }
+
+  & .unf-tab {
+    width: 460px;
+  }
+
+  & .unf-ticker {
+    width: 400px;
   }
 
   & .component-example__live--rendered {
@@ -121,17 +136,17 @@
       max-width: 400px;
     }
   }
+}
 
-  & .tab {
-    width: 460px;
+body {
+  .unf-bottomsheet {
+    & p {
+      color: $font-color-black-secondary;
+    }
   }
 
-  & .ticker {
-    width: 400px;
-  }
-
-  & .navbar-container {
-    width: 400px;
-    z-index: 1;
+  .unf-dialog__content {
+    max-width: 420px;
+    margin: auto;
   }
 }

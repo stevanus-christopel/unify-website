@@ -1,3 +1,6 @@
-<Toaster actionText="OK" onActionClick={() => alert('Hello World..')}>
-    The content goes here, use green color for any info, and maximum 2 lines 
+<Toaster
+  actionText="OK"
+  onActionClick={this.toggleDisplay}
+  display={this.state.display}>
+    The content goes here, use green color for any info, and maximum 2 lines
 </Toaster>

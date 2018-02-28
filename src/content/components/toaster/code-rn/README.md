@@ -16,6 +16,8 @@ Use these props on each `<Toaster />` component. The bold one in Value section i
 |---------------------|----------------------------------|-----------------|---------------------|
 | className   | Props for applying custom classes   | string            | **""**
 | error   | Props for making error toaster styles   | bool            | **false**, true
+| display   | Props to display the toaster   | bool            | **false**, true
 | actionText   | Props for adding action text to toaster   | string            | **""**
 | onActionPress   | Props for adding press function to action text on toaster   | func            | -
+| onSwipeDown   | Props for adding swipe down function on toaster   | func            | -
 | children   | Props for give toaster text   | string            | **""**

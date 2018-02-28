@@ -10,11 +10,15 @@
 
 #### Props
 
-Use these props on each `<Ticker />` component. The bold one in Value section is the default value.
+Use these props on each `<Ticker />` component. The bold one in Value section is the default value.<br />
+Props **item** below is the element of **items** array.
 
 | Props            | Description                         | Type            | Value
 |---------------------|----------------------------------|-----------------|---------------------|
 | className   | Props for applying custom classes   | string            | **""**
 | warning   | Props for making warning ticker styles   | bool            | **false**, true
-| items   | Props to set items inside ticker. Use same format as the sample above.   | array            | **[]**
 | indexActive   | Props for set which item is active based on array index number   | number            | **0**
+| items   | Props to set items inside ticker. Use same format as the sample above.   | array            | **[]**
+| item.text   | Props for text of each element inside items array.   | string            | ""
+| item.action   | Props for action text of each element inside items array.   | string            | ""
+| item.actionLink   | Props for set url (href) of action text.   | string            | ""

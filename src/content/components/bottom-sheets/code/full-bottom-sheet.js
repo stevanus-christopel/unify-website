@@ -1,12 +1,30 @@
-import React from 'react';
-import { BottomSheet } from 'unify-react-mobile';
+import React, { PureComponent } from 'react';
+import { Button, BottomSheet } from 'unify-react-mobile';
 
-const ComponentDemo = (
-    <div>
-        <BottomSheet full title="Title of Information">
+class ComponentDemo extends PureComponent {
+  state = {
+    display: false
+  }
+  toggleDisplay = () => {
+    this.setState({
+      display: !this.state.display
+    })
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <div>
+          <Button secondary block onClick={this.toggleDisplay}>Open Full Page Bottom Sheet</Button>
+        </div>
+        <BottomSheet full title="Title of Information"
+          root={document.getElementById("root")}
+          display={this.state.display}
+          onClose={this.toggleDisplay}>
             <p>This is content section.</p>
         </BottomSheet>
-    </div>
-)
+      </React.Fragment>
+    )
+  }
+}
 
-export default ComponentDemo;
+export default <ComponentDemo />;

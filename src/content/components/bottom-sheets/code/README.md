@@ -19,5 +19,5 @@ Use these props on each `<BottomSheet />` component. The bold one in Value secti
 | full   | Props for making full bottom sheet   | bool            | **false**, true
 | onClose   | Props for adding function to close the bottom sheet (toggle display state)   | func            | -
 | display   | Props to display the bottom sheet   | bool            | **false**, true
-| root   | Props to set the root of bottom sheet   | object            | document.body
+| root   | Props to set the react root of bottom sheet   | object            | document.body
 | children   | Props for give bottom sheet content   | object            | -

@@ -2,5 +2,8 @@
 <Button secondary medium>Secondary Medium</Button>
 <Button secondary large>Secondary Large</Button>
 <Button secondary block>Secondary Block</Button>
-<Button secondary block 
+<Button secondary block
+  loading={this.state.loading}
+  onPress={this.toggleLoading}>Click to show loading</Button>
+<Button secondary block
     image="http://sh-steve.ndvl/img/react-native/icon.png">Secondary Block with Image</Button>

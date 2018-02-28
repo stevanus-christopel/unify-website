@@ -10,10 +10,16 @@
 
 #### Props
 
-Use these props on each `<BottomNav />` component. The bold one in Value section is the default value.
+Use these props on each `<BottomNav />` component. The bold one in Value section is the default value.<br />
+Props **item** below is the element of **items** array.
 
 | Props            | Description                         | Type            | Value
 |---------------------|----------------------------------|-----------------|---------------------|
 | className   | Props for applying custom classes   | string            | **""**
-| items   | Props to set items inside bottom nav. Use same format as the sample above.   | array            | **[]**
 | indexActive   | Props for set which item is active based on array index number   | number            | **0**
+| items   | Props to set items inside bottom nav. Use same format as the sample above.   | array            | **[]**
+| item.key   | Props for key of each element inside items array.   | number            | 0
+| item.icon   | Props for non-active icon, can be string file location or child component  | string or object            | -
+| item.iconActive   | Props for active icon, can be string file location or child component  | string or object            | -
+| item.text   | Props for text of each element inside items array.   | string            | ""
+| item.onClick   | Props for adding click function of each element inside items array.   | func            | -

@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { Button } from 'unify-react-mobile';
 
-const ComponentDemo = (
-    <div>
-        <Button floating primary>Floating Button</Button>
-    </div>
-)
+import image from '../images/mail.svg'
 
-export default ComponentDemo;
+class ComponentDemo extends PureComponent {
+  state = {
+    loading: false
+  }
+  toggleLoading = () => {
+    this.setState({
+      loading: !this.state.loading
+    }, function() {
+      setTimeout(() => {
+        this.setState({
+          loading: !this.state.loading
+        })
+      }, 2000)
+    })
+  }
+  render() {
+    return (
+      <Button floating primary
+        loading={this.state.loading}
+        onClick={this.toggleLoading}>
+        Floating Button
+      </Button>
+    )
+  }
+}
+
+export default <ComponentDemo />;

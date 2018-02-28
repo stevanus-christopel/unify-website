@@ -10,15 +10,20 @@
 
 #### Props
 
-Use these props on each `<Menu />` component. The bold one in Value section is the default value.
+Use these props on each `<Menu />` component. The bold one in Value section is the default value.<br />
+Props **item** below is the element of **items** array.
 
 | Props            | Description                         | Type            | Value
 |---------------------|----------------------------------|-----------------|---------------------|
 | className   | Props for applying custom classes   | string            | **""**
-| display   | Props for defining whether the menu displayed or not   | bool            | **false**, true
-| items   | Props to set items inside menu. Use same format as the sample above.   | array            | **[]**
 | actionText   | Props to set text for menu's action   | string            | **""**
 | onAction   | Props for adding press function to menu's action   | func            | -
 | onClose   | Props for adding function to close the menu (toggle display state)   | func            | -
 | display   | Props to display the menu   | bool            | **false**, true
-| root   | Props to set the root of menu   | object            | document.body
+| root   | Props to set the react root of menu   | object            | document.body
+| children   | Props to give customized content above menu items (list) | string            | **""**
+| items   | Props to set items inside menu. Use same format as the sample above.   | array            | **[]**
+| item.key   | Props for key of each element inside items array.   | number            | 0
+| item.icon   | Props for icon, can be string file location or child component  | string or object            | -
+| item.text   | Props for text of each element inside items array.   | string            | ""
+| item.onPress   | Props for adding press function of each element inside items array.   | func            | -
