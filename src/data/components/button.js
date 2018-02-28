@@ -1,6 +1,9 @@
 /* eslint-disable */
  module.exports = {
   "variations": {
+    "transaction-button": [
+      "Transaction Button"
+    ],
     "primary-button": [
       "Primary Button"
     ],

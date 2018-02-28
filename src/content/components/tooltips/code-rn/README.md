@@ -17,9 +17,9 @@ Use these props on each `<Tooltip />` component. The bold one in Value section i
 | className   | Props for applying custom classes   | string            | **""**
 | title   | Props for set tooltip title   | string            | **""**
 | actionText   | Props for set action text to tooltip   | string            | **""**
-| onActionClick   | Props for set click function to action text on tooltip   | func            | -
+| onActionPress   | Props for set press function to action text on tooltip   | func            | -
 | image   | Props for adding icon to tooltip   | string            | -, image object
 | onClose   | Props for adding function to close the tooltip (toggle display state)   | func            | -
 | display   | Props to display the tooltip   | bool            | **false**, true
-| root   | Props to set the root of tooltip   | object            | document.body
+| root   | Props to set the react root of tooltip   | object            | document.body
 | children   | Props for give tooltip text   | string            | **""**

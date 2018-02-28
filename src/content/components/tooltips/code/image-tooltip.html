@@ -1,5 +1,7 @@
 <Tooltip title="Title Goes Here" actionText="Saya Mengerti" image={image}
-  onClose={this.toggleDisplay}  display={this.state.display}
-  root={this.props.root}>
-  Type your information about the hint in a compact way, don’t take it to long.
+  root={this.props.root}
+  display={this.state.display}
+  onClose={this.toggleDisplay}
+  onActionClick={this.toggleDisplay}>
+    Type your information about the hint in a compact way, don’t take it to long.
 </Tooltip>

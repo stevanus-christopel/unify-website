@@ -15,6 +15,8 @@ Use these props on each `<Button />` component. The bold one in Value section is
 | Props            | Description                         | Type            | Value
 |---------------------|----------------------------------|-----------------|---------------------|
 | className   | Props for applying custom classes   | string            | **""**
+| type   | Props for setting type of button   | string            | **button**, submit
+| transaction   | Props for making transaction button styles   | bool            | **false**, true
 | primary   | Props for making primary button styles   | bool            | **false**, true
 | secondary   | Props for making secondary button styles   | bool            | **false**, true
 | disabled   | Props for making disabled button styles   | bool            | **false**, true
@@ -24,5 +26,6 @@ Use these props on each `<Button />` component. The bold one in Value section is
 | floating   | Props for making floating button styles   | bool            | **false**, true
 | block   | Props for making block button styles   | bool            | **false**, true
 | image   | Props for adding icon to button   | string            | -, image object
+| loading   | Props for display loading state of button   | bool            | **false**, true
 | onClick   | Props for adding click function to button   | func            | -
 | children   | Props for give button text   | string            | **""**

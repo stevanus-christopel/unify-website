@@ -94,7 +94,7 @@
 */
 
 .component-example__live {
-  & .bottomnav {
+  & .unf-bottomnav {
     position: absolute;
     max-width: 400px;
     left: 50%;
@@ -103,42 +103,23 @@
     border-left: 1px solid $border-color;
   }
 
-  & .bottomsheet {
-    & p {
-      color: $font-color-black-secondary;
-    }
-  }
-
-  & .component-example__live--rendered {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    & div.dialog {
-      left: 50%;
-      transform: translate(-50%,-50%);
-      max-width: 400px;
-    }
-  }
-
-  & .tab {
-    width: 460px;
-  }
-
-  & .ticker {
-    width: 400px;
-  }
-
-  & .navbar-container {
-    width: 400px;
-    z-index: 1;
+  & .unf-btn__floating-container {
+    position: absolute;
   }
 
   & .unf-list {
     width: 450px;
     padding: 16px;
     background: #FFF;
+  }
+
+  & .unf-navbar-container {
+    width: 400px;
+    z-index: 1;
+  }
+
+  & .unf-overlay {
+    position: absolute;
   }
 
   & .unf-slider {
@@ -163,5 +144,39 @@
             z-index: 3;
         }
     }
+  }
+
+  & .unf-tab {
+    width: 460px;
+  }
+
+  & .unf-ticker {
+    width: 400px;
+  }
+
+  & .component-example__live--rendered {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    & div.dialog {
+      left: 50%;
+      transform: translate(-50%,-50%);
+      max-width: 400px;
+    }
+  }
+}
+
+body {
+  .unf-bottomsheet {
+    & p {
+      color: $font-color-black-secondary;
+    }
+  }
+
+  .unf-dialog__content {
+    max-width: 420px;
+    margin: auto;
   }
 }

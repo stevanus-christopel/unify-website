@@ -1,12 +1,31 @@
-import React from 'react';
-import { Toaster } from 'unify-react-mobile';
+import React, { PureComponent } from 'react';
+import { Button, Toaster } from 'unify-react-mobile';
 
-const ComponentDemo = (
-    <div>
-        <Toaster actionText="OK" onActionClick={() => alert('Hello World..')}>
-            The content goes here, use green color for any info, and maximum 2 lines 
+class ComponentDemo extends PureComponent {
+  state = {
+    display: false
+  }
+  toggleDisplay = () => {
+    this.setState({
+      display: !this.state.display
+    })
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <div>
+          <Button secondary block onClick={this.toggleDisplay}>Toggle Normal Toaster with Icon</Button>
+        </div>
+
+        <Toaster
+          actionText="OK"
+          onActionClick={this.toggleDisplay}
+          display={this.state.display}>
+            The content goes here, use red color for any errors, and maximum 2 lines
         </Toaster>
-    </div>
-)
+      </React.Fragment>
+    )
+  }
+}
 
-export default ComponentDemo;
+export default <ComponentDemo />;

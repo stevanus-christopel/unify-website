@@ -1,3 +1,6 @@
-<Toaster error actionText="OK" onActionClick={() => alert('Hello World..')}>
-    The content goes here, use red color for any errors, and maximum 2 lines 
+<Toaster error
+  actionText="OK"
+  onActionClick={this.toggleDisplay}
+  display={this.state.display}>
+    The content goes here, use red color for any errors, and maximum 2 lines
 </Toaster>

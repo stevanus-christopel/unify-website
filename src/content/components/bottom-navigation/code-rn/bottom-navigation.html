@@ -1,10 +1,49 @@
-<BottomNav items={
-    [
-      { key: 0, icon: require("../images/bottom-nav.svg"), iconActive: require("../images/bottom-nav-active.svg"), text: 'Home', onClick: function(){ alert('Hello Item 1'); } },
-      { key: 1, icon: require("../images/bottom-nav.svg"), iconActive: require("../images/bottom-nav-active.svg"), text: 'Hotlist', onClick: function(){ alert('Hello Item 2'); } },
-      { key: 2, icon: require("../images/bottom-nav.svg"), iconActive: require("../images/bottom-nav-active.svg"), text: 'Wishlist', onClick: function(){ alert('Hello Item 3'); } },
-      { key: 3, icon: require("../images/bottom-nav.svg"), iconActive: require("../images/bottom-nav-active.svg"), text: 'Keranjang', onClick: function(){ alert('Hello Item 4'); } },
-      { key: 4, icon: require("../images/bottom-nav.svg"), iconActive: require("../images/bottom-nav-active.svg"), text: 'Lainnya', onClick: function(){ alert('Hello Item 5'); } },
-    ]
-    } indexActive={4}
+<BottomNav indexActive={4}
+  items={[
+    {
+      key: 0,
+      icon: require("../images/bottom-nav.svg"),
+      iconActive: require("../images/bottom-nav-active.svg"),
+      text: 'Home',
+      onPress: function() {
+        console.log('Hello Item 1');
+      }
+    },
+    {
+      key: 1,
+      icon: require("../images/bottom-nav.svg"),
+      iconActive: require("../images/bottom-nav-active.svg"),
+      text: 'Hotlist',
+      onPress: function() {
+        console.log('Hello Item 2');
+      }
+    },
+    {
+      key: 2,
+      icon: require("../images/bottom-nav.svg"),
+      iconActive: require("../images/bottom-nav-active.svg"),
+      text: 'Wishlist',
+      onPress: function() {
+        console.log('Hello Item 3');
+      }
+    },
+    {
+      key: 3,
+      icon: require("../images/bottom-nav.svg"),
+      iconActive: require("../images/bottom-nav-active.svg"),
+      text: 'Keranjang',
+      onPress: function() {
+        console.log('Hello Item 4');
+      }
+    },
+    {
+      key: 4,
+      icon: require("../images/bottom-nav.svg"),
+      iconActive: require("../images/bottom-nav-active.svg"),
+      text: 'Lainnya',
+      onPress: function() {
+        console.log('Hello Item 5');
+      }
+    },
+  ]}
 />

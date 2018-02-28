@@ -22,20 +22,20 @@ class ComponentDemo extends PureComponent {
     return (
       <div>
           <div>
-              <Button primary small>Primary Small</Button>
+              <Button transaction small>Transaction Small</Button>
               &nbsp;&nbsp;
-              <Button primary medium>Primary Medium</Button>
+              <Button transaction medium>Transaction Medium</Button>
               &nbsp;&nbsp;
-              <Button primary large>Primary Large</Button>
+              <Button transaction large>Transaction Large</Button>
           </div>
           <br />
-          <Button primary block>Primary Block</Button>
+          <Button transaction block>Transaction Block</Button>
           <br />
-          <Button primary block
+          <Button transaction block
             loading={this.state.loading}
             onClick={this.toggleLoading}>Click to show loading</Button>
           <br />
-          <Button primary block image={image}>Primary Block with Image</Button>
+          <Button transaction block image={image}>Transaction Block with Image</Button>
       </div>
     )
   }

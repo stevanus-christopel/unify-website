@@ -1,5 +1,7 @@
 ---
 variations:
+  transaction-button:
+  - Transaction Button
   primary-button:
   - Primary Button
   secondary-button:

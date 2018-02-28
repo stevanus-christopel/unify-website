@@ -21,5 +21,5 @@ Use these props on each `<Tooltip />` component. The bold one in Value section i
 | image   | Props for adding icon to tooltip   | string            | -, image object
 | onClose   | Props for adding function to close the tooltip (toggle display state)   | func            | -
 | display   | Props to display the tooltip   | bool            | **false**, true
-| root   | Props to set the root of tooltip   | object            | document.body
+| root   | Props to set the react root of tooltip   | object            | document.body
 | children   | Props for give tooltip text   | string            | **""**

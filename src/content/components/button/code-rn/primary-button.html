@@ -2,5 +2,8 @@
 <Button primary medium>Primary Medium</Button>
 <Button primary large>Primary Large</Button>
 <Button primary block>Primary Block</Button>
-<Button primary block 
-    image="http://sh-steve.ndvl/img/react-native/icon.png">Primary Block with Image</Button>
+<Button primary block
+  loading={this.state.loading}
+  onPress={this.toggleLoading}>Click to show loading</Button>
+<Button primary block
+  image="http://sh-steve.ndvl/img/react-native/icon.png">Primary Block with Image</Button>
