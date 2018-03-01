@@ -19,7 +19,6 @@ Use these props on each `<NavBar />` component. The bold one in Value section is
 | subTitle   | Props to set subtitle of navigation bar   | string            | **""**
 | hideTitle   | Props to hide title of navigation bar   | bool            | **false**, true
 | hideSubTitle   | Props to hide subtitle of navigation bar   | bool            | **false**, true
-| hideActionTitle   | Props to hide action text of navigation bar    | bool            | **false**, true
 | inverted   | Props to set green (false) or white (true) as background for navigation bar   | bool            | **false**, true
 | onBack  | Props for adding back function or url to button   | func or string           | -
 | fixed   | Props to set navigation bar position as fixed   | bool            | **false**, true

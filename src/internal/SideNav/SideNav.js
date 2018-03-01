@@ -267,9 +267,9 @@ class SideNav extends Component {
             <ul className="main-nav-item__children--small">
             {
               navItemObj.children.map((subNavItem, index)=> {
-                if(index > 8) {
-                  return;
-                }
+                // if(index > 8) {
+                //   return;
+                // }
                 return <li key={index}>
                 <Link to={subNavItem.url}
                 onClick={this.props.onToggleBtnClick}>

@@ -26,6 +26,7 @@
 
       & .main-nav-item__children--small {
         max-height: 400px !important;
+        overflow: auto;
       }
 
       & .main-nav-item__heading--hover {
