@@ -6,15 +6,15 @@ class ComponentDemo extends PureComponent {
     indexActiveTabs: 0
   }
   handleChangeTab = (event, item) => {
-    this.setState({indexActiveTabs: item.index});
+    this.setState({indexActiveTabs: item.key});
   }
   render() {
     return (
       <Tab secondary
         items={[
-          { index: 0, text: "Inbox", count: 3 },
-          { index: 1, text: "Sent" },
-          { index: 2, text: "Trash" }
+          { key: 0, text: "Inbox", count: 3 },
+          { key: 1, text: "Sent" },
+          { key: 2, text: "Trash" }
         ]}
         indexActive={this.state.indexActiveTabs}
         onItemClick={this.handleChangeTab}
