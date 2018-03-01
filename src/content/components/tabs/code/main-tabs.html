@@ -1,7 +1,9 @@
 <Tab primary
   items={[
-    { text: "HOME", onClick: function(){} },
-    { text: "FEED", onClick: function(){} },
-    { text: "FAVORIT", onClick: function(){} }
+    { index: 0, text: "HOME", value: 1001 },
+    { index: 1, text: "FEED", value: 1002 },
+    { index: 2, text: "FAVORIT", value: 1003 }
   ]}
-  indexActive={0} />
+  indexActive={this.state.indexActiveTabs}
+  onItemClick={this.handleChangeTab}
+/>

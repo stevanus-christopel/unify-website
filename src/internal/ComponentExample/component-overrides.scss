@@ -109,7 +109,8 @@
 
   & .unf-list {
     width: 450px;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     background: #FFF;
   }
 
@@ -124,6 +125,7 @@
 
   & .unf-slider {
     width: 100%;
+    max-width: 400px;
     height: 60px;
     background: #FFF;
 
@@ -169,7 +171,8 @@
 }
 
 body {
-  .unf-bottomsheet {
+  .unf-bottomsheet,
+  .unf-card {
     & p {
       color: $font-color-black-secondary;
     }

@@ -17,5 +17,10 @@ Use these props on each `<Tab />` component. The bold one in Value section is th
 | className   | Props for applying custom classes   | string            | **""**
 | primary   | Props for making primary tabs styles   | bool            | **false**, true
 | secondary   | Props for making secondary tabs styles   | bool            | **false**, true
-| items   | Props to set items inside tabs. Use same format as the sample above.   | array            | **[]**
 | indexActive   | Props for set which item is active based on array index number   | number            | **0**
+| onItemClick   | Props for handling click function on item   | func            | -
+| items   | Props to set items inside tabs. Use same format as the sample above.   | array            | **[]**
+| item.key   | Props for key of each element inside items array.   | number            | 0
+| item.text   | Props for text of each element inside items array.   | string            | ""
+| item.value   | Props for value of each element inside items array. Usually will be used in onItemClick function   | string or number or object            | -
+| item.count   | Props for notification count of each element inside items array. Only applicable on secondary tab.   | number            | -

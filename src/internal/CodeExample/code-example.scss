@@ -26,7 +26,7 @@ $temp-text: $color__blue-90;
   color: transparent;
   background-color: #fff;
   cursor: pointer;
-  z-index: 20;
+  z-index: 2;
 
   &:focus {
     @include focus-outline;

@@ -4,10 +4,6 @@
   width: auto;
   background-color: transparent;
 
-  @include breakpoint('768px') {
-    margin-top: -2.5rem;
-  }
-
   &.bx--tabs {
     min-height: 35px;
 
@@ -52,7 +48,7 @@
 
   @include breakpoint('768px') {
     @include grid-padding;
-    margin: -3.61rem 0 0 0;
+    margin: -50.5px 0 0 0;
 
     .bx--tabs__nav {
       margin: 0;

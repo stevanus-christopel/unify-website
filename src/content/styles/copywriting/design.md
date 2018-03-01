@@ -345,7 +345,7 @@
   </div>
   <div>
     <div class="copy__box align-center w-90">
-      © 2009-2017, PT Tokopedia
+      © 2009-2018, PT Tokopedia
     </div>
     <div class="copy__box--do w-90"></div>
   </div>
@@ -401,12 +401,12 @@
     <br /><br />
     <h4 class="pt-0 w-90">Date</h4>
     <div class="copy__box align-center w-90">
-      15 Nov 2017
+      15 Nov 2018
     </div>
     <div class="copy__box--do w-90"></div>
     <br /><br />
     <div class="copy__box align-center w-90">
-      15 November 2017
+      15 November 2018
     </div>
     <div class="copy__box--dont w-90"></div>
   </div>

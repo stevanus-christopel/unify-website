@@ -1,7 +1,9 @@
 <Tab secondary
   items={[
-    { text: "HOME", onPress: function(){} },
-    { text: "FEED", onPress: function(){} },
-    { text: "FAVORIT", onPress: function(){} },
+    { index: 0, text: "Inbox", count: 3 },
+    { index: 1, text: "Sent" },
+    { index: 2, text: "Trash" }
   ]}
-  indexActive={0} />
+  indexActive={this.state.indexActiveTabs}
+  onItemPress={this.handleChangeTab}
+/>

@@ -78,7 +78,7 @@ class PageFooter extends Component {
       <footer className={footerClasses}>
         <div className="page-footer__content"></div>
         <div className="page-footer__content">
-          <p className="page-footer__text">Tokopedia UNIFY Team - 2017</p>
+          <p className="page-footer__text">Tokopedia UNIFY Team - { new Date().getFullYear() }</p>
         </div>
       </footer>
     );

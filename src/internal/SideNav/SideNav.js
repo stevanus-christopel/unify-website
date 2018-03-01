@@ -22,6 +22,7 @@ var diff_mouse_y = 0;
 
 var isHoverActive = true;
 var isInsideChildren = false;
+var hoverTimeout;
 
 class SideNav extends Component {
   static propTypes = {
@@ -94,45 +95,52 @@ class SideNav extends Component {
       subNavItems: []
     });
   }
-  
+
   handleMouseEnter = (title, subNavItems) => {
-    if(isHoverActive) {
-      const currentPath = browserHistory
-        .getCurrentLocation()
-        .pathname.split('/')[1];
-      
-      let menus = document.getElementsByClassName("main-nav-item");
-      for(var i=0;i<menus.length; i++) {
-        if(title === menus[i].childNodes[0].getAttribute("aria-label")) {
-          if(menus[i].childNodes[0].dataset.url === currentPath ||
-            (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
-            menus[i].className = "main-nav-item main-nav-item__active hover";
-          } else {
-            menus[i].className = "main-nav-item hover";
-          }
-        } else {
-          if(menus[i].childNodes[0].dataset.url === currentPath ||
-            (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
-            menus[i].className = "main-nav-item main-nav-item__active no-hover";
-          } else {
-            menus[i].className = "main-nav-item no-hover";
-          }
-        }
-      }
-      this.setState({
-        subNavItems: subNavItems
-      });
+    var timeoutTime = 1;
+    if(!isHoverActive) {
+      timeoutTime = 400;
     }
-  };
-    
-  handleMouseLeave = () => {
-    let that = this;
-    setTimeout(
-      function(){ 
-        if(!isInsideChildren) {
-          that.clearOnMouseLeave();
+
+    clearTimeout(hoverTimeout);
+    hoverTimeout = setTimeout(
+      () => {
+        const currentPath = browserHistory
+          .getCurrentLocation()
+          .pathname.split('/')[1];
+
+        let menus = document.getElementsByClassName("main-nav-item");
+        for(var i=0;i<menus.length; i++) {
+          if(title === menus[i].childNodes[0].getAttribute("aria-label")) {
+            if(menus[i].childNodes[0].dataset.url === currentPath ||
+              (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
+              menus[i].className = "main-nav-item main-nav-item__active hover";
+            } else {
+              menus[i].className = "main-nav-item hover";
+            }
+          } else {
+            if(menus[i].childNodes[0].dataset.url === currentPath ||
+              (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
+              menus[i].className = "main-nav-item main-nav-item__active no-hover";
+            } else {
+              menus[i].className = "main-nav-item no-hover";
+            }
+          }
         }
-    }, 500);
+        this.setState({
+          subNavItems: subNavItems
+        });
+      },
+    timeoutTime);
+  };
+
+  handleMouseLeave = () => {
+    setTimeout(
+      () => {
+        if(!isInsideChildren) {
+          this.clearOnMouseLeave();
+        }
+    }, 400);
   };
 
   handleMouseMove = (e) => {
@@ -143,7 +151,7 @@ class SideNav extends Component {
       last_mouse_x = e.x;
       last_mouse_y = e.y;
 
-      if(diff_mouse_x >= 4) {
+      if(diff_mouse_x >= 6) {
         isHoverActive = false;
       } else {
         isHoverActive = true;
@@ -153,11 +161,12 @@ class SideNav extends Component {
       // console.log("y : " + diff_mouse_y);
     }
   }
-    
+
   handleMouseEnterChildren = () => {
+    clearTimeout(hoverTimeout);
     isInsideChildren = true;
   };
-    
+
   handleMouseLeaveChildren = () => {
     isInsideChildren = false;
   };
@@ -342,7 +351,7 @@ class SideNav extends Component {
           {
             this.state.subNavItems.length > 0 &&
             <ul className="main-nav-item__children" onMouseEnter={this.handleMouseEnterChildren} onMouseLeave={this.handleMouseLeaveChildren}>
-              { 
+              {
                 this.state.subNavItems.map((subNavItem, index)=> {
                   if(index > 8) {
                     return;
@@ -362,7 +371,7 @@ class SideNav extends Component {
           {
             this.state.subNavItems.length > 8 &&
             <ul className="main-nav-item__children" onMouseEnter={this.handleMouseEnterChildren} onMouseLeave={this.handleMouseLeaveChildren}>
-              { 
+              {
                 this.state.subNavItems.map((subNavItem, index)=> {
                   if(index <= 8) {
                     return;

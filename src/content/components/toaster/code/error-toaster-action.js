@@ -14,7 +14,7 @@ class ComponentDemo extends PureComponent {
     return (
       <React.Fragment>
         <div>
-          <Button secondary block onClick={this.toggleDisplay}>Toggle Error Toaster with Icon</Button>
+          <Button secondary block onClick={this.toggleDisplay}>Toggle Error Toaster with Action</Button>
         </div>
 
         <Toaster error

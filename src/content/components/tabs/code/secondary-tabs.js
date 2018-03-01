@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { Tab } from 'unify-react-mobile';
 
-const ComponentDemo = (
-  <Tab secondary
-    items={[
-      { text: "HOME", onClick: function(){} },
-      { text: "FEED", onClick: function(){} },
-      { text: "FAVORIT", onClick: function(){} },
-    ]}
-    indexActive={0} />
-)
+class ComponentDemo extends PureComponent {
+  state = {
+    indexActiveTabs: 0
+  }
+  handleChangeTab = (event, item) => {
+    this.setState({indexActiveTabs: item.index});
+  }
+  render() {
+    return (
+      <Tab secondary
+        items={[
+          { index: 0, text: "Inbox", count: 3 },
+          { index: 1, text: "Sent" },
+          { index: 2, text: "Trash" }
+        ]}
+        indexActive={this.state.indexActiveTabs}
+        onItemClick={this.handleChangeTab}
+      />
+    )
+  }
+}
 
-export default ComponentDemo;
+export default <ComponentDemo />;
