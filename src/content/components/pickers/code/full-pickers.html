@@ -1,0 +1,19 @@
+<Picker full title='Title of Information'
+  root={document.getElementById("root")}
+  infoDate={[
+    {
+      date: new Date(2018, 2, 17),
+      text: 'Hari Raya Nyepi'
+    },
+    {
+      date: new Date(2018, 2, 30),
+      text: 'Wafat Yesus Kristus'
+    },
+  ]}
+  firstDate={this.state.firstDate}
+  secondDate={this.state.secondDate}
+  onClick={this.updateFirstDate}
+  onClickDouble={this.updateSecondDate}
+  onClose={this.toggleDisplay}
+  display={this.state.display}
+/>
