@@ -168,6 +168,14 @@
       max-width: 400px;
     }
   }
+
+  & .unf-checkbox, .unf-radio, .unf-toggle {
+    margin-right: 40px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
 
 body {
