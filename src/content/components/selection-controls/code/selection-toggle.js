@@ -34,7 +34,7 @@ class ComponentDemo extends PureComponent {
           prependText='prependText'
           appendText='appendText'
         />
-      </React.Fragment>    
+      </React.Fragment>
     )
   }
 }

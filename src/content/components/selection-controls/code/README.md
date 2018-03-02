@@ -23,3 +23,5 @@ Use these props on each `<Button />` component. The bold one in Value section is
 | disabled  | Props for making disabled selection component types   | bool    | **false**, true
 | onClick   | Props for adding click function to selection component   | func    | -
 | onChange   | Props for adding change function to selection componen   | func    | -
+| appendText  | Props for adding text after component (only for Toggle)   | string          | **""**
+| prependText  | Props for adding text before component (only for Toggle)  | string          | **""** 
