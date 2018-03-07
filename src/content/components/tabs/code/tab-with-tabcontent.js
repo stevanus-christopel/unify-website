@@ -17,7 +17,19 @@ class ComponentDemo extends PureComponent {
           { key: 2, text: "FAVORIT" }
         ]}
         indexActive={this.state.indexActiveTabs}
-        onItemClick={this.handleChangeTab} />
+        onItemClick={this.handleChangeTab} >
+        
+        <TabContent index={0}>
+          <h1>Text 1 Content</h1>
+          <p>Text 1 Content</p>
+        </TabContent>
+
+        <TabContent index={2}>
+          <h1>Text 3 Content</h1>
+          <p>Text 3 Content</p>
+        </TabContent>
+
+      </Tab>
     )
   }
 }

@@ -18,6 +18,7 @@ Props **item** below is the element of **items** array.
 | className   | Props for applying custom classes   | string            | **""**
 | warning   | Props for making warning ticker styles   | bool            | **false**, true
 | indexActive   | Props for set which item is active based on array index number   | number            | **0**
+| onClose       | Props for adding function to close the ticker     | func        | -
 | items   | Props to set items inside ticker. Use same format as the sample above.   | array            | **[]**
 | item.text   | Props for text of each element inside items array.   | string            | ""
 | item.action   | Props for action text of each element inside items array.   | string            | ""

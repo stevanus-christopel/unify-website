@@ -19,6 +19,7 @@ Use these props on each `<Tab />` component. The bold one in Value section is th
 | secondary   | Props for making secondary tabs styles   | bool            | **false**, true
 | indexActive   | Props for set which item is active based on array index number   | number            | **0**
 | onItemClick   | Props for handling click function on item   | func            | -
+| index     | Props for TabContent component to determine which tab header it belongs to. (Use this only if there's a Tab without child. see example Tab with TabContent)   | number    | -
 | items   | Props to set items inside tabs. Use same format as the sample above.   | array            | **[]**
 | item.key   | Props for key of each element inside items array.   | number            | 0
 | item.text   | Props for text of each element inside items array.   | string            | ""
