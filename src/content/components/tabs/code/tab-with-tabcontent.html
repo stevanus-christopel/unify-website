@@ -1,20 +1,22 @@
 <Tab primary
   items={[
-    { key: 0, text: "HOME", value: 1001 },
-    { key: 1, text: "FEED", value: 1002 },
-    { key: 2, text: "FAVORIT", value: 1003 }
+    { key: 0, text: "Inbox", count: 3 },
+    { key: 1, text: "Sent" },
+    { key: 2, text: "Trash" }
   ]}
   indexActive={this.state.indexActiveTabs}
   onItemClick={this.handleChangeTab}>
 
-  <TabContent index={0}>
-    <h1>Text 1 Content</h1>
-    <p>Text 1 Content</p>
+  <TabContent>
+    <h1>Inbox Content</h1>
   </TabContent>
 
-  <TabContent index={2}>
-    <h1>Text 3 Content</h1>
-    <p>Text 3 Content</p>
+  <TabContent>
+    <h1>Sent Content</h1>
+  </TabContent>
+
+  <TabContent>
+    <h1>Trash Content</h1>
   </TabContent>
   
 </Tab>

@@ -10,26 +10,30 @@ class ComponentDemo extends PureComponent {
   }
   render() {
     return (
-      <Tab primary
-        items={[
-          { key: 0, text: "HOME" },
-          { key: 1, text: "FEED" },
-          { key: 2, text: "FAVORIT" }
-        ]}
-        indexActive={this.state.indexActiveTabs}
-        onItemClick={this.handleChangeTab} >
-        
-        <TabContent index={0}>
-          <h1>Text 1 Content</h1>
-          <p>Text 1 Content</p>
-        </TabContent>
+      <div style={{backgroundColor: '#FFF', border: '1px solid #E0E0E0'}}>
+        <Tab secondary
+          items={[
+            { key: 0, text: "Inbox", count: 3 },
+            { key: 1, text: "Sent" },
+            { key: 2, text: "Trash" }
+          ]}
+          indexActive={this.state.indexActiveTabs}
+          onItemClick={this.handleChangeTab} >
+          
+            <TabContent>
+              <h1>Inbox Content</h1>
+            </TabContent>
 
-        <TabContent index={2}>
-          <h1>Text 3 Content</h1>
-          <p>Text 3 Content</p>
-        </TabContent>
+            <TabContent>
+              <h1>Sent Content</h1>
+            </TabContent>
 
-      </Tab>
+            <TabContent>
+              <h1>Trash Content</h1>
+            </TabContent>
+
+        </Tab>
+      </div>
     )
   }
 }
