@@ -6,6 +6,9 @@
     ],
     "secondary-tabs": [
       "Secondary Tabs"
+    ],
+    "tab-with-tabcontent": [
+      "Tab with TabContent"
     ]
   },
   "__content": "\n"

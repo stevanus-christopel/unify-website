@@ -1,12 +1,12 @@
 import React, { PureComponent } from 'react';
-import { Tab } from 'unify-react-mobile';
+import { Tab, TabContent } from 'unify-react-mobile';
 
 class ComponentDemo extends PureComponent {
   state = {
     indexActiveTabs: 0
   }
-  handleChangeTab = (event, item) => {
-    this.setState({indexActiveTabs: item.key});
+  handleChangeTab = (event, props) => {
+    this.setState({indexActiveTabs: props.index});
   }
   render() {
     return (
@@ -17,8 +17,7 @@ class ComponentDemo extends PureComponent {
           { key: 2, text: "FAVORIT" }
         ]}
         indexActive={this.state.indexActiveTabs}
-        onItemClick={this.handleChangeTab}
-      />
+        onItemClick={this.handleChangeTab} />
     )
   }
 }

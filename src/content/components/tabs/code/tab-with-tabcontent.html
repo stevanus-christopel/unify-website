@@ -1,0 +1,22 @@
+<Tab primary
+  items={[
+    { key: 0, text: "Inbox", count: 3 },
+    { key: 1, text: "Sent" },
+    { key: 2, text: "Trash" }
+  ]}
+  indexActive={this.state.indexActiveTabs}
+  onItemClick={this.handleChangeTab}>
+
+  <TabContent>
+    <h1>Inbox Content</h1>
+  </TabContent>
+
+  <TabContent>
+    <h1>Sent Content</h1>
+  </TabContent>
+
+  <TabContent>
+    <h1>Trash Content</h1>
+  </TabContent>
+  
+</Tab>
