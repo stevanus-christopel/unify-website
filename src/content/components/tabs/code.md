@@ -4,4 +4,6 @@ variations:
   - Main Tabs
   secondary-tabs:
   - Secondary Tabs
+  tab-with-tabcontent:
+  - Tab with TabContent
 ---
