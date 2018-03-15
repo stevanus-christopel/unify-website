@@ -33,7 +33,6 @@ class ComponentDemo extends PureComponent {
           <Button secondary block onClick={this.toggleDisplay}>Open Normal Picker</Button>
         </div>
         <Picker title='Title of Information'
-          root={document.getElementById("root")}
           infoDate={[
             {
               date: new Date(2018, 2, 17),

@@ -20,7 +20,6 @@ class ComponentDemo extends PureComponent {
           title="Title Goes Here"
           actionPrimaryText="CTA Here"
           onActionPrimaryClick={this.toggleDisplay}
-          root={document.getElementById("root")}
           display={this.state.display}
           onClose={this.toggleDisplay}>
           Make the copy compact to communicate what you want, approx 50 character like this

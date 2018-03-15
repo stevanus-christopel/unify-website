@@ -17,7 +17,6 @@ class ComponentDemo extends PureComponent {
           <Button secondary block onClick={this.toggleDisplay}>Open Normal Bottom Sheet</Button>
         </div>
         <BottomSheet title="Title of Information"
-          root={document.getElementById("root")}
           display={this.state.display}
           onClose={this.toggleDisplay}>
             <p>This is content section.</p>

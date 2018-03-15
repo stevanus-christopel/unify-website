@@ -20,7 +20,6 @@ Props **item** below is the element of **items** array.
 | onAction   | Props for adding click function to menu's action   | func            | -
 | onClose   | Props for adding function to close the menu (toggle display state)   | func            | -
 | display   | Props to display the menu   | bool            | **false**, true
-| root   | Props to set the react root of menu   | object            | document.body
 | children   | Props to give customized content above menu items (list) | string            | **""**
 | items   | Props to set items inside menu. Use same format as the sample above.   | array            | **[]**
 | item.key   | Props for key of each element inside items array.   | number            | 0

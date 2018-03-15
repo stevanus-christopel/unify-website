@@ -19,7 +19,6 @@ Use these props on each `<Picker />` component. The bold one in Value section is
 | full   | Props for making full bottom sheet   | bool            | **false**, true
 | onClose   | Props for adding function to close the bottom sheet (toggle display state)   | func            | -
 | display   | Props to display the bottom sheet   | bool            | **false**, true
-| root   | Props to set the react root of bottom sheet   | object            | document.body
 | firstDate | Props to set first date selected           | object          | -
 | secondDate | Props to set second date selected         | object          | -
 | infoDate | Props to set custom marked date on bottom   | array           | **[]**

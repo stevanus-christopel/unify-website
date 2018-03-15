@@ -19,7 +19,6 @@ class ComponentDemo extends PureComponent {
           <Button secondary block onClick={this.toggleDisplay}>Open Tooltip with Image</Button>
         </div>
         <Tooltip title="Title Goes Here" actionText="Saya Mengerti" image={image}
-          root={document.getElementById("root")}
           display={this.state.display}
           onClose={this.toggleDisplay}
           onActionClick={this.toggleDisplay}>

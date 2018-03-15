@@ -23,7 +23,6 @@ class ComponentDemo extends PureComponent {
               { key: 3, icon: 'http://sh-steve.ndvl/img/react-native/menu-icon.png', text: 'Third Content Goes Here', onClick: this.toggleDisplay },
             ]
           }
-          root={document.getElementById("root")}
           actionText="Call to Action Here"
           onClose={this.toggleDisplay}
           onAction={this.toggleDisplay}

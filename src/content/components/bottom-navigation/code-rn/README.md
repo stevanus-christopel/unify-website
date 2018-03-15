@@ -22,3 +22,4 @@ Props **item** below is the element of **items** array.
 | item.iconActive   | Props for active icon, can be string file location or child component  | string or object            | -
 | item.text   | Props for text of each element inside items array.   | string            | ""
 | item.onPress   | Props for adding press function of each element inside items array.   | func            | -
+| item.count   | Props for notification count of each element inside items array.  | number            | -

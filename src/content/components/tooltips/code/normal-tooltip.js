@@ -19,7 +19,6 @@ class ComponentDemo extends PureComponent {
           <Button secondary block onClick={this.toggleDisplay}>Open Normal Tooltip</Button>
         </div>
         <Tooltip title="Title Goes Here" actionText="Saya Mengerti"
-          root={document.getElementById("root")}
           display={this.state.display}
           onClose={this.toggleDisplay}
           onActionClick={this.toggleDisplay}>

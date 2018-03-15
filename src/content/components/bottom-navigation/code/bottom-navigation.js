@@ -39,7 +39,8 @@ const ComponentDemo = (
             text: 'Keranjang',
             onClick: function() {
               console.log('Hello Item 4');
-            }
+            },
+            count: 5
           },
           {
             key: 4,
