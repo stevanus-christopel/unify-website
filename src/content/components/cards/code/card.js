@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, List } from 'unify-react-mobile';
 
 const ComponentDemo = (
-  <Card subheader='Card Subheader'>
+  <Card subheader='Card Subheader' padding='32px'>
     <p>This is card content. You can fill any body text here.</p>
     <p>Please make it awesome.</p>
   </Card>

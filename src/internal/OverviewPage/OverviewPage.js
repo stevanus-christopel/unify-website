@@ -27,6 +27,11 @@ class OverviewPage extends Component {
         link: '/components/cards'
       },
       {
+        name: 'Carousel',
+        img: require('./images/Cards.svg'),
+        link: '/components/carousel'
+      },
+      {
         name: 'Chips',
         img: require('./images/Chips.svg'),
         link: '/components/chips'
@@ -35,6 +40,11 @@ class OverviewPage extends Component {
         name: 'Dialogs',
         img: require('./images/Dialog.svg'),
         link: '/components/dialogs'
+      },
+      {
+        name: 'Footer',
+        img: require('./images/Dialog.svg'),
+        link: '/components/footer'
       },
       {
         name: 'Lists',

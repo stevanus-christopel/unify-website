@@ -1,0 +1,6 @@
+---
+variations:
+  footer:
+  - Footer
+  
+---
