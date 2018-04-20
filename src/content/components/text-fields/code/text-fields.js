@@ -10,6 +10,8 @@ const ComponentDemo = (
     <TextField label="Counter Text Field" counter={20} />
     <TextField label="Label" message="This is info message." />
     <TextField label="Label" message="This is error message." error />
+    <TextField label="Label" message="This is success message." success />
+    <TextField prependText="prependText" appendText="appendText" label="Label" message="This is PrependText and AppendText" />
   </div>
 )
 
