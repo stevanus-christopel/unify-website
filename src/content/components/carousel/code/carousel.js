@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from 'unify-react-mobile';
+import Carousel from 'unify-react-mobile/build/Carousel';
 
 const ComponentDemo = (
   <Carousel 

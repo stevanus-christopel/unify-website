@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Ticker } from 'unify-react-mobile';
+import Ticker from 'unify-react-mobile/build/Ticker';
 
 class ComponentDemo extends PureComponent {
   handleClose = (e) => {

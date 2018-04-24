@@ -1,8 +1,10 @@
 ### Usage
 
 1. Install **unify-react-mobile** by running `yarn add unify-react-mobile` or `npm install unify-react-mobile` on your project.
-2. Use `import { Checkbox, Radio, Toggle } from 'unify-react-mobile'` on top of your code.
-3. Code your `<Checkbox />` or `<Radio />` or `<Toggle />` component based on your requirement with modifiers & props below.
+2. Use `import Checkbox from 'unify-react-mobile/build/Checkbox'` on top of your code.
+3. Use `import Radio from 'unify-react-mobile/build/Radio'` on top of your code.
+4. Use `import Toggle from 'unify-react-mobile/build/Toggle'` on top of your code.
+5. Code your `<Checkbox />` or `<Radio />` or `<Toggle />` component based on your requirement with modifiers & props below.
 
 
 

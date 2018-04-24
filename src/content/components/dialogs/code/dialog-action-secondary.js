@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Button, Dialog } from 'unify-react-mobile';
+import Button from 'unify-react-mobile/build/Button';
+import Dialog from 'unify-react-mobile/build/Dialog';
 
 class ComponentDemo extends PureComponent {
   state = {

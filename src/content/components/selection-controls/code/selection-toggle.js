@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Toggle } from 'unify-react-mobile';
+import Toggle from 'unify-react-mobile/build/Toggle';
 
 class ComponentDemo extends PureComponent {
   state = {

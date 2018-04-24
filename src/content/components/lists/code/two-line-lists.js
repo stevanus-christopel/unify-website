@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from 'unify-react-mobile';
+import List from 'unify-react-mobile/build/List';
 
 const ComponentDemo = (
   <List subheader="Subheader"

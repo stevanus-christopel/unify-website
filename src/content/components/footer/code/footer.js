@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Footer } from 'unify-react-mobile';
+import Footer from 'unify-react-mobile/build/Footer';
 
 class ComponentDemo extends PureComponent {
   state = {

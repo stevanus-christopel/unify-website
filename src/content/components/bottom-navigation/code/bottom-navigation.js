@@ -1,5 +1,5 @@
 import React from 'react';
-import { BottomNav } from 'unify-react-mobile';
+import BottomNav from 'unify-react-mobile/build/BottomNav';
 
 const ComponentDemo = (
     <div>

@@ -1,7 +1,7 @@
 ### Usage
 
 1. Install **unify-react-mobile** by running `yarn add unify-react-mobile` or `npm install unify-react-mobile` on your project.
-2. Use `import { BottomNav } from 'unify-react-mobile'` on top of your code.
+2. Use `import BottomNav from 'unify-react-mobile/build/BottomNav'` on top of your code.
 3. Code your `<BottomNav />` component based on your requirement with modifiers & props below.
 
 

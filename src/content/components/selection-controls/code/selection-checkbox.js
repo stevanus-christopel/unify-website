@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Checkbox } from 'unify-react-mobile';
+import Checkbox from 'unify-react-mobile/build/Checkbox';
 
 class ComponentDemo extends PureComponent {
   state = {

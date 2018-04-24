@@ -1,7 +1,7 @@
 ### Usage
 
 1. Install **unify-react-mobile** by running `yarn add unify-react-mobile` or `npm install unify-react-mobile` on your project.
-2. Use `import { Carousel } from 'unify-react-mobile'` on top of your code.
+2. Use `import Carousel from 'unify-react-mobile/build/Carousel'` on top of your code.
 3. Code your `<Carousel />` component based on your requirement with modifiers & props below.
 
 

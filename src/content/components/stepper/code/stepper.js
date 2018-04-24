@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBar } from 'unify-react-mobile';
+import NavBar from 'unify-react-mobile/build/NavBar';
 
 const ComponentDemo = (
     <div>

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Button, BottomSheet } from 'unify-react-mobile';
+import Button from 'unify-react-mobile/build/Button';
+import BottomSheet from 'unify-react-mobile/build/BottomSheet';
 
 class ComponentDemo extends PureComponent {
   state = {

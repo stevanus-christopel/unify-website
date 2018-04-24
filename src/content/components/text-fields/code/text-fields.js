@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField } from 'unify-react-mobile';
+import TextField from 'unify-react-mobile/build/TextField';
 
 const ComponentDemo = (
   <div style={{ width: '320px' }}>

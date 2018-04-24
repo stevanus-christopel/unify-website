@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Slider } from 'unify-react-mobile';
+import Slider from 'unify-react-mobile/build/Slider';
 
 class ComponentDemo extends PureComponent {
   state = {

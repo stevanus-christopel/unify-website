@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Button, Tooltip } from 'unify-react-mobile';
+import Tooltip from 'unify-react-mobile/build/Tooltip';
+import Button from 'unify-react-mobile/build/Button';
 
 import image from '../images/icon-tooltip.svg';
 

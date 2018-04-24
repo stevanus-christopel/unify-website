@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Button, Menu } from 'unify-react-mobile';
+import Button from 'unify-react-mobile/build/Button';
+import Menu from 'unify-react-mobile/build/Menu';
 
 class ComponentDemo extends PureComponent {
   state = {

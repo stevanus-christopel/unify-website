@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'unify-react-mobile';
+import Button from 'unify-react-mobile/build/Button';
 
 import image from '../images/mail.svg'
 

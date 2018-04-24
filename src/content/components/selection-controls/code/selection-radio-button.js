@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Radio } from 'unify-react-mobile';
+import Radio from 'unify-react-mobile/build/Radio';
 
 class ComponentDemo extends PureComponent {
   state = {

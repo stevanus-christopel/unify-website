@@ -103,8 +103,10 @@
     border-left: 1px solid $border-color;
   }
 
-  & .unf-btn__floating-container {
-    position: absolute;
+  & .unify-btn-container {
+    & > div {
+      position: absolute;
+    }
   }
 
   & .unf-list {
@@ -187,6 +189,6 @@ body {
 
   .unf-dialog__content {
     max-width: 420px;
-    margin: auto;
+    margin: auto !important;
   }
 }

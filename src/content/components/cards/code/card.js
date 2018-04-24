@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, List } from 'unify-react-mobile';
+import Card from 'unify-react-mobile/build/Card';
+import List from 'unify-react-mobile/build/List';
 
 const ComponentDemo = (
   <Card subheader='Card Subheader' padding='32px'>

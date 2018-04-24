@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Chip } from 'unify-react-mobile';
+import Chip from 'unify-react-mobile/build/Chip';
 
 class ComponentDemo extends PureComponent {
   state = {
