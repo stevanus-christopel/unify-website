@@ -12,7 +12,7 @@
 
 #### Props
 
-Use these props on each `<Button />` component. The bold one in Value section is the default value.
+Use these props on each `<Checkbox />` or `<Radio />` or `<Toggle />` component. The bold one in Value section is the default value.
 
 | Props            | Description                         | Type            | Value
 |---------------------|----------------------------------|-----------------|---------------------|
