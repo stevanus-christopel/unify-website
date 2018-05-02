@@ -42,35 +42,24 @@ class App extends Component {
   }
 
   onToggleBtnClick = () => {
-    if (overlay.isAnimating) {
-      return false;
-    } else {
-      overlay.toggle();
-
+    if (this.state.isOpen) {
+      this.setState({
+        isOpen: false,
+      });
       setTimeout(() => {
-        
-        if (this.state.isOpen) {
-          this.setState({
-            isOpen: false,
-          });
-          setTimeout(() => {
-            this.setState({
-              isFinal: true
-            });
-          }, 680);
-        } else {
-          this.setState({
-            isFinal: false,
-          });
-          setTimeout(() => {
-            this.setState({
-              isOpen: true
-            });
-          }, 5);
-        }
-
-
-      }, 100);
+        this.setState({
+          isFinal: true
+        });
+      }, 300);
+    } else {
+      this.setState({
+        isFinal: false,
+      });
+      setTimeout(() => {
+        this.setState({
+          isOpen: true
+        });
+      }, 5);
     }
   }
 

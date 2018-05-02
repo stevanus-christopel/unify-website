@@ -16,25 +16,25 @@
   @include font-smoothing;
   @include layer('temporary-nav');
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
   font-size: rem(14px);
+  background-color: $color__white;
   border-right: 2px solid $color__gray-3;
-  width: 100%;
+  width: 200px;
   height: 100%;
-  padding: 0 0 1rem;
+  padding: 0 0 16px;
   position: fixed;
   overflow-y: auto;
   z-index: 7000;
-  transition: transform 600ms ease, opacity 200ms ease;
+  transition: 500ms $bx--standard-easing;
 
   @include breakpoint('bp--sm--major') {
     box-shadow: none;
   }
 
   &__closed {
-    transform: translateY(100%);
-    opacity: 0;
+    transform: translateX(-100%);
     overflow: inherit;
   }
 
@@ -45,34 +45,35 @@
   &__logo {
     width: 100%;
     display: inline-block;
-    color: $font-color-white;
-    font-size: rem(16px);
+    color: $color__blue-90;
+    font-size: 16px;
     text-decoration: none;
     font-weight: 700;
-    line-height: 1.2;
-    margin-top: 2rem;
+    line-height: 1.5;
+    margin-top: 32px;
     white-space: nowrap;
-    padding: 0 rem(20px);
-    margin-bottom: rem(16px);
+    padding: 0 20px;
+    margin-bottom: 16px;
 
     span {
       font-weight: 300;
     }
 
     &:hover {
-      color: $font-color-white;
+      color: $color-green;
     }
   }
 
   &__top-container {
+    background: white;
     z-index: 1000;
-    padding: 1rem 0 0;
+    padding: 16px 0 0;
   }
 
   &__bottom-container {
-    width: 200%;
     transform: translateY(0);
-    transition: opacity 2000ms $bx--standard-easing, transform 1800ms $bx--standard-easing;
+    transition: opacity 600ms $bx--standard-easing, transform 400ms $bx--standard-easing;
+    background: white;
     opacity: 1;
 
     &--hidden {
@@ -82,14 +83,15 @@
   }
 
   .bx--search {
-    margin: 0 0 2rem;
-    height: rem(32px);
-    padding: 0 rem(20px);
+    margin: 0 0 32px;
+    height: 32px;
+    padding: 0 20px;
   }
 
   .bx--search-input {
-    padding: 0 .75rem;
+    padding: 0 14px;
     height: 100%;
+    font-size: 14px;
   }
 
   .bx--search--sm .bx--search-close {
@@ -99,17 +101,17 @@
   &__version {
     display: inline-block;
     width: 100%;
-    font-size: rem(11px);
+    font-size: 11px;
     padding: 0 rem(20px);
     margin-top: .25rem;
-    margin-bottom: rem(8px);
+    margin-bottom: 8px;
     text-decoration: none;
     color: $color__navy-gray-6;
     font-weight: 400;
 
     &:hover {
       text-decoration: underline;
-      color: $color__blue-51;
+      color: $color-green;
     }
   }
 
@@ -120,131 +122,37 @@
 
   &__link {
     width: 100%;
-    border-color: $color__blue-51;
-    color: $color__blue-51;
-    margin-bottom: 1rem;
+    border-color: $color__blue-90;
+    color: $color__blue-90;
+    margin-bottom: 16px;
     justify-content: space-between;
 
     .bx--btn--right-icon__icon {
-      fill: $color__blue-51;
+      fill: $color__blue-90;
+    }
+
+    &.bx--btn--secondary .bx--btn__icon {
+      fill: $color__blue-90;
     }
 
     &:hover,
     &:focus {
-      background-color: $color__blue-51;
+      background-color: $color-green;
+      border-color: $color-green;
 
       .bx--btn--right-icon__icon {
+        fill: $color__white;
+      }
+
+      &.bx--btn--secondary .bx--btn__icon {
         fill: $color__white;
       }
     }
   }
 
   &__text {
-    font-size: .875rem;
-    color: $font-color-white;
+    font-size: 14px;
+    color: $color__blue-90;
     margin: .25rem 0;
-  }
-  
-  &__column {
-    width: 16.66%;
-    box-sizing: border-box;
-    border-right: solid 1px #398f3f;
-
-    &:last-child {
-      border-right: solid 1px transparent;
-    }
-  }
-
-  &__search {
-    position: absolute;
-    top: 100px;
-    width: 66.68%;
-
-    &-txt {
-      display: block;
-      width: 100%;
-      padding: 4px 0;
-      padding-right: 40px;
-      background-color: transparent;
-      text-align: center;
-      font-size: 24px;
-      line-height: 1.2;
-      font-weight: 600;
-      color: $font-color-white;
-      border: none;
-      border-bottom: solid 1px $font-color-white;
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: 24px;
-
-      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: $font-color-placeholder;
-      }
-      &::-moz-placeholder { /* Firefox 19+ */
-        color: $font-color-placeholder;
-      }
-      &:-ms-input-placeholder { /* IE 10+ */
-        color: $font-color-placeholder;
-      }
-      &:-moz-placeholder { /* Firefox 18- */
-        color: $font-color-placeholder;
-      }
-      
-      @include breakpoint('500px') {
-        font-size: 42px;
-        background-size: 32px;
-      }
-
-      @include breakpoint('1000px') {
-        font-size: 82px;
-        background-position: right 46px;
-        background-size: initial;
-      }
-    }
-  }
-
-  &__button {
-    display: block;
-    width: 204px;
-    background-color: transparent;
-    color: $font-color-white;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-    padding: 16px;
-    padding-top: 10px;
-    margin-right: 24px;
-    margin-bottom: 16px;
-    border: none;
-    border: 4px solid $font-color-white;
-    text-decoration: initial;
-
-    @include breakpoint('768px') {
-      display: inline-block;
-      width: initial;
-    }
-
-    &-container {
-      width: 200%;
-    }
-
-    &--icon {
-      position: relative;
-      top: 6px;
-      right: 6px;
-      margin-right: 4px;
-    }
-
-    & span {
-      display: inline-block;
-      font-size: 22px;
-      position: relative;
-      top: 3px;
-      margin-left: 20px;
-    }
-
-    &:hover {
-      color: $font-color-white;
-    }
   }
 }

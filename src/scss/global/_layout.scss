@@ -53,13 +53,9 @@ body {
 
 a {
   @include font-smoothing;
-  color: $color__blue-51;
+  color: $color-green;
   font-weight: 600;
   outline: none;
-
-  &:hover {
-    color: $color__blue-40;
-  }
 }
 
 svg {

@@ -12,6 +12,27 @@
   "components": {
     "title": "Components",
     "url": "components",
+    "subnav": {
+      "overview": "Overview",
+      "bottom-navigation": "Bottom Navigation",
+      "bottom-sheets": "Bottom Sheets",
+      "button": "Button",
+      "cards": "Cards",
+      "chips": "Chips",
+      "dialogs": "Dialogs",
+      "lists": "Lists",
+      "menus": "Menus",
+      "navigation-bar": "Navigation Bar",
+      "pickers": "Pickers",
+      "selection-controls": "Selection Controls",
+      "sliders": "Sliders",
+      "stepper": "Stepper",
+      "tabs": "Tabs",
+      "text-fields": "Text Fields",
+      "tickers": "Tickers",
+      "toaster": "Toaster",
+      "tooltips": "Tooltips"
+    },
     "children": [
       {
         "title": "Bottom Nav",
@@ -90,6 +111,14 @@
   "styles": {
     "title": "Styles",
     "url": "styles",
+    "subnav": {
+      "overview": "Overview",
+      "copywriting":"Copywriting",
+      "spacing":"Size & Spacing",
+      "colors":"Colors",
+      "typography":"Typography",
+      "icon":"Icon"
+    },
     "children": [
       {
         "title": "Copywriting",
@@ -116,6 +145,12 @@
   "interactions": {
     "title": "Interactions",
     "url": "interactions",
+    "subnav": {
+      "overview": "Overview",
+      "sound":"Sound",
+      "feedback":"Feedback",
+      "transition":"Transition"
+    },
     "children": [
       {
         "title": "Sound",
@@ -134,10 +169,15 @@
   "patterns": {
     "title": "Patterns",
     "url": "patterns",
+    "subnav": {
+      "overview": "Overview",
+      "emptystate":"Empty State",
+      "navigation":"Navigation"
+    },
     "children": [
       {
         "title": "Empty State",
-        "url": "/coming-soon/pattern/empty-state"
+        "url": "/coming-soon/pattern/emptystate"
       },
       {
         "title": "Navigation",

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link, browserHistory } from 'react-router';
 import classnames from 'classnames';
+import ReactGA from 'react-ga';
 import SiteContent from '../../data/sitecontent.js';
 
 import { Icon, Button } from 'carbon-components-react';
@@ -9,20 +10,6 @@ import { Icon, Button } from 'carbon-components-react';
 import SiteNavStructure from '../../data/site-nav-structure.json';
 import SideNavItem from '../SideNavItem/SideNavItem';
 import GlobalSearch from '../GlobalSearch/GlobalSearch';
-
-import iconTriangle from './images/triangle.svg';
-import iconGithub from './images/github.svg';
-import iconSketch from './images/sketch.svg';
-import iconSearch from './images/search-main-menu.svg';
-
-var last_mouse_x = 0;
-var last_mouse_y = 0;
-var diff_mouse_x = 0;
-var diff_mouse_y = 0;
-
-var isHoverActive = true;
-var isInsideChildren = false;
-var hoverTimeout;
 
 class SideNav extends Component {
   static propTypes = {
@@ -38,22 +25,7 @@ class SideNav extends Component {
     currentQuery: '',
     val: '',
     activeSearch: false,
-    subNavItems: [],
   };
-
-  componentDidMount() {
-      document.getElementsByClassName("side-nav__bottom-container")[0].onmousemove = this.handleMouseMove;
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if(this.props.isOpen && !nextProps.isOpen) {
-      this.setState({
-        subNavItems: []
-      });
-      this.clearInput();
-      this.clearOnMouseLeave();
-    }
-  }
 
   handleSkip = evt => {
     if (evt.which === 13) {
@@ -62,113 +34,27 @@ class SideNav extends Component {
     }
   };
 
+  handleClick = (evt, cat) => {
+    if (cat === 'Left Nav') {
+      ReactGA.event({
+        category: cat,
+        action: 'click',
+        label: evt.target.innerText,
+      });
+    } else {
+      ReactGA.event({
+        category: cat,
+        action: 'click',
+      });
+    }
+  };
+
   clearInput = () => {
-    document.getElementById("txt-search").value = '';
-  };
-
-  clearHoverState = () => {
-    const currentPath = browserHistory
-      .getCurrentLocation()
-      .pathname.split('/')[1];
-
-    let menus = document.getElementsByClassName("main-nav-item");
-    for(var i=0;i<menus.length; i++) {
-      if(menus[i].childNodes[0].dataset.url === currentPath ||
-        (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
-        menus[i].className = "main-nav-item main-nav-item__active";
-      } else {
-        menus[i].className = "main-nav-item";
-      }
-    }
-  }
-
-  clearOnMouseLeave = () => {
-    this.clearHoverState();
-
-    last_mouse_x = 0;
-    last_mouse_y = 0;
-    diff_mouse_x = 0;
-    diff_mouse_y = 0;
-    isHoverActive = true;
-
+    this.searchInput.value = '';
     this.setState({
-      subNavItems: []
+      val: '',
+      activeSearch: false,
     });
-  }
-
-  handleMouseEnter = (title, subNavItems) => {
-    var timeoutTime = 1;
-    if(!isHoverActive) {
-      timeoutTime = 400;
-    }
-
-    clearTimeout(hoverTimeout);
-    hoverTimeout = setTimeout(
-      () => {
-        const currentPath = browserHistory
-          .getCurrentLocation()
-          .pathname.split('/')[1];
-
-        let menus = document.getElementsByClassName("main-nav-item");
-        for(var i=0;i<menus.length; i++) {
-          if(title === menus[i].childNodes[0].getAttribute("aria-label")) {
-            if(menus[i].childNodes[0].dataset.url === currentPath ||
-              (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
-              menus[i].className = "main-nav-item main-nav-item__active hover";
-            } else {
-              menus[i].className = "main-nav-item hover";
-            }
-          } else {
-            if(menus[i].childNodes[0].dataset.url === currentPath ||
-              (menus[i].childNodes[0].dataset.url === "" && currentPath === "introduction")) {
-              menus[i].className = "main-nav-item main-nav-item__active no-hover";
-            } else {
-              menus[i].className = "main-nav-item no-hover";
-            }
-          }
-        }
-        this.setState({
-          subNavItems: subNavItems
-        });
-      },
-    timeoutTime);
-  };
-
-  handleMouseLeave = () => {
-    setTimeout(
-      () => {
-        if(!isInsideChildren) {
-          this.clearOnMouseLeave();
-        }
-    }, 400);
-  };
-
-  handleMouseMove = (e) => {
-    diff_mouse_x = (e.x - last_mouse_x);
-    diff_mouse_y = (e.y - last_mouse_y);
-
-    if(diff_mouse_x != 0 || diff_mouse_y != 0) {
-      last_mouse_x = e.x;
-      last_mouse_y = e.y;
-
-      if(diff_mouse_x >= 6) {
-        isHoverActive = false;
-      } else {
-        isHoverActive = true;
-      }
-
-      // console.log("x : " + diff_mouse_x);
-      // console.log("y : " + diff_mouse_y);
-    }
-  }
-
-  handleMouseEnterChildren = () => {
-    clearTimeout(hoverTimeout);
-    isInsideChildren = true;
-  };
-
-  handleMouseLeaveChildren = () => {
-    isInsideChildren = false;
   };
 
   crawlSiteContent = query => {
@@ -241,62 +127,164 @@ class SideNav extends Component {
   renderSiteItems = navItems =>
     Object.keys(navItems).map(navItem => {
       const navItemObj = navItems[navItem];
+      if (navItemObj.subnav) {
+        return this.renderSubNav(navItemObj.subnav, navItem);
+      }
       const currentPath = browserHistory
         .getCurrentLocation()
         .pathname.split('/');
       const isCurrentPath = currentPath[1] === navItem;
       return (
-        <SideNavItem key={navItem} isActiveItem={isCurrentPath}
-          onMouseEnter={() => this.handleMouseEnter(navItemObj.title, navItemObj.children)}>
+        <SideNavItem key={navItem} isActiveItem={isCurrentPath}>
           <Link
             aria-label={navItemObj.title}
-            data-url={navItemObj.url}
             tabIndex="0"
             className="main-nav-item__heading"
             to={`/${navItem}`}
-            onClick={this.props.onToggleBtnClick}
           >
             {navItemObj.title}
-            {
-              navItemObj.children.length > 0 &&
-              <img className="main-nav-item__heading--hover" alt='' src={iconTriangle} />
-            }
           </Link>
-          {
-            navItemObj.children.length > 0 &&
-            <ul className="main-nav-item__children--small">
-            {
-              navItemObj.children.map((subNavItem, index)=> {
-                // if(index > 8) {
-                //   return;
-                // }
-                return <li key={index}>
-                <Link to={subNavItem.url}
-                onClick={this.props.onToggleBtnClick}>
-                {subNavItem.title}
-                </Link>
-                </li>
-              })
-            }
-            </ul>
-          }
         </SideNavItem>
       );
     });
 
-  handleSearch = (event) => {
-    if(event.key === 'Enter' && document.getElementById("txt-search").value.length > 0) {
-      browserHistory.push("/search/" + document.getElementById("txt-search").value);
-      document.getElementById("txt-search").value = "";
-      this.props.onToggleBtnClick();
-    }
+  renderSubNav = (subnav, parentItem) => {
+    const subNavItems = this.renderSubNavItems(subnav, parentItem);
+    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+    const isCurrentPath = currentPath[1] === parentItem;
+    return (
+      <SideNavItem key={parentItem} isCurrentPath={isCurrentPath}>
+        <p className="main-nav-item__heading">
+          {SiteNavStructure[parentItem].title}
+          <Icon
+            className="main-nav-item__arrow"
+            name="caret--down"
+            aria-hidden="true"
+            description="Menu arrow icon"
+          />
+        </p>
+        <ul
+          role="menu"
+          aria-label={`${SiteNavStructure[parentItem].title} sub menu`}
+          aria-hidden="true"
+          className="main-nav__sub-nav"
+        >
+          {subNavItems}
+        </ul>
+      </SideNavItem>
+    );
+  };
+
+  renderInnerSubNav = (parent, parentKey) => {
+    const innerSubNavItems = this.renderInnerSubNavItems(parent.children, parentKey);
+    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+    const isCurrentPath = currentPath[1] === parentKey;
+    return (
+    <SideNavItem type="sub" key={parentKey} isCurrentPath={isCurrentPath}>
+      <p className="sub-nav__item">
+        {parent.title}
+        <Icon
+          className="main-nav-item__arrow"
+          name="caret--down"
+          aria-hidden="true"
+          description="Menu arrow icon"
+        />
+      </p>
+      <ul
+        role="menu"
+        aria-label={`${parent.title} sub menu`}
+        aria-hidden="true"
+        className="sub-nav__inner-sub-nav"
+      >
+        {innerSubNavItems}
+      </ul>
+    </SideNavItem>
+    );
   }
+
+  renderInnerSubNavItems = (subnav, parentItem) => {
+    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+    const { ENV } = process.env;
+    return Object.keys(subnav).map(subNavItem => {
+      const link = `/${parentItem}/${subNavItem}`;
+      const isCurrentPage =
+        parentItem === currentPath[1] && subNavItem === currentPath[2];
+      const classNames = classnames({
+        'sub-nav__item': true,
+        'sub-nav__item--sub': true,
+        selected: isCurrentPage, // eslint-disable-line
+      });
+      const subClassNames = classnames({
+        'sub-nav__item-link': true,
+        'sub-nav__item-link--sub': true
+      });
+      if (!(ENV === 'internal') && subNavItem === 'service-providers') {
+        return '';
+      }
+      const tabIndex = this.props.isOpen ? 0 : -1;
+      return (
+        <li
+          role="menuitem"
+          key={subNavItem}
+          className={classNames}
+          tabIndex="-1"
+        >
+          <Link
+            className={subClassNames}
+            aria-label={subnav[subNavItem]}
+            to={link}
+            tabIndex={tabIndex}
+          >
+            {subnav[subNavItem]}
+          </Link>
+        </li>
+      );
+    });
+  };
+
+  renderSubNavItems = (subnav, parentItem) => {
+    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+    const { ENV } = process.env;
+    return Object.keys(subnav).map(subNavItem => {
+      if (typeof subnav[subNavItem] === 'object') {
+        return this.renderInnerSubNav(subnav[subNavItem], subNavItem);
+      } else {
+        const link = `/${parentItem}/${subNavItem}`;
+        const isCurrentPage =
+          parentItem === currentPath[1] && subNavItem === currentPath[2];
+        const classNames = classnames({
+          'sub-nav__item': true,
+          selected: isCurrentPage, // eslint-disable-line
+        });
+        if (!(ENV === 'internal') && subNavItem === 'service-providers') {
+          return '';
+        }
+        const tabIndex = this.props.isOpen ? 0 : -1;
+        return (
+          <li
+            role="menuitem"
+            key={subNavItem}
+            className={classNames}
+            tabIndex="-1"
+          >
+            <Link
+              className="sub-nav__item-link"
+              aria-label={subnav[subNavItem]}
+              to={link}
+              tabIndex={tabIndex}
+            >
+              {subnav[subNavItem]}
+            </Link>
+          </li>
+        );
+      }
+    });
+  };
 
   render() {
     const { isOpen, isFinal } = this.props;
 
     const navItems = this.renderSiteItems(SiteNavStructure);
-
     const classNames = classnames({
       'side-nav': true,
       'side-nav__closed': !isOpen,
@@ -318,78 +306,7 @@ class SideNav extends Component {
         aria-expanded={isOpen}
         className={classNames}
       >
-        <div className="side-nav__column"></div>
-        <div className="side-nav__column">
-          <div className="side-nav__search">
-            <input id="txt-search" className="side-nav__search-txt" type="text" placeholder="Type for Search..."
-            style={ {backgroundImage: "url(" + iconSearch + ")" } } onKeyPress={this.handleSearch} />
-          </div>
-          <div className={bottomClasses} onMouseLeave={this.handleMouseLeave}>
-            <ul
-              role="menu"
-              aria-label="Page main menu"
-              className="side-nav__main-nav"
-            >
-              {navItems}
-            </ul>
-            <div className="side-nav__button-container">
-              <a href="https://drive.google.com/drive/folders/0AFAID-GJ_Se0Uk9PVA" target="_blank" className="side-nav__button">
-                <img alt='' src={iconSketch} className="side-nav__button--icon" />
-                Sketch File
-                <span>&#8594;</span>
-              </a>
-              <a href="https://github.com/tokopedia/unify-react-mobile" target="_blank" className="side-nav__button">
-                <img alt='' src={iconGithub} className="side-nav__button--icon" />
-                GitHub Repo
-                <span>&#8594;</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="side-nav__column"></div>
-        <div className="side-nav__column">
-          {
-            this.state.subNavItems.length > 0 &&
-            <ul className="main-nav-item__children" onMouseEnter={this.handleMouseEnterChildren} onMouseLeave={this.handleMouseLeaveChildren}>
-              {
-                this.state.subNavItems.map((subNavItem, index)=> {
-                  if(index > 8) {
-                    return;
-                  }
-                  return <li key={index}>
-                  <Link to={subNavItem.url}
-                  onClick={this.props.onToggleBtnClick}>
-                  {subNavItem.title}
-                  </Link>
-                  </li>
-                })
-              }
-            </ul>
-          }
-        </div>
-        <div className="side-nav__column">
-          {
-            this.state.subNavItems.length > 8 &&
-            <ul className="main-nav-item__children" onMouseEnter={this.handleMouseEnterChildren} onMouseLeave={this.handleMouseLeaveChildren}>
-              {
-                this.state.subNavItems.map((subNavItem, index)=> {
-                  if(index <= 8) {
-                    return;
-                  }
-                  return <li key={index}>
-                  <Link to={subNavItem.url}
-                  onClick={this.props.onToggleBtnClick}>
-                  {subNavItem.title}
-                  </Link>
-                  </li>
-                })
-              }
-            </ul>
-          }
-        </div>
-        <div className="side-nav__column"></div>
-
-        {/*<div className="side-nav__top-container">
+        <div className="side-nav__top-container">
           <a
             id="skip-to-content"
             tabIndex="0"
@@ -399,7 +316,7 @@ class SideNav extends Component {
           >
             Skip to main content
           </a>
-          <Link to="/" className="side-nav__logo" onClick={this.props.onToggleBtnClick}>
+          <Link to="/" className="side-nav__logo">
             UNIFY <span>Design System</span>
           </Link>
           <div className="bx--search bx--search--sm" role="search">
@@ -424,40 +341,50 @@ class SideNav extends Component {
               <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm3.5 10.1l-1.4 1.4L8 9.4l-2.1 2.1-1.4-1.4L6.6 8 4.5 5.9l1.4-1.4L8 6.6l2.1-2.1 1.4 1.4L9.4 8l2.1 2.1z" />
             </svg>
           </div>
-        </div>*/}
-        {/*
+        </div>
         <GlobalSearch
           results={this.state.results}
           relatedResults={this.state.relatedResults}
           val={this.state.val}
           currentQuery={this.state.currentQuery}
           activeSearch={this.state.activeSearch}
-        />*/}
-
-          {/*<div className="side-nav__links">
+        />
+        <div className={bottomClasses}>
+          <ul
+            role="menu"
+            aria-label="Page main menu"
+            className="side-nav__main-nav"
+            onClick={e => this.handleClick(e, 'Left Nav')}
+          >
+            {navItems}
+          </ul>
+          <div className="side-nav__links">
             <Button
-              href="https://github.com/carbon-design-system/carbon-design-kit"
+              href="https://drive.google.com/drive/folders/0AFAID-GJ_Se0Uk9PVA"
               className="side-nav__link bx--btn"
               kind="secondary"
               icon="arrow--right"
               target="_blank"
               role="button"
               iconDescription="sidenav link icon"
+              onClick={e => this.handleClick(e, 'Design Kit')}
             >
-              Design Kit
+              Sketch File
             </Button>
             <Button
-              href="https://github.com/carbon-design-system/carbon-components"
+              href="https://github.com/tokopedia/unify-react-mobile"
               className="side-nav__link bx--btn"
               kind="secondary"
               icon="arrow--right"
               target="_blank"
               role="button"
               iconDescription="sidenav link icon"
+              onClick={e => this.handleClick(e, 'Developer Kit')}
             >
               GitHub Repo
             </Button>
-          </div>*/}
+          </div>
+        </div>
       </nav>
     );
   }
