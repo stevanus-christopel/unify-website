@@ -120,16 +120,4 @@ module.exports = {
     "section": "design",
     "content": "All components align to an 8 square baseline grid for mobile, tablet, and desktop."
   },
-  "20": {
-    "parent": "styles",
-    "child": "colors",
-    "section": "palette",
-    "content": ""
-  },
-  "21": {
-    "parent": "styles",
-    "child": "typography",
-    "section": "design",
-    "content": "Typography, Roboto for Android and SF for iOS."
-  },
 }

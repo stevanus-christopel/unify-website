@@ -37,6 +37,16 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
+  @include breakpoint('bp--md--major') {
+    margin-left: 80px;
+    width: 100%;
+  }
+
+  &--expanded {
+    width: 100%;
+    margin-left: 0;
+  }
+
   main {
     background-color: #F8F8F8;
 

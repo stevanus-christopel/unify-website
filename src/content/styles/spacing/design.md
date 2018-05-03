@@ -1,4 +1,4 @@
-All components align to an 8dp square baseline grid for mobile, tablet, and desktop.
+All components align to an 8 square baseline grid for mobile, tablet, and desktop.
 
 ## Usage
 <div data-insert-component="ImageGrid">

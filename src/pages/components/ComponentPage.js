@@ -6,7 +6,6 @@ import { Tabs, Tab } from 'carbon-components-react';
 import CodePage from '../../internal/CodePage';
 import LiveComponent from '../../internal/LiveComponent';
 import OverviewPage from '../../internal/OverviewPage';
-import SearchPage from '../../internal/SearchPage';
 
 import Page from '../../internal/Page';
 import MarkdownPage from '../../internal/MarkdownPage';
@@ -32,10 +31,6 @@ class ComponentPage extends Component {
     const currentComponent = params.name;
     if (currentComponent === 'overview') {
       return <OverviewPage />;
-    }
-
-    if(params.searchQuery) {
-      return <SearchPage searchQuery={params.searchQuery} />;
     }
 
     if (params.page === 'live') {

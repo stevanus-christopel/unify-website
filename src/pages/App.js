@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import debounce from 'lodash.debounce';
-import ShapeOverlays from '../internal/ShapeOverlays';
 import SideNav from '../internal/SideNav';
 import SideNavToggle from '../internal/SideNavToggle';
 import PageFooter from '../internal/PageFooter';
@@ -11,16 +10,13 @@ import '../assets/syntax/prism.css';
 import '../assets/syntax/syntax.css';
 import '../scss/main.scss';
 
-const elmOverlay = document.querySelector('.shape-overlays');
-const overlay = new ShapeOverlays(elmOverlay);
-
 class App extends Component {
   static propTypes = {
     children: PropTypes.node,
   }
 
   state = {
-    isOpen: false,
+    isOpen: true,
     isFinal: true
   }
 

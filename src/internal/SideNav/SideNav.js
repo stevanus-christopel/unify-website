@@ -249,7 +249,9 @@ class SideNav extends Component {
       if (typeof subnav[subNavItem] === 'object') {
         return this.renderInnerSubNav(subnav[subNavItem], subNavItem);
       } else {
-        const link = `/${parentItem}/${subNavItem}`;
+        const link = (subNavItem.indexOf('_') > -1) ?
+          `/coming-soon/${parentItem}/${subNavItem.replace('_','')}` :
+          `/${parentItem}/${subNavItem}`;
         const isCurrentPage =
           parentItem === currentPath[1] && subNavItem === currentPath[2];
         const classNames = classnames({

@@ -1,4 +1,4 @@
-**Tickers** provide short, timely, and relevant information about important things that will happen in our system
+**Tickers** provide short, timely, and relevant information about important things that will happen in our system.
 
 ## Usage
 <div data-insert-component="ImageGrid">

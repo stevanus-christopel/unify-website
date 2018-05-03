@@ -117,7 +117,7 @@
       "spacing":"Size & Spacing",
       "colors":"Colors",
       "typography":"Typography",
-      "icon":"Icon"
+      "_icon":"Icon"
     },
     "children": [
       {
@@ -147,9 +147,9 @@
     "url": "interactions",
     "subnav": {
       "overview": "Overview",
-      "sound":"Sound",
-      "feedback":"Feedback",
-      "transition":"Transition"
+      "_sound":"Sound",
+      "_feedback":"Feedback",
+      "_transition":"Transition"
     },
     "children": [
       {
@@ -171,8 +171,8 @@
     "url": "patterns",
     "subnav": {
       "overview": "Overview",
-      "emptystate":"Empty State",
-      "navigation":"Navigation"
+      "_emptystate":"Empty State",
+      "_navigation":"Navigation"
     },
     "children": [
       {

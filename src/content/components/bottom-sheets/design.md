@@ -1,4 +1,4 @@
-**Bottom Sheets** slide up from the bottom of the screen to reveal more content
+**Bottom Sheets** slide up from the bottom of the screen to reveal more content.
 
 ## Usage
 <div data-insert-component="ImageGrid">

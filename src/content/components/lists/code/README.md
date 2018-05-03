@@ -20,7 +20,7 @@ Props **item** below is the element of props **items**
 | noMargin         | Props for removing margin           | bool            | **false**, true
 | items   | Props to set items inside tabs. Use same format as the sample above.  | array | **[]**
 | item.key  | Props for key of each element inside items array | number | **0**
-| item.checked  | Props for setting is the item checked | bool | **false**, true
+| item.checked  | Props for set the item to be checked | bool | **false**, true
 | item.text  | Props for text of each element inside items array  | string  | -
 | item.icon  | Props for item icon, can be string file location or child component  | string or object  | -
 | item.actionText | Props for adding action text of each element inside items array   | string  | -

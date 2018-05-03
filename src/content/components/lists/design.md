@@ -1,4 +1,4 @@
-**Lists** consist of related content grouped together and organized vertically
+**Lists** consist of related content grouped together and organized vertically.
 
 ## Usage
 <div data-insert-component="ImageGrid">

@@ -23,6 +23,7 @@ Props **item** below is the element of **items** array.
 | children   | Props to give customized content above menu items (list) | string            | **""**
 | items   | Props to set items inside menu. Use same format as the sample above.   | array            | **[]**
 | item.key   | Props for key of each element inside items array.   | number            | 0
+| item.checked  | Props for set the item to be checked | bool | **false**, true
 | item.icon   | Props for icon, can be string file location or child component  | string or object            | -
 | item.text   | Props for text of each element inside items array.   | string            | ""
 | item.onPress   | Props for adding press function of each element inside items array.   | func            | -

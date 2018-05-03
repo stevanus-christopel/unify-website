@@ -1,4 +1,4 @@
-**Tabs** make it easy to explore and switch between different views
+**Tabs** make it easy to explore and switch between different views.
 
 ## Usage
 <div data-insert-component="ImageGrid">
