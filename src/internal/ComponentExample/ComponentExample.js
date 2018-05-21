@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
 
-import 'unify-react-mobile/build/styles.css';
+// import 'unify-react-mobile/build/styles.css';
 
 class ComponentExample extends Component {
   static propTypes = {

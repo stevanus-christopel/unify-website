@@ -158,6 +158,7 @@
   }
 
   & .component-example__live--rendered {
+    display: block;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -191,4 +192,6 @@ body {
     max-width: 420px;
     margin: auto !important;
   }
+
+  overflow: auto !important;
 }
