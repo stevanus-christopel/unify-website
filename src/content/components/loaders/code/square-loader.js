@@ -4,7 +4,9 @@ import LoaderSquare from 'unify-react-mobile/build/LoaderSquare';
 class ComponentDemo extends PureComponent {
   render() {
     return(
-      <LoaderSquare width='100%' paddingBottom='100%' marginBottom='16px'/>
+      <div className='loader-wrapper square-loader'>
+        <LoaderSquare width='100%' paddingBottom='100%' marginBottom='16px'/>
+      </div>
     )
   }
 }

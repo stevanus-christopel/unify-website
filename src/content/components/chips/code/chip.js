@@ -16,6 +16,8 @@ class ComponentDemo extends PureComponent {
         <Chip onClose={(e) => {e.target.parentNode.remove()}}>Chip with onClose props</Chip>
         <br />
         <Chip>Chips with very very long text</Chip>
+        <br/>
+        <Chip loading={true}></Chip>
       </div>
     )
   }

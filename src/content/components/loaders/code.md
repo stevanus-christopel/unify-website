@@ -1,27 +1,28 @@
 ---
 variations:
-  card-loader:
-  - Card Loader
+  line-loader:
+  - Line Loader
+  square-loader:
+  - Square Loader
   circle-loader:
   - Circle Loader
   container-loader:
-  - Container Loader
+  - Page - Container Loader
+  card-loader:
+  - Page - Card Loader
   form-loader:
-  - Form Loader
+  - Page - Form Loader
   grid-loader:
-  - Grid Loader
+  - Page - Grid Loader
   home-loader:
-  - Home Loader
+  - Page - Home Loader
   jumper-loader:
-  - Jumper Loader
-  line-loader:
-  - Line Loader
+  - Page - Jumper Loader
   list-loader:
-  - List Loader
+  - Page - List Loader
   pdp-loader:
-  - PDP Loader
+  - Page - PDP Loader
   shop-loader:
-  - Shop Loader
-  square-loader:
-  - Square Loader
+  - Page - Shop Loader
+  
 ---

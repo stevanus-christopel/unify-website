@@ -158,11 +158,32 @@
   }
 
   & .component-example__live--rendered {
-    display: block;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+
+    & div.loader-wrapper {
+      display: block;
+      width: 100%;
+      max-width: 375px;
+      height: 100%;
+      background: #FFFFFF;
+
+      &.line-loader, &.square-loader {
+        padding: 16px 16px 0 16px;
+      }
+
+      &.circle-loader {
+        padding: 16px 0;
+      }
+    }
+
+    & div.slider-wrapper {
+      width: 100%;
+
+      .unf-slider--block {
+        margin: 0 auto;
+      }
+    }
 
     & div.dialog {
       left: 50%;

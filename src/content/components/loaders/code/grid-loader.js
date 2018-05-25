@@ -4,7 +4,9 @@ import LoaderGrid from 'unify-react-mobile/build/LoaderGrid';
 class ComponentDemo extends PureComponent {
   render() {
     return(
-      <LoaderGrid />
+      <div className='loader-wrapper'>
+        <LoaderGrid />
+      </div>
     )
   }
 }

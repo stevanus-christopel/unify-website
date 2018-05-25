@@ -4,7 +4,9 @@ import LoaderHome from 'unify-react-mobile/build/LoaderHome';
 class ComponentDemo extends PureComponent {
   render() {
     return(
-      <LoaderHome />
+      <div className='loader-wrapper'>
+        <LoaderHome />
+      </div>
     )
   }
 }

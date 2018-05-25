@@ -9,6 +9,9 @@
     ],
     "warning-ticker": [
       "Warning Ticker"
+    ],
+    "permanent-ticker": [
+      "Permanent Ticker"
     ]
   },
   "__content": "\n"

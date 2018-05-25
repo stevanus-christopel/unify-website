@@ -26,9 +26,9 @@ class ComponentDemo extends PureComponent {
           androidURL='#'
           iosURL='#'
           contactUsURL='https://tokopedia.com/contact-us'
-          desktopURL='#'
+          desktopURL='https://tokopedia.com'
           termConditionsURL='https://m.tokopedia.com/terms'
-          privacyURL='#'
+          privacyURL='https://m.tokopedia.com/privacy'
           onLanguageChange={this.handleLanguage}
         />
       </div>

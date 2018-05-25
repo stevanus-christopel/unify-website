@@ -4,7 +4,9 @@ import LoaderPDP from 'unify-react-mobile/build/LoaderPDP';
 class ComponentDemo extends PureComponent {
   render() {
     return(
-      <LoaderPDP />
+      <div className='loader-wrapper'>
+        <LoaderPDP />
+      </div>
     )
   }
 }

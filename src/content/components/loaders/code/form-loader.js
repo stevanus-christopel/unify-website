@@ -4,7 +4,9 @@ import LoaderForm from 'unify-react-mobile/build/LoaderForm';
 class ComponentDemo extends PureComponent {
   render() {
     return(
-      <LoaderForm />
+      <div className='loader-wrapper'>
+        <LoaderForm />
+      </div>
     )
   }
 }

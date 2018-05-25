@@ -4,7 +4,9 @@ import LoaderCard from 'unify-react-mobile/build/LoaderCard';
 class ComponentDemo extends PureComponent {
   render() {
     return(
-      <LoaderCard />
+      <div className='loader-wrapper'>
+        <LoaderCard />
+      </div>
     )
   }
 }

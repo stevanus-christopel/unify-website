@@ -4,7 +4,9 @@ import LoaderContainer from 'unify-react-mobile/build/LoaderContainer';
 class ComponentDemo extends PureComponent {
   render() {
     return(
-      <LoaderContainer />
+      <div className='loader-wrapper'>
+        <LoaderContainer />
+      </div>
     )
   }
 }

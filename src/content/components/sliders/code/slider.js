@@ -7,15 +7,17 @@ class ComponentDemo extends PureComponent {
   }
   render() {
     return(
-      <Slider 
-        min={0} 
-        max={10} 
-        value={this.state.value}
-        step={1}
-        separator={4}
-        block
-        onChange={(value) => { this.setState({value: value}) }}
-      />
+      <div className='slider-wrapper'>
+        <Slider 
+          min={0} 
+          max={10} 
+          value={this.state.value}
+          step={1}
+          separator={4}
+          block
+          onChange={(value) => { this.setState({value: value}) }}
+        />
+      </div>
     )
   }
 }

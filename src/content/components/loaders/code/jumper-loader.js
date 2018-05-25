@@ -4,7 +4,7 @@ import LoaderJumper from 'unify-react-mobile/build/LoaderJumper';
 class ComponentDemo extends PureComponent {
   render() {
     return(
-      <LoaderJumper />
+        <LoaderJumper />
     )
   }
 }

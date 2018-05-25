@@ -6,4 +6,6 @@ variations:
   - Announcement Sliding Ticker
   warning-ticker:
   - Warning Ticker
+  permanent-ticker:
+  - Permanent Ticker
 ---

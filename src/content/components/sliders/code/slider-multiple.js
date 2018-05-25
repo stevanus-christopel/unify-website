@@ -9,18 +9,20 @@ class ComponentDemo extends PureComponent {
 
   render() {
     return(
-      <Slider 
-        min={0}
-        max={100} 
-        value={this.state.single}
-        doubleValue={this.state.double}
-        double
-        step={1}
-        separator={4}
-        block
-        onChange={(value) => { this.setState({single: value}) }}
-        onChangeDouble={(value) => { this.setState({double: value}) }}
-      />
+      <div className='slider-wrapper'>
+        <Slider 
+          min={0}
+          max={100} 
+          value={this.state.single}
+          doubleValue={this.state.double}
+          double
+          step={1}
+          separator={4}
+          block
+          onChange={(value) => { this.setState({single: value}) }}
+          onChangeDouble={(value) => { this.setState({double: value}) }}
+        />
+      </div>
     )
   }
 }

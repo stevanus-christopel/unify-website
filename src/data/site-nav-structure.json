@@ -18,16 +18,21 @@
       "bottom-sheets": "Bottom Sheets",
       "button": "Button",
       "cards": "Cards",
+      "carousel": "Carousel",
       "chips": "Chips",
       "dialogs": "Dialogs",
+      "footer": "Footer",
       "lists": "Lists",
+      "loaders": "Loaders",
       "menus": "Menus",
       "navigation-bar": "Navigation Bar",
       "pickers": "Pickers",
+      "select": "Select",
       "selection-controls": "Selection Controls",
       "sliders": "Sliders",
       "stepper": "Stepper",
       "tabs": "Tabs",
+      "text-area": "Text Area",
       "text-fields": "Text Fields",
       "tickers": "Tickers",
       "toaster": "Toaster",
@@ -51,6 +56,10 @@
         "url": "/components/cards"
       },
       {
+        "title": "Carousel",
+        "url": "/components/carousel"
+      },
+      {
         "title": "Chips",
         "url": "/components/chips"
       },
@@ -59,8 +68,16 @@
         "url": "/components/dialogs"
       },
       {
+        "title": "Footer",
+        "url": "/components/footer"
+      },
+      {
         "title": "Lists",
         "url": "/components/lists"
+      },
+      {
+        "title": "Loaders",
+        "url": "/components/loaders"
       },
       {
         "title": "Menus",
@@ -73,6 +90,10 @@
       {
         "title": "Pickers",
         "url": "/components/pickers"
+      },
+      {
+        "title": "Select",
+        "url": "/components/select"
       },
       {
         "title": "Selection Controls",
@@ -89,6 +110,10 @@
       {
         "title": "Tabs",
         "url": "/components/tabs"
+      },
+      {
+        "title": "Text Area",
+        "url": "/components/text-area"
       },
       {
         "title": "Text Fields",
