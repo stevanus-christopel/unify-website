@@ -19,3 +19,4 @@ Use these props on each `<Chip />` component. The bold one in Value section is t
 | onClick     | Props for adding click function to chips | func            | -
 | onClose     | Props for adding close function to chips | func            | -
 | children         | Props for give chips text           | string          | **""**
+| loading          | Props for chips loading state       | bool            | **false**, true

@@ -23,7 +23,9 @@ Props **item** below is the element of props **items**
 | item.checked  | Props for set the item to be checked | bool | **false**, true
 | item.text  | Props for text of each element inside items array  | string  | -
 | item.icon  | Props for item icon, can be string file location or child component  | string or object  | -
+| item.largeIcon   | Props for item large icon, can be string file location or child component  | string or object  | -
 | item.actionText | Props for adding action text of each element inside items array   | string  | -
 | item.actionType | Props for set the type of action inside items array   | string  | checkbox, radio, toggle
 | item.arrow  | Props for showing arrow icon  | bool | -
 | item.onClick  | Props for adding click function of each element inside items array  | func | -
+| item.hideBorder  | Props for removing border bottom on item | bool        | **false**, true

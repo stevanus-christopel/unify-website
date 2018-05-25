@@ -20,5 +20,6 @@ Use these props on each `<Carousel />` component. The bold one in Value section 
 | autoplay         | Props for autoplay slides           | bool            | **false**, true
 | link    | Props for adding custom link on right bottom text  | string    | -
 | linkText    | Props for adding text on right bottom    | string          | -
+| width           | Props for set items width            | number          | -
 | onChange    | Props for adding change function when moving slides        | func          | -
 | children        | Props for give carousel content      | array           | **[]**

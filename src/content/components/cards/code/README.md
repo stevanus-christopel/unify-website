@@ -19,3 +19,5 @@ Use these props on each `<Card />` component. The bold one in Value section is t
 | container     | Props for applying container style     | bool            | **false**, true
 | children         | Props for give card content           | string          | **""**
 | padding          | Props for give card's padding       | string          | **16px**
+| actionText       | Props for card action text          | string          | ""
+| onActionClick    | Props for adding function to action text   | func     | -
