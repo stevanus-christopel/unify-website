@@ -14,7 +14,7 @@ class ComponentDemo extends PureComponent {
 
   render() {
     return(
-      <React.Fragment>
+      <div className='selection-control-wrapper'>
         <Radio 
           value='option1'
           checked={this.state.checked === 'option1'}
@@ -30,7 +30,7 @@ class ComponentDemo extends PureComponent {
           value='Radio Value'
           disabled
         />
-      </React.Fragment>
+      </div>
     )
   }
 }

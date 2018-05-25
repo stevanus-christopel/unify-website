@@ -161,6 +161,15 @@
     margin: 0 auto;
     padding: 0;
 
+    & div.selection-control-wrapper {
+      background: #FFFFFF;
+      padding: 16px;
+
+      label {
+        margin: 0 16px;
+      }
+    }
+
     & div.loader-wrapper {
       display: block;
       width: 100%;
@@ -179,10 +188,17 @@
 
     & div.slider-wrapper {
       width: 100%;
+      background: #FFFFFF;
+      padding: 16px 0;
 
       .unf-slider--block {
         margin: 0 auto;
       }
+    }
+
+    & div.stepper-wrapper {
+      max-width: 360px;
+      width: 100%;
     }
 
     & div.dialog {

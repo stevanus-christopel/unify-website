@@ -14,7 +14,7 @@ class ComponentDemo extends PureComponent {
 
   render() {
     return(
-      <React.Fragment>
+      <div className='selection-control-wrapper'>
         <Checkbox
           value='Checkbox value'
           useLabel
@@ -28,7 +28,7 @@ class ComponentDemo extends PureComponent {
         <Checkbox
           value='Checkbox value'
           disabled />
-      </React.Fragment>    
+      </div>    
     )
   }
 }

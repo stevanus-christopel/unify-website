@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from 'unify-react-mobile/build/NavBar';
 
 const ComponentDemo = (
-    <div>
+    <div className='stepper-wrapper'>
         <NavBar inverted
             title="1 of 3 Steps"
             onBack="https://www.tokopedia.com"

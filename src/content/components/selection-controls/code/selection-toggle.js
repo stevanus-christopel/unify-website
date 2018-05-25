@@ -14,7 +14,7 @@ class ComponentDemo extends PureComponent {
 
   render() {
     return(
-      <React.Fragment>
+      <div className='selection-control-wrapper'>
         <Toggle 
           value='Toggle value'
           checked={this.state.checked}
@@ -34,7 +34,7 @@ class ComponentDemo extends PureComponent {
           prependText='prependText'
           appendText='appendText'
         />
-      </React.Fragment>
+      </div>
     )
   }
 }
