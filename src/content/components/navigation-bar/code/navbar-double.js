@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from 'unify-react-mobile/build/NavBar';
 
 const ComponentDemo = (
-    <div>
+  <div style={{width: '320px'}}>
         <NavBar inverted
             title="Text Goes Here"
             subTitle="Sub-text goes here"

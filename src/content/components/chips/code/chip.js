@@ -9,7 +9,7 @@ class ComponentDemo extends PureComponent {
   render() {
     return(
       <div>
-        <Chip onClick={() => {this.setState({active: !this.state.active})}} 
+        <Chip onClick={() => {this.setState({active: !this.state.active})}}
           active={this.state.active}>Normal Chip</Chip>
         <Chip active>Active Chip</Chip>
         <br />
@@ -17,7 +17,7 @@ class ComponentDemo extends PureComponent {
         <br />
         <Chip>Chips with very very long text</Chip>
         <br/>
-        <Chip loading={true}></Chip>
+        <Chip loading={true}>Chip loading state</Chip>
       </div>
     )
   }

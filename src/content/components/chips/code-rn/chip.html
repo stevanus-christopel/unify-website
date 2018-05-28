@@ -1,5 +1,6 @@
-<Chip onPress={() => {this.setState({active: !this.state.active})}} 
+<Chip onPress={() => {this.setState({active: !this.state.active})}}
   active={this.state.active}>Normal Chip</Chip>
 <Chip active>Active Chip</Chip>
 <Chip onClose={(e) => {e.target.parentNode.remove()}}>Chip with onClose props</Chip>
 <Chip>Chips with very very long text</Chip>
+<Chip loading={true}>Chip loading state</Chip>

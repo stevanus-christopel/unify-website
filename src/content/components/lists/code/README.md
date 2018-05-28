@@ -28,4 +28,4 @@ Props **item** below is the element of props **items**
 | item.actionType | Props for set the type of action inside items array   | string  | checkbox, radio, toggle
 | item.arrow  | Props for showing arrow icon  | bool | -
 | item.onClick  | Props for adding click function of each element inside items array  | func | -
-| item.hideBorder  | Props for removing border bottom on item | bool        | **false**, true
+| item.noBorder  | Props for removing border bottom on item | bool        | **false**, true
