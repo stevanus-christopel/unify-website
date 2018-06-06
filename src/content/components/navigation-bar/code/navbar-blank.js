@@ -5,8 +5,6 @@ const ComponentDemo = (
   <div style={{width: '320px'}}>
         <NavBar inverted
             onBack="https://www.tokopedia.com"
-            actionTitle="Action"
-            onAction="https://www.tokopedia.com"
         />
     </div>
 )

@@ -6,7 +6,6 @@ const ComponentDemo = (
     <NavBar inverted
       title="Text Goes Here"
       onBack="https://www.tokopedia.com"
-      actionTitle="Action"
       onAction="https://www.tokopedia.com">
         <span style={{paddingRight: '16px', color: '#42B549'}} onClick={() => console.log('Do some action')}>
           Action
