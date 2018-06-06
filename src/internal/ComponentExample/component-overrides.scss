@@ -201,6 +201,32 @@
       width: 100%;
     }
 
+    & div.search-wrapper {
+      width: 100%;
+      background: #FFFFFF;
+      margin: 0;
+    }
+
+    & div.label-wrapper {
+      width: 100%;
+      background: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 16px;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
     & div.dialog {
       left: 50%;
       transform: translate(-50%,-50%);

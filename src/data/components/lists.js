@@ -6,6 +6,9 @@
     ],
     "two-line-lists": [
       "Two Line"
+    ],
+    "custom-lists": [
+      "Custom List"
     ]
   },
   "__content": "\n"

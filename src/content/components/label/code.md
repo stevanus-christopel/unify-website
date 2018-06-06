@@ -1,0 +1,5 @@
+---
+variations:
+  label:
+  - Label
+---

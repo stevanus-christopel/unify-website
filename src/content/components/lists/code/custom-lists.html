@@ -1,0 +1,13 @@
+const GlobalText = props => <span>{props.text}</span>
+const BoldGreenText = props => <b style={{color: '#42b549'}}>{props.text}</b>
+const LabelUnify = props => <Label backgroundColor='#42b549' textColor='#FFFFFF' large>{props.text}</Label>
+<List subheader="Subheader"
+    items={[
+      { text: "Text with global template"},
+      { text: "Text with global template"},
+      { text: "Text with global template"},
+      { text: "Text with custom template", template: BoldGreenText},
+      { text: "Text with custom template", template: LabelUnify}
+    ]}
+    template={GlobalText}
+  />

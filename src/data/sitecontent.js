@@ -50,113 +50,131 @@ module.exports = {
   },
   "8": {
     "parent": "components",
+    "child": "label",
+    "section": "design",
+    "content": "-"
+  },
+  "9": {
+    "parent": "components",
     "child": "lists",
     "section": "design",
     "content": "Lists consist of related content grouped together and organized vertically."
   },
-  "9": {
+  "10": {
     "parent": "components",
     "child": "loaders",
     "section": "design",
     "content": "-"
   },
-  "10": {
+  "11": {
     "parent": "components",
     "child": "menus",
     "section": "design",
     "content": "Menus display a list of choices on a transient sheet of material."
   },
-  "11": {
+  "12": {
     "parent": "components",
     "child": "navigation-bar",
     "section": "design",
     "content": "Navigation Bar appears at the top of an app screen, below the status bar, and enables navigation through a series of hierarchical screens."
   },
-  "12": {
+  "13": {
     "parent": "components",
     "child": "pickers",
     "section": "design",
     "content": "Pickers provide a simple way to select a single value from a pre-determined set."
   },
-  "13": {
+  "14": {
+    "parent": 'components',
+    "child": "searchbar",
+    "section": "design",
+    "content": "-"
+  },
+  "15": {
     "parent": "components",
     "child": "select",
     "section": "design",
     "content": "-"
   },
-  "14": {
+  "16": {
     "parent": "components",
     "child": "selection-controls",
     "section": "design",
     "content": "Selection controls allow the user to select options."
   },
-  "15": {
+  "17": {
     "parent": "components",
     "child": "sliders",
     "section": "design",
     "content": "Sliders let users select from a range of values by moving the slider thumb."
   },
-  "16": {
+  "18": {
     "parent": "components",
     "child": "stepper",
     "section": "design",
     "content": "Stepper convey progress through numbered steps."
   },
-  "17": {
+  "19": {
+    "parent": "components",
+    "child": "subheader",
+    "section": "design",
+    "content": "-"
+  },
+  "20": {
     "parent": "components",
     "child": "tabs",
     "section": "design",
     "content": "Tabs make it easy to explore and switch between different views."
   },
-  "18": {
+  "21": {
     "parent": "components",
     "child": "text-area",
     "section": "design",
     "content": "-"
   },
-  "19": {
+  "22": {
     "parent": "components",
     "child": "text-fields",
     "section": "design",
     "content": "Text Fields allow users to input, edit, and select text."
   },
-  "20": {
+  "23": {
     "parent": "components",
     "child": "tickers",
     "section": "design",
     "content": "Tickers provide short, timely, and relevant information about important things that will happen in our system."
   },
-  "21": {
+  "24": {
     "parent": "components",
     "child": "toaster",
     "section": "design",
     "content": "Toaster provides brief feedback about an operation through a message at the bottom of the screen."
   },
-  "22": {
+  "25": {
     "parent": "components",
     "child": "tooltips",
     "section": "design",
     "content": "Tooltips provide additional information upon hover, focus, or click. They often contain helper text that is contextual to an element."
   },
-  "23": {
+  "26": {
     "parent": "styles",
     "child": "copywriting",
     "section": "design",
     "content": "Writing text should be understandable by anyone, anywhere, regardless of their culture or language. Clear, accurate, and concise text make interfaces more usable and build trust."
   },
-  "24": {
+  "27": {
     "parent": "styles",
     "child": "spacing",
     "section": "design",
     "content": "All components align to an 8 square baseline grid for mobile, tablet, and desktop."
   },
-  "25": {
+  "28": {
     "parent": "styles",
     "child": "colors",
     "section": "palette",
     "content": ""
   },
-  "26": {
+  "29": {
     "parent": "styles",
     "child": "typography",
     "section": "design",

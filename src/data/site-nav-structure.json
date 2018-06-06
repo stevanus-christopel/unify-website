@@ -22,11 +22,13 @@
       "chips": "Chips",
       "dialogs": "Dialogs",
       "footer": "Footer",
+      "label": "Label",
       "lists": "Lists",
       "loaders": "Loaders",
       "menus": "Menus",
       "navigation-bar": "Navigation Bar",
       "pickers": "Pickers",
+      "searchbar": "SearchBar",
       "select": "Select",
       "selection-controls": "Selection Controls",
       "sliders": "Sliders",
@@ -72,6 +74,10 @@
         "url": "/components/footer"
       },
       {
+        "title": "Label",
+        "url": "/components/label"
+      },
+      {
         "title": "Lists",
         "url": "/components/lists"
       },
@@ -92,6 +98,10 @@
         "url": "/components/pickers"
       },
       {
+        "title": "SearchBar",
+        "url": "/components/searchbar"
+      },
+      {
         "title": "Select",
         "url": "/components/select"
       },
@@ -106,6 +116,10 @@
       {
         "title": "Stepper",
         "url": "/components/stepper"
+      },
+      {
+        "title": "Subheader",
+        "url": "/components/subheader"
       },
       {
         "title": "Tabs",

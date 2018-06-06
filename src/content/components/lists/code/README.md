@@ -18,6 +18,7 @@ Props **item** below is the element of props **items**
 | className        | Props for applying custom classes   | string          | **""**
 | subheader        | Props for subheader text            | string          | ""
 | noMargin         | Props for removing margin           | bool            | **false**, true
+| template         | Props for custom DOM applied to all items  | object   | -
 | items   | Props to set items inside tabs. Use same format as the sample above.  | array | **[]**
 | item.key  | Props for key of each element inside items array | number | **0**
 | item.checked  | Props for set the item to be checked | bool | **false**, true
@@ -29,3 +30,6 @@ Props **item** below is the element of props **items**
 | item.arrow  | Props for showing arrow icon  | bool | -
 | item.onClick  | Props for adding click function of each element inside items array  | func | -
 | item.noBorder  | Props for removing border bottom on item | bool        | **false**, true
+| item.iconSize   | Props for set the image background sizae | string     | -
+| item.textIndent  | Props for set text indent on curren item   | string   | -
+| item.template    | Props for custom DOM on current item   | object       | -

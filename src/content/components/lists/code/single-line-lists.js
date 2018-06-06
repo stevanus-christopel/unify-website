@@ -12,6 +12,7 @@ const ComponentDemo = (
       { text: "Text goes here", actionType: "toggle" },
       { text: "Text goes here", actionType: "checkbox", checked: true },
       { text: "Text goes here", checked: true },
+      { text: "Text goes here", icon: "https://placehold.it/100x100", iconSize: '40px', textIndent: '48px'}
     ]}
   />
 )

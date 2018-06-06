@@ -47,6 +47,11 @@ class OverviewPage extends Component {
         link: '/components/footer'
       },
       {
+        name: 'Label',
+        img: require('./images/Lists.svg'),
+        link: '/components/label'
+      },
+      {
         name: 'Lists',
         img: require('./images/Lists.svg'),
         link: '/components/lists'
@@ -72,6 +77,11 @@ class OverviewPage extends Component {
         link: '/components/pickers'
       },
       {
+        name: 'Searchbar',
+        img: require('./images/Text Fields.svg'),
+        link: '/components/searchbar'
+      },
+      {
         name: 'Select',
         img: require('./images/Selection Controls.svg'),
         link: '/components/select'
@@ -90,6 +100,11 @@ class OverviewPage extends Component {
         name: 'Stepper',
         img: require('./images/Stepper.svg'),
         link: '/components/stepper'
+      },
+      {
+        name: 'Subheader',
+        img: require('./images/Cards.svg'),
+        link: '/components/subheader'
       },
       {
         name: 'Tabs',
