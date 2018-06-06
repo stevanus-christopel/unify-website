@@ -16,6 +16,7 @@ Use these props on each `<BottomSheet />` component. The bold one in Value secti
 |---------------------|----------------------------------|-----------------|---------------------|
 | className   | Props for applying custom classes   | string            | **""**
 | title   | Props for bottom sheets title   | string            | **""**
+| subTitle  | Props for bottom sheets subTitle  | string            | **""**
 | full   | Props for making full bottom sheet   | bool            | **false**, true
 | onClose   | Props for adding function to close the bottom sheet (toggle display state)   | func            | -
 | display   | Props to display the bottom sheet   | bool            | **false**, true

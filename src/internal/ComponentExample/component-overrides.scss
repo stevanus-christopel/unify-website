@@ -216,10 +216,24 @@
       flex-direction: column;
       padding: 16px;
 
-      div {
+      & > div {
         display: flex;
         flex-direction: row;
         margin-bottom: 8px;
+
+        &.label-flex {
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 8px;
+          
+          div {
+            margin-right: 8px;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
 
         &:last-child {
           margin-bottom: 0;

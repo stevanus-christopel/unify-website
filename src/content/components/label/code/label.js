@@ -3,7 +3,7 @@ import Label from 'unify-react-mobile/build/Label';
 
 const ComponentDemo = (
   <div className='label-wrapper'>
-    <div>
+    <div className='label-flex'>
       <Label backgroundColor='#42B549' textColor='#FFFFFF'>
         Label small
       </Label>

@@ -18,8 +18,11 @@ class ComponentDemo extends PureComponent {
           <Button secondary block onClick={this.toggleDisplay}>Open Full Page Bottom Sheet</Button>
         </div>
         <BottomSheet full title="Title of Information"
+          subTitle="SubTitle of Information"
           display={this.state.display}
-          onClose={this.toggleDisplay}>
+          onClose={this.toggleDisplay}
+          actionText='Action Text'
+          onActionClick={() => alert('Unify is cool')}>
             <p>This is content section.</p>
         </BottomSheet>
       </React.Fragment>

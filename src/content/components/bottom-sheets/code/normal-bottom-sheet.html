@@ -1,5 +1,8 @@
 <BottomSheet title="Title of Information"
+  subTitle="SubTitle of Information"
   onClose={this.toggleDisplay}
-  display={this.state.display}>
+  display={this.state.display}
+  actionText="Action Text"
+  onActionClick={() => alert('Unify is cool')}>
   <p>This is content section.</p>
 </BottomSheet>
