@@ -25,4 +25,5 @@ Use these props on each `<NavBar />` component. The bold one in Value section is
 | numberOfStep     | Props to set total number of steps   | number          | -
 | onBack  | Props for adding back function or url to button   | func or string           | -
 | fixed   | Props to set navigation bar position as fixed   | bool            | **false**, true
+| shadow   | Props to set whether box-shadow should be shown or not   | bool            | **true**, false
 | children   | Props to give action or icon on the right side   | string or object            | -

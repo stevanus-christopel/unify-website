@@ -1,0 +1,15 @@
+
+<NavBar inverted
+    title="Text Goes Here"
+    onBack="https://www.tokopedia.com"
+    shadow={false}
+/>
+
+<Tab secondary
+  items={[
+    { key: 0, text: "Inbox", count: 3 },
+    { key: 1, text: "Sent" },
+    { key: 2, text: "Trash" }
+  ]}
+  indexActive={this.state.indexActiveTabs}
+  onItemClick={this.handleChangeTab} />

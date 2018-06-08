@@ -8,4 +8,6 @@ variations:
   - Navigation Bar with Action
   navbar-blank:
   - Blank Navigation Bar
+  navbar-no-shadow:
+  - Navigation Bar without shadow (with Tab component)
 ---

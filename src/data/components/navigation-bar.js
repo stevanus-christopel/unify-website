@@ -12,6 +12,9 @@
     ],
     "navbar-blank": [
       "Blank Navigation Bar"
+    ],
+    "navbar-no-shadow": [
+      "Navigation Bar without shadow (with Tab component)"
     ]
   },
   "__content": "\n"
